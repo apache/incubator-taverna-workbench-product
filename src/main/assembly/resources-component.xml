@@ -1,0 +1,49 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<component
+	xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
+	<fileSets>
+		<fileSet>
+			<directory>src/main/resources</directory>
+			<outputDirectory>/</outputDirectory>
+			<excludes>
+				<exclude>conf/raven-launcher.properties</exclude>
+				<exclude>conf/current-profile.xml</exclude>
+				<exclude>plugins/plugins.xml</exclude>
+				<exclude>plugins/plugin-sites.xml</exclude>
+			</excludes>
+		</fileSet>
+		<fileSet>
+			<!--
+				Note - this is the partial "manual" bit of the repository built by
+				maven-dependency-plugin in the pom.xml - the rest is made by the
+				<repositories> section below
+			-->
+			<directory>${project.build.directory}/repository</directory>
+			<outputDirectory>/repository</outputDirectory>
+		</fileSet>
+	</fileSets>
+	<files>
+		<file>
+			<source>src/main/resources/conf/raven-launcher.properties</source>
+			<outputDirectory>/conf</outputDirectory>
+			<filtered>true</filtered>
+		</file>
+		<file>
+			<source>src/main/resources/conf/current-profile.xml</source>
+			<outputDirectory>/conf</outputDirectory>
+			<filtered>true</filtered>
+		</file>
+		<file>
+			<source>src/main/resources/plugins/plugins.xml</source>
+			<outputDirectory>/plugins</outputDirectory>
+			<filtered>true</filtered>
+		</file>
+		<file>
+			<source>src/main/resources/plugins/plugin-sites.xml</source>
+			<outputDirectory>/plugins</outputDirectory>
+			<filtered>true</filtered>
+		</file>
+	</files>
+</component>

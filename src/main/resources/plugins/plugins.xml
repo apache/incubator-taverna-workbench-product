@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugins:plugins xmlns:plugins="http://taverna.sf.net/2008/xml/plugins"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://taverna.sf.net/2008/xml/plugins http://taverna.sourceforge.net/2008/xml/plugins/plugins-2008-10-16.xsd ">
+
+	<plugin>
+		<provider>taverna.sf.net</provider>
+		<identifier>net.sf.taverna.t2.components</identifier>
+		<version>${project.version}-${buildNumber}</version>
+		<name>Workbench components</name>
+		<description>Taverna 2 workbench components</description>
+		<enabled>true</enabled>
+		<repositories>
+			${m2Repository}
+			<repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
+			<repository>http://www.mygrid.org.uk/maven/repository/</repository>
+			<repository>http://bioinf.ncl.ac.uk/mirror/maven/repository/</repository>
+			<repository>http://mirror.omii.ac.uk/maven/repository/</repository>
+			<repository>http://www.mygrid.org.uk/maven/repo1/</repository>
+			<repository>http://moby.ucalgary.ca/moby_maven/</repository>
+			<repository>http://biomoby.org/m2repo/</repository>
+			<repository>http://repository.jboss.com/maven2/</repository>
+			<repository>http://download.java.net/maven/2/</repository>
+			<repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
+			<repository>http://ws.zones.apache.org/repository2/</repository>
+			<repository>http://www.eviware.com/repository/maven2/</repository>
+		</repositories>
+		<profile>
+			<dependency>
+				<groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
+				<artifactId>components-plugin</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<!--  system artifacts -->
+			<artifact artifactId="saxpath" groupId="saxpath" version="1.0-FCS"
+				system="true" />
+			<artifact artifactId="jaxen" groupId="jaxen" version="1.0-FCS"
+				system="true" />
+			<artifact artifactId="xercesImpl" groupId="xerces" version="2.7.1"
+				system="true" />
+			<artifact artifactId="xalan" groupId="xalan" version="2.6.0"
+				system="true" />
+			<artifact artifactId="dom4j" groupId="dom4j" version="1.6"
+				system="true" />
+			<artifact artifactId="log4j" groupId="log4j" version="1.2.12"
+				system="true" />
+		</profile>
+		<compatibility>
+			<application>
+				<version>${project.version}</version>
+			</application>
+		</compatibility>
+	</plugin>
+	<plugin>
+		<provider>taverna.sf.net</provider>
+		<identifier>net.sf.taverna.t2.activities</identifier>
+		<version>${project.version}-${buildNumber}</version>
+		<name>Services</name>
+		<description>Taverna 2 services (WSDL, SoapLab, etc)</description>
+		<enabled>true</enabled>
+		<repositories>
+			${m2Repository}
+			<repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
+			<repository>http://www.mygrid.org.uk/maven/repository/</repository>
+			<repository>http://bioinf.ncl.ac.uk/mirror/maven/repository/</repository>
+			<repository>http://mirror.omii.ac.uk/maven/repository/</repository>
+			<repository>http://www.mygrid.org.uk/maven/repo1/</repository>
+			<repository>http://moby.ucalgary.ca/moby_maven/</repository>
+			<repository>http://biomoby.org/m2repo/</repository>
+			<repository>http://repository.jboss.com/maven2/</repository>
+			<repository>http://download.java.net/maven/2/</repository>
+			<repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
+			<repository>http://ws.zones.apache.org/repository2/</repository>
+			<repository>http://www.eviware.com/repository/maven2/</repository>
+		</repositories>
+		<profile>
+			<dependency>
+				<groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
+				<artifactId>activities-plugin</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</profile>
+		<compatibility>
+			<application>
+				<version>${project.version}</version>
+			</application>
+		</compatibility>
+	</plugin>
+	<plugin>
+		<provider>taverna.sf.net</provider>
+		<identifier>net.sf.taverna.t2.translators</identifier>
+		<version>${project.version}-${buildNumber}</version>
+		<name>Compatibility</name>
+		<description>Taverna 1 compatibility</description>
+		<enabled>true</enabled>
+		<repositories>
+			${m2Repository}
+			<repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
+			<repository>http://www.mygrid.org.uk/maven/repository/</repository>
+			<repository>http://bioinf.ncl.ac.uk/mirror/maven/repository/</repository>
+			<repository>http://mirror.omii.ac.uk/maven/repository/</repository>
+			<repository>http://www.mygrid.org.uk/maven/repo1/</repository>
+			<repository>http://moby.ucalgary.ca/moby_maven/</repository>
+			<repository>http://biomoby.org/m2repo/</repository>
+			<repository>http://repository.jboss.com/maven2/</repository>
+			<repository>http://download.java.net/maven/2/</repository>
+			<repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
+			<repository>http://ws.zones.apache.org/repository2/</repository>
+			<repository>http://www.eviware.com/repository/maven2/</repository>
+		</repositories>
+		<profile>
+			<dependency>
+				<groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
+				<artifactId>translators-plugin</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</profile>
+		<compatibility>
+			<application>
+				<version>${project.version}</version>
+			</application>
+		</compatibility>
+	</plugin>
+</plugins:plugins>

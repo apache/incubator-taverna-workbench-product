@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pluginSites>
+  <pluginSite>
+    <name>myGrid</name>
+    <url>http://www.mygrid.org.uk/taverna/updates/${project.version}/plugins/</url>
+  </pluginSite>
+</pluginSites>
