@@ -70,6 +70,23 @@
 							</descriptors>
 						</configuration>
 					</plugin>
+						<!--  Temporarily checked out from 
+						https://svn.codehaus.org/mojo/trunk/sandbox/nsis-maven-plugin/ 
+						and deployed to myGrid's snapshot repository -->
+					<!--<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>nsis-maven-plugin</artifactId>
+						<version>1.0-20090309.160159-1</version>
+						
+						<executions>
+							<execution>
+								<goals>
+									<goal>generate-project</goal>  create target/project.nsh 
+									<goal>compile</goal>           compile setup.nsi into exe 
+								</goals>
+							</execution>
+						</executions>
+					</plugin>-->
 				</plugins>
 				
 			</build>
