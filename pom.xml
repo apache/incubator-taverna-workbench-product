@@ -2576,7 +2576,15 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
-	</repositories>
+		<repository>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<id>tupelo2</id>
+			<name>tupelo2</name>
+			<url>http://dlt-dev.ncsa.uiuc.edu/m2</url>
+		</repository>
+			</repositories>
 	<dependencies>
 		<dependency>
 			<groupId>net.sf.taverna.t2.taverna-workbench
