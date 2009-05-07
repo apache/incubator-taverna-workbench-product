@@ -122,4 +122,39 @@
 			</application>
 		</compatibility>
 	</plugin>
+	<plugin>
+		<provider>taverna.sf.net</provider>
+		<identifier>net.sf.taverna.t2.taverna-workbench.provenanceconnectors-plugin</identifier>
+		<version>${project.version}-${buildNumber}</version>
+		<name>Services</name>
+		<description>Taverna 2 provenance connectors</description>
+		<enabled>true</enabled>
+		<repositories>
+			${m2Repository}
+			<repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
+			<repository>http://www.mygrid.org.uk/maven/repository/</repository>
+			<repository>http://bioinf.ncl.ac.uk/mirror/maven/repository/</repository>
+			<repository>http://mirror.omii.ac.uk/maven/repository/</repository>
+			<repository>http://www.mygrid.org.uk/maven/repo1/</repository>
+			<repository>http://moby.ucalgary.ca/moby_maven/</repository>
+			<repository>http://biomoby.org/m2repo/</repository>
+			<repository>http://repository.jboss.com/maven2/</repository>
+			<repository>http://download.java.net/maven/2/</repository>
+			<repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
+			<repository>http://ws.zones.apache.org/repository2/</repository>
+			<repository>http://www.eviware.com/repository/maven2/</repository>
+		</repositories>
+		<profile>
+		<dependency>
+			<groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
+			<artifactId>provenanceconnectors-plugin</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		</profile>
+		<compatibility>
+			<application>
+				<version>${project.version}</version>
+			</application>
+		</compatibility>
+	</plugin>
 </plugins:plugins>
