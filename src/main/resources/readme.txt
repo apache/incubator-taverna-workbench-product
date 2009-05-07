@@ -12,7 +12,4 @@ and follow the instructions.
 
 You can also use the graphical package manager.
 
-
-Read http://www.mygrid.org.uk/tools/taverna/taverna-requirements/ for more 
-details and links.
-
+Read http://www.taverna.org.uk/taverna-requirements/ for more details and links.
