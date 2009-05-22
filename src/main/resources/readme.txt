@@ -9,7 +9,4 @@ start a Terminal, type the following:
 
 and follow the instructions.
 
-
-You can also use the graphical package manager.
-
 Read http://www.taverna.org.uk/taverna-requirements/ for more details and links.
