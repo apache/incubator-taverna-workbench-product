@@ -1,4 +1,4 @@
- #!/bin/sh
+#!/bin/sh
 
 ## resolve links - $0 may be a symlink
 PRG="$0"
@@ -20,7 +20,8 @@ done
 TAVERNA_HOME="`dirname "$PRG"`"
 cd $TAVERNA_HOME
 
-exec java -Xmx300m -Draven.profile=file:conf/current-profile.xml \
+exec java -Xmx300m -XX:MaxPermSize=140m \
+  -Draven.profile=file:conf/current-profile.xml \
   -Dtaverna.startup=. \
   -Djava.system.class.loader=net.sf.taverna.raven.prelauncher.BootstrapClassLoader \
   -Dapple.laf.useScreenMenuBar=false \
