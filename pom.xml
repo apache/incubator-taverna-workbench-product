@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>net.sf.taverna.t2</groupId>
 		<artifactId>taverna-workbench</artifactId>
-		<version>2.1-SNAPSHOT</version>
+		<version>2.1-beta-2</version>
 	</parent>
 	<groupId>net.sf.taverna.t2.taverna-workbench
 	</groupId>
 	<artifactId>workbench-distro</artifactId>
 	<name>Taverna workbench distribution</name>
 	<properties>
-		<m2Repository></m2Repository>
+		<m2Repository />
 	</properties>
 	<profiles>
 		<profile>
@@ -2598,7 +2597,7 @@
 			<groupId>net.sf.taverna.t2.taverna-workbench
 			</groupId>
 			<artifactId>workbench-common</artifactId>
-			<version>${t2.taverna.workbench.version}
+			<version>${project.version}
 			</version>
 		</dependency>
 
@@ -2606,7 +2605,7 @@
 			<groupId>net.sf.taverna.t2.taverna-workbench.plugins
 			</groupId>
 			<artifactId>activities-plugin</artifactId>
-			<version>${t2.taverna.workbench.version}
+			<version>${project.version}
 			</version>
 			<scope>test</scope>
 		</dependency>
@@ -2614,7 +2613,7 @@
 			<groupId>net.sf.taverna.t2.taverna-workbench.plugins
 			</groupId>
 			<artifactId>components-plugin</artifactId>
-			<version>${t2.taverna.workbench.version}
+			<version>${project.version}
 			</version>
 			<scope>test</scope>
 		</dependency>
@@ -2622,14 +2621,14 @@
 			<groupId>net.sf.taverna.t2.taverna-workbench.plugins
 			</groupId>
 			<artifactId>translators-plugin</artifactId>
-			<version>${t2.taverna.workbench.version}
+			<version>${project.version}
 			</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
 			<artifactId>provenanceconnectors-plugin</artifactId>
-			<version>${t2.taverna.workbench.version}</version>
+			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
