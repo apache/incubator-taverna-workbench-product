@@ -1,0 +1,80 @@
+Known issues in Taverna 2.1 Beta 2 workbench
+============================================
+
+
+Configuration issues
+====================
+
+T2-688 Spring settings are wrong for net.sf.taverna.t2.reference.ui.TestReferenceGeneration
+T2-667 net.sf.taverna.t2.workbench.configuration.ConfigurationManagerTest hardcodes test directory
+T2-586 pom.xml for distribution should not depend upon snapshots
+
+Validation
+==========
+
+T2-665  Validate workflow should give a "yes it is OK" dialog
+
+Workflow design
+===============
+
+T2-601 Need to be able to load a workflow "offline"
+T2-660 Iteration strategy editor is non-intuitive
+T2-659 Iteration strategy editor requires dot/cross to have subnodes before ports can be dragged into them
+T2-647 SVG Error is sometimes generated
+T2-603 Link creation by dragging does not prevent feedback
+T2-600 Connect from string constant does not work
+T2-250 Non-helpful error message when failing to open a t1 workflow
+T2-619 Default values for service ports should be available
+T2-593 Keep chain of UUID for dataflow
+T2-498 Diagram errors stops updates of workflow explorer
+
+Saving workflows
+================
+
+T2-658 Merge problem workflows are saved but cannot be read
+T2-645 Sometimes saving a workflow on the Mac will hang Taverna
+
+Workflow run
+============
+
+T2-572 Run dialog should have launch workflow button in top right
+T2-567 Run dialog should allow drop onto value
+T2-563 Run dialog should render files (and URLs)
+T2-562 Choosing to use an example value should be an explicit choice
+T2-561 Run dialog should auto-delete default value
+T2-570 Run dialog needs to deal with large list depths
+T2-564 Run dialog should allow cloning and subsequent editing of a file or URL
+
+Workflow execution
+==================
+
+T2-646 Workflow shown as completed when it isn't
+T2-602 Provenance: Syntax error on BioMoby workflows
+T2-599 Queue size in Reference Service buffer is unlimited, leading to potential Out of Memory errors
+T2-598 java.lang.OutOfMemoryError: PermGen space
+T2-591 Provenance lineageservice threw NumberFormatException
+T2-588 In provenance, switching port does not clear the rendered result
+T2-578 System.out debug logs from provenance
+T2-577 IndexOutOfBoundsException from provenance storage thread
+T2-557 Results Perspective sometimes has blank below an error
+T2-655 SeqVista renderer isn't used for embl format
+T2-597 Workflows with no output ports are not indicated as finishing
+T2-594 net.sf.taverna.t2.core.provenance-derby should not depend on UI
+T2-579 Reference manager logs 'connection made to existing database instead'
+T2-575 Provenance should be displayed consistent with output values
+T2-553 Provenance does not distinguish between lists and iterations
+
+User support
+============
+
+T2-664 Add email feedback form to UI
+
+Various
+=======
+
+T2-653 Configure localworker still has localworker icon in configure button
+T2-574 Lists should start at one
+T2-441 Renaming of UI objects
+T2-412 Splashscreen is "a bit annoying"
+
+26th June 2009

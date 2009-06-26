@@ -1,0 +1,115 @@
+Welcome to Taverna 2.1 Beta 2 workbench
+=======================================
+
+Due to user response to Taverna 2 workbench, major improvements have
+been made to the user interface of Taverna 2.1 Beta 2 workbench.  Many
+of these are described here.
+
+Future improvements are planned, especially in the viewing of
+results.
+
+Overall organization
+====================
+
+The workflow explorer has been moved from the right-hand side of
+Taverna workbench to below the service panel.
+
+Service panel
+=============
+
+The service panel replaces the activity palette of Taverna 2
+workbench.  It has a simplified and more familiar interface.
+
+The services are now organized so that Service templates i.e. services
+that always require configuration such as Beanshell, are grouped
+together.
+
+The tree used to display the services is more natural, with
+service-type specific organization within the branches.
+
+The service panel allows filtered search of services.  Type in text to
+search on and the service panel will just show the matching services.
+Note that it may match on attributes of the services that are not
+immediately visibile.
+
+The service panel automatically saves the set of service providers
+that are loaded.  This means that if you add a new WSDL then it will
+be there the next time you start Taverna.
+
+Service providers can be removed from the service panel.
+
+Adding services to the workflow
+===============================
+
+You can now add services to the current workflow by right-clicking on
+the service in the service panel.  You can still drag-and-drop the
+service into either the workflow explorer or the workflow diagram.
+
+If the service that you add needs to be configured, then the
+configuration panel for that type of service will automatically
+pop-up.
+
+Workflow creation
+=================
+
+You can now use all of the necessary workflow creation and editing
+functions from within the workflow explorer.  Merges and control links
+(for "run after" specification) are now shown in the workflow
+explorer.
+
+Merges can now be configured to control the order in which the data
+arriving is combined.
+
+Objects in the workflow explorer and workflow diagram can be
+configured by right-clicking on them.
+
+Data link creation is more intelligent so that it does not allow the
+creation of loops.
+
+The workflow diagram can now be scrolled using standard scrollbars.
+
+Run dialog
+==========
+
+The run dialog has been changed so that a graphical representation of
+the workflow and information about the ports, including example values
+is shown.  The mechanism for entering input values for ports has been
+made more user-friendly.
+
+The dialog "remembers" the values used for previous runs of the
+workflow.
+
+Results viewing
+===============
+
+The results view now shows when all the data has arrived at an output
+(the port turns grey) and also gives an indication of whether the
+workflow is still running.
+
+The number of iterations of a service during the run is shown in the
+top right of the service.
+
+If any calls to a service fail, then the service is shown in red and
+the number of failures shown in the bottom right of the service.
+
+Intermediate results of a service can be examined by clicking on the
+service.  The input and output values for each iteration of the
+service can be examined.  The results for several services can be
+viewed at the same time (in separate windows).
+
+You can zoom and scroll within the monitored view of the workflow run.
+
+Data storage
+============
+
+The storing of the values passed between services has been made more
+efficient.  The values are now stored, if necessary, in a database.
+Because of the in-memory caching used, there is negligible impact on
+workflow runtime whilst allowing the handling of larger datasets.
+
+Known issues
+============
+
+As this is a beta, there are some issues which will be fixed for the
+Taverna 2.1 release.  These are detailed in known-issues.txt
+
