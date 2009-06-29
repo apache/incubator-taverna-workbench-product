@@ -8,7 +8,7 @@
 		<identifier>net.sf.taverna.t2.components</identifier>
 		<version>${project.version}-${buildNumber}</version>
 		<name>Workbench components</name>
-		<description>Taverna 2 workbench components</description>
+		<description>Taverna 2 workbench user interface</description>
 		<enabled>true</enabled>
 		<repositories>
 			${m2Repository}
@@ -126,8 +126,8 @@
 		<provider>taverna.sf.net</provider>
 		<identifier>net.sf.taverna.t2.taverna-workbench.provenanceconnectors-plugin</identifier>
 		<version>${project.version}-${buildNumber}</version>
-		<name>Services</name>
-		<description>Taverna 2 provenance connectors</description>
+		<name>Provenance storage support</name>
+		<description>Provenance connectors (Apache Derby)</description>
 		<enabled>true</enabled>
 		<repositories>
 			${m2Repository}

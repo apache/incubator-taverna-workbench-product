@@ -1,3 +1,4 @@
-Example workflows can be found in the myExperiment pack http://www.myexperiment.org/packs/70
+Example workflows can be found in the myExperiment 
+pack at http://www.myexperiment.org/packs/70
 
-26th June 2009
+29th June 2009

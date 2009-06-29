@@ -1,6 +1,9 @@
 Known issues in Taverna 2.1 Beta 2 workbench
 ============================================
 
+See http://www.mygrid.org.uk/dev/issues/secure/IssueNavigator.jspa?requestId=10127
+for an updated list and details about these issues.
+
 
 Configuration issues
 ====================
@@ -12,7 +15,7 @@ T2-586 pom.xml for distribution should not depend upon snapshots
 Validation
 ==========
 
-T2-665  Validate workflow should give a "yes it is OK" dialog
+T2-665 Validate workflow should give a "yes it is OK" dialog
 
 Workflow design
 ===============
@@ -77,4 +80,4 @@ T2-574 Lists should start at one
 T2-441 Renaming of UI objects
 T2-412 Splashscreen is "a bit annoying"
 
-26th June 2009
+29th June 2009

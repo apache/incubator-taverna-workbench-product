@@ -7,7 +7,7 @@ pushd "%~dp0"
 
 
 REM 300 MB memory
-set ARGS="-Xmx300m -XX:MaxPermSize=140m"
+set ARGS=-Xmx300m -XX:MaxPermSize=140m
 
 REM Internal system properties
 set ARGS=%ARGS% -Draven.profile=file:conf/current-profile.xml
@@ -16,7 +16,7 @@ set ARGS=%ARGS% -Dsun.swing.enableImprovedDragGesture
 REM set ARGS=%ARGS% "-Dtaverna.startup=%~dp0"
 set ARGS=%ARGS% "-Dtaverna.startup=."
 
-java %ARGS% -jar lib\prelauncher-*.jar
+call java %ARGS% -jar lib\prelauncher-*.jar
 
 REM restore current directory
 popd

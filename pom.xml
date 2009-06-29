@@ -453,6 +453,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.1.1</outputDirectory>
                                 </artifactItem>
+                                <!-- duplicate
                                 <artifactItem>
                                     <groupId>dom4j</groupId>
                                     <artifactId>dom4j</artifactId>
@@ -467,6 +468,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/dom4j/dom4j/1.6</outputDirectory>
                                 </artifactItem>
+                                -->
                                 <artifactItem>
                                     <groupId>dom4j</groupId>
                                     <artifactId>dom4j</artifactId>
@@ -509,6 +511,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/javax/transaction/jta/1.0.1B</outputDirectory>
                                 </artifactItem>
+                                <!--  duplicate
                                 <artifactItem>
                                     <groupId>jaxen</groupId>
                                     <artifactId>jaxen</artifactId>
@@ -523,6 +526,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/jaxen/jaxen/1.0-FCS</outputDirectory>
                                 </artifactItem>
+                                 -->
                                 <artifactItem>
                                     <groupId>jaxen</groupId>
                                     <artifactId>jaxen</artifactId>
@@ -537,6 +541,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/jaxen/jaxen/1.1.1</outputDirectory>
                                 </artifactItem>
+                                <!-- duplicate
                                 <artifactItem>
                                     <groupId>jboss</groupId>
                                     <artifactId>javassist</artifactId>
@@ -551,6 +556,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/jboss/javassist/3.3.ga</outputDirectory>
                                 </artifactItem>
+                                 -->
                                 <artifactItem>
                                     <groupId>jdom</groupId>
                                     <artifactId>jdom</artifactId>
@@ -607,6 +613,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/junit/junit/4.4</outputDirectory>
                                 </artifactItem>
+                                <!-- 
                                 <artifactItem>
                                     <groupId>log4j</groupId>
                                     <artifactId>log4j</artifactId>
@@ -621,6 +628,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.12</outputDirectory>
                                 </artifactItem>
+                                 -->
                                 <artifactItem>
                                     <groupId>log4j</groupId>
                                     <artifactId>log4j</artifactId>
@@ -726,6 +734,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/org/apache/apache/1</outputDirectory>
                                 </artifactItem>
+                                <!-- duplicate
                                 <artifactItem>
                                     <groupId>org.apache</groupId>
                                     <artifactId>apache</artifactId>
@@ -733,6 +742,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/org/apache/apache/4</outputDirectory>
                                 </artifactItem>
+                                 -->
                                 <artifactItem>
                                     <groupId>org.apache.commons</groupId>
                                     <artifactId>commons-parent</artifactId>
@@ -921,6 +931,7 @@
                                     <version>1.0-20090428.084527-6</version>
                                     <type>jar</type>
                                     <outputDirectory>${project.build.directory}/repository/org/openprovenance/opm/1.0-20090428.084527-6</outputDirectory>
+                                    <destFileName>opm-1.0-20090428.084527-6.jar</destFileName>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.openprovenance</groupId>
@@ -928,21 +939,9 @@
                                     <version>1.0-20090428.084527-6</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/org/openprovenance/opm/1.0-20090428.084527-6</outputDirectory>
+                                    <destFileName>opm-1.0-20090428.084527-6.pom</destFileName>                                    
                                 </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.openprovenance</groupId>
-                                    <artifactId>opm</artifactId>
-                                    <version>1.0-SNAPSHOT</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/openprovenance/opm/1.0-SNAPSHOT</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.openprovenance</groupId>
-                                    <artifactId>opm</artifactId>
-                                    <version>1.0-SNAPSHOT</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/openprovenance/opm/1.0-SNAPSHOT</outputDirectory>
-                                </artifactItem>
+                                <!-- 
                                 <artifactItem>
                                     <groupId>org.openprovenance</groupId>
                                     <artifactId>opm</artifactId>
@@ -964,19 +963,14 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/org/openprovenance/specs/1.0-SNAPSHOT</outputDirectory>
                                 </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.openprovenance</groupId>
-                                    <artifactId>specs</artifactId>
-                                    <version>1.0-SNAPSHOT</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/openprovenance/specs/1.0-SNAPSHOT</outputDirectory>
-                                </artifactItem>
+                                 -->
                                 <artifactItem>
                                     <groupId>org.openprovenance</groupId>
                                     <artifactId>tupelo</artifactId>
                                     <version>1.0-20090428.084527-2</version>
                                     <type>jar</type>
                                     <outputDirectory>${project.build.directory}/repository/org/openprovenance/tupelo/1.0-20090428.084527-2</outputDirectory>
+                                    <destFileName>tupelo-1.0-20090428.084527-2.jar</destFileName>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.openprovenance</groupId>
@@ -984,21 +978,9 @@
                                     <version>1.0-20090428.084527-2</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/org/openprovenance/tupelo/1.0-20090428.084527-2</outputDirectory>
+                                    <destFileName>tupelo-1.0-20090428.084527-2.pom</destFileName>                                    
                                 </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.openprovenance</groupId>
-                                    <artifactId>tupelo</artifactId>
-                                    <version>1.0-SNAPSHOT</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/openprovenance/tupelo/1.0-SNAPSHOT</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.openprovenance</groupId>
-                                    <artifactId>tupelo</artifactId>
-                                    <version>1.0-SNAPSHOT</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/openprovenance/tupelo/1.0-SNAPSHOT</outputDirectory>
-                                </artifactItem>
+                                <!-- 
                                 <artifactItem>
                                     <groupId>org.openprovenance</groupId>
                                     <artifactId>tupelo</artifactId>
@@ -1020,27 +1002,24 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-all/2.5-SNAPSHOT</outputDirectory>
                                 </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.tupeloproject</groupId>
-                                    <artifactId>tupelo-all</artifactId>
-                                    <version>2.5-SNAPSHOT</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-all/2.5-SNAPSHOT</outputDirectory>
-                                </artifactItem>
+                                 -->
                                 <artifactItem>
                                     <groupId>org.tupeloproject</groupId>
                                     <artifactId>tupelo-cet</artifactId>
                                     <version>2.5-20090416.190129-3</version>
                                     <type>jar</type>
                                     <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-cet/2.5-20090416.190129-3</outputDirectory>
+                                    <destFileName>tupelo-cet-2.5-20090416.190129-3.jar</destFileName>                                    
                                 </artifactItem>
-                                <artifactItem>
+                               <artifactItem>
                                     <groupId>org.tupeloproject</groupId>
                                     <artifactId>tupelo-cet</artifactId>
                                     <version>2.5-20090416.190129-3</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-cet/2.5-20090416.190129-3</outputDirectory>
+                                    <destFileName>tupelo-cet-2.5-20090416.190129-3.pom</destFileName>                                    
                                 </artifactItem>
+                                <!-- 
                                 <artifactItem>
                                     <groupId>org.tupeloproject</groupId>
                                     <artifactId>tupelo-cet</artifactId>
@@ -1054,27 +1033,6 @@
                                     <version>2.5-SNAPSHOT</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-cet/2.5-SNAPSHOT</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.tupeloproject</groupId>
-                                    <artifactId>tupelo-cet</artifactId>
-                                    <version>2.5-SNAPSHOT</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-cet/2.5-SNAPSHOT</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.tupeloproject</groupId>
-                                    <artifactId>tupelo-cet</artifactId>
-                                    <version>2.5-SNAPSHOT</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-cet/2.5-SNAPSHOT</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.tupeloproject</groupId>
-                                    <artifactId>tupelo-core</artifactId>
-                                    <version>2.5-SNAPSHOT</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-core/2.5-SNAPSHOT</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.tupeloproject</groupId>
@@ -1099,20 +1057,6 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.tupeloproject</groupId>
-                                    <artifactId>tupelo-kernel</artifactId>
-                                    <version>2.5-SNAPSHOT</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-kernel/2.5-SNAPSHOT</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.tupeloproject</groupId>
-                                    <artifactId>tupelo-kernel</artifactId>
-                                    <version>2.5-SNAPSHOT</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-kernel/2.5-SNAPSHOT</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.tupeloproject</groupId>
                                     <artifactId>tupelo-util</artifactId>
                                     <version>2.5-SNAPSHOT</version>
                                     <type>jar</type>
@@ -1125,20 +1069,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-util/2.5-SNAPSHOT</outputDirectory>
                                 </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.tupeloproject</groupId>
-                                    <artifactId>tupelo-util</artifactId>
-                                    <version>2.5-SNAPSHOT</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-util/2.5-SNAPSHOT</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.tupeloproject</groupId>
-                                    <artifactId>tupelo-util</artifactId>
-                                    <version>2.5-SNAPSHOT</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-util/2.5-SNAPSHOT</outputDirectory>
-                                </artifactItem>
+                                 -->
                                 <artifactItem>
                                     <groupId>oro</groupId>
                                     <artifactId>oro</artifactId>
@@ -1174,6 +1105,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/rhino/js/1.5R4.1</outputDirectory>
                                 </artifactItem>
+                                <!-- duplicate
                                 <artifactItem>
                                     <groupId>saxpath</groupId>
                                     <artifactId>saxpath</artifactId>
@@ -1188,6 +1120,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/saxpath/saxpath/1.0-FCS</outputDirectory>
                                 </artifactItem>
+                                -->
                                 <artifactItem>
                                     <groupId>servletapi</groupId>
                                     <artifactId>servletapi</artifactId>
@@ -1272,6 +1205,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/xerces/xercesImpl/2.5.0</outputDirectory>
                                 </artifactItem>
+                                <!--  duplicate
                                 <artifactItem>
                                     <groupId>xerces</groupId>
                                     <artifactId>xercesImpl</artifactId>
@@ -1286,6 +1220,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/xerces/xercesImpl/2.7.1</outputDirectory>
                                 </artifactItem>
+                                 -->
                                 <artifactItem>
                                     <groupId>xerces</groupId>
                                     <artifactId>xercesImpl</artifactId>
@@ -1328,6 +1263,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/xerces/xmlParserAPIs/2.6.2</outputDirectory>
                                 </artifactItem>
+                                <!-- duplicate
                                 <artifactItem>
                                     <groupId>xml-apis</groupId>
                                     <artifactId>xml-apis</artifactId>
@@ -1342,6 +1278,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/xml-apis/xml-apis/1.0.b2</outputDirectory>
                                 </artifactItem>
+                                 -->
                                 <artifactItem>
                                     <groupId>xml-apis</groupId>
                                     <artifactId>xml-apis</artifactId>
