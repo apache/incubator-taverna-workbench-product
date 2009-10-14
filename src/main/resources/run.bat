@@ -7,7 +7,7 @@ pushd "%~dp0"
 
 
 REM 300 MB memory
-set ARGS="-Xmx300m -XX:MaxPermSize=140m"
+set ARGS=-Xmx300m -XX:MaxPermSize=140m
 
 REM Internal system properties
 set ARGS=%ARGS% -Draven.profile=file:conf/current-profile.xml
