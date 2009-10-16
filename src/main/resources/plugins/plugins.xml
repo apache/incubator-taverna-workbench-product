@@ -12,7 +12,6 @@
 		<enabled>true</enabled>
 		<repositories>
 			${m2Repository}
-			<repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
 			<repository>http://www.mygrid.org.uk/maven/repository/</repository>
 			<repository>http://bioinf.ncl.ac.uk/mirror/maven/repository/</repository>
 			<repository>http://mirror.omii.ac.uk/maven/repository/</repository>
@@ -61,7 +60,6 @@
 		<enabled>true</enabled>
 		<repositories>
 			${m2Repository}
-			<repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
 			<repository>http://www.mygrid.org.uk/maven/repository/</repository>
 			<repository>http://bioinf.ncl.ac.uk/mirror/maven/repository/</repository>
 			<repository>http://mirror.omii.ac.uk/maven/repository/</repository>
@@ -96,7 +94,6 @@
 		<enabled>true</enabled>
 		<repositories>
 			${m2Repository}
-			<repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
 			<repository>http://www.mygrid.org.uk/maven/repository/</repository>
 			<repository>http://bioinf.ncl.ac.uk/mirror/maven/repository/</repository>
 			<repository>http://mirror.omii.ac.uk/maven/repository/</repository>
@@ -131,7 +128,6 @@
 		<enabled>true</enabled>
 		<repositories>
 			${m2Repository}
-			<repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
 			<repository>http://www.mygrid.org.uk/maven/repository/</repository>
 			<repository>http://bioinf.ncl.ac.uk/mirror/maven/repository/</repository>
 			<repository>http://mirror.omii.ac.uk/maven/repository/</repository>
