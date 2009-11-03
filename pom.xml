@@ -15,6 +15,83 @@
 	</properties>
 	<profiles>
 		<profile>
+			<id>developer-win</id>
+			<activation>
+				<os>
+					<family>Windows</family>
+				</os>
+			</activation>
+			<properties>
+				<!-- To be inserted into plugins.xml -->
+				<m2Repository>&lt;repository&gt;file:/${user.home}/.m2/repository/&lt;/repository&gt;</m2Repository>
+			</properties>
+			<build>
+				<finalName>taverna-dev-${project.version}-${buildNumber}</finalName>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>buildnumber-maven-plugin</artifactId>
+						<!--<version>1.0-beta-2</version>-->
+						<executions>
+							<execution>
+								<id>buildnumber-validate</id>
+								<phase>validate</phase>
+								<goals>
+									<goal>create</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<doCheck>false</doCheck>
+							<doUpdate>false</doUpdate>
+							<format>{0,date,yyyyMMdd}T{0,date,HHmm}
+							</format>
+							<items>
+								<item>timestamp</item>
+							</items>
+						</configuration>
+					</plugin>
+
+					<plugin>
+						<artifactId>maven-assembly-plugin
+						</artifactId>
+						<executions>
+							<execution>
+								<phase>package</phase>
+								<goals>
+									<goal>single</goal>
+								</goals>
+							</execution>
+						</executions>
+
+						<configuration>
+							<descriptors>
+								<descriptor>src/main/assembly/developer-assembly.xml
+								</descriptor>
+							</descriptors>
+						</configuration>
+					</plugin>
+						<!--  Temporarily checked out from 
+						https://svn.codehaus.org/mojo/trunk/sandbox/nsis-maven-plugin/ 
+						and deployed to myGrid's snapshot repository -->
+					<!--<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>nsis-maven-plugin</artifactId>
+						<version>1.0-20090309.160159-1</version>
+						
+						<executions>
+							<execution>
+								<goals>
+									<goal>generate-project</goal>  create target/project.nsh 
+									<goal>compile</goal>           compile setup.nsi into exe 
+								</goals>
+							</execution>
+						</executions>
+					</plugin>-->
+				</plugins>				
+			</build>
+		</profile>	
+		<profile>
 			<id>developer</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
