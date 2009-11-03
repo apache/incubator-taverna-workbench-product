@@ -5,7 +5,7 @@ PRG="$0"
 progname=`basename "$0"`
 saveddir=`pwd`
 
-# need this for relative symlinks
+# need this to resolve relative symlinks
 cd "$(dirname "$PRG")"
 while [ -h "$PRG" ] ; do
     ls=$(ls -ld "$PRG")
@@ -20,11 +20,13 @@ done
 TAVERNA_HOME="`dirname "$PRG"`"
 cd $TAVERNA_HOME
 
+# 300 MB memory, 140 MB for classes
 exec java -Xmx300m -XX:MaxPermSize=140m \
   -Draven.profile=file:conf/current-profile.xml \
   -Dtaverna.startup=. \
   -Djava.system.class.loader=net.sf.taverna.raven.prelauncher.BootstrapClassLoader \
-  -Dapple.laf.useScreenMenuBar=false \
+  -Dapple.laf.useScreenMenuBar=true \
+  -Dapple.awt.graphics.UseQuartz=true \
   -Dsun.swing.enableImprovedDragGesture \
   -jar lib/prelauncher-*.jar
   
