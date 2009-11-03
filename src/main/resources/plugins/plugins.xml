@@ -30,20 +30,6 @@
 				<artifactId>components-plugin</artifactId>
 				<version>${project.version}</version>
 			</dependency>
-
-			<!--  system artifacts -->
-			<artifact artifactId="saxpath" groupId="saxpath" version="1.0-FCS"
-				system="true" />
-			<artifact artifactId="jaxen" groupId="jaxen" version="1.0-FCS"
-				system="true" />
-			<artifact artifactId="xercesImpl" groupId="xerces" version="2.7.1"
-				system="true" />
-			<artifact artifactId="xalan" groupId="xalan" version="2.6.0"
-				system="true" />
-			<artifact artifactId="dom4j" groupId="dom4j" version="1.6"
-				system="true" />
-			<artifact artifactId="log4j" groupId="log4j" version="1.2.12"
-				system="true" />
 		</profile>
 		<compatibility>
 			<application>
