@@ -435,6 +435,20 @@
                                 <artifactItem>
                                     <groupId>commons-io</groupId>
                                     <artifactId>commons-io</artifactId>
+                                    <version>1.1</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-io/commons-io/1.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>commons-io</groupId>
+                                    <artifactId>commons-io</artifactId>
+                                    <version>1.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-io/commons-io/1.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>commons-io</groupId>
+                                    <artifactId>commons-io</artifactId>
                                     <version>1.2</version>
                                     <type>jar</type>
                                     <outputDirectory>${project.build.directory}/repository/commons-io/commons-io/1.2</outputDirectory>
@@ -533,20 +547,6 @@
                                 <artifactItem>
                                     <groupId>dom4j</groupId>
                                     <artifactId>dom4j</artifactId>
-                                    <version>1.6</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/dom4j/dom4j/1.6</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>dom4j</groupId>
-                                    <artifactId>dom4j</artifactId>
-                                    <version>1.6</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/dom4j/dom4j/1.6</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>dom4j</groupId>
-                                    <artifactId>dom4j</artifactId>
                                     <version>1.6.1</version>
                                     <type>jar</type>
                                     <outputDirectory>${project.build.directory}/repository/dom4j/dom4j/1.6.1</outputDirectory>
@@ -585,20 +585,6 @@
                                     <version>1.0.1B</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/javax/transaction/jta/1.0.1B</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>jaxen</groupId>
-                                    <artifactId>jaxen</artifactId>
-                                    <version>1.0-FCS</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/jaxen/jaxen/1.0-FCS</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>jaxen</groupId>
-                                    <artifactId>jaxen</artifactId>
-                                    <version>1.0-FCS</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/jaxen/jaxen/1.0-FCS</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>jaxen</groupId>
@@ -683,21 +669,7 @@
                                     <version>4.4</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/junit/junit/4.4</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>log4j</groupId>
-                                    <artifactId>log4j</artifactId>
-                                    <version>1.2.12</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.12</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>log4j</groupId>
-                                    <artifactId>log4j</artifactId>
-                                    <version>1.2.12</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.12</outputDirectory>
-                                </artifactItem>
+                                </artifactItem>                                
                                 <artifactItem>
                                     <groupId>log4j</groupId>
                                     <artifactId>log4j</artifactId>
@@ -1182,20 +1154,6 @@
                                     <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-util/2.5-SNAPSHOT</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>oro</groupId>
-                                    <artifactId>oro</artifactId>
-                                    <version>2.0.7</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/oro/oro/2.0.7</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>oro</groupId>
-                                    <artifactId>oro</artifactId>
-                                    <version>2.0.7</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/oro/oro/2.0.7</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
                                     <groupId>poi</groupId>
                                     <artifactId>poi-2.0-final</artifactId>
                                     <version>20040126</version>
@@ -1217,20 +1175,6 @@
                                     <outputDirectory>${project.build.directory}/repository/rhino/js/1.5R4.1</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>saxpath</groupId>
-                                    <artifactId>saxpath</artifactId>
-                                    <version>1.0-FCS</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/saxpath/saxpath/1.0-FCS</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>saxpath</groupId>
-                                    <artifactId>saxpath</artifactId>
-                                    <version>1.0-FCS</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/saxpath/saxpath/1.0-FCS</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
                                     <groupId>servletapi</groupId>
                                     <artifactId>servletapi</artifactId>
                                     <version>2.2</version>
@@ -1257,20 +1201,6 @@
                                     <version>1.0.1</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/stax/stax-api/1.0.1</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>xalan</groupId>
-                                    <artifactId>xalan</artifactId>
-                                    <version>2.6.0</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/xalan/xalan/2.6.0</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>xalan</groupId>
-                                    <artifactId>xalan</artifactId>
-                                    <version>2.6.0</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/xalan/xalan/2.6.0</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>xerces</groupId>
@@ -1317,20 +1247,6 @@
                                 <artifactItem>
                                     <groupId>xerces</groupId>
                                     <artifactId>xercesImpl</artifactId>
-                                    <version>2.7.1</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/xerces/xercesImpl/2.7.1</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>xerces</groupId>
-                                    <artifactId>xercesImpl</artifactId>
-                                    <version>2.7.1</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/xerces/xercesImpl/2.7.1</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>xerces</groupId>
-                                    <artifactId>xercesImpl</artifactId>
                                     <version>2.8.1</version>
                                     <type>jar</type>
                                     <outputDirectory>${project.build.directory}/repository/xerces/xercesImpl/2.8.1</outputDirectory>
@@ -1369,20 +1285,6 @@
                                     <version>2.6.2</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/xerces/xmlParserAPIs/2.6.2</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>xml-apis</groupId>
-                                    <artifactId>xml-apis</artifactId>
-                                    <version>1.0.b2</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/xml-apis/xml-apis/1.0.b2</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>xml-apis</groupId>
-                                    <artifactId>xml-apis</artifactId>
-                                    <version>1.0.b2</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/xml-apis/xml-apis/1.0.b2</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>xml-apis</groupId>
