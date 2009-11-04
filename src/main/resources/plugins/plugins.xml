@@ -6,7 +6,7 @@
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.translators</identifier>
 		<version>${project.version}-${buildNumber}</version>
-        <name>Compatibility (optional)</name>
+        <name>Compatibility (required)</name>
         <description>Taverna 1 compatibility</description>
         <enabled>true</enabled>
         <repositories>
@@ -74,7 +74,7 @@
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.taverna-workbench.provenanceconnectors-plugin</identifier>
 		<version>${project.version}-${buildNumber}</version>
-        <name>Provenance (optional)</name>
+        <name>Provenance (required)</name>
         <description>Taverna 2 provenance connectors</description>
         <enabled>true</enabled>
         <repositories>
