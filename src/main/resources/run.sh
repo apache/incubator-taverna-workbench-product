@@ -26,7 +26,7 @@ exec java -Xmx300m -XX:MaxPermSize=140m \
   -Dtaverna.startup=. \
   -Djava.system.class.loader=net.sf.taverna.raven.prelauncher.BootstrapClassLoader \
   -Dapple.laf.useScreenMenuBar=true \
-  -Dapple.awt.graphics.UseQuartz=true \
+  -Dapple.awt.graphics.UseQuartz=false \
   -Dsun.swing.enableImprovedDragGesture \
   -jar lib/prelauncher-*.jar
   
