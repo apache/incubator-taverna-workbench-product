@@ -762,13 +762,6 @@
                                     <outputDirectory>${project.build.directory}/repository/org/apache/apache/1</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>org.apache</groupId>
-                                    <artifactId>apache</artifactId>
-                                    <version>4</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/apache/apache/4</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
                                     <groupId>org.apache.commons</groupId>
                                     <artifactId>commons-parent</artifactId>
                                     <version>5</version>
