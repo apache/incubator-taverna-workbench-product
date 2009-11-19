@@ -1198,7 +1198,7 @@
 			<url>http://ws.zones.apache.org/repository2/
 			</url>
 			<releases>
-				<enabled>true</enabled>
+				<enabled>false</enabled>
 			</releases>
 			<snapshots>
 				<enabled>false</enabled>
