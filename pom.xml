@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>net.sf.taverna.t2</groupId>
 		<artifactId>taverna-workbench</artifactId>
-		<version>2.1-beta-3-SNAPSHOT</version>
+		<version>2.1-rc-1</version>
 	</parent>
 	<groupId>net.sf.taverna.t2.taverna-workbench
 	</groupId>
@@ -234,6 +234,7 @@
 					added by the repositories-component of the assembly plugin. 
 					
 					 -->
+<!-- Causes duplicate entry in zip file
 										<artifactItem>
 											<groupId>org.apache</groupId>
 											<artifactId>apache</artifactId>
@@ -241,6 +242,7 @@
 											<type>pom</type>
 											<outputDirectory>${project.build.directory}/repository/org/apache/apache/4</outputDirectory>
 										</artifactItem>
+-->
 										<artifactItem>
 											<groupId>avalon-framework</groupId>
 											<artifactId>avalon-framework</artifactId>
