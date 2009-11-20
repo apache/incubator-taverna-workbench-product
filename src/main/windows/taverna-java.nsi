@@ -4,18 +4,18 @@
 
 
 ; Human readable product name
-!define PRODUCT_NAME "Taverna Workbench 2.1 beta 2"
+!define PRODUCT_NAME "Taverna Workbench 2.1 RC 1"
 ; Who is publishing the software
 !define PUBLISHER "myGrid"
 !define COPYRIGHT "University of Manchester"
 ; Short-version of version 
-!define VERSION "2.1.b2"
+!define VERSION "2.1.rc1"
 
 ; Short name used for registry keys
 !define SHORT_NAME "Taverna Workbench ${VERSION}"
 
 ; Folder containing the source files to copy, relative to the .nsi file
-!define SOURCE "Taverna 2.1 beta 2"
+!define SOURCE "Taverna 2.1 rc 1"
 
 !define HELP_URL "http://www.mygrid.org.uk/tools/taverna/taverna-mailing-lists/"
 !define ABOUT_URL "http://www.taverna.org.uk/"
@@ -153,9 +153,9 @@ SectionEnd
 ; Minimum 5.0
 !define JRE_VERSION "5.0"
 
-; Should download at least 6.0 u14 - check link at
+; Should download at least 6.0 u17 - check for newest link at
 ; http://www.java.com/en/download/manual.jsp#win
-!define JRE_URL "http://javadl.sun.com/webapps/download/AutoDL?BundleId=32267"
+!define JRE_URL "http://javadl.sun.com/webapps/download/AutoDL?BundleId=35989"
  
 !define JAVAEXE "javaw.exe"
  

@@ -1,8 +1,8 @@
 <launch4jConfig>
   <dontWrapJar>true</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>lib\prelauncher-1.11.jar</jar>
-  <outfile>C:\Users\stain\Desktop\taverna-nightly-2.1-beta-2-20090629\taverna.exe</outfile>
+  <jar>lib\prelauncher-1.12.jar</jar>
+  <outfile>C:\Users\stain\Data\Desktop\taverna-nightly-2.1-rc-1-20091120\taverna.exe</outfile>
   <errTitle>Could not start Taverna</errTitle>
   <cmdLine></cmdLine>
   <chdir>.</chdir>
@@ -12,10 +12,10 @@
   <customProcName>false</customProcName>
   <stayAlive>false</stayAlive>
   <manifest></manifest>
-  <icon>C:\Users\stain\Desktop\taverna-nightly-2.1-beta-2-20090629\lib\launcher_logo.ico</icon>
+  <icon>C:\Users\stain\Data\Documents\src\taverna-workspace\taverna-workbench\products\net.sf.taverna.t2.taverna-workbench\workbench-distro\src\main\windows\launcher_logo.ico</icon>
   <singleInstance>
-    <mutexName>taverna21b2</mutexName>
-    <windowTitle>Taverna workbench 2.1 beta 2</windowTitle>
+    <mutexName>taverna21rc1</mutexName>
+    <windowTitle>Taverna workbench 2.1 RC 1</windowTitle>
   </singleInstance>
   <jre>
     <path></path>
@@ -31,18 +31,18 @@
     <opt>-Dtaverna.startup=.</opt>
   </jre>
   <splash>
-    <file>C:\Users\stain\Desktop\taverna-nightly-2.1-beta-2-20090629\lib\launcher_splashscreen.bmp</file>
+    <file>C:\Users\stain\Data\Documents\src\taverna-workspace\taverna-workbench\products\net.sf.taverna.t2.taverna-workbench\workbench-distro\src\main\windows\launcher_splashscreen.bmp</file>
     <waitForWindow>true</waitForWindow>
-    <timeout>15</timeout>
+    <timeout>20</timeout>
     <timeoutErr>true</timeoutErr>
   </splash>
   <versionInfo>
-    <fileVersion>2.1.0.2</fileVersion>
-    <txtFileVersion>2.1 beta 2</txtFileVersion>
+    <fileVersion>2.1.0.3</fileVersion>
+    <txtFileVersion>2.1 rc 1</txtFileVersion>
     <fileDescription>Taverna workbench</fileDescription>
     <copyright>2002-2009 University of Manchester</copyright>
-    <productVersion>2.1.0.2</productVersion>
-    <txtProductVersion>2.1 beta 2</txtProductVersion>
+    <productVersion>2.1.0.3</productVersion>
+    <txtProductVersion>2.1 RC 1</txtProductVersion>
     <productName>Taverna workbench</productName>
     <companyName>myGrid</companyName>
     <internalName>taverna</internalName>
