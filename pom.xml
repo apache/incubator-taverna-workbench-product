@@ -1195,18 +1195,6 @@
 			</snapshots>
 		</repository>
 		<repository>
-			<id>wsZones</id>
-			<name>Apache WS Zones repository</name>
-			<url>http://ws.zones.apache.org/repository2/
-			</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
