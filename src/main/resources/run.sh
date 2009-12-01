@@ -6,17 +6,17 @@ progname=`basename "$0"`
 saveddir=`pwd`
 
 # need this to resolve relative symlinks
-cd "$(dirname "$PRG")"
+cd "`dirname "$PRG"`"
 while [ -h "$PRG" ] ; do
-    ls=$(ls -ld "$PRG")
+    ls=`ls -ld "$PRG"`
     link=`expr "$ls" : '.*-> \(.*\)$'`
     if expr "$link" : '.*/.*' > /dev/null; then
-	PRG="$link"
+        PRG="$link"
     else
-	PRG=`dirname "$PRG"`"/$link"
+        PRG=`dirname "$PRG"`"/$link"
     fi
 done
-  
+
 TAVERNA_HOME="`dirname "$PRG"`"
 cd $TAVERNA_HOME
 
@@ -29,4 +29,3 @@ exec java -Xmx300m -XX:MaxPermSize=140m \
   -Dapple.awt.graphics.UseQuartz=false \
   -Dsun.swing.enableImprovedDragGesture \
   -jar lib/prelauncher-*.jar
-  
