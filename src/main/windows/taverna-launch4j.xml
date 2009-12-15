@@ -1,8 +1,8 @@
 <launch4jConfig>
   <dontWrapJar>true</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>lib\prelauncher-1.12.jar</jar>
-  <outfile>C:\Users\stain\Data\Desktop\taverna-nightly-2.1-rc-1-20091120\taverna.exe</outfile>
+  <jar>lib\prelauncher-2.0.jar</jar>
+  <outfile>C:\Users\stain\Data\Desktop\taverna-nightly-2.1.0\taverna.exe</outfile>
   <errTitle>Could not start Taverna</errTitle>
   <cmdLine></cmdLine>
   <chdir>.</chdir>
@@ -14,8 +14,8 @@
   <manifest></manifest>
   <icon>C:\Users\stain\Data\Documents\src\taverna-workspace\taverna-workbench\products\net.sf.taverna.t2.taverna-workbench\workbench-distro\src\main\windows\launcher_logo.ico</icon>
   <singleInstance>
-    <mutexName>taverna21rc1</mutexName>
-    <windowTitle>Taverna workbench 2.1 RC 1</windowTitle>
+    <mutexName>taverna21</mutexName>
+    <windowTitle>Taverna workbench 2.1</windowTitle>
   </singleInstance>
   <jre>
     <path></path>
@@ -37,12 +37,12 @@
     <timeoutErr>true</timeoutErr>
   </splash>
   <versionInfo>
-    <fileVersion>2.1.0.3</fileVersion>
-    <txtFileVersion>2.1 rc 1</txtFileVersion>
+    <fileVersion>2.1.0.4</fileVersion>
+    <txtFileVersion>2.1</txtFileVersion>
     <fileDescription>Taverna workbench</fileDescription>
     <copyright>2002-2009 University of Manchester</copyright>
-    <productVersion>2.1.0.3</productVersion>
-    <txtProductVersion>2.1 RC 1</txtProductVersion>
+    <productVersion>2.1.0.4</productVersion>
+    <txtProductVersion>2.1</txtProductVersion>
     <productName>Taverna workbench</productName>
     <companyName>myGrid</companyName>
     <internalName>taverna</internalName>
