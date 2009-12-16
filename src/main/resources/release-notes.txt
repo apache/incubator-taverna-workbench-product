@@ -1,0 +1,91 @@
+Changes since 2.1 beta 2
+========================
+
+General user interface
+======================
+
+Keyboard shortcuts: There are now keyboard shortcuts for many of the
+common workflow editing and running tasks.
+
+Recent workflows: Taverna now remembers your recently edited workflows
+and you can easily open them.
+
+Notification of updates: Users are now notified when updates to
+Taverna or to a plugin are available.
+
+Editing of workflows
+====================
+
+Importation of workflows: You now have the ability to merge a workflow
+into a currently edited workflow.
+
+Animated diagram: The diagram can now be made animated so it is easier
+to see what changes are being made.
+
+Diagram problems: The workflow diagram will no longer throw exceptions
+and refuse to display some workflows.
+
+Iteration strategy: The iteration strategy of services in Taverna 1
+workflows is now interpreted correctly within Taverna.
+
+Customized looping: Customized loop conditions are now displayed and
+saved correctly.
+
+Copy/cut/paste: You can copy/cut and then paste services.  This allows
+you to copy services from one workflow to another or within the same
+workflow.
+
+Services
+========
+
+Support for security: secured WSDL services can now be called using
+security validated via a credential manager.
+
+Updated R support: the R service now allows connections to an Rserve
+for the latest R (up to 2.10).
+
+New spreadsheet service: you can import Excel or csv spreadsheets and
+feed the content into your workflow.
+
+Biomoby services: The BioMoby objects are now shown in the normal
+service panel and can be added to the workflow just as other services.
+
+Running of workflows
+====================
+
+Improved run dialog: The dialog for entering run values now copes with
+complex trees of values.
+
+Saving and reusing values: You can now save and reuse the input values
+for a workflow run.  You can save the output values from a run and
+could use them as inputs for other workflow runs.
+
+Output value display: Output values are displayed using the correct
+renderers.  You are now warned if a value is large and could cause
+problems for Taverna.
+
+Output value tree: The tree of output values should now be correct.
+It no longer misses some of the generated data.
+
+Runs: You can now access the data associated with previous runs.  The
+provenance and data from a run can be deleted.
+
+Workflow completion: Taverna now correctly detects when a workflow run
+has finished.
+
+Provenance and data management: The provenance is now kept in the same
+database as the values.
+
+Improved performance: Workflow execution in 2.1 RC 1 is faster than
+that in 2.1 beta 2.
+
+myExperiment perspective
+========================
+
+Users can now
+	- browse workflows on myExperiment
+	- open a workflow from myExperiment in Taverna
+	- merge a workflow from myExperiment into the current
+workflow
+	- upload a workflow from Taverna to myExperiment
+	- download a workflow from myExperiment

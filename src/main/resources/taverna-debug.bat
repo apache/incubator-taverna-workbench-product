@@ -17,5 +17,6 @@ set ARGS=%ARGS% -Dtaverna.startup=.
 
 java %ARGS% -jar lib\prelauncher-*.jar
 
+pause
 REM restore current directory
 popd
