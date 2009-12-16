@@ -1,0 +1,171 @@
+========================
+Taverna 2.1 known issues
+========================
+
+This document some of the issues known in Taverna 2.1.  A full list
+can be found within the Jira system at 
+http://www.mygrid.org.uk/dev/issues/secure/IssueNavigator.jspa?mode=hide&requestId=10140
+
+
+Beanshell
+=========
+T2-512:  Cut and paste should be documented
+
+T2-975:  The configuration menu text should be more descriptive
+
+
+BioMart
+=======
+T2-1046: Empty configuration panel sometimes appears
+
+
+Rshell
+======
+T2-975:  The configuration menu text should be more descriptive
+
+
+WSDL
+====
+T2-1015: Taverna should be able to receive messages from secure
+services that include a timestamp
+
+T2-1075: Out of memory error with cyclic schemas
+
+
+Documentation
+=============
+T2-634:  The possible solutions for Taverna 1 workflows that depend on
+fail-if-false should be documented.
+
+
+Provenance
+==========
+T2-982: If the database is already being used, for example by another
+instance of Taverna, then attempts to use it do not fail gracefully.
+
+T2-1019: The intermediate results display should distinguish between a
+processor that has finished and produced an empty list, and a
+processor that has not yet produced any results.
+
+T2-1051: Provenance does not work correctly if an input and an output
+port have the same name
+
+T2-1062: Failed to start database 't2-database' error
+
+T2-1082: Sometimes data for previous runs are not shown correctly
+
+T2-1083: Backpatching can severely affect run speed
+
+
+Data management
+===============
+T2-1003: The degradation of speed when the cache is full needs to be examined.
+
+T2-1033: The database can become locked after an abrupt close of
+Taverna
+
+
+Testing
+=======
+T2-264:  Scalability and memory/thread footprint testing will continue
+
+
+Configuration
+=============
+
+T2-924:  Cross/dot product iteration strategies should be documented
+
+T2-979:  The loop configuration panel appears tall and thin in Linux.
+
+T2-1047: Contextual view can lose HTML formatting
+
+
+General issues
+==============
+T2-895:  The dataviewer should be included with the release.
+
+T2-980:  Taverna's look and feel does not affect the registration
+popup.
+
+T2-981:  The checkbox in the registration panel is not label-clickable
+
+
+Helper
+======
+T2-428:  The help descriptions for local services, especially XPath
+From Text, need to be checked
+
+
+myExperiment perspective
+========================
+T2-1025: The perspective can fail to encrypt and store passwords.
+
+T2-1012: The myExperiment login should make it clear that it is for
+myExperiment and not for Taverna
+
+T2-1036: The perspective should filter out broken workflows.  This
+relies on myExperiment's capability being upgraded,
+
+
+Preferences
+===========
+T2-965:  You should only be able to have one preferences dialog at a
+time.
+
+T2-471:  The text for provenance and data storage needs to be
+improved
+
+
+Provenance popup
+================
+T2-1019: The provenance popup panel should distinguish between the
+production of an empty list and no results being recived yet.
+
+T2-1045: Multiple clicks on a service can cause multiple intermediate
+values panels
+
+
+Renderers
+=========
+T2-1030: The SeqVista renderer is available for non-SeqVista
+results
+
+T2-1026: An OutOfMemoryError was thrown and needs to be
+double-checked.
+
+
+Results panel
+=============
+T2-969:  Need to add the ability to store a run as OPM
+
+Service panel
+=============
+T2-988:  A concurrent modification exception needs to be checked
+
+
+Workflow diagram
+================
+T2-508:  Show/hide ports menu item does not update correctly in some
+Java 1.6
+
+T2-669:  Diagram update exception for RunnableQueue needs to be
+double-checked
+
+T2-981 and T2-1044:  The default size of services needs to be increased
+
+T2-1001: Arrows to a merge can start from the wrong position when
+ports are displayed
+
+T2-1043: Import select source can wrap incorrectly
+
+T2-1074: GraphMonitor concurrent modeification exception
+
+
+General
+=======
+T2-1053: If you have a lot of workflows (say over 50) open then the
+workflows menu does not cope
+
+
+Alan R Williams, 16th December 2009
+
