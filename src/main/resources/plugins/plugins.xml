@@ -5,7 +5,7 @@
     <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.translators</identifier>
-		<version>${project.version}</version>
+		<version>${project.version}-${buildNumber}</version>
         <name>Compatibility (required)</name>
         <description>Taverna 1 compatibility</description>
         <enabled>true</enabled>
@@ -39,7 +39,7 @@
     <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.activities</identifier>
-		<version>${project.version}</version>
+		<version>${project.version}-${buildNumber}</version>
         <name>Services (required)</name>
         <description>Taverna 2 services (WSDL, SoapLab, etc)</description>
         <enabled>true</enabled>
@@ -73,7 +73,7 @@
     <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.taverna-workbench.provenanceconnectors-plugin</identifier>
-		<version>${project.version}</version>
+		<version>${project.version}-${buildNumber}</version>
         <name>Provenance (required)</name>
         <description>Taverna 2 provenance connectors</description>
         <enabled>true</enabled>
@@ -107,7 +107,7 @@
     <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.components</identifier>
-		<version>${project.version}</version>
+		<version>${project.version}-${buildNumber}</version>
         <name>Workbench (required)</name>
         <description>Taverna 2 workbench. Required for graphical interface.</description>
         <enabled>true</enabled>
