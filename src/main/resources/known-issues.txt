@@ -1,45 +1,40 @@
-========================
-Taverna 2.1 known issues
-========================
+==========================
+Taverna 2.1.2 known issues
+==========================
 
-This document some of the issues known in Taverna 2.1.  A full list
-can be found within the Jira system at 
-http://www.mygrid.org.uk/dev/issues/secure/IssueNavigator.jspa?mode=hide&requestId=10140
-
-
-Beanshell
-=========
-T2-512:  Cut and paste should be documented
-
-T2-975:  The configuration menu text should be more descriptive
+This document some of the known issues in Taverna 2.1.2.  A full list
+and further details can be found within myGrid's issue tracker Jira at 
+http://www.mygrid.org.uk/dev/issues/secure/IssueNavigator.jspa?mode=hide&requestId=10153
 
 
-BioMart
-=======
-T2-1046: Empty configuration panel sometimes appears
+General issues
+==============
+T2-316: Ability to execute workflow from command line
+
+T2-890: Iteration strategy not always translated correctly from Taverna 1 workflows (most likely due to Taverna 1 having inconsistent iteration strategies)
+
+T2-895:  The dataviewer should be included with the release.
+
+T2-1144: Plugin manager only supports HTTP-based sites
 
 
-Rshell
-======
-T2-975:  The configuration menu text should be more descriptive
+Workflow engine
+===============
+T2-414: Can't stop a running workflow
 
 
-WSDL
-====
-T2-1015: Taverna should be able to receive messages from secure
-services that include a timestamp
+Data management
+===============
+T2-1003: The degradation of speed when the cache is full needs to be examined.
 
-T2-1075: Out of memory error with cyclic schemas
-
-
-Documentation
-=============
-T2-634:  The possible solutions for Taverna 1 workflows that depend on
-fail-if-false should be documented.
+T2-1033: The database can become locked after an abrupt close of
+Taverna
 
 
-Provenance
-==========
+Provenance capturing
+====================
+T2-875: Processor execution start/finish time not recorded
+
 T2-982: If the database is already being used, for example by another
 instance of Taverna, then attempts to use it do not fail gracefully.
 
@@ -54,15 +49,19 @@ T2-1062: Failed to start database 't2-database' error
 
 T2-1082: Sometimes data for previous runs are not shown correctly
 
-T2-1083: Backpatching can severely affect run speed
+T2-1083: Provenance capture can in some cases severely affect run speed
+
+T2-1211: Provenance does not capture details of retries 
+
+T2-1212: Provenance does not capture details about looping
 
 
-Data management
-===============
-T2-1003: The degradation of speed when the cache is full needs to be examined.
+Security
+========
+T2-697: Export of trusted certificates don't work
 
-T2-1033: The database can become locked after an abrupt close of
-Taverna
+T2-933: Secured WSDLs should be indicated with padlock in diagram
+
 
 
 Testing
@@ -70,102 +69,279 @@ Testing
 T2-264:  Scalability and memory/thread footprint testing will continue
 
 
-Configuration
+
+Workbench issues
+================
+
+T2-248, T2-392: No feedback while opening workflow
+
+T2-294: Can't add alternative services to processor
+
+T2-495: Removing links to a merge leaves stand-alone merge
+
+T2-685: Can't open workflow if a service is offline/disappeared
+
+T2-766: If/else style branching
+
+T2-734: Undo should indicate what is to be undone
+
+T2-797: Can't rename workflow
+
+T2-1053: If you have a lot of workflows (say over 50) open then the
+workflows menu does not cope
+
+
+Available services
+==================
+T2-239: Can't save custom beanshell script as local worker
+
+T2-621: Should include services from opened workflow
+
+T2-762: Can't remove 'Local services'
+
+T2-767: Can't add configured services (like BioMart queries)
+
+T2-1151: Empty/failing service providers can't be removed (Only by 'Remove all user-added')
+
+T2-1235: Should cache descriptions, should work even starting offline
+
+T2-1236, T2-1237: Ability to refresh service descriptions (while developing a service)
+
+
+Workflow diagram
+================
+T2-216: Text-cursor showed when hovering over services
+
+T2-237: Control-click don't work on a mac
+
+T2-238: Difficult to click link for removal
+
+T2-505: Port display order not consistent
+
+T2-508:  Show/hide ports menu item does not update correctly on OS X
+
+T2-839: Nested workflow with no inputs sho
+
+T2-991, T2-1044: Diagram too tiny for small workflows
+
+T2-1001: Arrows to a merge can start from the wrong position when
+ports are displayed
+
+T2-1120: Diagram does not indicate implicit iteration
+
+
+Workflow explorer
+=================
+T2-483: Need collapse/expand all
+
+T2-736: Ability to do multiple-delete
+
+
+Details tab
+===========
+T2-350: Port details should show connections
+
+T2-416: Can't configure retries and threads for service
+
+T2-1047: Details for services looses HTML formatting and borders
+
+
+Looping
+=======
+T2-641: Looping fails if tested output port not connected in workflow
+
+T2-827: Support for loop testing on lists
+
+T2-1119: Looping not indicated in diagram 
+
+
+List handling
 =============
+T2-73: Taverna should indicate when list handling needs updating
 
-T2-924:  Cross/dot product iteration strategies should be documented
+T2-199: Move down/left/right buttons missing
 
-T2-979:  The loop configuration panel appears tall and thin in Linux.
+T2-659, T2-813: Difficult to drag ports into dot/cross products
 
-T2-1047: Contextual view can lose HTML formatting
+T2-660: Iteration strategy editor is non-intuitive 
 
-
-General issues
-==============
-T2-895:  The dataviewer should be included with the release.
-
-T2-980:  Taverna's look and feel does not affect the registration
-popup.
-
-T2-981:  The checkbox in the registration panel is not label-clickable
+(Various other issues indicate the dialogue should be redone)
 
 
-Helper
-======
-T2-428:  The help descriptions for local services, especially XPath
-From Text, need to be checked
+
+Results/runs
+============
+T2-504: Can't click on output port to see values
+
+T2-969: Need ability to store a run as OPM (Open Provenance Model)
+
+T2-1016: Ability to open workflow from previous run
+
+T2-1090: Might say "List with 2 values" instead of 3 
+
+T2-1123: Total number of invocations not shown
+
+T2-1140: Saving of large data not memory-efficient 
+
+T2-1206: Not obvious that service can be clicked for intermediates
+
+T2-1208: Need t1-style processor list/table view
+
+T2-1209: Need filter to show only errors
+
+T2-1213: Need workflow run progress report 
+
+T2-1215: Colours should be red/green indicating status (as in t1)
+
+T2-1218: Can't see errors for services with no output ports
+
+T2-1249: Should auto-select the first value in list
+
+T2-1251: Workflow outputs not always shown if workflow executes fast (redraw issue)
+
+
+Output values (Renderers)
+=========================
+T2-1030: The SeqVista renderer appears even for non-SeqVista
+XML results
+
+T2-1026: An OutOfMemoryError was thrown and needs to be
+double-checked.
+
+T2-1207: Renderer area is too small for many outputs
+
+T2-1245: For quite large values, (> 100 MB), selecting runs out of memory without showing "Value is large" dialogue
+
+T2-1248: Text renderer scrolls to last line, should show first line
+
+
+Provenance/intermediate values
+==============================
+T2-553: Does not distingiush lists and iterations
+
+T2-875: Processor execution start/stop times should be shown
+
+T2-1019: The provenance popup panel should distinguish between the
+production of an empty list and no results being received yet.
+
+T2-1045: Multiple clicks on a service can cause multiple intermediate
+values panels
+
+
+
+
+Beanshell scripts
+=================
+T2-425: Beanshell editor ignores Alt-keystrokes in OS X
+
+T2-512: Cut and paste should be documented
+
+T2-421: Beanshell scripts not executed in a protective sandbox
+
+T2-779: Beanshell configuration needs help/descriptions
+
+T2-785: Scrolling in Beanshell editor does not always work
+
+T2-1122: Beanshell configuration dialogue behind main window after switching application  
+
+T2-1128: Close->Yes does not check if port names are unique
+
+
+BioMart services
+================
+T2-479: Selecting a BioMart filter can take some time
+
+T2-1046: Empty configuration panel sometimes appears
+
+T2-1093: BioMart streaming is disabled (for provenance performance reasons)
+
+
+
+BioMoby services
+================
+T2-671: Unnecessary console warning 
+"Central class is  org.biomoby.client.CentralDigestCachedImpl"
+
+
+Nested workflows
+================
+T2-203: Can't undo (in parent workflow) changes to nested workflow
+
+T2-791: Not always obvious that user is editing a nested workflow
+
+T2-1043: Import workflow "select source" shown incorrectly
+
+T2-1126: "Save as" in a nested workflow detaches it from parent
+
+
+
+Local workers
+=============
+T2-288: List Files by Extension includes too many files
+
+T2-765, T2-764, T2-763: Various improvements needed for "Execute SQL"
+
+T2-1099: Local list workers only support strings, should use references
+
+
+Soaplab services
+================
+T2-337: Should also support Soaplab 2 
+
+
+WSDL services
+=============
+T2-486: Can't use lists of lists as input
+
+T2-587: Can't distinguish between several declared operations with same name
+
+T2-847: XML splitters don't support optional inputs
+
+T2-1061: Can't upload SOAP attachments (only receive) 
+
+T2-1105: Wrong/invalid element name from XML splitters for inner complex types
+
+T2-1106: Can't import cyclic XML schema includes
+
+T2-1108: Does not support XML attributes (only elements) in XML splitters
+
+T2-1088, T2-1110: Incorrect handling of arrays in result
+
+T2-1115: WSDL 1.2 and 2 not supported
+
+T2-1160: XML splitters not updated when XML schema changes on server
+
+T2-1224: Binary data invalid as input, need 'Encode as base64' local worker first
+
+T2-1229: Security dialogue should remember/guess security profile
+
+T2-1230: Security dialogue don't indicate if username/password already set
+
+T2-1243: HTTP Digest-protected web services not supported
 
 
 myExperiment perspective
 ========================
-T2-1025: The perspective can fail to encrypt and store passwords.
-
 T2-1012: The myExperiment login should make it clear that it is for
 myExperiment and not for Taverna
 
 T2-1036: The perspective should filter out broken workflows.  This
 relies on myExperiment's capability being upgraded,
 
+T2-1068: Does not display processors/services of Taverna 2 workflows (only T1)
 
-Preferences
-===========
-T2-965:  You should only be able to have one preferences dialog at a
-time.
+T2-1121: Upload seems to require title/description even when it will be derived 
 
-T2-471:  The text for provenance and data storage needs to be
-improved
+T2-1185: Upload assumes file is saved as .t2flow (breaks for T1 .xml) 
 
 
-Provenance popup
-================
-T2-1019: The provenance popup panel should distinguish between the
-production of an empty list and no results being recived yet.
-
-T2-1045: Multiple clicks on a service can cause multiple intermediate
-values panels
-
-
-Renderers
-=========
-T2-1030: The SeqVista renderer is available for non-SeqVista
-results
-
-T2-1026: An OutOfMemoryError was thrown and needs to be
-double-checked.
-
-
-Results panel
+ 
+Documentation
 =============
-T2-969:  Need to add the ability to store a run as OPM
-
-Service panel
-=============
-T2-988:  A concurrent modification exception needs to be checked
+T2-634:  The possible solutions for Taverna 1 workflows that depend on
+fail-if-false should be documented.
 
 
-Workflow diagram
-================
-T2-508:  Show/hide ports menu item does not update correctly in some
-Java 1.6
-
-T2-669:  Diagram update exception for RunnableQueue needs to be
-double-checked
-
-T2-981 and T2-1044:  The default size of services needs to be increased
-
-T2-1001: Arrows to a merge can start from the wrong position when
-ports are displayed
-
-T2-1043: Import select source can wrap incorrectly
-
-T2-1074: GraphMonitor concurrent modeification exception
 
 
-General
-=======
-T2-1053: If you have a lot of workflows (say over 50) open then the
-workflows menu does not cope
-
-
-Alan R Williams, 16th December 2009
-
+Stian Soiland-Reyes & Alan R Williams, 2010-03-23
