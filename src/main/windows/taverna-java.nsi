@@ -4,20 +4,20 @@
 
 
 ; Human readable product name
-!define PRODUCT_NAME "Taverna Workbench 2.1"
+!define PRODUCT_NAME "Taverna Workbench 2.1.2"
 ; Who is publishing the software
 !define PUBLISHER "myGrid"
-!define COPYRIGHT "University of Manchester"
+!define COPYRIGHT "University of Manchester, UK"
 ; Short-version of version 
-!define VERSION "2.1.0"
+!define VERSION "2.1.2"
 
 ; Short name used for registry keys
 !define SHORT_NAME "Taverna Workbench ${VERSION}"
 
 ; Folder containing the source files to copy, relative to the .nsi file
-!define SOURCE "Taverna 2.1"
+!define SOURCE "Taverna 2.1.2"
 
-!define HELP_URL "http://www.mygrid.org.uk/tools/taverna/taverna-mailing-lists/"
+!define HELP_URL "http://www.taverna.org.uk/about/contact-us/"
 !define ABOUT_URL "http://www.taverna.org.uk/"
 
 
