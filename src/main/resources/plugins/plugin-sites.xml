@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pluginSites>
   <pluginSite>
-    <name>myGrid</name>
-    <url>http://www.mygrid.org.uk/taverna/updates/${project.version}/plugins/</url>
+    <name>Official myGrid plugins</name>
+    <url>http://www.mygrid.org.uk/taverna/updates/${project.version}/plugins/official/</url>
+  </pluginSite>
+  <pluginSite>
+    <name>Third-party plugins</name>
+    <url>http://www.mygrid.org.uk/taverna/updates/${project.version}/plugins/3rdparty/</url>
+  </pluginSite>
+  <pluginSite>
+    <name>Prototype plugins (Warning: alpha versions)</name>
+    <url>http://www.mygrid.org.uk/taverna/updates/${project.version}/plugins/prototype/</url>
   </pluginSite>
 </pluginSites>
