@@ -62,6 +62,24 @@ where you can also track the latest developments of Taverna.
   * http://taverna-hackers.markmail.org/search/?q=
 
 
+Registration
+============
+Taverna might ask if you would like to register as a Taverna user. The myGrid
+team would appreciate if you do, as it would:
+
+  * Allow us to support you better; future plans will be directed towards
+    solutions Taverna users require
+
+  * Help sustain Taverna development; out continued funding relies on us
+    showing usage
+
+By registering, you will *not* be giving us access to your data or service
+usage. We will *not* be monitoring your usage of Taverna, we will only record
+the information you provide at registration time.
+
+For full terms and condition of our registration, see
+http://www.taverna.org.uk/about/legal-stuff/terms/
+
 
 Examples
 ========
@@ -79,7 +97,7 @@ You can find and describe web services at http://www.biocatalogue.org/
 
 Documentation
 =============
-See http://prototype.taverna.org.uk/documentation/taverna-2-1/ for
+See http://www.taverna.org.uk/documentation/taverna-2-1/ for
 documentation and tutorials on using Taverna.
 
 See the file known-issues.txt for known issues with this release, and the file
@@ -108,8 +126,8 @@ and follow the instructions. You might also need to change the default Java
 implementation by running:
   sudo update-alternatives --config java
 
-Read http://www.mygrid.org.uk/tools/taverna/taverna-requirements/ for more
-requirement details.
+Read http://www.taverna.org.uk/download/taverna-2-1/system-requirements/ for
+more requirement details.
 
 
 Secure web services

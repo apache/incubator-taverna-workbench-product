@@ -100,7 +100,7 @@ T2-621: Should include services from opened workflow
 
 T2-762: Can't remove 'Local services'
 
-T2-767: Can't add configured services (like BioMart queries)
+T2-767: Can't save configured services (Beanshell, BioMart)
 
 T2-1151: Empty/failing service providers can't be removed (Only by 'Remove all
 user-added')
@@ -123,7 +123,7 @@ T2-505: Port display order not consistent
 
 T2-508:  Show/hide ports menu item does not update correctly on OS X
 
-T2-839: Nested workflow with no inputs sho
+T2-839: Nested workflow with no inputs shown incorrectly in diagram
 
 T2-991, T2-1044: Diagram too tiny for small workflows
 
@@ -146,7 +146,7 @@ T2-350: Port details should show connections
 
 T2-416: Can't configure retries and threads for service
 
-T2-1047: Details for services looses HTML formatting and borders
+T2-1047: Details for services loses HTML formatting and borders
 
 
 Looping
@@ -242,8 +242,6 @@ T2-512: Cut and paste should be documented
 T2-421: Beanshell scripts not executed in a protective sandbox
 
 T2-779: Beanshell configuration needs help/descriptions
-
-T2-785: Scrolling in Beanshell editor does not always work
 
 T2-1122: Beanshell configuration dialogue behind main window after switching
 application  

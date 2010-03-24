@@ -17,7 +17,7 @@ instead. (T2-1191)
 (T2-1189)
 
 Pressing Enter now closes dialogue in "Add new plugin site" (T2-1150) and "Add
-new WSDL/Soaplab service" (T2-1149) 
+new WSDL/Biomart/Soaplab service" (T2-1149) 
 
 Previous workflow runs used to parse every executed workflow at startup, which
 could be slow and error-prone. Now they are parsed individually when a run
@@ -99,8 +99,8 @@ Security
 HTTP Proxy username/password no longer lost if using File -> Open from location
 (T2-1184)
 
-HTTP Basic Auth and HTTP Digest now supported for most HTTP connection types in
-Taverna. (T2-1225, T2-1183)
+HTTP Basic Auth and HTTP Digest now supported for opening workflows and "Get
+page/image from URL" local worker. (T2-1225, T2-1183)
 
 An Apple update to Java 6 on OS X change the default trust store password
 (T2-1094)
