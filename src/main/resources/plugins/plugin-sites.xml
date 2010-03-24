@@ -9,7 +9,7 @@
     <url>http://www.mygrid.org.uk/taverna/updates/${project.version}/plugins/3rdparty/</url>
   </pluginSite>
   <pluginSite>
-    <name>Prototype plugins (Warning: alpha versions)</name>
+    <name>Prototype plugins (Warning: alpha/beta versions)</name>
     <url>http://www.mygrid.org.uk/taverna/updates/${project.version}/plugins/prototype/</url>
   </pluginSite>
 </pluginSites>
