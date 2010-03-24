@@ -1,9 +1,143 @@
-Changes since 2.1 beta 2
-========================
+Changes in 2.1.2 (including 2.1.1)
+==================================
+
+For a complete list of issues that have been solved for 2.1.2, 
+see http://tinyurl.com/t2-1-2-fixes or
+http://www.mygrid.org.uk/dev/issues/secure/IssueNavigator.jspa?requestId=10154 )
+
 
 General user interface
-======================
+----------------------
+Resolved a memory leak for multiple invocations of nested workflows. (T2-1135) 
 
+Database cleanup no longer blocks shutdown, done in the background at startup
+instead. (T2-1191)
+
+"Do you want to save" dialogue now appears before database shutdown dialogue.
+(T2-1189)
+
+Pressing Enter now closes dialogue in "Add new plugin site" (T2-1150) and "Add
+new WSDL/Soaplab service" (T2-1149) 
+
+Previous workflow runs used to parse every executed workflow at startup, which
+could be slow and error-prone. Now they are parsed individually when a run
+is first selected (T2-1188)  
+
+
+Workflow engine
+---------------
+Two thread-safety issues with nested workflows were resolved (T2-1137, T2-1124)
+
+"Save value" now saves the correct value after showing "Value too large"
+warning (T2-1147) 
+
+
+Workflow design
+---------------
+Empty dot and cross products in list handling could cause workflow execution to
+fail, but are now automatically removed when editing the list handling.
+(T2-1101. T2-1100)
+
+
+Results
+-------
+"Save value" now saves the correct value after switching back to port without
+reselecting value (T2-1156, T2-1147)
+
+All renderers are now available, even if not automatically detected.
+Non-detected renderers are grayed out, but still selectable. (T2-1228)
+
+The chosen renderer is now remembered for all items on an output port. (T2-1089)
+
+It is now possible to force a re-rendering of the result by clicking "Refresh"
+(T2-1227)
+
+The "Value too large" warning for outputs over 1 MB no longer appear more than
+once when selecting the same value again. (T2-1244)
+
+
+WSDL services
+-------------
+Support for HTTP Basic Auth support for WSDL service invocation (but not
+Digest) (T2-1096)
+
+Username/password dialogue now appears via credential manager, no longer
+appears outside workbench (T2-1165) 
+ 
+Adding a WSDL service to a workflow will pop up the security dialogue if
+username/password for WSDL already exist in credential manager.  
+
+HTTPS protected WSDLs should now work.
+ 
+
+Local workers
+-------------
+"Get page/image from URL" now supports HTTPS and Basic/digest authentication
+(T2-1198)
+
+
+Beanshell scripts
+-----------------
+Invalid port names are no longer allowed (T2-1129)
+
+An output port name called the same as an input name is now allowed (T2-1127)
+
+
+RShell script
+-------------
+The R script was not always saved when clicking 'Apply' (T2-1145)
+
+
+myExperiment perspective
+------------------------
+Non-English users now able to log in (avoiding locale-based date parsing)
+(T2-1157)
+
+
+Security
+--------
+HTTP Proxy username/password no longer lost if using File -> Open from location
+(T2-1184)
+
+HTTP Basic Auth and HTTP Digest now supported for most HTTP connection types in
+Taverna. (T2-1225, T2-1183)
+
+An Apple update to Java 6 on OS X change the default trust store password
+(T2-1094)
+
+Credential manager no longer pops up user interfaces when run outside the
+workbench (T2-1164, T2-698)
+
+Master password dialogue did not appear in 2.1.1 (T2-1133) 
+
+HTTPS should now generally be supported. A confirmation dialogue will appear if
+an untrusted certificate is used for the first time, and the default Java
+truststore is imported on first run.
+
+
+API changes
+-----------
+StartupSPI and ShutdownSPI positionHint flipped, now a low position means early
+execution (T2-1186)
+
+Running Taverna from workbench-dev no longer gives blank perspectives (T2-1190)
+
+Credential Manager now exposes a single SPI CredentialProviderSPI, for
+providing master password, certificate approval and username password.
+Workbench implementation pops up dialogues. (T2-1193)
+
+
+
+Changes in 2.1.0 (since 2.1 beta 2)
+===================================
+
+For a complete list of issues solved for 2.1.0, see
+http://tinyurl.com/t2-1-0-fixes or
+http://www.mygrid.org.uk/dev/issues/secure/IssueNavigator.jspa?reset=true&pid=10040&resolution=1&resolution=11&fixfor=10112&fixfor=10131&sorter/field=issuekey&sorter/order=DESC
+
+
+General user interface
+----------------------
 Keyboard shortcuts: There are now keyboard shortcuts for many of the
 common workflow editing and running tasks.
 
@@ -13,9 +147,9 @@ and you can easily open them.
 Notification of updates: Users are now notified when updates to
 Taverna or to a plugin are available.
 
-Editing of workflows
-====================
 
+Editing of workflows
+--------------------
 Importation of workflows: You now have the ability to merge a workflow
 into a currently edited workflow.
 
@@ -35,9 +169,9 @@ Copy/cut/paste: You can copy/cut and then paste services.  This allows
 you to copy services from one workflow to another or within the same
 workflow.
 
-Services
-========
 
+Services
+--------
 Support for security: secured WSDL services can now be called using
 security validated via a credential manager.
 
@@ -50,9 +184,9 @@ feed the content into your workflow.
 Biomoby services: The BioMoby objects are now shown in the normal
 service panel and can be added to the workflow just as other services.
 
-Running of workflows
-====================
 
+Running of workflows
+--------------------
 Improved run dialog: The dialog for entering run values now copes with
 complex trees of values.
 
@@ -79,13 +213,12 @@ database as the values.
 Improved performance: Workflow execution in 2.1 RC 1 is faster than
 that in 2.1 beta 2.
 
-myExperiment perspective
-========================
 
+myExperiment perspective
+------------------------
 Users can now
 	- browse workflows on myExperiment
 	- open a workflow from myExperiment in Taverna
-	- merge a workflow from myExperiment into the current
-workflow
+	- merge a workflow from myExperiment into the current workflow
 	- upload a workflow from Taverna to myExperiment
 	- download a workflow from myExperiment
