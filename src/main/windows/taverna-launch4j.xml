@@ -2,20 +2,20 @@
   <dontWrapJar>true</dontWrapJar>
   <headerType>gui</headerType>
   <jar>lib\prelauncher-2.0.jar</jar>
-  <outfile>C:\Users\stain\Data\Desktop\taverna-nightly-2.1.0\taverna.exe</outfile>
+  <outfile>C:\Users\stain\Data\Desktop\taverna-nightly-2.1.2\taverna.exe</outfile>
   <errTitle>Could not start Taverna</errTitle>
   <cmdLine></cmdLine>
   <chdir>.</chdir>
   <priority>normal</priority>
   <downloadUrl>http://java.com/download</downloadUrl>
-  <supportUrl>http://www.mygrid.org.uk/tools/taverna/taverna-mailing-lists/</supportUrl>
+  <supportUrl>http://www.taverna.org.uk/about/contact-us/</supportUrl>
   <customProcName>false</customProcName>
   <stayAlive>false</stayAlive>
   <manifest></manifest>
-  <icon>C:\Users\stain\Data\Documents\src\taverna-workspace\taverna-workbench\products\net.sf.taverna.t2.taverna-workbench\workbench-distro\src\main\windows\launcher_logo.ico</icon>
+  <icon>launcher_logo.ico</icon>
   <singleInstance>
-    <mutexName>taverna21</mutexName>
-    <windowTitle>Taverna workbench 2.1</windowTitle>
+    <mutexName>taverna212</mutexName>
+    <windowTitle>Taverna workbench 2.1.2</windowTitle>
   </singleInstance>
   <jre>
     <path></path>
@@ -31,18 +31,18 @@
     <opt>-Dtaverna.startup=.</opt>
   </jre>
   <splash>
-    <file>C:\Users\stain\Data\Documents\src\taverna-workspace\taverna-workbench\products\net.sf.taverna.t2.taverna-workbench\workbench-distro\src\main\windows\launcher_splashscreen.bmp</file>
+    <file>launcher_splashscreen.bmp</file>
     <waitForWindow>true</waitForWindow>
     <timeout>20</timeout>
     <timeoutErr>true</timeoutErr>
   </splash>
   <versionInfo>
-    <fileVersion>2.1.0.4</fileVersion>
-    <txtFileVersion>2.1</txtFileVersion>
+    <fileVersion>2.1.2.0</fileVersion>
+    <txtFileVersion>2.1.2</txtFileVersion>
     <fileDescription>Taverna workbench</fileDescription>
-    <copyright>2002-2009 University of Manchester</copyright>
-    <productVersion>2.1.0.4</productVersion>
-    <txtProductVersion>2.1</txtProductVersion>
+    <copyright>2002-2010 University of Manchester, UK</copyright>
+    <productVersion>2.1.2.0</productVersion>
+    <txtProductVersion>2.1.2</txtProductVersion>
     <productName>Taverna workbench</productName>
     <companyName>myGrid</companyName>
     <internalName>taverna</internalName>
