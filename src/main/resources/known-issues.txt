@@ -2,8 +2,8 @@
 Taverna 2.1.2 known issues
 ==========================
 
-This document some of the known issues in Taverna 2.1.2.  A full list
-and further details can be found within myGrid's issue tracker Jira at 
+This document some of the known issues in Taverna 2.1.2.  A full list and
+further details can be found within myGrid's issue tracker Jira at
 http://www.mygrid.org.uk/dev/issues/secure/IssueNavigator.jspa?mode=hide&requestId=10153
 
 
@@ -11,7 +11,9 @@ General issues
 ==============
 T2-316: Ability to execute workflow from command line
 
-T2-890: Iteration strategy not always translated correctly from Taverna 1 workflows (most likely due to Taverna 1 having inconsistent iteration strategies)
+T2-890: Iteration strategy not always translated correctly from Taverna 1
+workflows (most likely due to Taverna 1 having inconsistent iteration
+strategies)
 
 T2-895:  The dataviewer should be included with the release.
 
@@ -27,23 +29,22 @@ Data management
 ===============
 T2-1003: The degradation of speed when the cache is full needs to be examined.
 
-T2-1033: The database can become locked after an abrupt close of
-Taverna
+T2-1033: The database can become locked after an abrupt close of Taverna
 
 
 Provenance capturing
 ====================
 T2-875: Processor execution start/finish time not recorded
 
-T2-982: If the database is already being used, for example by another
-instance of Taverna, then attempts to use it do not fail gracefully.
+T2-982: If the database is already being used, for example by another instance
+of Taverna, then attempts to use it do not fail gracefully.
 
 T2-1019: The intermediate results display should distinguish between a
-processor that has finished and produced an empty list, and a
-processor that has not yet produced any results.
+processor that has finished and produced an empty list, and a processor that
+has not yet produced any results.
 
-T2-1051: Provenance does not work correctly if an input and an output
-port have the same name
+T2-1051: Provenance does not work correctly if an input and an output port have
+the same name
 
 T2-1062: Failed to start database 't2-database' error
 
@@ -87,8 +88,8 @@ T2-734: Undo should indicate what is to be undone
 
 T2-797: Can't rename workflow
 
-T2-1053: If you have a lot of workflows (say over 50) open then the
-workflows menu does not cope
+T2-1053: If you have a lot of workflows (say over 50) open then the workflows
+menu does not cope
 
 
 Available services
@@ -101,11 +102,13 @@ T2-762: Can't remove 'Local services'
 
 T2-767: Can't add configured services (like BioMart queries)
 
-T2-1151: Empty/failing service providers can't be removed (Only by 'Remove all user-added')
+T2-1151: Empty/failing service providers can't be removed (Only by 'Remove all
+user-added')
 
 T2-1235: Should cache descriptions, should work even starting offline
 
-T2-1236, T2-1237: Ability to refresh service descriptions (while developing a service)
+T2-1236, T2-1237: Ability to refresh service descriptions (while developing a
+service)
 
 
 Workflow diagram
@@ -124,8 +127,8 @@ T2-839: Nested workflow with no inputs sho
 
 T2-991, T2-1044: Diagram too tiny for small workflows
 
-T2-1001: Arrows to a merge can start from the wrong position when
-ports are displayed
+T2-1001: Arrows to a merge can start from the wrong position when ports are
+displayed
 
 T2-1120: Diagram does not indicate implicit iteration
 
@@ -197,20 +200,20 @@ T2-1218: Can't see errors for services with no output ports
 
 T2-1249: Should auto-select the first value in list
 
-T2-1251: Workflow outputs not always shown if workflow executes fast (redraw issue)
+T2-1251: Workflow outputs not always shown if workflow executes fast (redraw
+issue)
 
 
 Output values (Renderers)
 =========================
-T2-1030: The SeqVista renderer appears even for non-SeqVista
-XML results
+T2-1030: The SeqVista renderer appears even for non-SeqVista XML results
 
-T2-1026: An OutOfMemoryError was thrown and needs to be
-double-checked.
+T2-1026: An OutOfMemoryError was thrown and needs to be double-checked.
 
 T2-1207: Renderer area is too small for many outputs
 
-T2-1245: For quite large values, (> 100 MB), selecting runs out of memory without showing "Value is large" dialogue
+T2-1245: For quite large values, (> 100 MB), selecting runs out of memory
+without showing "Value is large" dialogue
 
 T2-1248: Text renderer scrolls to last line, should show first line
 
@@ -221,11 +224,11 @@ T2-553: Does not distingiush lists and iterations
 
 T2-875: Processor execution start/stop times should be shown
 
-T2-1019: The provenance popup panel should distinguish between the
-production of an empty list and no results being received yet.
+T2-1019: The provenance popup panel should distinguish between the production
+of an empty list and no results being received yet.
 
-T2-1045: Multiple clicks on a service can cause multiple intermediate
-values panels
+T2-1045: Multiple clicks on a service can cause multiple intermediate values
+panels
 
 
 
@@ -242,7 +245,8 @@ T2-779: Beanshell configuration needs help/descriptions
 
 T2-785: Scrolling in Beanshell editor does not always work
 
-T2-1122: Beanshell configuration dialogue behind main window after switching application  
+T2-1122: Beanshell configuration dialogue behind main window after switching
+application  
 
 T2-1128: Close->Yes does not check if port names are unique
 
@@ -259,8 +263,8 @@ T2-1093: BioMart streaming is disabled (for provenance performance reasons)
 
 BioMoby services
 ================
-T2-671: Unnecessary console warning 
-"Central class is  org.biomoby.client.CentralDigestCachedImpl"
+T2-671: Unnecessary console warning "Central class is
+org.biomoby.client.CentralDigestCachedImpl"
 
 
 Nested workflows
@@ -311,7 +315,8 @@ T2-1115: WSDL 1.2 and 2 not supported
 
 T2-1160: XML splitters not updated when XML schema changes on server
 
-T2-1224: Binary data invalid as input, need 'Encode as base64' local worker first
+T2-1224: Binary data invalid as input, need 'Encode as base64' local worker
+first
 
 T2-1229: Security dialogue should remember/guess security profile
 
@@ -325,8 +330,8 @@ myExperiment perspective
 T2-1012: The myExperiment login should make it clear that it is for
 myExperiment and not for Taverna
 
-T2-1036: The perspective should filter out broken workflows.  This
-relies on myExperiment's capability being upgraded,
+T2-1036: The perspective should filter out broken workflows.  This relies on
+myExperiment's capability being upgraded,
 
 T2-1068: Does not display processors/services of Taverna 2 workflows (only T1)
 
@@ -342,6 +347,4 @@ T2-634:  The possible solutions for Taverna 1 workflows that depend on
 fail-if-false should be documented.
 
 
-
-
-Stian Soiland-Reyes & Alan R Williams, 2010-03-23
+Stian Soiland-Reyes, Alan R Williams, 2010-03-23
