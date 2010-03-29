@@ -1,15 +1,15 @@
 <launch4jConfig>
   <dontWrapJar>true</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>lib\prelauncher-2.0.jar</jar>
-  <outfile>C:\Users\stain\Data\Desktop\taverna-nightly-2.1.2\taverna.exe</outfile>
+  <jar>lib\prelauncher-2.1.jar</jar>
+  <outfile>C:\Users\stain\Data\Desktop\taverna-workbench-2.1.2\taverna.exe</outfile>
   <errTitle>Could not start Taverna</errTitle>
   <cmdLine></cmdLine>
   <chdir>.</chdir>
   <priority>normal</priority>
   <downloadUrl>http://java.com/download</downloadUrl>
   <supportUrl>http://www.taverna.org.uk/about/contact-us/</supportUrl>
-  <customProcName>false</customProcName>
+  <customProcName>true</customProcName>
   <stayAlive>false</stayAlive>
   <manifest></manifest>
   <icon>launcher_logo.ico</icon>
