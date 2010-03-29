@@ -1,0 +1,58 @@
+<launch4jConfig>
+  <dontWrapJar>true</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>lib\prelauncher-2.1.jar</jar>
+  <outfile>C:\Users\stain\Data\Desktop\taverna-workbench-2.1.2\taverna.exe</outfile>
+  <errTitle>Could not start Taverna</errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl>http://www.taverna.org.uk/about/contact-us/</supportUrl>
+  <customProcName>true</customProcName>
+  <stayAlive>false</stayAlive>
+  <manifest></manifest>
+  <icon>launcher_logo.ico</icon>
+  <singleInstance>
+    <mutexName>taverna212</mutexName>
+    <windowTitle>Taverna workbench 2.1.2</windowTitle>
+  </singleInstance>
+  <jre>
+    <path></path>
+    <minVersion>1.5.0</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJdk</jdkPreference>
+    <maxHeapSize>300</maxHeapSize>
+    <maxHeapPercent>50</maxHeapPercent>
+    <opt>-XX:MaxPermSize=140m</opt>
+    <opt>-Draven.profile=file:conf/current-profile.xml</opt>
+    <opt>-Djava.system.class.loader=net.sf.taverna.raven.prelauncher.BootstrapClassLoader</opt>
+    <opt>-Dsun.swing.enableImprovedDragGesture</opt>
+    <opt>-Dtaverna.startup=.</opt>
+  </jre>
+  <splash>
+    <file>launcher_splashscreen.bmp</file>
+    <waitForWindow>true</waitForWindow>
+    <timeout>20</timeout>
+    <timeoutErr>true</timeoutErr>
+  </splash>
+  <versionInfo>
+    <fileVersion>2.1.2.0</fileVersion>
+    <txtFileVersion>2.1.2</txtFileVersion>
+    <fileDescription>Taverna workbench</fileDescription>
+    <copyright>2002-2010 University of Manchester, UK</copyright>
+    <productVersion>2.1.2.0</productVersion>
+    <txtProductVersion>2.1.2</txtProductVersion>
+    <productName>Taverna workbench</productName>
+    <companyName>myGrid</companyName>
+    <internalName>taverna</internalName>
+    <originalFilename>taverna.exe</originalFilename>
+  </versionInfo>
+  <messages>
+    <startupErr>An error occurred while starting Taverna.</startupErr>
+    <bundledJreErr>This application was configured to use a bundled Java Runtime Environment but the runtime is missing or corrupted.</bundledJreErr>
+    <jreVersionErr>Taverna requires the Java Runtime Environment to be installed.</jreVersionErr>
+    <launcherErr>The registry refers to a nonexistent Java Runtime Environment installation or the runtime is corrupted.</launcherErr>
+    <instanceAlreadyExistsMsg>Taverna is already running.</instanceAlreadyExistsMsg>
+  </messages>
+</launch4jConfig>
