@@ -15,7 +15,7 @@
 !define SHORT_NAME "Taverna Workbench ${VERSION}"
 
 ; Folder containing the source files to copy, relative to the .nsi file
-!define SOURCE "Taverna 2.1.2"
+!define SOURCE "taverna-workbench-2.1.2"
 
 !define HELP_URL "http://www.taverna.org.uk/about/contact-us/"
 !define ABOUT_URL "http://www.taverna.org.uk/"
@@ -49,9 +49,9 @@ RequestExecutionLevel admin
 SetCompressor /SOLID LZMA
 
 
-!define MUI_ICON "${SOURCE}\lib\launcher_logo.ico"
-!define MUI_UNICON "${SOURCE}\lib\launcher_logo.ico"
-Icon "${SOURCE}\lib\launcher_logo.ico"
+!define MUI_ICON "launcher_logo.ico"
+!define MUI_UNICON "launcher_logo.ico"
+Icon "launcher_logo.ico"
 
 
 VIAddVersionKey "ProductName" "${PRODUCT_NAME}"
