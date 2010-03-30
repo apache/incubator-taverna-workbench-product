@@ -55,8 +55,8 @@
 					</plugin>
 
 					<plugin>
-						<artifactId>maven-assembly-plugin
-						</artifactId>
+						<artifactId>maven-assembly-plugin</artifactId>
+						<version>2.2-beta-4</version>
 						<executions>
 							<execution>
 								<phase>package</phase>
@@ -126,8 +126,8 @@
 					</plugin>
 
 					<plugin>
-						<artifactId>maven-assembly-plugin
-						</artifactId>
+						<artifactId>maven-assembly-plugin</artifactId>
+						<version>2.2-beta-4</version>
 						<executions>
 							<execution>
 								<phase>package</phase>
@@ -1173,6 +1173,7 @@
 					</plugin>
 					<plugin>
 						<artifactId>maven-assembly-plugin</artifactId>
+						<version>2.2-beta-4</version>
 						<executions>
 							<execution>
 								<phase>package</phase>
@@ -2211,6 +2212,7 @@
 					</plugin>
 					<plugin>
 						<artifactId>maven-assembly-plugin</artifactId>
+						<version>2.2-beta-4</version>
 						<executions>
 							<execution>
 								<phase>package</phase>

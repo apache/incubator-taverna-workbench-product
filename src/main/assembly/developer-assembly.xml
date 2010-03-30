@@ -6,7 +6,6 @@
 	<id>dev</id>
 	<includeBaseDirectory>false</includeBaseDirectory>
 	<baseDirectory>taverna-dev-${project.version}-${buildNumber}</baseDirectory>
-	<finalName>taverna-dev-${project.version}-${buildNumber}</finalName>
 	<formats>
 		<format>dir</format>
 	</formats>
