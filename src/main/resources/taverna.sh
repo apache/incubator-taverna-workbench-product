@@ -20,8 +20,8 @@ done
 TAVERNA_HOME="`dirname "$PRG"`"
 cd $TAVERNA_HOME
 
-# 300 MB memory, 140 MB for classes
-exec java -Xmx300m -XX:MaxPermSize=140m \
+# 400 MB memory, 140 MB for classes
+exec java -Xmx400m -XX:MaxPermSize=140m \
   -Draven.profile=file:conf/current-profile.xml \
   -Dtaverna.startup=. \
   -Djava.system.class.loader=net.sf.taverna.raven.prelauncher.BootstrapClassLoader \

@@ -6,8 +6,8 @@ REM go to the distribution directory
 pushd "%~dp0"
 
 
-REM 300 MB memory, 140 MB for classes
-set ARGS=-Xmx300m -XX:MaxPermSize=140m
+REM 400 MB memory, 140 MB for classes
+set ARGS=-Xmx400m -XX:MaxPermSize=140m
 
 REM Internal system properties
 set ARGS=%ARGS% -Draven.profile=file:conf/current-profile.xml
