@@ -5,6 +5,7 @@ PRG="$0"
 progname=`basename "$0"`
 saveddir=`pwd`
 
+
 # need this to resolve relative symlinks
 cd "`dirname "$PRG"`"
 while [ -h "$PRG" ] ; do
