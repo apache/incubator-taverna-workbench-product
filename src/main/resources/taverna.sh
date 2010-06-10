@@ -17,9 +17,6 @@ while [ -h "$PRG" ] ; do
     fi
 done
 
-TAVERNA_HOME="`dirname "$PRG"`"
-cd $TAVERNA_HOME
-
 # 400 MB memory, 140 MB for classes
 exec java -Xmx400m -XX:MaxPermSize=140m \
   -Draven.profile=file:conf/current-profile.xml \
