@@ -141,7 +141,7 @@
     <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.commandline</identifier>
-		<version>1.0-SNAPSHOT</version>
+		<version>${project.version}-${buildNumber}</version>
         <name>Taverna Command Line</name>
         <description>Allows execution of Taverna workflows from the command line</description>
         <enabled>true</enabled>
@@ -162,12 +162,12 @@
             <dependency>
                 <groupId>net.sf.taverna.t2.taverna-commandline</groupId>
                 <artifactId>taverna-commandline-common</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>${t2.taverna-commandline.version}</version>
             </dependency>
         </profile>
         <compatibility>
             <application>
-                <version>2.1-SNAPSHOT</version>
+                <version>${project.version}</version>
             </application>
         </compatibility>
     </plugin>
