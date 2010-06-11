@@ -234,23 +234,14 @@
 					added by the repositories-component of the assembly plugin. 
 					
 					 -->
-<!-- Causes duplicate entry in zip file
-										<artifactItem>
-											<groupId>org.apache</groupId>
-											<artifactId>apache</artifactId>
-											<version>4</version>
-											<type>pom</type>
-											<outputDirectory>${project.build.directory}/repository/org/apache/apache/4</outputDirectory>
-										</artifactItem>
--->
- <artifactItem>
+								<artifactItem>
                                     <groupId>antlr</groupId>
                                     <artifactId>antlr</artifactId>
                                     <version>2.7.5</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/antlr/antlr/2.7.5</outputDirectory>
-                                </artifactItem>
-                                 <artifactItem>
+                                </artifactItem>					 
+                                <artifactItem>
                                     <groupId>antlr</groupId>
                                     <artifactId>antlr</artifactId>
                                     <version>2.7.5</version>
@@ -540,20 +531,6 @@
                                 <artifactItem>
                                     <groupId>commons-logging</groupId>
                                     <artifactId>commons-logging</artifactId>
-                                    <version>1.0</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.0</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>commons-logging</groupId>
-                                    <artifactId>commons-logging</artifactId>
-                                    <version>1.0</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.0</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>commons-logging</groupId>
-                                    <artifactId>commons-logging</artifactId>
                                     <version>1.0.3</version>
                                     <type>jar</type>
                                     <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.0.3</outputDirectory>
@@ -568,16 +545,16 @@
                                 <artifactItem>
                                     <groupId>commons-logging</groupId>
                                     <artifactId>commons-logging</artifactId>
-                                    <version>1.1</version>
+                                    <version>1.0</version>
                                     <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.1</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.0</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>commons-logging</groupId>
                                     <artifactId>commons-logging</artifactId>
-                                    <version>1.1</version>
+                                    <version>1.0</version>
                                     <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.1</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.0</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>commons-logging</groupId>
@@ -592,6 +569,20 @@
                                     <version>1.1.1</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.1.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>commons-logging</groupId>
+                                    <artifactId>commons-logging</artifactId>
+                                    <version>1.1</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>commons-logging</groupId>
+                                    <artifactId>commons-logging</artifactId>
+                                    <version>1.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.1</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>commons-pool</groupId>
@@ -694,16 +685,16 @@
                                 <artifactItem>
                                     <groupId>junit</groupId>
                                     <artifactId>junit</artifactId>
-                                    <version>3.8</version>
+                                    <version>3.8.1</version>
                                     <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/junit/junit/3.8</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/junit/junit/3.8.1</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>junit</groupId>
                                     <artifactId>junit</artifactId>
-                                    <version>3.8</version>
+                                    <version>3.8.1</version>
                                     <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/junit/junit/3.8</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/junit/junit/3.8.1</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>junit</groupId>
@@ -774,6 +765,41 @@
                                     <version>3.1.14</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/mysql/mysql-connector-java/3.1.14</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>net.sf.taverna.t2</groupId>
+                                    <artifactId>lang</artifactId>
+                                    <version>1.0</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/net/sf/taverna/t2/lang/1.0</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>net.sf.taverna.t2.lang</groupId>
+                                    <artifactId>observer</artifactId>
+                                    <version>1.0</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/net/sf/taverna/t2/lang/observer/1.0</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>net.sf.taverna.t2.lang</groupId>
+                                    <artifactId>observer</artifactId>
+                                    <version>1.0</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/net/sf/taverna/t2/lang/observer/1.0</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>net.sf.taverna.t2.lang</groupId>
+                                    <artifactId>ui</artifactId>
+                                    <version>1.0</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/net/sf/taverna/t2/lang/ui/1.0</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>net.sf.taverna.t2.lang</groupId>
+                                    <artifactId>ui</artifactId>
+                                    <version>1.0</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/net/sf/taverna/t2/lang/ui/1.0</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>net.sf.taverna</groupId>
@@ -795,6 +821,13 @@
                                     <version>1</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/org/apache/apache/1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache</groupId>
+                                    <artifactId>apache</artifactId>
+                                    <version>4</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/apache/4</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.apache.commons</groupId>
@@ -820,16 +853,16 @@
                                 <artifactItem>
                                     <groupId>org.apache.poi</groupId>
                                     <artifactId>poi</artifactId>
-                                    <version>3.2-FINAL</version>
+                                    <version>3.5-FINAL</version>
                                     <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/apache/poi/poi/3.2-FINAL</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/poi/poi/3.5-FINAL</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.apache.poi</groupId>
                                     <artifactId>poi</artifactId>
-                                    <version>3.2-FINAL</version>
+                                    <version>3.5-FINAL</version>
                                     <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/apache/poi/poi/3.2-FINAL</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/poi/poi/3.5-FINAL</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.apache.xmlbeans</groupId>
@@ -1173,8 +1206,7 @@
                                     <version>1.0</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/xom/xom/1.0</outputDirectory>
-                                </artifactItem>
-
+                                </artifactItem>										
 									</artifactItems>
 								</configuration>
 							</execution>
@@ -1274,22 +1306,14 @@
 					added by the repositories-component of the assembly plugin. 
 					
 					 -->
-<!-- Causes duplicate entry in zip file
-										<artifactItem>
-											<groupId>org.apache</groupId>
-											<artifactId>apache</artifactId>
-											<version>4</version>
-											<type>pom</type>
-											<outputDirectory>${project.build.directory}/repository/org/apache/apache/4</outputDirectory>
-										</artifactItem>
---> <artifactItem>
+								<artifactItem>
                                     <groupId>antlr</groupId>
                                     <artifactId>antlr</artifactId>
                                     <version>2.7.5</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/antlr/antlr/2.7.5</outputDirectory>
                                 </artifactItem>
-                                 <artifactItem>
+				                <artifactItem>
                                     <groupId>antlr</groupId>
                                     <artifactId>antlr</artifactId>
                                     <version>2.7.5</version>
@@ -1579,20 +1603,6 @@
                                 <artifactItem>
                                     <groupId>commons-logging</groupId>
                                     <artifactId>commons-logging</artifactId>
-                                    <version>1.0</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.0</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>commons-logging</groupId>
-                                    <artifactId>commons-logging</artifactId>
-                                    <version>1.0</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.0</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>commons-logging</groupId>
-                                    <artifactId>commons-logging</artifactId>
                                     <version>1.0.3</version>
                                     <type>jar</type>
                                     <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.0.3</outputDirectory>
@@ -1607,16 +1617,16 @@
                                 <artifactItem>
                                     <groupId>commons-logging</groupId>
                                     <artifactId>commons-logging</artifactId>
-                                    <version>1.1</version>
+                                    <version>1.0</version>
                                     <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.1</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.0</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>commons-logging</groupId>
                                     <artifactId>commons-logging</artifactId>
-                                    <version>1.1</version>
+                                    <version>1.0</version>
                                     <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.1</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.0</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>commons-logging</groupId>
@@ -1631,6 +1641,20 @@
                                     <version>1.1.1</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.1.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>commons-logging</groupId>
+                                    <artifactId>commons-logging</artifactId>
+                                    <version>1.1</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>commons-logging</groupId>
+                                    <artifactId>commons-logging</artifactId>
+                                    <version>1.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.1</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>commons-pool</groupId>
@@ -1733,16 +1757,16 @@
                                 <artifactItem>
                                     <groupId>junit</groupId>
                                     <artifactId>junit</artifactId>
-                                    <version>3.8</version>
+                                    <version>3.8.1</version>
                                     <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/junit/junit/3.8</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/junit/junit/3.8.1</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>junit</groupId>
                                     <artifactId>junit</artifactId>
-                                    <version>3.8</version>
+                                    <version>3.8.1</version>
                                     <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/junit/junit/3.8</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/junit/junit/3.8.1</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>junit</groupId>
@@ -1813,6 +1837,41 @@
                                     <version>3.1.14</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/mysql/mysql-connector-java/3.1.14</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>net.sf.taverna.t2</groupId>
+                                    <artifactId>lang</artifactId>
+                                    <version>1.0</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/net/sf/taverna/t2/lang/1.0</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>net.sf.taverna.t2.lang</groupId>
+                                    <artifactId>observer</artifactId>
+                                    <version>1.0</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/net/sf/taverna/t2/lang/observer/1.0</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>net.sf.taverna.t2.lang</groupId>
+                                    <artifactId>observer</artifactId>
+                                    <version>1.0</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/net/sf/taverna/t2/lang/observer/1.0</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>net.sf.taverna.t2.lang</groupId>
+                                    <artifactId>ui</artifactId>
+                                    <version>1.0</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/net/sf/taverna/t2/lang/ui/1.0</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>net.sf.taverna.t2.lang</groupId>
+                                    <artifactId>ui</artifactId>
+                                    <version>1.0</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/net/sf/taverna/t2/lang/ui/1.0</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>net.sf.taverna</groupId>
@@ -1834,6 +1893,13 @@
                                     <version>1</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/org/apache/apache/1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache</groupId>
+                                    <artifactId>apache</artifactId>
+                                    <version>4</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/apache/4</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.apache.commons</groupId>
@@ -1859,16 +1925,16 @@
                                 <artifactItem>
                                     <groupId>org.apache.poi</groupId>
                                     <artifactId>poi</artifactId>
-                                    <version>3.2-FINAL</version>
+                                    <version>3.5-FINAL</version>
                                     <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/apache/poi/poi/3.2-FINAL</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/poi/poi/3.5-FINAL</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.apache.poi</groupId>
                                     <artifactId>poi</artifactId>
-                                    <version>3.2-FINAL</version>
+                                    <version>3.5-FINAL</version>
                                     <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/apache/poi/poi/3.2-FINAL</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/poi/poi/3.5-FINAL</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.apache.xmlbeans</groupId>
@@ -2214,7 +2280,7 @@
                                     <outputDirectory>${project.build.directory}/repository/xom/xom/1.0</outputDirectory>
                                 </artifactItem>
 
-									</artifactItems>
+									</artifactItems>							
 								</configuration>
 							</execution>
 						</executions>
