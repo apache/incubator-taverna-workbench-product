@@ -20,4 +20,4 @@ exec java -Xmx300m -XX:MaxPermSize=140m \
   -Draven.launcher.app.main=net.sf.taverna.t2.commandline.CommandLineLauncher \
   -Draven.launcher.show_splashscreen=false \
   -jar "$taverna_home/lib/"prelauncher-*.jar \
-  $@
+  ${1+"$@"}

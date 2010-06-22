@@ -21,5 +21,5 @@ exec java -Xmx400m -XX:MaxPermSize=140m \
   -Dapple.awt.graphics.UseQuartz=false \
   -Dsun.swing.enableImprovedDragGesture \
   -jar "$taverna_home/lib/"prelauncher-*.jar \
-  $@
+  ${1+"$@"}
   
