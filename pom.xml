@@ -727,16 +727,16 @@
                                 <artifactItem>
                                     <groupId>log4j</groupId>
                                     <artifactId>log4j</artifactId>
-                                    <version>1.2.14</version>
+                                    <version>1.2.12</version>
                                     <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.14</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.12</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>log4j</groupId>
                                     <artifactId>log4j</artifactId>
-                                    <version>1.2.14</version>
+                                    <version>1.2.12</version>
                                     <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.14</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.12</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>logkit</groupId>
@@ -1799,16 +1799,16 @@
                                 <artifactItem>
                                     <groupId>log4j</groupId>
                                     <artifactId>log4j</artifactId>
-                                    <version>1.2.14</version>
+                                    <version>1.2.12</version>
                                     <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.14</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.12</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>log4j</groupId>
                                     <artifactId>log4j</artifactId>
-                                    <version>1.2.14</version>
+                                    <version>1.2.12</version>
                                     <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.14</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.12</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>logkit</groupId>
