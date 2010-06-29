@@ -1,8 +1,15 @@
 #!/bin/sh
 
+set -e
+
 ## resolve links - $0 may be a symlink
 prog="$0"
-realprog=`readlink -e "$prog"`
+
+real_path() {
+    readlink -m "$1" 2>/dev/null || python -c 'import os,sys;print os.path.realpath(sys.argv[1])' "$1"
+}
+
+realprog=`real_path "$prog"`
 taverna_home=`dirname "$realprog"`
 
 # 300 MB memory, 140 MB for classes
@@ -13,4 +20,4 @@ exec java -Xmx300m -XX:MaxPermSize=140m \
   -Draven.launcher.app.main=net.sf.taverna.t2.commandline.CommandLineLauncher \
   -Draven.launcher.show_splashscreen=false \
   -jar "$taverna_home/lib/"prelauncher-*.jar \
-  $@
+  ${1+"$@"}
