@@ -1,9 +1,163 @@
+Changes in 2.2.0
+================
+
+For a complete list of issues that have been solved for 2.2.0, 
+see http://tinyurl.com/t2-2-0-fixes or
+http://www.mygrid.org.uk/dev/issues/secure/IssueNavigator.jspa?mode=hide&requestId=10175
+
+
+General user interface
+----------------------
+Workflows with services that are offline/unavailable, or which plugin is
+not installed, can now be opened and edited. (T2-1231, T2-1411)
+
+Unavailable services are shown faded in the workflow. (T2-1354)
+
+The dialogue for adding nested workflows did not always disappear
+(T2-1261)
+
+Workbench configuration preference tidied up (T2-1463)
+
+The preferences window did not always appear on a restricted (ie.
+WiFi) network which present HTML login pages to any URL. (T2-1409)
+
+New menu item: Advanced->Show log folder (T2-1273)
+
+User registration form records the "Purpose" field correctly. (T2-1304)
+
+
+Workflow engine
+---------------
+New ability to pause and cancel a running workflow (T2-414).
+
+Provenance handles empty lists correctly. (T2-1019)
+
+Provenance supports workflows and services which has an
+input port with the same name as an output port. (T2-1051)
+
+Provenance records and shows start/stop/average execution times for
+workflow, services and service iterations. (T2-875)
+
+New "executeworkflow" command line tool (T2-316)
+
+taverna.sh and taverna-debug.bat now handles symlinks to the Taverna
+installation. (T2-1406)
+
+
+
+Workflow design
+---------------
+
+Validation Report warns on potential errors in workflow, and
+suggests possible solutions like editing the List Handling. (T2-1238)
+
+A full validation is performed before running a workflow, which
+will attempt to connect to external services in the workflow - giving an
+early warning for instance if a service is not available, or if a
+beanshell script contains error.
+
+Ability to configure retries and threads. (T2-416)
+
+Right-click menu to configure looping, retries and threads.
+
+Configure Looping dialogue layout modified (T2-1366)
+
+Configure Looping dialogue simplified (T2-824, T2-1349)
+
+Workflow output port was not always selected correctly. (T2-1288)
+
+Menu for Insert->Constant value modified (T2-1325)
+
+
+Running workflows
+-----------------
+Run Workflow dialogue is no longer modal, allowing one dialogue per
+workflow at the same time (T2-1221)
+
+Run Workflow dialogue warns if the workflow has potential problems. (T2-1363)
+
+Unconnected input ports are no longer shown in Run Workflow. (T2-1285)
+
+Run Workflow dialogue could appear twice for same workflow if
+double-clicking Run. (T2-863)
+
+Run Workflow shows the filename or name of workflow (T2-1284)
+
+"Load previous values" button in the Run Dialog should remember the last
+used folder.  (T2-1252) 
+
+Exiting Taverna while a workflow is running will warn the user, asking
+to Cancel active runs. (T2-1426)
+
+
+Results
+-------
+New Progress Report shows a table of running services in workflow and
+nested workflows. Table shows status, queued iterations, iterations
+finished, failed iterations, start and stop times, and average
+invocation time. (T2-1213)
+
+
+
+
+
+T2-1248 	Workbench - Renderers 	Text renderer scrolls to bottom 
+T2-1263 	Workbench - Renderers 	URL renderer does not work as expected 
+T2-1313 	Workbench - Renderers 	HTML renderer does not work as a proper HTML renderer where you can follow hyperlinks etc. 
+T2-1317 	Workbench - Renderers 	TIFF renderer is needed 
+T2-1320 	Workbench - Renderers 	Rtf renderer renders text as html 
+T2-1369 	Workbench - Renderers 	SeqVista messes up look and feel 
+T2-1469 	Workbench - Provenance previous runs 	Previous Runs of nested workflows wrongly appear if nested workflow was also individually run 
+T2-553 	Workbench - Provenance previous runs 	Provenance does not distinguish between lists and iterations 
+
+T2-1279 	Workbench - Results panel 	Value-too-large dialogue still renders if pressing Escape in Windows 
+T2-1324 	Workbench - Results panel 	"Save values" should say "Save all values" 
+T2-1413 	Workbench - Results panel 	Error count for processor inside nested workflow is wrong 
+T2-1414 	Workbench - Results panel 	No error count on a nested workflow 
+T2-1416 	Workbench - Results panel 	No indication of which invocation failed 
+T2-1427 	Workbench - Results panel 	Need to distinguish between invocations that error bounced and those that threw an error 
+T2-1459 	Refinement	Workbench - Results panel 	Clicking workflow output port in result graph should select output port results 
+T2-1460 	Workbench - Results panel 	Intermediate values must allow filtering for errors 
+T2-1461 	Workbench - Results panel 	Workflow results must be filterable 
+T2-1280 	Workbench - Results panel Workbench - Workflow runs panel 	Binary data not always loaded/saved correctly 
+
+
+
+X service
+---------
+T2-1287 	Activity - Beanshell 	Script should show line numbers 
+T2-1375 	Activity - Beanshell 	Beanshell health checker needs tweaking 
+T2-1387 	Activity - Beanshell Activity - RShell 	Ports should start at 1 
+T2-1093 	Activity - Biomart 	Switch BioMart streaming back on 
+T2-674 	Activity - Biomart Activity - Biomoby Activity - Soaplab Activity - WSDL and XML splitter 	Hardcoded default locations 
+T2-1314 	Activity - Nested workflow 	Import workflow window pops up 2 file chooser dialogs 
+T2-1315 	Activity - Nested workflow 	Import workflow window does not display location of the "Already opened window" nicely 
+T2-1376 	Activity - Unrecognized 	Unrecognized activity must be implemented 
+T2-1470 	Activity - WSDL and XML splitter 	WSDL activity can take lone time to fail configuration 
+T2-847 	Activity - WSDL and XML splitter 	XML splitters don't support optional inputs - WSDL minOccurs ignored 
+
+
+myExperiment perspective
+------------------------
+T2-1185 	Workbench - Perspectives - myExperiment 	myExperiment perspective assumes a t2flow is being uploaded 
+T2-1333 	Workbench - Perspectives - myExperiment 	when myExperiment perspective loads T1 workflows from a file on a disk they appear as T2 workflows on myExperiment Web site 
+T2-1377 	Workbench - Perspectives - myExperiment 	The myExperiment perspective wipes out css settings 
+
+
+API changes
+-----------
+T2-1336 	Engine - Workflow model 	Placeholder for semantic annotation 
+T2-1337 	Engine - Workflow model 	Identification chain for dataflows 
+
+
+
+
 Changes in 2.1.2 (including 2.1.1)
 ==================================
 
 For a complete list of issues that have been solved for 2.1.2, 
 see http://tinyurl.com/t2-1-2-fixes or
-http://www.mygrid.org.uk/dev/issues/secure/IssueNavigator.jspa?requestId=10154 )
+http://www.mygrid.org.uk/dev/issues/secure/IssueNavigator.jspa?requestId=10154
 
 
 General user interface
