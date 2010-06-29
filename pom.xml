@@ -894,17 +894,31 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.biomoby</groupId>
-                                    <artifactId>jmoby-dashboard</artifactId>
-                                    <version>1.1.3-taverna-1</version>
+                                    <artifactId>jmoby</artifactId>
+                                    <version>1.1.3-taverna</version>
                                     <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/biomoby/jmoby-dashboard/1.1.3-taverna-1</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/org/biomoby/jmoby/1.1.3-taverna</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.biomoby</groupId>
+                                    <artifactId>jmoby</artifactId>
+                                    <version>1.1.3-taverna</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/biomoby/jmoby/1.1.3-taverna</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.biomoby</groupId>
                                     <artifactId>jmoby-dashboard</artifactId>
-                                    <version>1.1.3-taverna-1</version>
+                                    <version>1.1.3-taverna</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/biomoby/jmoby-dashboard/1.1.3-taverna</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.biomoby</groupId>
+                                    <artifactId>jmoby-dashboard</artifactId>
+                                    <version>1.1.3-taverna</version>
                                     <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/biomoby/jmoby-dashboard/1.1.3-taverna-1</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/org/biomoby/jmoby-dashboard/1.1.3-taverna</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.codehaus.woodstox</groupId>
@@ -1785,16 +1799,16 @@
                                 <artifactItem>
                                     <groupId>log4j</groupId>
                                     <artifactId>log4j</artifactId>
-                                    <version>1.2.14</version>
+                                    <version>1.2.12</version>
                                     <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.14</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.12</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>log4j</groupId>
                                     <artifactId>log4j</artifactId>
-                                    <version>1.2.14</version>
+                                    <version>1.2.12</version>
                                     <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.14</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.12</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>logkit</groupId>
@@ -1952,17 +1966,31 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.biomoby</groupId>
-                                    <artifactId>jmoby-dashboard</artifactId>
-                                    <version>1.1.3-taverna-1</version>
+                                    <artifactId>jmoby</artifactId>
+                                    <version>1.1.3-taverna</version>
                                     <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/biomoby/jmoby-dashboard/1.1.3-taverna-1</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/org/biomoby/jmoby/1.1.3-taverna</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.biomoby</groupId>
+                                    <artifactId>jmoby</artifactId>
+                                    <version>1.1.3-taverna</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/biomoby/jmoby/1.1.3-taverna</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.biomoby</groupId>
                                     <artifactId>jmoby-dashboard</artifactId>
-                                    <version>1.1.3-taverna-1</version>
+                                    <version>1.1.3-taverna</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/biomoby/jmoby-dashboard/1.1.3-taverna</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.biomoby</groupId>
+                                    <artifactId>jmoby-dashboard</artifactId>
+                                    <version>1.1.3-taverna</version>
                                     <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/biomoby/jmoby-dashboard/1.1.3-taverna-1</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/org/biomoby/jmoby-dashboard/1.1.3-taverna</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.codehaus.woodstox</groupId>
