@@ -1,159 +1,204 @@
-Changes in 2.2.0
-================
+Changes in Taverna 2.2.0
+========================
 
-For a complete list of issues that have been solved for 2.2.0, 
+For a complete list of issues that have been solved for Taverna 2.2.0,
 see http://tinyurl.com/t2-2-0-fixes or
 http://www.mygrid.org.uk/dev/issues/secure/IssueNavigator.jspa?mode=hide&requestId=10175
 
 
 General user interface
 ----------------------
-Workflows with services that are offline/unavailable, or which plugin is
-not installed, can now be opened and edited. (T2-1231, T2-1411)
+Workflows with services that are offline/unavailable, or for which the
+appropriate plugin is not installed, can now be opened and edited.
+(T2-1231, T2-1411, T2-1376)
 
-Unavailable services are shown faded in the workflow. (T2-1354)
+Unavailable and unrecognized services are shown faded in the workflow.
+(T2-1354)
 
-The dialogue for adding nested workflows did not always disappear
-(T2-1261)
+New menu item Advanced->Show log folder. (T2-1273)
 
-Workbench configuration preference tidied up (T2-1463)
+Workbench Configuration preferences tidied up. (T2-1463)
 
-The preferences window did not always appear on a restricted (ie.
-WiFi) network which present HTML login pages to any URL. (T2-1409)
-
-New menu item: Advanced->Show log folder (T2-1273)
+Preferences window did not always appear on a restricted (ie. WiFi)
+network which returned HTML login pages for any URL. (T2-1409)
 
 User registration form records the "Purpose" field correctly. (T2-1304)
 
 
 Workflow engine
 ---------------
-New ability to pause and cancel a running workflow (T2-414).
+"executeworkflow" command line tool. (T2-316)
 
-Provenance handles empty lists correctly. (T2-1019)
+Ability to pause, resume and cancel a running workflow. (T2-414).
 
-Provenance supports workflows and services which has an
+taverna.sh and taverna-debug.bat now handle symbolic links to the
+Taverna installation. (T2-1406)
+
+Shows start/stop/average execution times for workflow, services and
+individual service iterations. (T2-875)
+
+Intermediate values display empty lists correctly. (T2-1019)
+
+Intermediate values supports workflows and services which has an
 input port with the same name as an output port. (T2-1051)
-
-Provenance records and shows start/stop/average execution times for
-workflow, services and service iterations. (T2-875)
-
-New "executeworkflow" command line tool (T2-316)
-
-taverna.sh and taverna-debug.bat now handles symlinks to the Taverna
-installation. (T2-1406)
-
 
 
 Workflow design
 ---------------
+Service descriptions (the Available Services) can be exported to and
+imported from an XML file. Default Services are no longer hard-coded,
+but can be customised per Taverna installations. (T2-674)
 
-Validation Report warns on potential errors in workflow, and
-suggests possible solutions like editing the List Handling. (T2-1238)
+Added Validation Report, warns on potential errors in workflow, and
+suggests possible solutions like editing the List Handling or enabling
+retries. (T2-1238)
 
-A full validation is performed before running a workflow, which
-will attempt to connect to external services in the workflow - giving an
-early warning for instance if a service is not available, or if a
-beanshell script contains error.
+A full validation is performed before running a workflow, which will
+attempt to connect to external services in the workflow - giving an
+early warning if a service is not available.
 
 Ability to configure retries and threads. (T2-416)
 
-Right-click menu to configure looping, retries and threads.
+Added Right-click menu to configure looping, retries and threads.
 
-Configure Looping dialogue layout modified (T2-1366)
-
-Configure Looping dialogue simplified (T2-824, T2-1349)
+Configure Looping dialogue simplified. (T2-1366, T2-824, T2-1349)
 
 Workflow output port was not always selected correctly. (T2-1288)
 
-Menu for Insert->Constant value modified (T2-1325)
+Confusing Insert->Constant value removed as it was always disabled
+except when selecting an input port. Still available on right-click
+menu.  (T2-1325)
 
 
 Running workflows
 -----------------
-Run Workflow dialogue is no longer modal, allowing one dialogue per
-workflow at the same time (T2-1221)
+Run Workflow dialogue is no longer modal, allowing one dialog per
+workflow at the same time. (T2-1221)
 
-Run Workflow dialogue warns if the workflow has potential problems. (T2-1363)
+Run Workflow dialogue warns if the workflow has potential problems.
+(T2-1363)
+
+Run Workflow shows the filename or name of workflow. (T2-1284)
 
 Unconnected input ports are no longer shown in Run Workflow. (T2-1285)
 
 Run Workflow dialogue could appear twice for same workflow if
-double-clicking Run. (T2-863)
+double-clicking Run button. (T2-863)
 
-Run Workflow shows the filename or name of workflow (T2-1284)
-
-"Load previous values" button in the Run Dialog should remember the last
+"Load/Save previous values" button in the Run Dialog remembers the last
 used folder.  (T2-1252) 
 
 Exiting Taverna while a workflow is running will warn the user, asking
-to Cancel active runs. (T2-1426)
+to Cancel active workflow runs. (T2-1426)
 
 
 Results
 -------
-New Progress Report shows a table of running services in workflow and
-nested workflows. Table shows status, queued iterations, iterations
-finished, failed iterations, start and stop times, and average
-invocation time. (T2-1213)
+Added Progress Report, shows a table of running services (including
+nested workflows). Table shows status, queued iterations, iterations
+finished, failed iterations, first and last invocation times, and average
+invocation time.  (T2-1213)
+
+Intermediate values for a service shows iterations separately from
+output lists. (T2-553)
+
+Iterations indicate if they failed by colour and label. (T2-1416)
+
+Iterations indicate if they were skipped due to incoming errors.
+(T2-1427)
+
+Possibility to filter iterations and outputs to show only results or
+only errors.  (T2-1460, T2-1461)
+
+Clicking a workflow output port in diagram selects the resulting output
+tab. (T2-1459)
+
+Added error count on nested workflows, showing number of nested workflow
+iterations which contained one or more errors. (T2-1414)
+
+"Save values" button renamed to "Save all values". (T2-1324)
+
+Value-is-too-large dialogue would still render the full value if
+pressing Escape in Windows. (T2-1279)
+
+Error count for services inside a nested workflow could be wrong.
+(T2-1413)
+
+Previous runs of nested workflows could wrongly reappear as an
+individual run. (T2-1469)
+
+Binary data was not always saved correctly on Windows. (T2-1280)
 
 
+Result renderers
+----------------
+Added renderer for TIFF and JPEG2000. (T2-1317)
+
+HTML renderer now follows (absolute) hyperlinks. (T2-1313)
+
+Text renderer no longer scrolls to the bottom. (T2-1248)
+
+Updated RTF renderer. (T2-1320)
+
+SeqVista renderer could break look and feel on Linux. (T2-1369)
+
+Non-functioning URL renderer disabled. (T2-1263)
 
 
+Beanshell/RShell scripts
+------------------------
+Script editors show line number. (T2-1287)
 
-T2-1248 	Workbench - Renderers 	Text renderer scrolls to bottom 
-T2-1263 	Workbench - Renderers 	URL renderer does not work as expected 
-T2-1313 	Workbench - Renderers 	HTML renderer does not work as a proper HTML renderer where you can follow hyperlinks etc. 
-T2-1317 	Workbench - Renderers 	TIFF renderer is needed 
-T2-1320 	Workbench - Renderers 	Rtf renderer renders text as html 
-T2-1369 	Workbench - Renderers 	SeqVista messes up look and feel 
-T2-1469 	Workbench - Provenance previous runs 	Previous Runs of nested workflows wrongly appear if nested workflow was also individually run 
-T2-553 	Workbench - Provenance previous runs 	Provenance does not distinguish between lists and iterations 
+Suggested port names should start at 1, not 0. (T2-1387)
 
-T2-1279 	Workbench - Results panel 	Value-too-large dialogue still renders if pressing Escape in Windows 
-T2-1324 	Workbench - Results panel 	"Save values" should say "Save all values" 
-T2-1413 	Workbench - Results panel 	Error count for processor inside nested workflow is wrong 
-T2-1414 	Workbench - Results panel 	No error count on a nested workflow 
-T2-1416 	Workbench - Results panel 	No indication of which invocation failed 
-T2-1427 	Workbench - Results panel 	Need to distinguish between invocations that error bounced and those that threw an error 
-T2-1459 	Refinement	Workbench - Results panel 	Clicking workflow output port in result graph should select output port results 
-T2-1460 	Workbench - Results panel 	Intermediate values must allow filtering for errors 
-T2-1461 	Workbench - Results panel 	Workflow results must be filterable 
-T2-1280 	Workbench - Results panel Workbench - Workflow runs panel 	Binary data not always loaded/saved correctly 
+Invalid beanshell scripts detected by validation report. (T2-1375)
 
 
+Nested workflows
+----------------
+Import workflow did not always display "Already opened workflows" list
+correctly. (T2-1315)
 
-X service
----------
-T2-1287 	Activity - Beanshell 	Script should show line numbers 
-T2-1375 	Activity - Beanshell 	Beanshell health checker needs tweaking 
-T2-1387 	Activity - Beanshell Activity - RShell 	Ports should start at 1 
-T2-1093 	Activity - Biomart 	Switch BioMart streaming back on 
-T2-674 	Activity - Biomart Activity - Biomoby Activity - Soaplab Activity - WSDL and XML splitter 	Hardcoded default locations 
-T2-1314 	Activity - Nested workflow 	Import workflow window pops up 2 file chooser dialogs 
-T2-1315 	Activity - Nested workflow 	Import workflow window does not display location of the "Already opened window" nicely 
-T2-1376 	Activity - Unrecognized 	Unrecognized activity must be implemented 
-T2-1470 	Activity - WSDL and XML splitter 	WSDL activity can take lone time to fail configuration 
-T2-847 	Activity - WSDL and XML splitter 	XML splitters don't support optional inputs - WSDL minOccurs ignored 
+The dialogue for adding nested workflows did not always disappear.
+(T2-1261)
+
+Import workflow could pop-up 2 file choosers dialogues. (T2-1314)
+
+
+Biomart service
+---------------
+Biomart is streaming results, enabling pipelining for individual rows in
+result. (T2-1093)
+
+
+WSDL service
+------------
+XML splitters support optional and nillable inputs. (T2-847)
+
+Loading a workflow with a WSDL service which is unreachable could take a
+long time while timing out. (T2-1470)
 
 
 myExperiment perspective
 ------------------------
-T2-1185 	Workbench - Perspectives - myExperiment 	myExperiment perspective assumes a t2flow is being uploaded 
-T2-1333 	Workbench - Perspectives - myExperiment 	when myExperiment perspective loads T1 workflows from a file on a disk they appear as T2 workflows on myExperiment Web site 
-T2-1377 	Workbench - Perspectives - myExperiment 	The myExperiment perspective wipes out css settings 
+myExperiment perspective did not upload Taverna 1 workflows correctly.
+(T2-1185, T2-1333)
+
+Using myExperiment perspective could break display of Service Details
+and other HTML-based components. (T2-1377)
 
 
 API changes
 -----------
-T2-1336 	Engine - Workflow model 	Placeholder for semantic annotation 
-T2-1337 	Engine - Workflow model 	Identification chain for dataflows 
+Added a placeholder to keep semantic annotations of workflow components.
+Suggested format is RDF/N3 using <> as subject. (T2-1336)
+
+Workflow definition keeps chain of previous workflow identifiers.
+(T2-1337)
 
 
-
-
-Changes in 2.1.2 (including 2.1.1)
-==================================
+Changes in Taverna 2.1.2 (including 2.1.1)
+==========================================
 
 For a complete list of issues that have been solved for 2.1.2, 
 see http://tinyurl.com/t2-1-2-fixes or
@@ -162,25 +207,27 @@ http://www.mygrid.org.uk/dev/issues/secure/IssueNavigator.jspa?requestId=10154
 
 General user interface
 ----------------------
-Resolved a memory leak for multiple invocations of nested workflows. (T2-1135) 
+Resolved a memory leak for multiple invocations of nested workflows.
+(T2-1135) 
 
-Database cleanup no longer blocks shutdown, done in the background at startup
-instead. (T2-1191)
+Database cleanup no longer blocks shutdown, done in the background at
+startup instead. (T2-1191)
 
-"Do you want to save" dialogue now appears before database shutdown dialogue.
-(T2-1189)
+"Do you want to save" dialogue now appears before database shutdown
+dialogue.  (T2-1189)
 
-Pressing Enter now closes dialogue in "Add new plugin site" (T2-1150) and "Add
-new WSDL/Biomart/Soaplab service" (T2-1149) 
+Pressing Enter now closes dialogue in "Add new plugin site" (T2-1150)
+and "Add new WSDL/Biomart/Soaplab service" (T2-1149) 
 
-Previous workflow runs used to parse every executed workflow at startup, which
-could be slow and error-prone. Now they are parsed individually when a run
-is first selected (T2-1188)  
+Previous workflow runs used to parse every executed workflow at startup,
+which could be slow and error-prone. Now they are parsed individually
+when a run is first selected (T2-1188)  
 
 
 Workflow engine
 ---------------
-Two thread-safety issues with nested workflows were resolved (T2-1137, T2-1124)
+Two thread-safety issues with nested workflows were resolved (T2-1137,
+T2-1124)
 
 "Save value" now saves the correct value after showing "Value too large"
 warning (T2-1147) 
@@ -188,26 +235,27 @@ warning (T2-1147)
 
 Workflow design
 ---------------
-Empty dot and cross products in list handling could cause workflow execution to
-fail, but are now automatically removed when editing the list handling.
-(T2-1101. T2-1100)
+Empty dot and cross products in list handling could cause workflow
+execution to fail, but are now automatically removed when editing the
+list handling.  (T2-1101. T2-1100)
 
 
 Results
 -------
-"Save value" now saves the correct value after switching back to port without
-reselecting value (T2-1156, T2-1147)
+"Save value" now saves the correct value after switching back to port
+without reselecting value (T2-1156, T2-1147)
 
 All renderers are now available, even if not automatically detected.
 Non-detected renderers are grayed out, but still selectable. (T2-1228)
 
-The chosen renderer is now remembered for all items on an output port. (T2-1089)
+The chosen renderer is now remembered for all items on an output port.
+(T2-1089)
 
-It is now possible to force a re-rendering of the result by clicking "Refresh"
-(T2-1227)
+It is now possible to force a re-rendering of the result by clicking
+"Refresh" (T2-1227)
 
-The "Value too large" warning for outputs over 1 MB no longer appear more than
-once when selecting the same value again. (T2-1244)
+The "Value too large" warning for outputs over 1 MB no longer appear
+more than once when selecting the same value again. (T2-1244)
 
 
 WSDL services
@@ -226,15 +274,16 @@ HTTPS protected WSDLs should now work.
 
 Local workers
 -------------
-"Get page/image from URL" now supports HTTPS and Basic/digest authentication
-(T2-1198)
+"Get page/image from URL" now supports HTTPS and Basic/digest
+authentication (T2-1198)
 
 
 Beanshell scripts
 -----------------
 Invalid port names are no longer allowed (T2-1129)
 
-An output port name called the same as an input name is now allowed (T2-1127)
+An output port name called the same as an input name is now allowed
+(T2-1127)
 
 
 RShell script
@@ -244,46 +293,46 @@ The R script was not always saved when clicking 'Apply' (T2-1145)
 
 myExperiment perspective
 ------------------------
-Non-English users now able to log in (avoiding locale-based date parsing)
-(T2-1157)
+Non-English users now able to log in (avoiding locale-based date
+parsing) (T2-1157)
 
 
 Security
 --------
-HTTP Proxy username/password no longer lost if using File -> Open from location
-(T2-1184)
+HTTP Proxy username/password no longer lost if using File -> Open from
+location (T2-1184)
 
-HTTP Basic Auth and HTTP Digest now supported for opening workflows and "Get
-page/image from URL" local worker. (T2-1225, T2-1183)
+HTTP Basic Auth and HTTP Digest now supported for opening workflows and
+"Get page/image from URL" local worker. (T2-1225, T2-1183)
 
-An Apple update to Java 6 on OS X change the default trust store password
-(T2-1094)
+An Apple update to Java 6 on OS X change the default trust store
+password (T2-1094)
 
-Credential manager no longer pops up user interfaces when run outside the
-workbench (T2-1164, T2-698)
+Credential manager no longer pops up user interfaces when run outside
+the workbench (T2-1164, T2-698)
 
 Master password dialogue did not appear in 2.1.1 (T2-1133) 
 
-HTTPS should now generally be supported. A confirmation dialogue will appear if
-an untrusted certificate is used for the first time, and the default Java
-truststore is imported on first run.
+HTTPS should now generally be supported. A confirmation dialogue will
+appear if an untrusted certificate is used for the first time, and the
+default Java truststore is imported on first run.
 
 
 API changes
 -----------
-StartupSPI and ShutdownSPI positionHint flipped, now a low position means early
-execution (T2-1186)
+StartupSPI and ShutdownSPI positionHint flipped, now a low position
+means early execution (T2-1186)
 
-Running Taverna from workbench-dev no longer gives blank perspectives (T2-1190)
+Running Taverna from workbench-dev no longer gives blank perspectives
+(T2-1190)
 
 Credential Manager now exposes a single SPI CredentialProviderSPI, for
 providing master password, certificate approval and username password.
 Workbench implementation pops up dialogues. (T2-1193)
 
 
-
-Changes in 2.1.0 (since 2.1 beta 2)
-===================================
+Changes in Taverna 2.1.0 (since 2.1 beta 2)
+===========================================
 
 For a complete list of issues solved for 2.1.0, see
 http://tinyurl.com/t2-1-0-fixes or
@@ -298,8 +347,8 @@ common workflow editing and running tasks.
 Recent workflows: Taverna now remembers your recently edited workflows
 and you can easily open them.
 
-Notification of updates: Users are now notified when updates to
-Taverna or to a plugin are available.
+Notification of updates: Users are now notified when updates to Taverna
+or to a plugin are available.
 
 
 Editing of workflows
@@ -329,8 +378,8 @@ Services
 Support for security: secured WSDL services can now be called using
 security validated via a credential manager.
 
-Updated R support: the R service now allows connections to an Rserve
-for the latest R (up to 2.10).
+Updated R support: the R service now allows connections to an Rserve for
+the latest R (up to 2.10).
 
 New spreadsheet service: you can import Excel or csv spreadsheets and
 feed the content into your workflow.
@@ -345,15 +394,15 @@ Improved run dialog: The dialog for entering run values now copes with
 complex trees of values.
 
 Saving and reusing values: You can now save and reuse the input values
-for a workflow run.  You can save the output values from a run and
-could use them as inputs for other workflow runs.
+for a workflow run.  You can save the output values from a run and could
+    use them as inputs for other workflow runs.
 
 Output value display: Output values are displayed using the correct
 renderers.  You are now warned if a value is large and could cause
 problems for Taverna.
 
-Output value tree: The tree of output values should now be correct.
-It no longer misses some of the generated data.
+Output value tree: The tree of output values should now be correct.  It
+no longer misses some of the generated data.
 
 Runs: You can now access the data associated with previous runs.  The
 provenance and data from a run can be deleted.
@@ -364,8 +413,8 @@ has finished.
 Provenance and data management: The provenance is now kept in the same
 database as the values.
 
-Improved performance: Workflow execution in 2.1 RC 1 is faster than
-that in 2.1 beta 2.
+Improved performance: Workflow execution in 2.1 RC 1 is faster than that
+in 2.1 beta 2.
 
 
 myExperiment perspective
