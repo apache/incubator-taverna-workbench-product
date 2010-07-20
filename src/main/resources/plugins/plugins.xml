@@ -129,7 +129,7 @@
             <dependency>
                 <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
                 <artifactId>components-plugin</artifactId>
-                <version>${project.version}</version>
+                <version>2.2.1</version>
             </dependency>
         </profile>
         <compatibility>
