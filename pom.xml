@@ -191,6 +191,7 @@
 							</items>
 						</configuration>
 					</plugin>
+<!--
 					<plugin>
 						<artifactId>maven-dependency-plugin</artifactId>
 						<executions>
@@ -206,7 +207,6 @@
 									<overWriteReleases>false</overWriteReleases>
 									<overWriteSnapshots>true</overWriteSnapshots>
 									<artifactItems>
-										<!-- 
 					Produced by first doing a nightly build (-Pnightly) but with this plugin
 					commented out. When unzipping taverna-XXXX-bin.zip the repository/ folder
 					will be missing these artifacts below (mainly due to Raven not merging version
@@ -233,12 +233,12 @@
 					need to redo this procedure, as this means that an artifactItem is adding a file already
 					added by the repositories-component of the assembly plugin. 
 					
-					 -->
 									</artifactItems>
 								</configuration>
 							</execution>
 						</executions>
 					</plugin>
+-->
 					<plugin>
 						<artifactId>maven-assembly-plugin</artifactId>
 						<version>2.2-beta-4</version>
