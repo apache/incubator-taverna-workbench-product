@@ -19,5 +19,6 @@ exec java -Xmx300m -XX:MaxPermSize=140m \
   -Djava.system.class.loader=net.sf.taverna.raven.prelauncher.BootstrapClassLoader \
   -Draven.launcher.app.main=net.sf.taverna.t2.commandline.CommandLineLauncher \
   -Draven.launcher.show_splashscreen=false \
+  -Djava.awt.headless=true \
   -jar "$taverna_home/lib/"prelauncher-*.jar \
   ${1+"$@"}

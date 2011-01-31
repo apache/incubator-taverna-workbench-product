@@ -14,6 +14,7 @@ set ARGS=%ARGS% "-Draven.profile=file:%TAVERNA_HOME%conf/current-profile.xml"
 set ARGS=%ARGS% -Djava.system.class.loader=net.sf.taverna.raven.prelauncher.BootstrapClassLoader 
 set ARGS=%ARGS% -Draven.launcher.app.main=net.sf.taverna.t2.commandline.CommandLineLauncher
 set ARGS=%ARGS% -Draven.launcher.show_splashscreen=false
+set ARGS=%ARGS% -Djava.awt.headless=true
 set ARGS=%ARGS% "-Dtaverna.startup=%TAVERNA_HOME%."
 
 java %ARGS% -jar "%TAVERNA_HOME%lib\prelauncher-2.3-SNAPSHOT.jar" %*
