@@ -380,12 +380,12 @@
 			</snapshots>
 		</repository>
 		<repository>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
 			<id>tupelo2</id>
 			<name>tupelo2</name>
 			<url>http://dlt-dev.ncsa.uiuc.edu/m2</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
 		</repository>
 <!--
 		<repository>
