@@ -13,8 +13,7 @@
             ${m2Repository}
             <repository>http://www.mygrid.org.uk/maven/repository/</repository>
             <repository>http://www.mygrid.org.uk/maven/repo1/</repository>
-            <repository>http://moby.ucalgary.ca/moby_maven/</repository>
-            <repository>http://biomoby.org/m2repo/</repository>
+            <repository>http://www.mygrid.org.uk/maven/biomoby/biomoby.org/m2repo/</repository>            
             <repository>http://repository.jboss.com/maven2/</repository>
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
@@ -45,8 +44,7 @@
             ${m2Repository}
             <repository>http://www.mygrid.org.uk/maven/repository/</repository>
             <repository>http://www.mygrid.org.uk/maven/repo1/</repository>
-            <repository>http://moby.ucalgary.ca/moby_maven/</repository>
-            <repository>http://biomoby.org/m2repo/</repository>
+            <repository>http://www.mygrid.org.uk/maven/biomoby/biomoby.org/m2repo/</repository>            
             <repository>http://repository.jboss.com/maven2/</repository>
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
