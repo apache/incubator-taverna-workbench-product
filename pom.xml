@@ -415,6 +415,8 @@
 			</version>
 			<scope>test</scope>
 		</dependency>
+        <!-- Each of the plugins/ must be included here to ensure their
+        JARs end up in repository/-->
 		<dependency>
 			<groupId>net.sf.taverna.t2.taverna-workbench.plugins
 			</groupId>
@@ -429,6 +431,12 @@
 			<artifactId>translators-plugin</artifactId>
 			<version>${project.version}
 			</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
+			<artifactId>externaltool-plugin</artifactId>
+			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>

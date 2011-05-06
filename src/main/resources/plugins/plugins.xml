@@ -113,6 +113,9 @@
             <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
             <repository>http://ws.zones.apache.org/repository2/</repository>
             <repository>http://www.eviware.com/repository/maven2/</repository>
+			<repository>http://dlt-dev.ncsa.uiuc.edu/m2/</repository>
+			<repository>http://openprovenance.org/java/maven-releases/</repository>
+			<repository>http://openjena.org/repo/</repository>
         </repositories>
         <profile>
             <dependency>
