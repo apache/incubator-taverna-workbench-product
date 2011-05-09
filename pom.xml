@@ -365,39 +365,6 @@
 			</build>
 		</profile>
 	</profiles>
-
-	<repositories>
-		<repository>
-			<id>eviware</id>
-			<name>Eviware repository</name>
-			<url>http://www.eviware.com/repository/maven2/
-			</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>tupelo2</id>
-			<name>tupelo2</name>
-			<url>http://dlt-dev.ncsa.uiuc.edu/m2</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-<!--
-		<repository>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-			<id>opm</id>
-			<name>opm</name>
-			<url>http://openprovenance.org/java/maven-snapshots</url>
-		</repository>
--->
-	</repositories>
 	<dependencies>
 		<dependency>
 			<groupId>net.sf.taverna.t2.taverna-workbench
@@ -442,12 +409,6 @@
 		<dependency>
 			<groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
 			<artifactId>provenanceconnectors-plugin</artifactId>
-			<version>${project.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
-			<artifactId>externaltool-plugin</artifactId>
 			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
