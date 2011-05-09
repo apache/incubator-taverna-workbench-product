@@ -446,6 +446,12 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+			<groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
+			<artifactId>externaltool-plugin</artifactId>
+			<version>${project.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
 			<groupId>net.sf.taverna.t2.taverna-commandline</groupId>
 			<artifactId>taverna-commandline-common</artifactId>
 			<version>${t2.taverna-commandline.version}</version>
