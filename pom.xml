@@ -1210,6 +1210,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/org/slf4j/slf4j-parent/1.5.8</outputDirectory>
                                 </artifactItem>
+                                <!-- 
                                 <artifactItem>
                                     <groupId>org.tupeloproject</groupId>
                                     <artifactId>tupelo-all</artifactId>
@@ -1266,6 +1267,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-util/2.4.3</outputDirectory>
                                 </artifactItem>
+                                 -->
                                 <artifactItem>
                                     <groupId>oro</groupId>
                                     <artifactId>oro</artifactId>
@@ -2586,6 +2588,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/org/slf4j/slf4j-parent/1.5.8</outputDirectory>
                                 </artifactItem>
+                                <!-- 
                                 <artifactItem>
                                     <groupId>org.tupeloproject</groupId>
                                     <artifactId>tupelo-all</artifactId>
@@ -2642,6 +2645,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-util/2.4.3</outputDirectory>
                                 </artifactItem>
+                                 -->                                
                                 <artifactItem>
                                     <groupId>oro</groupId>
                                     <artifactId>oro</artifactId>
@@ -2978,7 +2982,8 @@
 			<name>Odftoolkit Repository</name>
 			<url>http://odftoolkit.org/svn/odfdom~maven2/release/</url>
 			<releases>						
-				<checksumPolicy>fail</checksumPolicy>
+				<checksumPolicy>fail</checksumPolicy>				
+				<updatePolicy>never</updatePolicy>
 			</releases>
 			<snapshots>
 				<enabled>false</enabled>				
