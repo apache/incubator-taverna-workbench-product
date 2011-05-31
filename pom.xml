@@ -2975,7 +2975,6 @@
 		</dependency>
 	</dependencies>
 	<repositories>
-	<repositories>
 		<repository>
 			<id>mygrid-repository</id>
 			<name>myGrid Repository</name>
