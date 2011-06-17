@@ -8,6 +8,8 @@
 			<includeMetadata>true</includeMetadata>
 			<outputDirectory>repository</outputDirectory>
 			<scope>test</scope>
+			<fileMode>0644</fileMode>
+			<directoryMode>0755</directoryMode>
 		</repository>
 	</repositories>
 </component>

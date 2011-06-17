@@ -12,7 +12,12 @@
 				<exclude>conf/current-profile.xml</exclude>
 				<exclude>plugins/plugins.xml</exclude>
 				<exclude>plugins/plugin-sites.xml</exclude>
+				<exclude>taverna.sh</exclude>
+				<exclude>executeworkflow.sh</exclude>
 			</excludes>
+			<fileMode>0644</fileMode>			
+			<directoryMode>0755</directoryMode>
+			<lineEnding>keep</lineEnding>			
 		</fileSet>
 		<fileSet>
 			<!--
@@ -22,28 +27,47 @@
 			-->
 			<directory>${project.build.directory}/repository</directory>
 			<outputDirectory>/repository</outputDirectory>
+			<fileMode>0644</fileMode>
+			<directoryMode>0755</directoryMode>
 		</fileSet>
 	</fileSets>
 	<files>
 		<file>
+			<source>src/main/resources/taverna.sh</source>
+			<outputDirectory>/</outputDirectory>
+			<fileMode>0755</fileMode>
+			<lineEnding>lf</lineEnding>
+		</file>
+		<file>
+			<source>src/main/resources/executeworkflow.sh</source>
+			<outputDirectory>/</outputDirectory>
+			<fileMode>0755</fileMode>
+			<lineEnding>lf</lineEnding>
+		</file>
+
+		<file>
 			<source>src/main/resources/conf/raven-launcher.properties</source>
 			<outputDirectory>/conf</outputDirectory>
 			<filtered>true</filtered>
+			<fileMode>0644</fileMode>
 		</file>
 		<file>
 			<source>src/main/resources/conf/current-profile.xml</source>
 			<outputDirectory>/conf</outputDirectory>
 			<filtered>true</filtered>
+			<fileMode>0644</fileMode>
 		</file>
 		<file>
 			<source>src/main/resources/plugins/plugins.xml</source>
 			<outputDirectory>/plugins</outputDirectory>
 			<filtered>true</filtered>
+			<fileMode>0644</fileMode>			
 		</file>
 		<file>
 			<source>src/main/resources/plugins/plugin-sites.xml</source>
 			<outputDirectory>/plugins</outputDirectory>
 			<filtered>true</filtered>
+			<fileMode>0644</fileMode>
 		</file>
 	</files>
 </component>
