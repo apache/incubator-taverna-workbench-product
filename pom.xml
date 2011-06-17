@@ -25,7 +25,7 @@
 			</activation>
 			<properties>
 				<!-- To be inserted into plugins.xml -->
-				<m2Repository>&lt;repository&gt;file:/${user.home}/.m2/repository/&lt;/repository&gt;</m2Repository>
+				<m2Repository>&lt;repository&gt;file:/${settings.localRepository}/&lt;/repository&gt;</m2Repository>
 			</properties>
 			<build>
 				<finalName>taverna-dev-${project.version}-${buildNumber}</finalName>
@@ -97,7 +97,7 @@
 			</activation>
 			<properties>
 				<!-- To be inserted into plugins.xml -->
-				<m2Repository>&lt;repository&gt;file:${user.home}/.m2/repository/&lt;/repository&gt;</m2Repository>
+				<m2Repository>&lt;repository&gt;file:${settings.localRepository}/&lt;/repository&gt;</m2Repository>
 			</properties>
 			<build>
 				<finalName>taverna-dev-${project.version}-${buildNumber}</finalName>
