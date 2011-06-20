@@ -141,7 +141,7 @@
             ${m2Repository}
             <repository>http://www.mygrid.org.uk/maven/repository/</repository>
             <repository>http://www.mygrid.org.uk/maven/repo1/</repository>
-            <repository>http://repository.jboss.com/maven2/</repository>
+            <repository>http://repo.fusesource.com/maven2-all</repository>
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
             <repository>http://ws.zones.apache.org/repository2/</repository>
