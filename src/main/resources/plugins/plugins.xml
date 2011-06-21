@@ -70,7 +70,7 @@
         <identifier>net.sf.taverna.t2.activities.external-tool-activity</identifier>
 		<version>${project.version}-${buildNumber}</version>
         <name>External tool service (required)</name>
-        <description>Taverna 2 External tool service</description>
+        <description>Taverna 2 Tool service</description>
         <enabled>true</enabled>
         <repositories>
             ${m2Repository}
