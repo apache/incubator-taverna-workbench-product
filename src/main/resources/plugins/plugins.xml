@@ -160,6 +160,36 @@
             </application>
         </compatibility>
     </plugin>
+        <plugin>
+        <provider>taverna.sf.net</provider>
+        <identifier>net.sf.taverna.t2.servicecatalogue</identifier>
+		<version>${project.version}-${buildNumber}</version>
+        <name>Service catalogue (required)</name>
+        <description>Taverna 2 service catalogue.</description>
+        <enabled>true</enabled>
+        <repositories>
+            ${m2Repository}
+            <repository>http://www.mygrid.org.uk/maven/repository/</repository>
+            <repository>http://www.mygrid.org.uk/maven/repo1/</repository>
+            <repository>http://repo.fusesource.com/maven2-all</repository>
+            <repository>http://download.java.net/maven/2/</repository>
+            <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
+            <repository>http://ws.zones.apache.org/repository2/</repository>
+            <repository>http://www.eviware.com/repository/maven2/</repository>
+        </repositories>
+        <profile>
+            <dependency>
+                <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
+                <artifactId>servicecatalogue-plugin</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </profile>
+        <compatibility>
+            <application>
+                <version>${project.version}</version>
+            </application>
+        </compatibility>
+    </plugin>
     <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.commandline</identifier>
