@@ -217,10 +217,10 @@
 					differences). To find out which ones, start run.sh once, and then 
 					in .taverna-123123123/repository/ run:
 
-					stain@ralph ~/AppData/Roaming/taverna-2.1-beta-3-SNAPSHOT-20091117/repository
+					stain@ralph ~/AppData/Roaming/taverna-2.1-beta-3-20091117/repository
 					$ find -type f > $HOME/files
 					
-					stain@ralph ~/AppData/Roaming/taverna-2.1-beta-3-SNAPSHOT-20091117/repository
+					stain@ralph ~/AppData/Roaming/taverna-2.1-beta-3-20091117/repository
 					$ cd
 		
 					stain@ralph ~
@@ -321,10 +321,10 @@
 					differences). To find out which ones, start run.sh once, and then 
 					in .taverna-123123123/repository/ run:
 
-					stain@ralph ~/AppData/Roaming/taverna-2.1-beta-3-SNAPSHOT-20091117/repository
+					stain@ralph ~/AppData/Roaming/taverna-2.1-beta-3-20091117/repository
 					$ find -type f > $HOME/files
 					
-					stain@ralph ~/AppData/Roaming/taverna-2.1-beta-3-SNAPSHOT-20091117/repository
+					stain@ralph ~/AppData/Roaming/taverna-2.1-beta-3-20091117/repository
 					$ cd
 		
 					stain@ralph ~
