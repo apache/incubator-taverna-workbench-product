@@ -56,6 +56,8 @@ files = open("files")
 for file in files:
     matches = pathPattern.match(file) 
     #print matches.groups()
+    if not matches:
+        continue
     groupIDPath = matches.group(1)
     groupID = groupIDPath.replace("/", ".")
     artifactID = matches.group(2)
