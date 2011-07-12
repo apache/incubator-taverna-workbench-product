@@ -1,64 +1,93 @@
 =======================
-Taverna workbench 2.2.0
+Taverna workbench 2.3.0
 =======================
 http://www.taverna.org.uk/
 http://www.mygrid.org.uk/
 
-Released by myGrid, 2010-07-05
-(c) Copyright 2005-2010 University of Manchester, UK
+Released by myGrid, 2011-07-12
+(c) Copyright 2005-2011 University of Manchester, UK
 
 
 Licence
 =======
 Taverna is licenced under the GNU Lesser General Public Licence. (LGPL) 2.1.
-See the file LICENCE.txt for details.
+See the file LICENCE.txt or http://www.gnu.org/licenses/lgpl-2.1.html for
+details.
 
 If the source code was not included in this download, you can download it from
+http://www.taverna.org.uk/download/workbench/2-3/#download-source or 
 http://www.taverna.org.uk/download/source-code/
 
 Taverna uses various third-party libraries that are included under compatible
-open source licences such as Apache Licence.
+open source licences such as the Apache Licence.
 
 
 Running Taverna
 ===============
-For Windows, if you used the installer you should have 
-Taverna->Taverna workbench 2.2.0 in your Start menu. If you used the
-self-extracting archive, double-click on "taverna.exe" in the extracted folder.
 
-For OS X, copy the Taverna application bundle to /Applications or your
+Windows
+-------
+If you used the installer you should have Taverna->Taverna workbench 2.3.0 in
+your Start menu. If you used the self-extracting archive, double-click on
+"taverna.exe" in the extracted folder.
+
+If you used the installer, it should have checked that you have a recent
+version of Java installed. See "Requirements" below.
+
+
+Mac OS X
+--------
+Running Taverna on a Mac requires Mac OS X 10.5 or later with the latest
+updates installed for Java 6. 32-bit machines will need 10.6 or later.
+
+Copy the "Taverna" application bundle to /Applications or a folder of your
 preference. Eject the disk image, and run Taverna from the installed location.
 
+You might also need to install Graphviz as it is no longer bundled with Taverna. 
+See "Requirements" below.
+
+
+Linux
+-----
 For Linux, either double-click on "taverna.sh", or start a Terminal and execute
 "./taverna.sh" or "sh taverna.sh" from the folder where you extracted Taverna.
+
+You will need to have Graphviz and Oracle's Java runtime installed. See
+"Requirements" below.
+
 
 Documentation
 =============
 See http://www.taverna.org.uk/documentation/taverna-2-x/ for
 documentation and tutorials on using Taverna.
 
-See the file known-issues.txt for known issues with this release, and the file
-release-notes.txt for improvements since the previous version of Taverna.
+See http://www.mygrid.org.uk/dev/wiki/display/taverna23/User+Manual for the
+Taverna 2.3 user manual.
+
+See the file ''known-issues.txt'' for known issues with this release, and the
+file ''release-notes.txt'' for improvements since the previous version of
+Taverna.
 
 
 Examples
 ========
-Example Taverna 2.2 workflows can be found in the myExperiment starter pack at
-http://www.myexperiment.org/packs/122
+Example Taverna 2.3 workflows can be found in the myExperiment starter pack at
+http://www.myexperiment.org/packs/192
 
 You can also access these as the tab 'Starter pack' under the *myExperiment*
 view inside Taverna.
 
 You can share and find other workflows at http://www.myexperiment.org/
 
-You can find and describe web services at http://www.biocatalogue.org/
+You can find and describe web services in life sciences at
+http://www.biocatalogue.org/
 
 
 Support
 =======
 See http://www.taverna.org.uk/about/contact-us/ for contact details.
 
-You may email support@mygrid.org.uk for any questions on using Taverna
+You may email <support@mygrid.org.uk> for any questions on using Taverna
 workbench. myGrid's support team should respond to your query within a 
 week.
 
@@ -95,7 +124,7 @@ team would appreciate if you do, as it would:
 
 By registering, you will *not* be giving us access to your data or service
 usage. We will *not* be monitoring your usage of Taverna, we will only record
-the information you provide at registration time.
+the information you provide in the registration form.
 
 For full terms and condition of our registration, see
 http://www.taverna.org.uk/about/legal-stuff/terms/
@@ -103,27 +132,57 @@ http://www.taverna.org.uk/about/legal-stuff/terms/
 
 Requirements
 ============
-Taverna requires the Java Runtime Environment (JRE) version 5 or 6 from Sun.
-No other versions of Java are officially tested with Taverna. 
 
-*Note that future versions of Taverna will require Java 6.*
+Graphviz
+--------
+The external tool Graphviz ( http://www.graphviz.org/ ) is used for generating
+the workflow diagram in Taverna. A version of Graphviz is bundled in the
+Windows install, while Linux and Mac OS X users will need to install Graphviz
+separately.
 
-Mac OS X 10.5 (Leopard) and later should come with Java 5 or newer.  
+For OS X, see http://www.graphviz.org/Download_macos.php where you can download
+the *current stable release* for your operating system.
 
-Windows users might need to download Java from http://java.com/
+For Linux, most distributions have a way to install Graphviz. For Ubuntu, try:
+  sudo apt-get install graphviz
+
+For other distributions, see http://www.graphviz.org/Download.php for
+instructions. Please note that you do *not* need the Grappa java library.
+
+In most cases Taverna should be able to pick up the location of the Graphviz
+binary "dot" from the PATH, if this is not the case, see
+http://www.mygrid.org.uk/dev/wiki/display/taverna/Workbench+preferences on how
+to configure the location of "dot".
+
+
+Java
+-----
+Taverna requires the Java Runtime Environment (JRE) version 6 or later from
+Oracle.  No other versions of Java are officially tested with Taverna. 
+
+Windows users might need to download Java from http://java.com/ - but in most
+cases the Taverna installer would already have checked if Java is installed.
 
 Linux users have different options to install Java depending on their Linux
 distribution. Some distributions, such as Ubuntu, might come with alternative
 open source implementations of Java, like Gnu GCJ and OpenJDK. We've identified
 some issues with these implementations, and recommend using the official Java
-implementation from Sun. 
+implementation from Sun/Oracle. 
 
-To download Sun Java 6 for Ubuntu, start a Terminal, and type the following:
-  sudo aptitude install sun-java6-jre
+To download Oracle Java 6 for Ubuntu, start a Terminal, and type the following:
+  sudo apt-get install sun-java6-jre
 
 and follow the instructions. You might also need to change the default Java
 implementation by running:
   sudo update-alternatives --config java
+
+To check your version of Java on the command line, try:
+
+  $ java -version
+  java version "1.6.0_22"
+  Java(TM) SE Runtime Environment (build 1.6.0_22-b04)
+  Java HotSpot(TM) 64-Bit Server VM (build 17.1-b03, mixed mode)
+
 
 Read http://www.taverna.org.uk/download/workbench/system-requirements/
 for more requirement details.
@@ -165,12 +224,8 @@ you will have to install the policy files again in the appropriate directory of
 your new Java installation.
 
 For Java 6, you can download the unlimited cryptography policy jar files from:
-  http://tinyurl.com/java6sec    -or- 
+  http://tinyurl.com/java6sec    -or-
   https://cds.sun.com/is-bin/INTERSHOP.enfinity/WFS/CDS-CDS_Developer-Site/en_US/-/USD/ViewProductDetail-Start?ProductRef=jce_policy-6-oth-JPR@CDS-CDS_Developer
-
-For Java 5, you can download the unlimited cryptography policy jar files from:
-  http://tinyurl.com/java5sec    -or- 
-  https://cds.sun.com/is-bin/INTERSHOP.enfinity/WFS/CDS-CDS_Developer-Site/en_US/-/USD/ViewProductDetail-Start?ProductRef=jce_policy-1.5.0-oth-JPR@CDS-CDS_Developer
 
 
 Advanced
@@ -193,19 +248,21 @@ Advanced->Show Log Folder in the menu.
 
 See:
 
+    Windows 7/Vista: C:\Users\JohnDoe\AppData\Roaming\taverna-2.3.0\logs
+
     Windows XP: C:\Documents and settings\JohnDoe\
-                   Application Data\taverna-2.2.0\logs
+                   Application Data\taverna-2.3.0\logs
 
-    Vista/Windows 7: C:\Users\JohnDoe\AppData\Roaming\taverna-2.2.0\logs
 
-    OS X: /Users/JohnDoe/Library/Application support/taverna-2.2.0/logs
+    OS X: /Users/JohnDoe/Library/Application support/taverna-2.3.0/logs
 
-    Linux: /home/johndoe/.taverna-2.2.0/logs
+    Linux: /home/johndoe/.taverna-2.3.0/logs
 
 Note that "Application data" and "AppData" are hidden folders in Windows.
 
 To modify the log levels, edit "conf/log4j.properties" in the Taverna
 installation folder.
+
 
 Default services and plugins
 ----------------------------
@@ -225,8 +282,9 @@ append the installation directory's "repository".
 Memory usage 
 ------------
 For OS X and Linux, Taverna will use a maximum of 400 MB. In Windows,
-"taverna-debug.bat" will also use 400 MB, while "taverna.exe" will use
-400 MB or up to 50% of available memory when launching Taverna.
+"taverna-debug.bat" will also use 400 MB, while "taverna.exe" will use up to
+400 MB or, if higher, 15% of available memory at the point of launching
+Taverna.
 
 If Taverna happens to run out of memory while running a workflow with
 large data (or large number of data), you can set Taverna to store data
@@ -235,6 +293,10 @@ the tick for "In-memory storage". This will reduce execution speed
 slightly, but should consume less memory. Also remember to click
 'Remove' on old runs you are no longer interested in.
 
+http://www.mygrid.org.uk/dev/wiki/display/taverna/Data+and+provenance+preferences
+has more details on the data settings.
+
+
 If you need to increase the available memory, edit "taverna.sh" or
 "taverna-debug.bat" and replace "-Xmx400m" with say "-Xmx600m" to use
 600 MiB.
@@ -242,3 +304,6 @@ If you need to increase the available memory, edit "taverna.sh" or
 For OS X you would need to right click on "Taverna.app" and go inside
 the application bundle to edit Contents/Info.plist and change the same
 parameter using the Property List Editor.
+
+http://www.mygrid.org.uk/dev/wiki/display/taverna/Increase+memory+allocation
+has more details on memory allocation.
