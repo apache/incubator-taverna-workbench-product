@@ -1,8 +1,8 @@
 <launch4jConfig>
   <dontWrapJar>true</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>lib\prelauncher-2.1.jar</jar>
-  <outfile>C:\Users\stain\Data\Desktop\taverna-workbench-2.1.2\taverna.exe</outfile>
+  <jar>lib\prelauncher-2.3.jar</jar>
+  <outfile>E:\3\taverna.exe</outfile>
   <errTitle>Could not start Taverna</errTitle>
   <cmdLine></cmdLine>
   <chdir>.</chdir>
@@ -14,16 +14,18 @@
   <manifest></manifest>
   <icon>launcher_logo.ico</icon>
   <singleInstance>
-    <mutexName>taverna212</mutexName>
-    <windowTitle>Taverna workbench 2.1.2</windowTitle>
+    <mutexName>taverna230</mutexName>
+    <windowTitle>Taverna workbench 2.3.0</windowTitle>
   </singleInstance>
   <jre>
     <path></path>
-    <minVersion>1.5.0</minVersion>
+    <minVersion>1.6.0</minVersion>
     <maxVersion></maxVersion>
-    <jdkPreference>preferJdk</jdkPreference>
-    <maxHeapSize>300</maxHeapSize>
-    <maxHeapPercent>50</maxHeapPercent>
+    <jdkPreference>preferJre</jdkPreference>
+    <initialHeapSize>150</initialHeapSize>
+    <initialHeapPercent>5</initialHeapPercent>
+    <maxHeapSize>400</maxHeapSize>
+    <maxHeapPercent>15</maxHeapPercent>
     <opt>-XX:MaxPermSize=140m</opt>
     <opt>-Draven.profile=file:conf/current-profile.xml</opt>
     <opt>-Djava.system.class.loader=net.sf.taverna.raven.prelauncher.BootstrapClassLoader</opt>
@@ -37,12 +39,12 @@
     <timeoutErr>true</timeoutErr>
   </splash>
   <versionInfo>
-    <fileVersion>2.1.2.0</fileVersion>
-    <txtFileVersion>2.1.2</txtFileVersion>
+    <fileVersion>2.3.0.0</fileVersion>
+    <txtFileVersion>2.3.0</txtFileVersion>
     <fileDescription>Taverna workbench</fileDescription>
-    <copyright>2002-2010 University of Manchester, UK</copyright>
-    <productVersion>2.1.2.0</productVersion>
-    <txtProductVersion>2.1.2</txtProductVersion>
+    <copyright>2002-2011 University of Manchester, UK</copyright>
+    <productVersion>2.3.0.0</productVersion>
+    <txtProductVersion>2.3.0</txtProductVersion>
     <productName>Taverna workbench</productName>
     <companyName>myGrid</companyName>
     <internalName>taverna</internalName>
