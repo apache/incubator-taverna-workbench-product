@@ -1,3 +1,247 @@
+Changes in Taverna 2.3.0
+========================
+
+The major changes are the addition of REST, XPath and Tool services,
+the addition of the Service Catalogue perspective, and the ability to
+export a workflow run as OPM or Janus.
+
+For a complete list of issues that have been solved for Taverna 2.3.0
+(including those for 2.2.1 and 2.2.2) see
+http://www.mygrid.org.uk/dev/issues/secure/IssueNavigator.jspa?mode=hide&requestId=10221
+
+
+General user interface
+----------------------
+Control-click now works on Macs (T2-237)
+
+User-friendly way of reporting bugs (T2-549)
+
+The open workflow dialog has been slightly improved (T2-731)
+
+"Save diagram" has been renamed to "Export diagram" (T2-738)
+
+"Open location" icon is now available in the toolbar (T2-752)
+
+The top level icons have been ordered to agree with the corresponding
+menu items (T2-753)
+
+The Credential Manager checks for previous versions of Taverna
+and asks the user to import old Keystore/Truststore (T2-944)
+
+Empty service providers can now be removed (T2-1151)
+
+Important notice mechanism added (T2-1282)
+
+Reduction in the size of the registration dialog (T2-1302)
+
+The "Save as" dialog now suggests a name (T2-1318)
+
+Help is now shown in a standard browser, fixing many issues (T2-1518
+and T2-1706)
+
+A problem with service configuration dialog text has been fixed
+(T2-1592)
+
+Users can now see the "Application data" directory (T2-1612)
+
+Taverna now uses the standard SwingWorker (T2-1683)
+
+The service panel now allows services with identical names (T2-1714)
+
+Taverna now handles up-to-date dot (T2-1874)
+
+A possible ConcurrentModificationException in the service description
+registry has been removed (T2-1894)
+
+Improved icons are used for most dialogs (T2-1914)
+
+
+Workflow engine
+---------------
+Workflow runs are now removed from memory when deleted
+(T2-1531 and T2-1596)
+
+Job queues are cleared by the dispatch stack (T2-1597) and cross
+product, dot product, strategy nodes and the crystalizer no longer cache (T2-1598,
+T2-1599, T2-1601, T2-1602)
+
+The memory footprint of references has been greatly reduced (T2-1600)
+
+Some mySQL provenance problems have been fixed (T2-1605)
+
+The remote health checker tries a GET if the HEAD fails (T2-1679)
+
+Out-of-date annotations are removed when a workflow is serialized
+(T2-1697)
+
+A thread deadlock when running nested workflows in parallel has been
+fixed (T2-1713)
+
+The run-deletion thread no longer hangs (T2-1759)
+
+The timeouts for the plugin manager etc. have been reduced (T2-1783
+and T2-1784)
+
+
+Workflow design
+---------------
+The links within the workflow explorer are now ordered (T2-238)
+
+The name of the current workflow is shown on the diagram border
+(T2-473); this makes editing a nested workflow less confusing (T2-791)
+
+Undo now unselects a removed processor/port/merge (T2-517)
+
+Validation errors are given if the tested output port involved in
+making a service loop is not connected within the workflow. (T2-641)
+
+The iteration strategy editing has been improved (T2-813)
+
+Can now drag a link to a merge (T2-845)
+
+The details panel attempts to show the same type of information as
+previously shown (T2-1489)
+
+Nested workflow labels are now shown corrected (T2-1654)
+
+Opening a workflow that uses HTTPS no longer hangs the UI (T2-1659)
+
+An empty workflow is no longer indicated in the workflow explorer as
+having problems (T2-1717)
+
+Selection of the next annotation field has been improved (T2-1730)
+
+The zoom-related actions now correctly change with the selection of a
+workflow (T2-1813)
+
+An exception is now shown when addition of a service to the workflow
+fails (T2-1850)
+
+Larger example values can now be specified (T2-1872)
+
+Import workflow no longer throws null pointer exceptions (T2-1915)
+
+
+Running workflows
+-----------------
+Merging of lists to feed a service that expects a single input value
+now works (T2-1423)
+
+Pausing a workflow now changes the icon to paused (T2-1530)
+
+Workflow run progress monitor no longer stores a node for each service
+invocation (T2-1603)
+
+Suggested solutions for failed HTTPS client authentication have been
+added (T2-1738 and T2-1740)
+
+The credential manager now delays asking for passwords until it is
+needed (T2-1743)
+
+Users can specify the character encoding and data type of input data
+(T2-1750)
+
+When the first attempt to give a password for the credential manager
+fails, it now accepts a correct password (T2-1907)
+
+
+Results
+-------
+You can now edit the executed workflow that caused a workflow run
+(T2-1016)
+
+Deleting a workflow run now moves to the next entry (T2-1323)
+
+The save data dialog has been improved (T2-1498)
+
+The ordering of data for previous runs is correct (T2-1514)
+
+Expansion triangles are shown for top-level data and invocations
+(T2-1515)
+
+The split pane jumps around less (T2-1516)
+
+
+Result renderers
+----------------
+Tick box for wrapping result text (T2-633)
+
+Save as OPM and Save as Janus are now available for a workflow run
+(T2-969)
+
+The hex renderer is now read-only (T2-1569)
+
+The rendering of error documents containing HTML has been improved
+(T2-1641)
+
+A PDF and an improved HTML (open in browser) renderer have been added
+(T2-1712)
+
+Virtual machine objects can now be rendered as their string
+representation (T2-1859)
+
+
+Beanshell/RShell scripts
+------------------------
+The scripts now accept Alt-keystrokes on the Mac (T2-425)
+
+The Beanshell interpreter now clears its variable bindings (T2-1480)
+
+Existing scripts are shown when loading and saving (T2-1499)
+
+The text of the check script dialog has been improved (T2-1664)
+
+R expressions can now be passed (T2-1695)
+
+R services now use the credential manager to handle authorization
+(T2-1698)
+
+
+BioMart services
+----------------
+A NullPointerException is no longer thrown when datasets referenced by
+filters are missing not when attributes are missing (T2-1513, T2-1913)
+
+
+BioMoby services
+----------------
+The BioMoby port names are now coped with better in provenance
+(T2-602 and T2-1529)
+
+BioMoby no longer pops up an error message at startup (T2-1496)
+
+The BioMart service provider now loads its services in chunks (T2-1785)
+
+
+Local services
+--------------
+Select and Choose LocalWorkers now throw an exception for an empty
+list of values (T2-298)
+
+Some local services were changed to close streams (T2-1684)
+
+"Get image from URL" no longer reads contents twice (T2-1685)
+
+A new "Transform XML with parameters" service has been addded
+(T2-1693)
+
+"Read text file" can now take an encoding (T2-1750)
+
+
+SoapLab services
+----------------
+The URL dialog now copes with the lack of a trailing / (T2-1787)
+
+
+WSDL services
+-------------
+Operations that Taverna could not run are no longer shown in the
+service panel (T2-1116)
+
+XML attributes of top-level SOAP elements are no longer stripped out
+(T2-1606)
+
+
 Changes in Taverna 2.2.0
 ========================
 
@@ -39,9 +283,8 @@ individual service iterations. (T2-875)
 
 Intermediate values display empty lists correctly. (T2-1019)
 
-Intermediate values supports workflows and services which has an
+Intermediate values now support workflows and services which have an
 input port with the same name as an output port. (T2-1051)
-
 
 Workflow design
 ---------------
@@ -129,9 +372,11 @@ individual run. (T2-1469)
 
 Binary data was not always saved correctly on Windows. (T2-1280)
 
+Save all is now available for an iteration (T2-1751)
 
 Result renderers
 ----------------
+
 Added renderer for TIFF and JPEG2000. (T2-1317)
 
 HTML renderer now follows (absolute) hyperlinks. (T2-1313)
