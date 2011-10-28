@@ -3004,7 +3004,7 @@
 			 -->
 			<id>odftoolkit</id>
 			<name>Odftoolkit Repository</name>
-			<url>http://odftoolkit.org/svn/odfdom~maven2/release/</url>
+			<url>https://svn.odftoolkit.org/svn/odfdom~maven2/release</url>
 			<releases>						
 				<checksumPolicy>fail</checksumPolicy>				
 				<updatePolicy>never</updatePolicy>
