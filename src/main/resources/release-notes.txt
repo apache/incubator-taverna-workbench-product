@@ -1,3 +1,149 @@
+Changes in Taverna 2.4.0
+========================
+
+Taverna 2.4.0 includes a major extension to the functionality of
+string constant (now renamed text constant) and a number of bug fixes.
+
+Credential Manager
+------------------
+
+Updating of the master password now works correctly (T2-2004)
+
+Run dialog
+----------
+
+Users can now use all the example values with one click (T2-2079)
+
+The minimization of the run dialog has been changed (T2-2005)
+
+Previously, the run dialog could get confused if, after the workflow
+had been run, ports were removed from the workflow or
+renamed. (T2-2060)
+
+myExperiment Perspective
+------------------------
+
+The My Stuff tab now shows all of a user's objects (T2-2000)
+
+The default sharing license now agrees with the default on the
+myExperiment web site (T2-2008)
+
+The myExperiment Perspective has been changed to use the credential
+manager (T2-2010)
+
+The myExperiment Perspective is more tolerant of different date
+formats (T2-2020)
+
+Service Catalogue Perspective
+-----------------------------
+
+The search box is now shown in small windows (T2-1948)
+
+The details of services are now displayed correctly (T2-2001)
+
+Workflow design
+---------------
+
+The list handling and annotation of a service can now be done by
+r-clicking on a service (T2-2077 and T2-2078)
+
+Saving a workflow now uses temporary files, so that it it fails it
+does not lose the original workflow (T2-1998)
+
+The workflow title is now limited in length (T2-2002)
+
+Worklow run
+-----------
+
+The display of error documents that contain HTML has been improved
+(T2-1641)
+
+Saving data now closes streams correctly (T2-1997)
+
+The HTML renderer now uses the standard Desktop mechanism (T2-1999)
+
+Annotations
+-----------
+
+Annotations of services are now displayed correctly (T2-2009)
+
+Beanshell service
+-----------------
+
+The background colour for text has been changed to make it more
+readable (T2-1984)
+
+BioMoby service
+---------------
+
+The registries have now been changed to point at INAB (T2-1983)
+
+REST service
+------------
+
+The default port for HTTPS has been corrected (T2-2022)
+
+The REST service can now return the URL that was created by the
+replacement of the parameters with the input values (T2-2023)
+
+The REST service can now return the headers of the reponse. (T2-2064)
+
+Header values can now be parameterized. The parameters can be set by
+passing values into the corresponding port of the service. (T2-2072)
+
+SoapLab service
+---------------
+
+The SoapLab service will now fail if the invoked service does not
+return enough data (T2-1994)
+
+Text constant service
+---------------------
+
+The string constant service has been replaced by the text constant
+service. The text constant service allows the entry of multi-line text
+values, and the text can be loaded from and stored to a file.
+
+Tool service
+------------
+
+The SSH connection values are now displayed correctly (T2-1946)
+
+Static URLs are now serialized correctly in tool descriptions
+(T2-1976)
+
+Configuration now works in Java 1.7 (T2-1985)
+
+The help location for the tool service has been corrected (T2-1986)
+
+The tool service prevents ports being created that overlap with the
+standard ports (T2-1987)
+
+The tool service now handles binary data (T2-1988 and T2-1981).
+
+The tool service now has the option to retrieve data as soon as the
+tool invocation has finished. (T2-2003)
+
+The tool service has been made more thread-safe. (T2-2028)
+
+WSDL service
+------------
+
+The XML splitters and WSDL service now inherit through extension
+(T2-511, T2-872 and T2-1109)
+
+Descriptions for WSDL services are now extracted from the WSDL
+document (T2-1990)
+
+Annotations on web service ports are now included in the corresponding
+XML splitters (T2-2007)
+
+XPath service
+-------------
+
+The XPath service no longer reports problems with attribute namespaces
+(T2-2018)
+
 Changes in Taverna 2.3.0
 ========================
 

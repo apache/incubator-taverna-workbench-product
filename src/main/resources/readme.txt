@@ -1,5 +1,5 @@
 =======================
-Taverna workbench 2.3.0
+Taverna workbench 2.4.0
 =======================
 http://www.taverna.org.uk/
 http://www.mygrid.org.uk/
@@ -27,7 +27,7 @@ Running Taverna
 
 Windows
 -------
-If you used the installer you should have Taverna->Taverna workbench 2.3.0 in
+If you used the installer you should have Taverna->Taverna workbench 2.4.0 in
 your Start menu. If you used the self-extracting archive, double-click on
 "taverna.exe" in the extracted folder.
 
@@ -61,8 +61,8 @@ Documentation
 See http://www.taverna.org.uk/documentation/taverna-2-x/ for
 documentation and tutorials on using Taverna.
 
-See http://www.mygrid.org.uk/dev/wiki/display/taverna23/User+Manual for the
-Taverna 2.3 user manual.
+See http://www.mygrid.org.uk/dev/wiki/display/taverna24/User+Manual for the
+Taverna 2.4 user manual.
 
 See the file ''known-issues.txt'' for known issues with this release, and the
 file ''release-notes.txt'' for improvements since the previous version of
@@ -71,8 +71,8 @@ Taverna.
 
 Examples
 ========
-Example Taverna 2.3 workflows can be found in the myExperiment starter pack at
-http://www.myexperiment.org/packs/192
+Example Taverna 2.4 workflows can be found in the myExperiment starter pack at
+http://www.myexperiment.org/packs/254
 
 You can also access these as the tab 'Starter pack' under the *myExperiment*
 view inside Taverna.
@@ -224,9 +224,10 @@ you will have to install the policy files again in the appropriate directory of
 your new Java installation.
 
 For Java 6, you can download the unlimited cryptography policy jar files from:
-  http://tinyurl.com/java6sec    -or-
-  https://cds.sun.com/is-bin/INTERSHOP.enfinity/WFS/CDS-CDS_Developer-Site/en_US/-/USD/ViewProductDetail-Start?ProductRef=jce_policy-6-oth-JPR@CDS-CDS_Developer
+http://www.oracle.com/technetwork/java/javase/downloads/jce-6-download-429243.html
 
+For Java 7, you can download the unlimited cryptography policy jar files from:
+http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html
 
 Advanced
 ========
@@ -248,15 +249,15 @@ Advanced->Show Log Folder in the menu.
 
 See:
 
-    Windows 7/Vista: C:\Users\JohnDoe\AppData\Roaming\taverna-2.3.0\logs
+    Windows 7/Vista: C:\Users\JohnDoe\AppData\Roaming\taverna-2.4.0\logs
 
     Windows XP: C:\Documents and settings\JohnDoe\
-                   Application Data\taverna-2.3.0\logs
+                   Application Data\taverna-2.4.0\logs
 
 
-    OS X: /Users/JohnDoe/Library/Application support/taverna-2.3.0/logs
+    OS X: /Users/JohnDoe/Library/Application support/taverna-2.4.0/logs
 
-    Linux: /home/johndoe/.taverna-2.3.0/logs
+    Linux: /home/johndoe/.taverna-2.4.0/logs
 
 Note that "Application data" and "AppData" are hidden folders in Windows.
 

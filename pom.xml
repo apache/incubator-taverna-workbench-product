@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>net.sf.taverna.t2</groupId>
 		<artifactId>taverna-workbench</artifactId>
-		<version>2.4-SNAPSHOT</version>
+		<version>2.4.0</version>
 	</parent>
 	<groupId>net.sf.taverna.t2.taverna-workbench
 	</groupId>
@@ -215,10 +215,10 @@
 					differences). To find out which ones, start run.sh once, and then 
 					in .taverna-123123123/repository/ run:
 
-					stain@ralph ~/AppData/Roaming/taverna-2.1-beta-4-SNAPSHOT-20091117/repository
+					stain@ralph ~/AppData/Roaming/taverna-2.1-beta-4-20091117/repository
 					$ find -type f > $HOME/files
 					
-					stain@ralph ~/AppData/Roaming/taverna-2.1-beta-4-SNAPSHOT-20091117/repository
+					stain@ralph ~/AppData/Roaming/taverna-2.1-beta-4-20091117/repository
 					$ cd
 		
 					stain@ralph ~
@@ -310,17 +310,17 @@
 									<overWriteReleases>false</overWriteReleases>
 									<overWriteSnapshots>true</overWriteSnapshots>
 									<artifactItems>
-										<!-- 
+<!--
 					Produced by first doing a nightly build (-Pnightly) but with this plugin
 					commented out. When unzipping taverna-XXXX-bin.zip the repository/ folder
 					will be missing these artifacts below (mainly due to Raven not merging version
 					differences). To find out which ones, start run.sh once, and then 
 					in .taverna-123123123/repository/ run:
 
-					stain@ralph ~/AppData/Roaming/taverna-2.1-beta-4-SNAPSHOT-20091117/repository
+					stain@ralph ~/AppData/Roaming/taverna-2.1-beta-4-20091117/repository
 					$ find -type f > $HOME/files
 					
-					stain@ralph ~/AppData/Roaming/taverna-2.1-beta-4-SNAPSHOT-20091117/repository
+					stain@ralph ~/AppData/Roaming/taverna-2.1-beta-4-20091117/repository
 					$ cd
 		
 					stain@ralph ~
@@ -336,37 +336,7 @@
 					If on unzipping you get warnings about overwriting files already existing you might also
 					need to redo this procedure, as this means that an artifactItem is adding a file already
 					added by the repositories-component of the assembly plugin. 
-					
-					 -->
-					            <artifactItem>
-                                    <groupId>com.sun.xml.bind</groupId>
-                                    <artifactId>jaxb-impl</artifactId>
-                                    <version>2.1.6</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/com/sun/xml/bind/jaxb-impl/2.1.6</outputDirectory>
-                                </artifactItem>
-					            <artifactItem>
-                                    <groupId>com.sun.xml.bind</groupId>
-                                    <artifactId>jaxb-impl</artifactId>
-                                    <version>2.1.10</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/com/sun/xml/bind/jaxb-impl/2.1.10</outputDirectory>
-                                </artifactItem>
-                                 <artifactItem>
-                                    <groupId>javax.xml.stream</groupId>
-                                    <artifactId>stax-api</artifactId>
-                                    <version>1.0</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/javax/xml/stream/stax-api/1.0</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>javax.xml.stream</groupId>
-                                    <artifactId>stax-api</artifactId>
-                                    <version>1.0</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/javax/xml/stream/stax-api/1.0</outputDirectory>
-                                </artifactItem>
-					 
+-->					
                                 <artifactItem>
                                     <groupId>antlr</groupId>
                                     <artifactId>antlr</artifactId>
@@ -531,9 +501,9 @@
                                 <artifactItem>
                                     <groupId>com.ibm.icu</groupId>
                                     <artifactId>icu4j</artifactId>
-                                    <version>3.4.4</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/com/ibm/icu/icu4j/3.4.4</outputDirectory>
+                                    <version>2.6.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/com/ibm/icu/icu4j/2.6.1</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>com.ibm.icu</groupId>
@@ -543,6 +513,41 @@
                                     <outputDirectory>${project.build.directory}/repository/com/ibm/icu/icu4j/3.8</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
+                                    <groupId>com.ibm.icu</groupId>
+                                    <artifactId>icu4j</artifactId>
+                                    <version>3.8</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/com/ibm/icu/icu4j/3.8</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.sun.xml.bind</groupId>
+                                    <artifactId>jaxb-impl</artifactId>
+                                    <version>2.1.10</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/com/sun/xml/bind/jaxb-impl/2.1.10</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.sun.xml.bind</groupId>
+                                    <artifactId>jaxb-impl</artifactId>
+                                    <version>2.1.10</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/com/sun/xml/bind/jaxb-impl/2.1.10</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.sun.xml.bind</groupId>
+                                    <artifactId>jaxb-impl</artifactId>
+                                    <version>2.1.6</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/com/sun/xml/bind/jaxb-impl/2.1.6</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.sun.xml.bind</groupId>
+                                    <artifactId>jaxb-impl</artifactId>
+                                    <version>2.1.6</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/com/sun/xml/bind/jaxb-impl/2.1.6</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
                                     <groupId>commons-beanutils</groupId>
                                     <artifactId>commons-beanutils</artifactId>
                                     <version>1.4</version>
@@ -933,6 +938,20 @@
                                     <version>2.3</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/javax/servlet/servlet-api/2.3</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>javax.xml.stream</groupId>
+                                    <artifactId>stax-api</artifactId>
+                                    <version>1.0</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/javax/xml/stream/stax-api/1.0</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>javax.xml.stream</groupId>
+                                    <artifactId>stax-api</artifactId>
+                                    <version>1.0</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/javax/xml/stream/stax-api/1.0</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>jaxen</groupId>
@@ -1133,8 +1152,22 @@
                                 <artifactItem>
                                     <groupId>org.apache.xmlbeans</groupId>
                                     <artifactId>xmlbeans</artifactId>
+                                    <version>2.3.0</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/xmlbeans/xmlbeans/2.3.0</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.xmlbeans</groupId>
+                                    <artifactId>xmlbeans</artifactId>
                                     <version>2.5.0</version>
                                     <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/xmlbeans/xmlbeans/2.5.0</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.xmlbeans</groupId>
+                                    <artifactId>xmlbeans</artifactId>
+                                    <version>2.5.0</version>
+                                    <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/org/apache/xmlbeans/xmlbeans/2.5.0</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
@@ -1305,64 +1338,6 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/org/slf4j/slf4j-parent/1.5.8</outputDirectory>
                                 </artifactItem>
-                                <!-- 
-                                <artifactItem>
-                                    <groupId>org.tupeloproject</groupId>
-                                    <artifactId>tupelo-all</artifactId>
-                                    <version>2.4.3</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-all/2.4.3</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.tupeloproject</groupId>
-                                    <artifactId>tupelo-cet</artifactId>
-                                    <version>2.4.3</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-cet/2.4.3</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.tupeloproject</groupId>
-                                    <artifactId>tupelo-cet</artifactId>
-                                    <version>2.4.3</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-cet/2.4.3</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.tupeloproject</groupId>
-                                    <artifactId>tupelo-core</artifactId>
-                                    <version>2.4.3</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-core/2.4.3</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.tupeloproject</groupId>
-                                    <artifactId>tupelo-kernel</artifactId>
-                                    <version>2.4.3</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-kernel/2.4.3</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.tupeloproject</groupId>
-                                    <artifactId>tupelo-kernel</artifactId>
-                                    <version>2.4.3</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-kernel/2.4.3</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.tupeloproject</groupId>
-                                    <artifactId>tupelo-util</artifactId>
-                                    <version>2.4.3</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-util/2.4.3</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.tupeloproject</groupId>
-                                    <artifactId>tupelo-util</artifactId>
-                                    <version>2.4.3</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/org/tupeloproject/tupelo-util/2.4.3</outputDirectory>
-                                </artifactItem>
-                                 -->                                
                                 <artifactItem>
                                     <groupId>oro</groupId>
                                     <artifactId>oro</artifactId>
@@ -1429,16 +1404,16 @@
                                 <artifactItem>
                                     <groupId>uk.org.mygrid.resources.mimeutil</groupId>
                                     <artifactId>mime-util</artifactId>
-                                    <version>2.1.2-3</version>
+                                    <version>2.1.2-4</version>
                                     <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/uk/org/mygrid/resources/mimeutil/mime-util/2.1.2-3</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/uk/org/mygrid/resources/mimeutil/mime-util/2.1.2-5</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>uk.org.mygrid.resources.mimeutil</groupId>
                                     <artifactId>mime-util</artifactId>
-                                    <version>2.1.2-3</version>
+                                    <version>2.1.2-4</version>
                                     <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/uk/org/mygrid/resources/mimeutil/mime-util/2.1.2-3</outputDirectory>
+                                    <outputDirectory>${project.build.directory}/repository/uk/org/mygrid/resources/mimeutil/mime-util/2.1.2-5</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>uk.org.mygrid.taverna.raven</groupId>
@@ -1453,6 +1428,20 @@
                                     <version>1.9</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/uk/org/mygrid/taverna/raven/raven/1.9</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>xalan</groupId>
+                                    <artifactId>xalan</artifactId>
+                                    <version>2.6.0</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/xalan/xalan/2.6.0</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>xalan</groupId>
+                                    <artifactId>xalan</artifactId>
+                                    <version>2.6.0</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/xalan/xalan/2.6.0</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>xalan</groupId>
@@ -1499,6 +1488,20 @@
                                 <artifactItem>
                                     <groupId>xerces</groupId>
                                     <artifactId>xercesImpl</artifactId>
+                                    <version>2.7.1</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/xerces/xercesImpl/2.7.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>xerces</groupId>
+                                    <artifactId>xercesImpl</artifactId>
+                                    <version>2.7.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/xerces/xercesImpl/2.7.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>xerces</groupId>
+                                    <artifactId>xercesImpl</artifactId>
                                     <version>2.8.1</version>
                                     <type>jar</type>
                                     <outputDirectory>${project.build.directory}/repository/xerces/xercesImpl/2.8.1</outputDirectory>
@@ -1509,20 +1512,6 @@
                                     <version>2.8.1</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/xerces/xercesImpl/2.8.1</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>xerces</groupId>
-                                    <artifactId>xercesImpl</artifactId>
-                                    <version>2.9.1</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/xerces/xercesImpl/2.9.1</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>xerces</groupId>
-                                    <artifactId>xercesImpl</artifactId>
-                                    <version>2.9.1</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/xerces/xercesImpl/2.9.1</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>xerces</groupId>
