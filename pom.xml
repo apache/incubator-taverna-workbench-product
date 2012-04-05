@@ -742,6 +742,7 @@
                                     <version>1.3</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/commons-io/commons-io/1.3</outputDirectory>
+                                </artifactItem>
                                 <artifactItem>
                                     <groupId>commons-io</groupId>
                                     <artifactId>commons-io</artifactId>
