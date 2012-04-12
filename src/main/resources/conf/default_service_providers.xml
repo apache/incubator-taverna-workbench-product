@@ -4,41 +4,7 @@
       <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2010/service-provider/wsdl</providerId>
       <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
         <net.sf.taverna.t2.activities.wsdl.servicedescriptions.WSDLServiceProviderConfig xmlns="">
-          <uri serialization="custom">
-            <java.net.URI>
-              <default>
-                <string>http://soap.genome.jp/KEGG.wsdl</string>
-              </default>
-            </java.net.URI>
-          </uri>
-        </net.sf.taverna.t2.activities.wsdl.servicedescriptions.WSDLServiceProviderConfig>
-      </configBean>
-    </provider>
-    <provider>
-      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2010/service-provider/soaplab</providerId>
-      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
-        <net.sf.taverna.t2.activities.soaplab.servicedescriptions.SoaplabServiceProviderConfig xmlns="">
-          <endpoint serialization="custom">
-            <java.net.URI>
-              <default>
-                <string>http://www.ebi.ac.uk/soaplab/services/</string>
-              </default>
-            </java.net.URI>
-          </endpoint>
-        </net.sf.taverna.t2.activities.soaplab.servicedescriptions.SoaplabServiceProviderConfig>
-      </configBean>
-    </provider>
-    <provider>
-      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2010/service-provider/wsdl</providerId>
-      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
-        <net.sf.taverna.t2.activities.wsdl.servicedescriptions.WSDLServiceProviderConfig xmlns="">
-          <uri serialization="custom">
-            <java.net.URI>
-              <default>
-                <string>http://www.ebi.ac.uk/ws/services/urn:Dbfetch?wsdl</string>
-              </default>
-            </java.net.URI>
-          </uri>
+          <uri>http://www.ebi.ac.uk/xembl/XEMBL.wsdl</uri>
         </net.sf.taverna.t2.activities.wsdl.servicedescriptions.WSDLServiceProviderConfig>
       </configBean>
     </provider>
@@ -46,35 +12,8 @@
       <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2010/service-provider/wsdl</providerId>
       <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
         <net.sf.taverna.t2.activities.wsdl.servicedescriptions.WSDLServiceProviderConfig xmlns="">
-          <uri serialization="custom">
-            <java.net.URI>
-              <default>
-                <string>http://www.ebi.ac.uk/xembl/XEMBL.wsdl</string>
-              </default>
-            </java.net.URI>
-          </uri>
+          <uri>http://soap.genome.jp/KEGG.wsdl</uri>
         </net.sf.taverna.t2.activities.wsdl.servicedescriptions.WSDLServiceProviderConfig>
-      </configBean>
-    </provider>
-    <provider>
-      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2010/service-provider/biomoby</providerId>
-      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
-        <net.sf.taverna.t2.activities.biomoby.servicedescriptions.BiomobyServiceProviderConfig xmlns="">
-          <endpoint serialization="custom">
-            <java.net.URI>
-              <default>
-                <string>http://moby.ucalgary.ca/moby/MOBY-Central.pl</string>
-              </default>
-            </java.net.URI>
-          </endpoint>
-          <namespace serialization="custom">
-            <java.net.URI>
-              <default>
-                <string>http://moby.ucalgary.ca/MOBY/Central</string>
-              </default>
-            </java.net.URI>
-          </namespace>
-        </net.sf.taverna.t2.activities.biomoby.servicedescriptions.BiomobyServiceProviderConfig>
       </configBean>
     </provider>
     <provider>
@@ -86,16 +25,43 @@
       </configBean>
     </provider>
     <provider>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2010/service-provider/soaplab</providerId>
+      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
+        <net.sf.taverna.t2.activities.soaplab.servicedescriptions.SoaplabServiceProviderConfig xmlns="">
+          <endpoint>http://www.ebi.ac.uk/soaplab/services/</endpoint>
+        </net.sf.taverna.t2.activities.soaplab.servicedescriptions.SoaplabServiceProviderConfig>
+      </configBean>
+    </provider>
+    <provider>
       <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2010/service-provider/wsdl</providerId>
       <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
         <net.sf.taverna.t2.activities.wsdl.servicedescriptions.WSDLServiceProviderConfig xmlns="">
-          <uri serialization="custom">
-            <java.net.URI>
-              <default>
-                <string>http://soap.bind.ca/wsdl/bind.wsdl</string>
-              </default>
-            </java.net.URI>
-          </uri>
+          <uri>http://soap.bind.ca/wsdl/bind.wsdl</uri>
+        </net.sf.taverna.t2.activities.wsdl.servicedescriptions.WSDLServiceProviderConfig>
+      </configBean>
+    </provider>
+    <provider>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2010/service-provider/biomoby</providerId>
+      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
+        <net.sf.taverna.t2.activities.biomoby.servicedescriptions.BiomobyServiceProviderConfig xmlns="">
+          <endpoint>http://moby.ucalgary.ca/moby/MOBY-Central.pl</endpoint>
+          <namespace>http://moby.ucalgary.ca/MOBY/Central</namespace>
+        </net.sf.taverna.t2.activities.biomoby.servicedescriptions.BiomobyServiceProviderConfig>
+      </configBean>
+    </provider>
+    <provider>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2010/service-provider/wsdl</providerId>
+      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
+        <net.sf.taverna.t2.activities.wsdl.servicedescriptions.WSDLServiceProviderConfig xmlns="">
+          <uri>http://eutils.ncbi.nlm.nih.gov/entrez/eutils/soap/eutils.wsdl</uri>
+        </net.sf.taverna.t2.activities.wsdl.servicedescriptions.WSDLServiceProviderConfig>
+      </configBean>
+    </provider>
+    <provider>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2010/service-provider/wsdl</providerId>
+      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
+        <net.sf.taverna.t2.activities.wsdl.servicedescriptions.WSDLServiceProviderConfig xmlns="">
+          <uri>http://www.ebi.ac.uk/ws/services/urn:Dbfetch?wsdl</uri>
         </net.sf.taverna.t2.activities.wsdl.servicedescriptions.WSDLServiceProviderConfig>
       </configBean>
     </provider>
