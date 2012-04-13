@@ -1,3 +1,11 @@
+==========================
+Taverna 2.4.0 known issues
+==========================
+
+This document some of the known issues in Taverna 2.4.0.  A full list
+and further details can be found within myGrid's issue tracker Jira at
+http://www.mygrid.org.uk/dev/issues/secure/IssueNavigator.jspa?sorter/field=components&sorter/order=ASC
+
 APIConsumer Service
 ====================
 
