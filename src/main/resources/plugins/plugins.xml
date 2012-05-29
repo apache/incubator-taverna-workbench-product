@@ -5,7 +5,7 @@
     <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.translators</identifier>
-		<version>${project.version}-${buildNumber}</version>
+		<version>2.4.0-${buildNumber}</version>
         <name>Compatibility (required)</name>
         <description>Taverna 1 compatibility</description>
         <enabled>true</enabled>
@@ -22,19 +22,20 @@
             <dependency>
                 <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
                 <artifactId>translators-plugin</artifactId>
-                <version>${project.version}</version>
+                <version>2.4.0</version>
             </dependency>
         </profile>
         <compatibility>
             <application>
-                <version>${project.version}</version>
+                <version>2.4.0</version>
+                <version>2.4.1</version>
             </application>
         </compatibility>
     </plugin>
     <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.activities</identifier>
-		<version>${project.version}-${buildNumber}</version>
+		<version>2.4.1-${buildNumber}</version>
         <name>Services (required)</name>
         <description>Taverna 2 services (WSDL, SoapLab, etc)</description>
         <enabled>true</enabled>
@@ -52,19 +53,20 @@
             <dependency>
                 <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
                 <artifactId>activities-plugin</artifactId>
-                <version>${project.version}</version>
+                <version>2.4.1</version>
             </dependency>
         </profile>
         <compatibility>
             <application>
-                <version>${project.version}</version>
+                <version>2.4.0</version>
+                <version>2.4.1</version>
             </application>
         </compatibility>
     </plugin>
     <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.activities.external-tool-activity</identifier>
-		<version>${project.version}-${buildNumber}</version>
+		<version>2.4.1-${buildNumber}</version>
         <name>External tool service (required)</name>
         <description>Taverna 2 Tool service</description>
         <enabled>true</enabled>
@@ -81,19 +83,20 @@
             <dependency>
                 <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
                 <artifactId>externaltool-plugin</artifactId>
-                <version>${project.version}</version>
+                <version>2.4.1</version>
             </dependency>
         </profile>
         <compatibility>
             <application>
-                <version>${project.version}</version>
+                <version>2.4.0</version>
+                <version>2.4.1</version>
             </application>
         </compatibility>
     </plugin>
     <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.taverna-workbench.provenanceconnectors-plugin</identifier>
-		<version>${project.version}-${buildNumber}</version>
+		<version>2.4.0-${buildNumber}</version>
         <name>Provenance (required)</name>
         <description>Taverna 2 provenance connectors</description>
         <enabled>true</enabled>
@@ -112,19 +115,20 @@
             <dependency>
                 <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
                 <artifactId>provenanceconnectors-plugin</artifactId>
-               <version>${project.version}</version>
+               <version>2.4.0</version>
             </dependency>
         </profile>
         <compatibility>
             <application>
-                <version>${project.version}</version>
+                <version>2.4.0</version>
+                <version>2.4.1</version>
             </application>
         </compatibility>
     </plugin>
     <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.components</identifier>
-		<version>${project.version}-${buildNumber}</version>
+		<version>2.4.1-${buildNumber}</version>
         <name>Workbench (required)</name>
         <description>Taverna 2 workbench. Required for graphical interface.</description>
         <enabled>true</enabled>
@@ -142,19 +146,20 @@
             <dependency>
                 <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
                 <artifactId>components-plugin</artifactId>
-                <version>${project.version}</version>
+                <version>2.4.1</version>
             </dependency>
         </profile>
         <compatibility>
             <application>
-                <version>${project.version}</version>
+                <version>2.4.0</version>
+                <version>2.4.1</version>
             </application>
         </compatibility>
     </plugin>
         <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.servicecatalogue</identifier>
-		<version>${project.version}-${buildNumber}</version>
+		<version>2.4.1-${buildNumber}</version>
         <name>Service catalogue (required)</name>
         <description>Taverna 2 service catalogue.</description>
         <enabled>true</enabled>
@@ -172,19 +177,20 @@
             <dependency>
                 <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
                 <artifactId>servicecatalogue-plugin</artifactId>
-                <version>${project.version}</version>
+                <version>2.4.1</version>
             </dependency>
         </profile>
         <compatibility>
             <application>
-                <version>${project.version}</version>
+                <version>2.4.0</version>
+                <version>2.4.1</version>
             </application>
         </compatibility>
     </plugin>
     <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.commandline</identifier>
-		<version>${project.version}</version>
+		<version>2.4.0</version>
         <name>Taverna Command Line</name>
         <description>Allows execution of Taverna workflows from the command line</description>
         <enabled>true</enabled>
@@ -205,7 +211,7 @@
         </profile>
         <compatibility>
             <application>
-                <version>${project.version}</version>
+                <version>2.4.0</version>
             </application>
         </compatibility>
     </plugin>
