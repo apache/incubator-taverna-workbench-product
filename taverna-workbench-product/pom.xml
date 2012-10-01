@@ -90,7 +90,7 @@
 		</dependency>
 
 		<!-- Taverna Activities -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>net.sf.taverna.t2.activities</groupId>
 			<artifactId>all-activities</artifactId>
 			<version>${t2.activities.version}</version>
@@ -100,6 +100,21 @@
 					<artifactId>biomoby-activity</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency> -->
+		<dependency>
+			<groupId>net.sf.taverna.t2.activities</groupId>
+			<artifactId>beanshell-activity</artifactId>
+			<version>${t2.activities.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.taverna.t2.activities</groupId>
+			<artifactId>biomart-activity</artifactId>
+			<version>${t2.activities.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.taverna.t2.activities</groupId>
+			<artifactId>stringconstant-activity</artifactId>
+			<version>${t2.activities.version}</version>
 		</dependency>
 
 		<!-- Taverna Activities UI -->
