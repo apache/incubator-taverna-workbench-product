@@ -95,16 +95,11 @@
 		<!-- <dependency> <groupId>net.sf.taverna.t2.activities</groupId> <artifactId>all-activities</artifactId>
 			<version>${t2.activities.version}</version> <exclusions> <exclusion> <groupId>net.sf.taverna.t2.activities</groupId>
 			<artifactId>biomoby-activity</artifactId> </exclusion> </exclusions> </dependency> -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>net.sf.taverna.t2.activities</groupId>
 			<artifactId>beanshell-activity</artifactId>
 			<version>${t2.activities.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>net.sf.taverna.t2.activities</groupId>
-			<artifactId>biomart-activity</artifactId>
-			<version>${t2.activities.version}</version>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>net.sf.taverna.t2.activities</groupId>
 			<artifactId>stringconstant-activity</artifactId>
@@ -115,16 +110,11 @@
 		<!-- <dependency> <groupId>net.sf.taverna.t2.ui-activities</groupId> <artifactId>all-activity-uis</artifactId>
 			<version>${t2.activities.version}</version> <exclusions> <exclusion> <groupId>net.sf.taverna.t2.activities</groupId>
 			<artifactId>biomoby-activity-ui</artifactId> </exclusion> </exclusions> </dependency> -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>net.sf.taverna.t2.ui-activities</groupId>
 			<artifactId>beanshell-activity-ui</artifactId>
 			<version>${t2.ui.activities.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>net.sf.taverna.t2.ui-activities</groupId>
-			<artifactId>biomart-activity-ui</artifactId>
-			<version>${t2.ui.activities.version}</version>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>net.sf.taverna.t2.ui-activities</groupId>
 			<artifactId>stringconstant-activity-ui</artifactId>
@@ -167,11 +157,11 @@
 			<artifactId>menu-impl</artifactId>
 			<version>${t2.ui.impl.version}</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>net.sf.taverna.t2.ui-impl</groupId>
 			<artifactId>report-impl</artifactId>
 			<version>${t2.ui.impl.version}</version>
-		</dependency>
+		</dependency> -->
 
 		<dependency>
 			<groupId>net.sf.taverna.t2.ui-components</groupId>
@@ -184,7 +174,7 @@
 			<version>${t2.ui.components.version}</version>
 		</dependency>
 
-		<dependency>
+		<!-- <dependency>
 			<groupId>net.sf.taverna.t2.ui-exts</groupId>
 			<artifactId>menu-items</artifactId>
 			<version>${t2.ui.exts.version}</version>
@@ -203,7 +193,7 @@
 			<groupId>net.sf.taverna.t2.ui-exts</groupId>
 			<artifactId>retry-ui</artifactId>
 			<version>${t2.ui.exts.version}</version>
-		</dependency>
+		</dependency> -->
 
 
 		<!-- Taverna Platform -->
