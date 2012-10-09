@@ -8,7 +8,6 @@
 	</parent>
 	<groupId>uk.org.taverna.workbench</groupId>
 	<artifactId>taverna-workbench-product</artifactId>
-	<version>3.0.0-SNAPSHOT</version>
 	<name>Taverna Workbench Product</name>
 	<packaging>pom</packaging>
 	<dependencies>
