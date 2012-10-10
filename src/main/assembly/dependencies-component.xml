@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component
+	xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/component/1.1.2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/component/1.1.2 http://maven.apache.org/xsd/component-1.1.2.xsd">
+	<dependencySets>
+		<dependencySet>
+			<useTransitiveDependencies>true</useTransitiveDependencies>
+			<outputDirectory>/bundles</outputDirectory>
+			<excludes>
+			<!-- Exclude anything in lib/ (except configuration) -->
+				<exclude>net.sf.taverna.t2.activities:all-activities</exclude>
+				<exclude>uk.org.taverna.workbench:taverna-workbench</exclude>
+				<exclude>uk.org.taverna.osgi:osgi-launcher</exclude>
+				<exclude>org.eclipse.osgi:org.eclipse.osgi</exclude>
+				<!--  Exclude ourselves -->
+				<exclude>uk.org.taverna.workbench:taverna-workbench-product</exclude>
+			</excludes>
+		</dependencySet>
+		<dependencySet>
+			<outputDirectory>/lib</outputDirectory>
+			<includes>
+				<include>uk.org.taverna.workbench:taverna-workbench</include>
+				<include>uk.org.taverna.osgi:osgi-launcher</include>
+				<include>org.apache.log4j:com.springsource.org.apache.log4j</include>
+				<include>uk.org.taverna.configuration:taverna-app-configuration-api</include>
+				<include>uk.org.taverna.configuration:taverna-app-configuration-impl</include>
+				<include>org.osgi:org.osgi.core</include>
+				<include>org.eclipse.osgi:org.eclipse.osgi</include>
+			</includes>
+		</dependencySet>
+	</dependencySets>
+
+	<fileSets>
+		<fileSet>
+			<directory>src/main/etc</directory>
+			<fileMode>0755</fileMode>
+			<outputDirectory></outputDirectory>
+		</fileSet>
+	</fileSets>
+</component>
