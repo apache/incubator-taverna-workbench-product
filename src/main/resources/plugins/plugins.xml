@@ -29,13 +29,14 @@
             <application>
                 <version>2.4.0</version>
                 <version>2.4.1</version>
+                 <version>2.4.2</version>
             </application>
         </compatibility>
     </plugin>
     <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.activities</identifier>
-		<version>2.4.1-${buildNumber}</version>
+		<version>2.4.2-${buildNumber}</version>
         <name>Services (required)</name>
         <description>Taverna 2 services (WSDL, SoapLab, etc)</description>
         <enabled>true</enabled>
@@ -53,13 +54,14 @@
             <dependency>
                 <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
                 <artifactId>activities-plugin</artifactId>
-                <version>2.4.1</version>
+                <version>2.4.2</version>
             </dependency>
         </profile>
         <compatibility>
             <application>
                 <version>2.4.0</version>
                 <version>2.4.1</version>
+                <version>2.4.2</version>
             </application>
         </compatibility>
     </plugin>
@@ -90,6 +92,7 @@
             <application>
                 <version>2.4.0</version>
                 <version>2.4.1</version>
+                <version>2.4.2</version>
             </application>
         </compatibility>
     </plugin>
@@ -122,6 +125,7 @@
             <application>
                 <version>2.4.0</version>
                 <version>2.4.1</version>
+                <version>2.4.2</version>
             </application>
         </compatibility>
     </plugin>
@@ -153,6 +157,7 @@
             <application>
                 <version>2.4.0</version>
                 <version>2.4.1</version>
+                <version>2.4.2</version>
             </application>
         </compatibility>
     </plugin>
@@ -184,6 +189,7 @@
             <application>
                 <version>2.4.0</version>
                 <version>2.4.1</version>
+                <version>2.4.2</version>
             </application>
         </compatibility>
     </plugin>
@@ -212,6 +218,7 @@
         <compatibility>
             <application>
                 <version>2.4.0</version>
+                <version>2.4.2</version>
             </application>
         </compatibility>
     </plugin>
