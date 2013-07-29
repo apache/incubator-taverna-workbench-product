@@ -78,17 +78,17 @@
 			<plugin>
 				<groupId>net.sf.taverna.t2.maven.plugins</groupId>
 				<artifactId>taverna-maven-plugin</artifactId>
-				<version>0.3.0-SNAPSHOT</version>
+				<version>0.3.1-SNAPSHOT</version>
 				<extensions>true</extensions>
 				<configuration>
 					<buildNumber>${buildNumber}</buildNumber>
-					<!-- <updateSite>http://www.mygrid.org.uk/taverna/updates/taverna-workbench/</updateSite> -->
+					<updateSite>http://www.mygrid.org.uk/taverna/updates/taverna-workbench/</updateSite>
 					<updateSite>http://localhost/~david/taverna/updates/taverna-workbench/</updateSite>
 					<pluginSite>http://localhost/~david/taverna/plugins/taverna-workbench/</pluginSite>
 					<frameworkConfigurations>
 						<frameworkConfiguration>
 							<name>org.osgi.framework.bootdelegation</name>
-							<!-- <value>sun.*,com.sun.*,java.*,org.xml.*,org.w3c.*,apple.*,com.apple.*</value> -->
+							<value>sun.*,com.sun.*,java.*,org.xml.*,org.w3c.*,apple.*,com.apple.*</value>
 							<value>sun.*,com.sun.*,java.*,org.w3c.*,apple.*,com.apple.*</value>
 						</frameworkConfiguration>
 						<frameworkConfiguration>
