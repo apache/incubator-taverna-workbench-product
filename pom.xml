@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>net.sf.taverna.t2</groupId>
 		<artifactId>taverna-workbench</artifactId>
-		<version>2.4.2</version>
+		<version>2.4.3</version>
 	</parent>
 	<groupId>net.sf.taverna.t2.taverna-workbench
 	</groupId>
@@ -14,7 +14,6 @@
 	<properties>
 		<m2Repository />
 	</properties>
-	<version>2.4.2</version>
 	<profiles>
 		<profile>
 			<id>developer-win</id>
@@ -1646,15 +1645,14 @@
 			<groupId>net.sf.taverna.t2.taverna-workbench
 			</groupId>
 			<artifactId>workbench-common</artifactId>
-			<version>2.4.2
-			</version>
+            <version>${project.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>net.sf.taverna.t2.taverna-workbench.plugins
 			</groupId>
 			<artifactId>activities-plugin</artifactId>
-			<version>2.4.2</version>
+            <version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
         <!-- Each of the plugins/ must be included here to ensure their
@@ -1663,33 +1661,32 @@
 			<groupId>net.sf.taverna.t2.taverna-workbench.plugins
 			</groupId>
 			<artifactId>components-plugin</artifactId>
-			<version>2.4.2</version>
+            <version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.sf.taverna.t2.taverna-workbench.plugins
 			</groupId>
 			<artifactId>translators-plugin</artifactId>
-			<version>2.4.2
-			</version>
+            <version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
 			<artifactId>externaltool-plugin</artifactId>
-			<version>2.4.2</version>
+            <version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
 			<artifactId>servicecatalogue-plugin</artifactId>
-			<version>2.4.2</version>
+            <version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
 			<artifactId>provenanceconnectors-plugin</artifactId>
-			<version>2.4.2</version>
+            <version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
