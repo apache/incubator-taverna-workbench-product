@@ -159,6 +159,19 @@
 	</distributionManagement>
 	<dependencies>
 
+		<!-- Workaround for slf4j api/impl version mismatch -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.6.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.6.0</version>
+			<scope>runtime</scope>
+		</dependency>
+
 		<!-- Spring DM -->
 		<dependency>
 			<groupId>net.sourceforge.cglib</groupId>
@@ -508,11 +521,6 @@
 		<dependency>
 			<groupId>uk.org.taverna.platform</groupId>
 			<artifactId>taverna-capability-impl</artifactId>
-			<version>${platform.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>uk.org.taverna.platform</groupId>
-			<artifactId>taverna-data-inmemory-impl</artifactId>
 			<version>${platform.version}</version>
 		</dependency>
 		<dependency>
