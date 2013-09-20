@@ -88,8 +88,7 @@
 					<frameworkConfigurations>
 						<frameworkConfiguration>
 							<name>org.osgi.framework.bootdelegation</name>
-							<value>sun.*,com.sun.*,java.*,org.xml.*,org.w3c.*,apple.*,com.apple.*</value>
-							<value>sun.*,com.sun.*,java.*,org.w3c.*,apple.*,com.apple.*</value>
+							<value>sun.*,com.sun.*,java.*,javax.*,org.xml.*,org.w3c.*,apple.*,com.apple.*,org.omg.*,org.ietf.jgss.*,org.jcp.xml.dsig.internal.*</value>
 						</frameworkConfiguration>
 						<frameworkConfiguration>
 							<name>org.osgi.framework.system.packages.extra</name>
