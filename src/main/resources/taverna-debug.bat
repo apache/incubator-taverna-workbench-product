@@ -14,6 +14,6 @@ set ARGS=%ARGS% -Djava.system.class.loader=net.sf.taverna.raven.prelauncher.Boot
 set ARGS=%ARGS% -Dsun.swing.enableImprovedDragGesture 
 set ARGS=%ARGS% "-Dtaverna.startup=%TAVERNA_HOME%."
 
-java %ARGS% -jar "%TAVERNA_HOME%lib\prelauncher-2.4-SNAPSHOT.jar" %*
+java %ARGS% -jar "%TAVERNA_HOME%lib\prelauncher-2.5-SNAPSHOT.jar" %*
 
 pause
