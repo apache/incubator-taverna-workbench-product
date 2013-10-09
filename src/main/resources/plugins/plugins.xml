@@ -2,7 +2,7 @@
 <plugins:plugins xmlns:plugins="http://taverna.sf.net/2008/xml/plugins"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://taverna.sf.net/2008/xml/plugins http://taverna.sourceforge.net/2008/xml/plugins/plugins-2008-10-16.xsd ">
-    <plugin>
+<!--     <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.translators</identifier>
 		<version>${project.version}-${buildNumber}</version>
@@ -30,7 +30,7 @@
                 <version>${project.version}</version>
             </application>
         </compatibility>
-    </plugin>
+    </plugin> -->
     <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.activities</identifier>
@@ -53,6 +53,12 @@
                 <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
                 <artifactId>activities-plugin</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>2.4</version>
+                <system>true</system>
             </dependency>
         </profile>
         <compatibility>
