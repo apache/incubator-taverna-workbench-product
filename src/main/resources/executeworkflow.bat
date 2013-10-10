@@ -17,6 +17,6 @@ set ARGS=%ARGS% -Draven.launcher.show_splashscreen=false
 set ARGS=%ARGS% -Djava.awt.headless=true
 set ARGS=%ARGS% "-Dtaverna.startup=%TAVERNA_HOME%."
 
-java %ARGS% -jar "%TAVERNA_HOME%lib\prelauncher-2.4-SNAPSHOT.jar" %*
+java %ARGS% -jar "%TAVERNA_HOME%lib\prelauncher-2.5-SNAPSHOT.jar" %*
 
 
