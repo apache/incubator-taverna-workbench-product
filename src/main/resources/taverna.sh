@@ -16,8 +16,8 @@ if test -x "$JAVA_HOME/bin/java"; then
     javabin="$JAVA_HOME/bin/java"
 fi
 
-# 400 MB memory, 140 MB for classes
-exec "$javabin" -Xmx400m -XX:MaxPermSize=140m \
+# 1000 MB memory, 140 MB for classes
+exec "$javabin" -Xmx1000m -XX:MaxPermSize=140m \
   "-Draven.profile=file://$taverna_home/conf/current-profile.xml" \
   "-Dtaverna.startup=$taverna_home" \
   -Djava.system.class.loader=net.sf.taverna.raven.prelauncher.BootstrapClassLoader \

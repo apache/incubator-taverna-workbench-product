@@ -5,8 +5,8 @@ REM Taverna startup script
 REM distribution directory
 set TAVERNA_HOME=%~dp0
 
-REM 400 MB memory, 140 MB for classes
-set ARGS=-Xmx400m -XX:MaxPermSize=140m
+REM 1000 MB memory, 140 MB for classes
+set ARGS=-Xmx1000m -XX:MaxPermSize=140m
 
 REM Taverna system properties
 set ARGS=%ARGS% "-Draven.profile=file:%TAVERNA_HOME%conf/current-profile.xml"
