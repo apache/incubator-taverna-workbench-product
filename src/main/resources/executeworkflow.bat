@@ -6,8 +6,8 @@ REM distribution directory
 set TAVERNA_HOME=%~dp0
 
 
-REM 300 MB memory, 140 MB for classes
-set ARGS=-Xmx300m -XX:MaxPermSize=140m
+REM 1000 MB memory, 140 MB for classes
+set ARGS=-Xmx1000m -XX:MaxPermSize=140m
 
 REM Taverna system properties
 set ARGS=%ARGS% "-Draven.profile=file:%TAVERNA_HOME%conf/current-profile.xml"
@@ -15,6 +15,16 @@ set ARGS=%ARGS% -Djava.system.class.loader=net.sf.taverna.raven.prelauncher.Boot
 set ARGS=%ARGS% -Draven.launcher.app.main=net.sf.taverna.t2.commandline.CommandLineLauncher
 set ARGS=%ARGS% -Draven.launcher.show_splashscreen=false
 set ARGS=%ARGS% -Djava.awt.headless=true
+
+REM Uncomment and change the value of the following line to enable web-driven interaction with
+REM an external site
+:: set ARGS=%ARGS% -Dtaverna.interaction.host=localhost
+
+REM Uncomment the following three lines to enable web-driven interaction
+:: set ARGS=%ARGS% -Dtaverna.interaction.port=8080
+:: set ARGS=%ARGS% -Dtaverna.interaction.webdav_path="/interaction"
+:: set ARGS=%ARGS% -Dtaverna.interaction.feed_path="/feed"
+
 set ARGS=%ARGS% "-Dtaverna.startup=%TAVERNA_HOME%."
 
 java %ARGS% -jar "%TAVERNA_HOME%lib\prelauncher-2.5-SNAPSHOT.jar" %*
