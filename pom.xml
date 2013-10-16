@@ -373,6 +373,11 @@
 		</dependency>
 		<dependency>
 			<groupId>net.sf.taverna.t2.ui-activities</groupId>
+			<artifactId>rest-activity-ui</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.taverna.t2.ui-activities</groupId>
 			<artifactId>rshell-activity-ui</artifactId>
 			<version>2.0-SNAPSHOT</version>
 		</dependency>
@@ -504,12 +509,18 @@
 			<artifactId>menu-items</artifactId>
 			<version>2.0-SNAPSHOT</version>
 		</dependency>
-		<!-- <dependency> <groupId>net.sf.taverna.t2.ui-exts</groupId> <artifactId>parallelize-ui</artifactId>
-			<version>2.0-SNAPSHOT</version> </dependency> -->
+		<dependency>
+			<groupId>net.sf.taverna.t2.ui-exts</groupId>
+			<artifactId>parallelize-ui</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
 		<!-- <dependency> <groupId>net.sf.taverna.t2.ui-exts</groupId> <artifactId>renderers-exts</artifactId>
 			<version>2.0-SNAPSHOT</version> </dependency> -->
-		<!-- <dependency> <groupId>net.sf.taverna.t2.ui-exts</groupId> <artifactId>retry-ui</artifactId>
-			<version>2.0-SNAPSHOT</version> </dependency> -->
+		<dependency>
+			<groupId>net.sf.taverna.t2.ui-exts</groupId>
+			<artifactId>retry-ui</artifactId>
+			<version>2.0-SNAPSHOT</version>
+		</dependency>
 
 
 		<!-- Taverna Platform -->
