@@ -12,6 +12,7 @@
         <repositories>
             ${m2Repository}
             <repository>http://www.mygrid.org.uk/maven/repository/</repository>
+            <repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
             <repository>http://uk.maven.org/maven2/</repository>
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
@@ -41,7 +42,8 @@
         <repositories>
             ${m2Repository}
             <repository>http://www.mygrid.org.uk/maven/repository/</repository>
-            <repository>http://uk.maven.org/maven2/</repository>
+            <repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
+             <repository>http://uk.maven.org/maven2/</repository>
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
             <repository>http://ws.zones.apache.org/repository2/</repository>
@@ -77,7 +79,8 @@
         <repositories>
             ${m2Repository}
             <repository>http://www.mygrid.org.uk/maven/repository/</repository>
-            <repository>http://uk.maven.org/maven2/</repository>
+            <repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
+             <repository>http://uk.maven.org/maven2/</repository>
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
             <repository>http://ws.zones.apache.org/repository2/</repository>
@@ -106,7 +109,8 @@
         <repositories>
             ${m2Repository}
            <repository>http://www.mygrid.org.uk/maven/repository/</repository>
-            <repository>http://uk.maven.org/maven2/</repository>
+            <repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
+             <repository>http://uk.maven.org/maven2/</repository>
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
             <repository>http://ws.zones.apache.org/repository2/</repository>
@@ -137,7 +141,8 @@
         <repositories>
             ${m2Repository}
             <repository>http://www.mygrid.org.uk/maven/repository/</repository>
-            <repository>http://uk.maven.org/maven2/</repository>
+            <repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
+             <repository>http://uk.maven.org/maven2/</repository>
             <repository>http://repo.fusesource.com/maven2-all</repository>
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
@@ -167,7 +172,8 @@
         <repositories>
             ${m2Repository}
             <repository>http://www.mygrid.org.uk/maven/repository/</repository>
-            <repository>http://uk.maven.org/maven2/</repository>
+            <repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
+             <repository>http://uk.maven.org/maven2/</repository>
             <repository>http://repo.fusesource.com/maven2-all</repository>
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
@@ -196,7 +202,8 @@
         <enabled>true</enabled>
         <repositories>            
             <repository>http://www.mygrid.org.uk/maven/repository/</repository>
-            <repository>http://uk.maven.org/maven2/</repository>
+            <repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
+             <repository>http://uk.maven.org/maven2/</repository>
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
             <repository>http://ws.zones.apache.org/repository2/</repository>
@@ -225,8 +232,8 @@
         <enabled>false</enabled>
         <repositories>
             <repository>http://www.mygrid.org.uk/maven/repository/</repository>
-            <repository>http://repo1.maven.org/maven2/</repository>
             <repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
+             <repository>http://repo1.maven.org/maven2/</repository>
             <repository>http://uk.maven.org/maven2/</repository>
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://www.mygrid.org.uk/maven/biomoby/moby-dev.inab.org/m2/</repository>
