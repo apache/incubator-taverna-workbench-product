@@ -523,21 +523,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/bouncycastle/bcprov-jdk16/140</outputDirectory>
                                 </artifactItem>
-                                <artifactItem>
-                                    <groupId>BrowserLauncher2</groupId>
-                                    <artifactId>BrowserLauncher2</artifactId>
-                                    <version>1.3</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/BrowserLauncher2/BrowserLauncher2/1.3</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>BrowserLauncher2</groupId>
-                                    <artifactId>BrowserLauncher2</artifactId>
-                                    <version>1.3</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/BrowserLauncher2/BrowserLauncher2/1.3</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
+                               <artifactItem>
                                     <groupId>cglib</groupId>
                                     <artifactId>cglib</artifactId>
                                     <version>2.1_3</version>
@@ -5735,20 +5721,6 @@
                                     <version>140</version>
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/bouncycastle/bcprov-jdk16/140</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>BrowserLauncher2</groupId>
-                                    <artifactId>BrowserLauncher2</artifactId>
-                                    <version>1.3</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/BrowserLauncher2/BrowserLauncher2/1.3</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>BrowserLauncher2</groupId>
-                                    <artifactId>BrowserLauncher2</artifactId>
-                                    <version>1.3</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/BrowserLauncher2/BrowserLauncher2/1.3</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>cglib</groupId>
