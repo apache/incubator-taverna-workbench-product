@@ -16,15 +16,15 @@ if test -x "$JAVA_HOME/bin/java"; then
     javabin="$JAVA_HOME/bin/java"
 fi
 
-interaction_settings = ""
+interaction_settings=""
 ## Uncomment and change the value of the following line to enable web-driven interaction with
 ## an external site
-## interaction_settings +=  " -Dtaverna.interaction.host=localhost"
+## interaction_settings="$interaction_settings -Dtaverna.interaction.host=localhost"
 
 ## Uncomment the following three lines to enable web-driven interaction
-## interaction_settings +=  " -Dtaverna.interaction.port=8080"
-## interaction_settings +=  ' -Dtaverna.interaction.webdav_path="/interaction"'
-## interaction_settings +=  ' -Dtaverna.interaction.feed_path="/feed"'
+## interaction_settings="$interaction_settings -Dtaverna.interaction.port=8080"
+## interaction_settings="$interaction_settings -Dtaverna.interaction.webdav_path=/interaction"
+## interaction_settings="$interaction_settings -Dtaverna.interaction.feed_path=/feed"
 
 
 # 1000 MB memory, 140 MB for classes
