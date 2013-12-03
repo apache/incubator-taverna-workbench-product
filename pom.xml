@@ -5262,6 +5262,20 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/xml-apis/xml-apis/1.3.04</outputDirectory>
                                 </artifactItem>
+                               <artifactItem>
+                                    <groupId>xml-apis</groupId>
+                                    <artifactId>xml-apis</artifactId>
+                                    <version>1.4.01</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/xml-apis/xml-apis/1.4.01</outputDirectory>
+                                </artifactItem>
+                                 <artifactItem>
+                                    <groupId>xml-apis</groupId>
+                                    <artifactId>xml-apis</artifactId>
+                                    <version>1.4.01</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/xml-apis/xml-apis/1.4.01</outputDirectory>
+                                </artifactItem>
                                 <artifactItem>
                                     <groupId>xml-apis</groupId>
                                     <artifactId>xml-apis</artifactId>
