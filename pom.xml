@@ -618,14 +618,8 @@
 		<dependency>
 			<groupId>uk.org.taverna.databundle</groupId>
 			<artifactId>databundle</artifactId>
-			<version>0.2.0</version>
+			<version>0.2.1</version>
 		</dependency>
-        <dependency>
-            <!-- Newer robundle to fix T3-954 -->
-            <groupId>org.purl.wf4ever.robundle</groupId>
-            <artifactId>robundle</artifactId>
-            <version>0.1.2-SNAPSHOT</version>
-        </dependency>
 		<!-- HTTP client needed by Data Bundle -->
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
