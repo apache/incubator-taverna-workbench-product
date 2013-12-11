@@ -3,17 +3,6 @@
 	xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/component/1.1.2"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/component/1.1.2 http://maven.apache.org/xsd/component-1.1.2.xsd">
-	<!-- <dependencySets>
-		<dependencySet>
-			<useTransitiveDependencies>true</useTransitiveDependencies>
-			<outputDirectory>/lib/${artifact.groupId}</outputDirectory>
-			<outputFileNameMapping>${artifact.artifactId}-${artifact.baseVersion}${dashClassifier?}.${artifact.extension}</outputFileNameMapping>
-			<excludes>
-				Exclude ourselves
-				<exclude>uk.org.taverna.workbench:taverna-workbench-product</exclude>
-			</excludes>
-		</dependencySet>
-	</dependencySets> -->
 
 	<fileSets>
 		<fileSet>

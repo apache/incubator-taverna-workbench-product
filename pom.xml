@@ -13,31 +13,63 @@
 	<packaging>taverna-application</packaging>
 	<profiles>
 		<profile>
-			<id>developer</id>
+			<id>dev</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<properties>
 				<assembly.descriptor>src/main/assembly/developer-assembly.xml</assembly.descriptor>
-				<profile.updateSite>http://dev.mygrid.org.uk/taverna/updates/taverna-workbench/</profile.updateSite>
-				<profile.pluginSite>http://dev.mygrid.org.uk/taverna/plugins/taverna-workbench/</profile.pluginSite>
+				<profile.updateSite>http://updates.taverna.org.uk/workbench/3.0/dev/</profile.updateSite>
+				<profile.pluginSite>http://updates.taverna.org.uk/workbench/3.0/dev/plugins/</profile.pluginSite>
 			</properties>
+			<distributionManagement>
+				<repository>
+					<id>dev</id>
+					<url>file:///local/www/taverna/updates/3/workbench/3.0/dev</url>
+				</repository>
+			</distributionManagement>
+		</profile>
+		<profile>
+			<id>beta</id>
+			<properties>
+				<assembly.descriptor>src/main/assembly/nightly-assembly.xml</assembly.descriptor>
+				<profile.updateSite>http://updates.taverna.org.uk/workbench/3.0/beta/</profile.updateSite>
+				<profile.pluginSite>http://updates.taverna.org.uk/workbench/3.0/beta/plugins/</profile.pluginSite>
+			</properties>
+			<distributionManagement>
+				<repository>
+					<id>beta</id>
+					<url>file:///local/www/taverna/updates/3/workbench/3.0/beta</url>
+				</repository>
+			</distributionManagement>
+		</profile>
+		<profile>
+			<id>stable</id>
+			<properties>
+				<assembly.descriptor>src/main/assembly/release-assembly.xml</assembly.descriptor>
+				<profile.updateSite>http://updates.taverna.org.uk/workbench/3.0/stable/</profile.updateSite>
+				<profile.pluginSite>http://updates.taverna.org.uk/workbench/3.0/stable/plugins/</profile.pluginSite>
+			</properties>
+			<distributionManagement>
+				<repository>
+					<id>stable</id>
+					<url>file:///local/www/taverna/updates/3/workbench/3.0/stable</url>
+				</repository>
+			</distributionManagement>
 		</profile>
 		<profile>
 			<id>nightly</id>
 			<properties>
 				<assembly.descriptor>src/main/assembly/nightly-assembly.xml</assembly.descriptor>
-				<profile.updateSite>http://dev.mygrid.org.uk/taverna/updates/taverna-workbench/</profile.updateSite>
-				<profile.pluginSite>http://dev.mygrid.org.uk/taverna/plugins/taverna-workbench/</profile.pluginSite>
+				<profile.updateSite>http://updates.taverna.org.uk/workbench/3.0/dev/</profile.updateSite>
+				<profile.pluginSite>http://updates.taverna.org.uk/workbench/3.0/dev/plugins/</profile.pluginSite>
 			</properties>
-		</profile>
-		<profile>
-			<id>release</id>
-			<properties>
-				<assembly.descriptor>src/main/assembly/release-assembly.xml</assembly.descriptor>
-				<profile.updateSite>http://www.mygrid.org.uk/taverna/updates/taverna-workbench/</profile.updateSite>
-				<profile.pluginSite>http://www.mygrid.org.uk/taverna/plugins/taverna-workbench/</profile.pluginSite>
-			</properties>
+			<distributionManagement>
+				<repository>
+					<id>dev</id>
+					<url>file:///local/www/taverna/updates/3/workbench/3.0/dev</url>
+				</repository>
+			</distributionManagement>
 		</profile>
 	</profiles>
 	<build>
@@ -160,12 +192,6 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-	<distributionManagement>
-		<snapshotRepository>
-			<id>dev</id>
-			<url>file:///Users/david/Sites/taverna/updates/taverna-workbench</url>
-		</snapshotRepository>
-	</distributionManagement>
 	<dependencies>
 
 		<!-- Explicit org.osgi.* with <scope>provided as these are also provided
