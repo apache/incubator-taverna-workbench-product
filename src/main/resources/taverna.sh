@@ -18,6 +18,8 @@ fi
 
 # 1000 MB memory, 140 MB for classes
 exec "$javabin" -Xmx1000m -XX:MaxPermSize=140m \
+  "-Dcom.sun.net.ssl.enableECC=false" \
+  "-Djsse.enableSNIExtension=false" \
   "-Draven.profile=file://$taverna_home/conf/current-profile.xml" \
   "-Dtaverna.startup=$taverna_home" \
   -Djava.system.class.loader=net.sf.taverna.raven.prelauncher.BootstrapClassLoader \
