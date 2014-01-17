@@ -1,19 +1,19 @@
 Changes in Taverna 2.5.0
 ========================
 
-Taverna 2.5.0 includes several improvements, including additional
-functionality (interaction service, PROV support, components),  
-a simplified installation, user interface improvements
-and bug-fixes.
+Taverna 2.5.0 includes additional functionality (interaction service,
+PROV support, components), a simplified installation, user interface
+improvements and bug-fixes.
 
 
 Installation
 ------------
+
 To simplify installation on common operating systems, Taverna
-distributions for Windows/Linux/OSX now come bundled with
-the corresponding JRE from OpenJDK and the required Graphviz
-binaries. This JRE does no longer require the user to install 
-the JCE Strong Encryption policy.
+distributions for Windows/Linux/OSX now come bundled with the Java
+Runtime Environment from OpenJDK and the required Graphviz
+binaries. The installation no longer requires you to install the JCE
+Strong Encryption policy.
 
 Note that installation on OS X currently requires the 
 XQuartz libraries to be manually installed. 
@@ -52,11 +52,11 @@ The Taverna-PROV export has been added. This adds a new
 button "Save Provenance Bundle" when clicking "Save All"
 from the results perspective. 
 
-The provenance Data Bundle is a ZIP file based on the 
-Research Object Bundle specification, and contains
-a W3C PROV-O provenance of a workflow
-run, in addition to all input, output and intermediate values
-as separate files withint he bundle.
+The provenance bundle is a ZIP file containing all input, output and
+intermediate values as separate files, along with the provenance of
+the workflow run. The bundle is based on the Research Object Bundle
+specification, and complies with the W3C PROV-O provenance
+specification.
 
 For details, see https://github.com/myGrid/taverna-prov
 
@@ -70,20 +70,7 @@ described for compatiblity with other components within
 a chosen Component Family.
 
 This allows for publication of reusable workflow fragments,
-which appear as single services within the master workflow. Unlike
-nested workflows, components are retrieved at runtime from the
-Component repository (by default myExperiment), allowing for
-automatic updates. 
-
-Components are defined according to a specified profile, to
-ensure they comply with the specified interface and has
-the required metadata (such as typing of inputs and outputs)
-specified.
-
-Available components are discovered within the chosen
-component family, identifying compatible steps that 
-can be combined in the master workflow without requiring any
-adaptation with shim-services.
+which appear as single services within the master workflow.
 
 For details, see 
 http://www.taverna.org.uk/developers/work-in-progress/components/
@@ -94,16 +81,14 @@ Help
 Added Help->About, which includes debug information that 
 can be posted with support requests. (T3-1015)
 
-
-
 Credential Manager 
 -------------------
+
 Rather than requiring a credential manager password at start-up, 
-the default password "taverna" is used unless manually specified. (T3-981)
+the default password "taverna" is used unless explicitly specified. (T3-981)
 
 The bundled OpenJDK includes support for strong cryptography, and thus
 the JCE dialogue should no longer appear at startup. (T3-980)
-
 
 XPath service
 -------------
@@ -117,7 +102,6 @@ Added ability to receive result of XPath functions, e.g.
 REST service
 ------------
 Support optional input query parameters (T2-2112)
-
 
 Plugin manager
 --------------
