@@ -28,6 +28,17 @@ Taverna uses various third-party libraries that are included under compatible
 open source licences such as BSD, MIT and the Apache Licence 2.0.
 
 
+Requirements
+============
+
+See http://www.taverna.org.uk/download/workbench/system-requirements/
+
+Note that installation on OS X currently requires the 
+XQuartz libraries to be manually installed. 
+XQuartz-2.7.5.dmg (or newer) should be included on the
+Taverna OS X disk image. If not, see 
+http://xquartz.macosforge.org/landing/
+
 
 Documentation
 =============
@@ -37,10 +48,12 @@ documentation and tutorials on using Taverna.
 See http://www.mygrid.org.uk/dev/wiki/display/taverna25/User+Manual for the
 Taverna 2.5 user manual.
 
+
 Examples
 ========
 Example Taverna 2.5 workflows can be found in the myExperiment starter pack at
-http://www.myexperiment.org/packs/XXX
+
+TODO: http://www.myexperiment.org/packs/XXX
 
 You can also access these as the tab 'Starter pack' under the *myExperiment*
 view inside Taverna.
@@ -96,16 +109,4 @@ the information you provide in the registration form.
 
 For full terms and condition of our registration, see
 http://www.taverna.org.uk/about/legal-stuff/terms/
-
-
-Requirements
-============
-
-See http://www.taverna.org.uk/download/workbench/system-requirements/
-
-Note that installation on OS X currently requires the 
-XQuartz libraries to be manually installed. 
-XQuartz-2.7.5.dmg (or newer) should be included on the
-Taverna OS X disk image. If not, see 
-http://xquartz.macosforge.org/landing/
 
