@@ -198,7 +198,7 @@
 						<executions>
 							<execution>
 								<id>dependencycopy</id>
-								<phase>package</phase>
+								<phase>prepare-package</phase>
 								<goals>
 									<goal>copy</goal>
 								</goals>
@@ -5397,7 +5397,7 @@
 				<m2Repository></m2Repository>
 			</properties>
 			<build>
-				<finalName>taverna-workbench-${project.version}</finalName>
+				<finalName>taverna-workbench</finalName>
 				<plugins>
 					<plugin>
 						<groupId>org.codehaus.mojo</groupId>
@@ -5425,7 +5425,7 @@
 						<executions>
 							<execution>
 								<id>dependencycopy</id>
-								<phase>package</phase>
+								<phase>prepare-package</phase>
 								<goals>
 									<goal>copy</goal>
 								</goals>
@@ -10616,6 +10616,126 @@
 				</plugins>
 			</build>
 		</profile>
+        <profile>
+            <id>dist</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-assembly-plugin</artifactId>
+                        <version>2.2</version>
+                        <executions>
+                            <execution>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>single</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>src/main/assembly/dist-assembly.xml
+                                </descriptor>
+                            </descriptors>
+                            <attach>false</attach>
+                        </configuration>
+                    </plugin>
+                
+                    <!--  Download openJDK JREs on demand -->
+                   <plugin>
+                        <groupId>com.googlecode.maven-download-plugin</groupId>
+                        <artifactId>maven-download-plugin</artifactId>
+                        <version>1.1.0</version>
+                        <executions>
+                            <execution>
+                                <id>openjdk-linux-amd64</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>wget</goal>
+                                </goals>
+                                <configuration>
+                                    <url>http://build.mygrid.org.uk/openjdk/1.7.0-u40-unofficial/openjdk-1.7.0-u40-unofficial-linux-amd64-image.tar.gz</url>
+                                    <outputDirectory>${user.home}/.install4j5/jres</outputDirectory>
+                                    <md5>26049183816155c627a4a8cfdab70bf7</md5>
+                                </configuration>
+                            </execution>
+                           <!-- 
+                            <execution>
+                                <id>openjdk-linux-i586</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>wget</goal>
+                                </goals>
+                                <configuration>
+                                    <url>http://build.mygrid.org.uk/openjdk/1.7.0-u40-unofficial/openjdk-1.7.0-u40-unofficial-linux-i586-image.tar.gz</url>
+                                    <outputDirectory>${user.home}/.install4j5/jres</outputDirectory>
+                                    <md5>d936c298ebc62fe3c0171203e7b26887</md5>
+                                </configuration>
+                            </execution>                            
+                             -->
+                            <execution>
+                                <id>openjdk-macosx-x86_64</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>wget</goal>
+                                </goals>
+                                <configuration>
+                                    <url>http://build.mygrid.org.uk/openjdk/1.7.0-u40-unofficial/openjdk-1.7.0-u40-unofficial-macosx-x86_64-bundle.tar.gz</url>
+                                    <outputDirectory>${user.home}/.install4j5/jres</outputDirectory>
+                                    <md5>abf69f7d2a45bfa4979f5ad7f6978373</md5>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>openjdk-windows-amd64</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>wget</goal>
+                                </goals>
+                                <configuration>
+                                    <url>http://build.mygrid.org.uk/openjdk/1.7.0-u40-unofficial/openjdk-1.7.0-u40-unofficial-windows-amd64-image.tar.gz</url>
+                                    <outputDirectory>${user.home}/.install4j5/jres</outputDirectory>
+                                    <md5>3ce46e962e503f73737c053fc13fd37e</md5>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>openjdk-windows-i586</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>wget</goal>
+                                </goals>
+                                <configuration>
+                                    <url>http://build.mygrid.org.uk/openjdk/1.7.0-u40-unofficial/openjdk-1.7.0-u40-unofficial-windows-i586-image.tar.gz</url>
+                                    <outputDirectory>${user.home}/.install4j5/jres</outputDirectory>
+                                    <md5>6f4e36cc73a41c94396cd0f1e1ac263b</md5>
+                                </configuration>
+                            </execution>
+                         </executions>
+                    </plugin>
+                                
+                    <plugin>
+                        <groupId>org.sonatype.install4j</groupId>
+                        <artifactId>install4j-maven-plugin</artifactId>
+                        <version>1.0.6</version>
+                        <executions>
+                            <execution>
+                                <id>compile-installers</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>compile</goal>
+                                </goals>
+                                <configuration>
+                                    <projectFile>${project.basedir}/src/main/install4j/taverna-workbench.install4j</projectFile>
+<!--
+                                    <skipOnMissingExecutable>true</skipOnMissingExecutable>
+-->
+                                    <faster>true</faster>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
 	</profiles>
 	<dependencies>
 		<dependency>
