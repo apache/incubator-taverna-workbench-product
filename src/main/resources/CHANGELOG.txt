@@ -36,6 +36,7 @@ TODO: is this how they can be re-enabled?
 
 Interaction service
 -------------------
+
 The Interaction Service has been added to the Workbench. This
 provides the ability to ask questions and inform users during
 the running of the workflow. Unlike the previous interactive
@@ -46,8 +47,10 @@ Taverna Server.
 For details, see 
 http://www.taverna.org.uk/developers/work-in-progress/interaction/
 
+
 Provenance
 ----------
+
 The Taverna-PROV export has been added. This adds a new
 button "Save Provenance Bundle" when clicking "Save All"
 from the results perspective. 
@@ -78,8 +81,10 @@ http://www.taverna.org.uk/developers/work-in-progress/components/
 
 Help
 ----
+
 Added Help->About, which includes debug information that 
 can be posted with support requests. (T3-1015)
+
 
 Credential Manager 
 -------------------
@@ -90,8 +95,10 @@ the default password "taverna" is used unless explicitly specified. (T3-981)
 The bundled OpenJDK includes support for strong cryptography, and thus
 the JCE dialogue should no longer appear at startup. (T3-980)
 
+
 XPath service
 -------------
+
 Added ability to extract the first matching value (at depth 0). 
 Additional output ports added. (T3-1019)
 
@@ -101,10 +108,13 @@ Added ability to receive result of XPath functions, e.g.
 
 REST service
 ------------
+
 Support optional input query parameters (T2-2112)
+
 
 Plugin manager
 --------------
+
 Avoid startup screen delays if a plugin's repository URL
 fails due to DNS/network errors (T2-2115)
 
@@ -115,6 +125,7 @@ Available Services. (T3-1018)
 
 Run dialog
 ----------
+
 On Linux, the Run dialogue should no longer appear
 behind the workbench window if it was iconified (T2-2105, T3-994)
 
@@ -128,6 +139,7 @@ during command line execution of large workflows. (T2-2102)
 
 T2flow format
 -------------
+
 The calculated port depth of output ports are stored
 in the saved t2flow. (T3-1013)
 
@@ -149,10 +161,12 @@ Changes in Taverna 2.4.0
 Taverna 2.4.0 includes a major extension to the functionality of
 string constant (now renamed text constant) and a number of bug fixes.
 
+
 Credential Manager
 ------------------
 
 Updating of the master password now works correctly (T2-2004)
+
 
 Run dialog
 ----------
@@ -164,6 +178,7 @@ The minimization of the run dialog has been changed (T2-2005)
 Previously, the run dialog could get confused if, after the workflow
 had been run, ports were removed from the workflow or
 renamed. (T2-2060)
+
 
 myExperiment Perspective
 ------------------------
@@ -179,12 +194,14 @@ manager (T2-2010)
 The myExperiment Perspective is more tolerant of different date
 formats (T2-2020)
 
+
 Service Catalogue Perspective
 -----------------------------
 
 The search box is now shown in small windows (T2-1948)
 
 The details of services are now displayed correctly (T2-2001)
+
 
 Workflow design
 ---------------
@@ -197,6 +214,7 @@ does not lose the original workflow (T2-1998)
 
 The workflow title is now limited in length (T2-2002)
 
+
 Worklow run
 -----------
 
@@ -207,10 +225,12 @@ Saving data now closes streams correctly (T2-1997)
 
 The HTML renderer now uses the standard Desktop mechanism (T2-1999)
 
+
 Annotations
 -----------
 
 Annotations of services are now displayed correctly (T2-2009)
+
 
 Beanshell service
 -----------------
@@ -218,10 +238,12 @@ Beanshell service
 The background colour for text has been changed to make it more
 readable (T2-1984)
 
+
 BioMoby service
 ---------------
 
 The registries have now been changed to point at INAB (T2-1983)
+
 
 REST service
 ------------
@@ -236,11 +258,13 @@ The REST service can now return the headers of the reponse. (T2-2064)
 Header values can now be parameterized. The parameters can be set by
 passing values into the corresponding port of the service. (T2-2072)
 
+
 SoapLab service
 ---------------
 
 The SoapLab service will now fail if the invoked service does not
 return enough data (T2-1994)
+
 
 Text constant service
 ---------------------
@@ -248,6 +272,7 @@ Text constant service
 The string constant service has been replaced by the text constant
 service. The text constant service allows the entry of multi-line text
 values, and the text can be loaded from and stored to a file.
+
 
 Tool service
 ------------
@@ -271,6 +296,7 @@ tool invocation has finished. (T2-2003)
 
 The tool service has been made more thread-safe. (T2-2028)
 
+
 WSDL service
 ------------
 
@@ -282,6 +308,7 @@ document (T2-1990)
 
 Annotations on web service ports are now included in the corresponding
 XML splitters (T2-2007)
+
 
 XPath service
 -------------
