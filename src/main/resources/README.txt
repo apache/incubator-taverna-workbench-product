@@ -103,3 +103,9 @@ Requirements
 
 See http://www.taverna.org.uk/download/workbench/system-requirements/
 
+Note that installation on OS X currently requires the 
+XQuartz libraries to be manually installed. 
+XQuartz-2.7.5.dmg (or newer) should be included on the
+Taverna OS X disk image. If not, see 
+http://xquartz.macosforge.org/landing/
+
