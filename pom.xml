@@ -229,6 +229,16 @@
 							</execution>
 						</executions>
 					</plugin>
+
+                    <plugin>
+                        <groupId>org.sonatype.install4j</groupId>
+                        <artifactId>install4j-maven-plugin</artifactId>
+                        <version>1.0.6</version>
+                        <configuration>
+                            <release>${project.version}-${buildNumber}</release>
+                            <faster>true</faster>
+                        </configuration>
+                    </plugin>
 				</plugins>
 			</build>
 		</profile>
@@ -302,6 +312,19 @@
             <build>
                 <plugins>
                     <plugin>
+                        <artifactId>maven-dependency-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>dependencycopy</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>copy</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-assembly-plugin</artifactId>
                         <version>2.2</version>
@@ -318,11 +341,12 @@
                                         </descriptor>
                                     </descriptors>
                                     <attach>false</attach>
-                                    <finalName>taverna-workbench-dist</finalName>
+                                    <finalName>taverna-workbench</finalName>
                                 </configuration>                                
                             </execution>
                         </executions>
                     </plugin>
+                
                 
                     <!--  Download openJDK JREs on demand -->
                    <plugin>
@@ -394,7 +418,7 @@
                             </execution>
                          </executions>
                     </plugin>
-                                
+
                     <plugin>
                         <groupId>org.sonatype.install4j</groupId>
                         <artifactId>install4j-maven-plugin</artifactId>
@@ -407,11 +431,11 @@
                                     <goal>compile</goal>
                                 </goals>
                                 <configuration>
+                                    <failIfMissing>true</failIfMissing>
                                     <projectFile>${project.basedir}/src/main/install4j/taverna-workbench.install4j</projectFile>
 <!--
                                     <skipOnMissingExecutable>true</skipOnMissingExecutable>
 -->
-                                    <faster>true</faster>
                                 </configuration>
                             </execution>
                         </executions>
