@@ -1,5 +1,9 @@
-====================================
-Taverna 2.5 Pre-release known issues
-====================================
+==========================
+Taverna 2.5.0 known issues
+==========================
 
-A set of known issues will be specified when Taverna 2.5 is released.
+TODO: Include known issues in Taverna 2.5
+
+See:
+http://dev.mygrid.org.uk/issues/issues/?filter=10412
+
