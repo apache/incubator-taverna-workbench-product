@@ -17,8 +17,8 @@ if test -x "$JAVA_HOME/bin/java"; then
 fi
 
 # 32-bit compatible memory settings:
-# 700 MB memory, 140 MB for classes
-exec "$javabin" -Xmx700m -XX:MaxPermSize=140m \
+# 700 MB memory, 200 MB for classes
+exec "$javabin" -Xmx700m -XX:MaxPermSize=200m \
   "-Draven.profile=file://$taverna_home/conf/current-profile.xml" \
   "-Dtaverna.startup=$taverna_home" \
   "-Dtaverna.dotlocation=$taverna_home/bin/dot.sh"
