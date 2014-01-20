@@ -19,7 +19,7 @@ fi
 interaction_settings=""
 ## Uncomment and change the value of the following line to enable web-driven interaction with
 ## an external site
-## interaction_settings="$interaction_settings -Dtaverna.interaction.host=localhost"
+## interaction_settings="$interaction_settings -Dtaverna.interaction.host=http://localhost"
 
 ## Uncomment the following three lines to enable web-driven interaction
 ## interaction_settings="$interaction_settings -Dtaverna.interaction.port=8080"
