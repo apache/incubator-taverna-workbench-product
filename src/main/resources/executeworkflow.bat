@@ -20,7 +20,7 @@ set ARGS=%ARGS% -Djava.awt.headless=true
 
 REM Uncomment and change the value of the following line to enable web-driven interaction with
 REM an external site
-:: set ARGS=%ARGS% -Dtaverna.interaction.host=localhost
+:: set ARGS=%ARGS% -Dtaverna.interaction.host=http://localhost
 
 REM Uncomment the following three lines to enable web-driven interaction
 :: set ARGS=%ARGS% -Dtaverna.interaction.port=8080
