@@ -21,7 +21,7 @@
 				<os>
 					<family>Windows</family>
 				</os>
-				<activeByDefault>false</activeByDefault>
+				<activeByDefault>true</activeByDefault>
 			</activation>
 			<properties>
 				<!-- To be inserted into plugins.xml -->
