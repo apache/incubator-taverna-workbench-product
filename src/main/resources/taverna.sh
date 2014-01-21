@@ -21,7 +21,7 @@ fi
 exec "$javabin" -Xmx700m -XX:MaxPermSize=200m \
   "-Draven.profile=file://$taverna_home/conf/current-profile.xml" \
   "-Dtaverna.startup=$taverna_home" \
-  "-Dtaverna.dotlocation=$taverna_home/bin/dot.sh"
+  "-Dtaverna.dotlocation=$taverna_home/bin/dot.sh" \
   -Djava.system.class.loader=net.sf.taverna.raven.prelauncher.BootstrapClassLoader \
   -Dapple.laf.useScreenMenuBar=true \
   -Dapple.awt.graphics.UseQuartz=false \
