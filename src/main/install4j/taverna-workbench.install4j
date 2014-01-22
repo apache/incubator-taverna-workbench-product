@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <install4j version="5.1.8" transformSequenceNumber="4">
-  <directoryPresets config="../../../target/taverna-workbench-dist/README.txt" />
+  <directoryPresets config="../windows/launcher_logo.ico" />
   <application name="Taverna Workbench" distributionSourceDir="" applicationId="5202-1944-9901-7953" mediaDir="../../../target/media" mediaFilePattern="${compiler:sys.shortName}-${compiler:sys.version}-${compiler:sys.platform}" compression="6" lzmaCompression="true" pack200Compression="false" excludeSignedFromPacking="true" commonExternalFiles="false" createMd5Sums="true" shrinkRuntime="false" shortName="taverna-workbench" publisher="myGrid" publisherWeb="http://www.taverna.org.uk/" version="2.5-SNAPSHOT" allPathsRelative="true" backupOnSave="false" autoSave="true" convertDotsToUnderscores="false" macSignature="????" installerName="" javaMinVersion="1.7" javaMaxVersion="" allowBetaVM="false" jdkMode="runtimeJre" jdkName="">
     <languages skipLanguageSelection="false" languageSelectionInPrincipalLanguage="false">
       <principalLanguage id="en" customLocalizationFile="" />
@@ -41,13 +41,7 @@
     </mountPoints>
     <entries>
       <dirEntry mountPoint="22" file="../../../target/taverna-workbench-dist" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="direct" subDirectory="taverna-workbench-dist" excludeSuffixes="" dirMode="755" overrideDirMode="false">
-        <exclude>
-          <entry location="taverna.sh" fileType="regular" />
-          <entry location="taverna-debug.bat" fileType="regular" />
-          <entry location="executeworkflow.bat" fileType="regular" />
-          <entry location="executeworkflow.sh" fileType="regular" />
-          <entry location="bin" fileType="regular" />
-        </exclude>
+        <exclude />
       </dirEntry>
       <dirEntry mountPoint="96" file="../../../target/taverna-workbench-dist/bin/win32i386" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="subdir" subDirectory="win32i386" excludeSuffixes="" dirMode="755" overrideDirMode="false">
         <exclude />
@@ -85,9 +79,9 @@
       </splashScreen>
       <java mainClass="net.sf.taverna.raven.launcher.Launcher" vmParameters="" arguments="" allowVMPassthroughParameters="true" preferredVM="client" bundleRuntime="true">
         <classPath>
-          <scanDirectory location="lib" failOnError="true" />
           <directory location="conf" failOnError="false" />
           <directory location="lib" failOnError="false" />
+          <scanDirectory location="lib" failOnError="true" />
         </classPath>
         <nativeLibraryDirectories>
           <directory name="lib" />
@@ -96,25 +90,25 @@
       <includedFiles />
       <unextractableFiles />
       <vmOptionsFile mode="content" overwriteMode="3" fileMode="644">
-        <content>-Xmx${compiler:maxMemory}
+        <content># Maximum working memory
+-Xmx${compiler:maxMemory}
+# Maximum memory for classes and plugins
 -XX:MaxPermSize=${compiler:maxPermGenSpace}
--Djava.awt.headless=true
+# Graphviz dot binary
+-Dtaverna.dotlocation=${compiler:dot}
+
+## System properties
 -Djava.system.class.loader=net.sf.taverna.raven.prelauncher.BootstrapClassLoader
--Draven.launcher.app.main=net.sf.taverna.t2.commandline.CommandLineLauncher
 -Dapple.laf.useScreenMenuBar=true
 -Dapple.awt.graphics.UseQuartz=false
 -Dsun.swing.enableImprovedDragGesture
 -Dcom.sun.net.ssl.enableECC=false
 -Djsse.enableSNIExtension=false
+##
+
+# Taverna distribution info
 -Dinstall4j.build=${compiler:sys.date}T${compiler:sys.time}
--Dinstall4j.platform=${compiler:sys.platform}
-## Uncomment and change the value of the following line to enable
-## web-driven interaction with an external site
-#-Dtaverna.interaction.host=http://localhost
-## Modify the lines below if needed
-#-Dtaverna.interaction.port=8080
-#-Dtaverna.interaction.webdav_path=/interaction
-#-Dtaverna.interaction.feed_path=/feed"</content>
+-Dinstall4j.platform=${compiler:sys.platform}</content>
       </vmOptionsFile>
       <customScript mode="1" file="">
         <content />
@@ -126,21 +120,21 @@
         <file path="../resources/lib/launcher_logo_256x256.png" />
       </iconImageFiles>
     </launcher>
-    <launcher name="executeworkflow" id="164" customizedId="" external="false" excludeFromMenu="false" unixMode="755" menuName="${compiler:sys.fullName} ${compiler:sys.version}" icnsFile="../osx/Taverna.icns" customMacBundleIdentifier="true" macBundleIdentifier="net.sf.taverna.t2.workbench" swtApp="false" fileset="" macBundleBinary="JavaApplicationStub" addMacEntitlements="false" macEntitlementsFile="">
-      <executable name="executeworkflow" type="1" iconSet="true" iconFile="../windows/launcher_logo.ico" executableDir="" redirectStderr="false" stderrFile="error.log" stderrMode="overwrite" redirectStdout="false" stdoutFile="output.log" stdoutMode="overwrite" failOnStderrOutput="true" executableMode="2" changeWorkingDirectory="false" workingDirectory="." singleInstance="true" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="" executionLevel="asInvoker" checkConsoleParameter="true" globalSingleInstance="false">
-        <versionInfo include="true" fileVersion="" fileDescription="Taverna Workbench build ${compiler:sys.platform}--${compiler:sys.date}T${compiler:sys.time}" legalCopyright="Copyright 2005-2014 University of Manchester, UK" internalName="taverna" productName="" />
+    <launcher name="executeworkflow" id="165" customizedId="" external="false" excludeFromMenu="true" unixMode="755" menuName="" icnsFile="" customMacBundleIdentifier="false" macBundleIdentifier="" swtApp="false" fileset="" macBundleBinary="JavaApplicationStub" addMacEntitlements="false" macEntitlementsFile="">
+      <executable name="executeworkflow" type="1" iconSet="false" iconFile="" executableDir="" redirectStderr="false" stderrFile="error.log" stderrMode="overwrite" redirectStdout="false" stdoutFile="output.log" stdoutMode="overwrite" failOnStderrOutput="true" executableMode="2" changeWorkingDirectory="false" workingDirectory="." singleInstance="false" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="" executionLevel="asInvoker" checkConsoleParameter="false" globalSingleInstance="false">
+        <versionInfo include="false" fileVersion="" fileDescription="" legalCopyright="" internalName="" productName="" />
       </executable>
-      <splashScreen show="false" autoOff="true" alwaysOnTop="true" width="0" height="0" bitmapFile="../resources/lib/launcher_splashscreen.png" java6SplashScreen="false">
+      <splashScreen show="false" autoOff="true" alwaysOnTop="true" width="0" height="0" bitmapFile="" java6SplashScreen="false">
         <text>
           <statusLine x="20" y="20" text="" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
           <versionLine x="20" y="40" text="version ${compiler:sys.version}" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
         </text>
       </splashScreen>
-      <java mainClass="net.sf.taverna.raven.launcher.Launcher" vmParameters="" arguments="" allowVMPassthroughParameters="true" preferredVM="client" bundleRuntime="true">
+      <java mainClass="net.sf.taverna.raven.launcher.Launcher" vmParameters="-Draven.launcher.app.main=net.sf.taverna.t2.commandline.CommandLineLauncher" arguments="" allowVMPassthroughParameters="true" preferredVM="client" bundleRuntime="true">
         <classPath>
-          <scanDirectory location="lib" failOnError="true" />
           <directory location="conf" failOnError="false" />
-          <directory location="lib" failOnError="false" />
+          <directory location="lib" failOnError="true" />
+          <scanDirectory location="lib" failOnError="true" />
         </classPath>
         <nativeLibraryDirectories>
           <directory name="lib" />
@@ -148,25 +142,29 @@
       </java>
       <includedFiles />
       <unextractableFiles />
-      <vmOptionsFile mode="content" overwriteMode="3" fileMode="644">
-        <content>-Xmx${compiler:maxMemory}
+      <vmOptionsFile mode="content" overwriteMode="0" fileMode="644">
+        <content># Maximum working memory
+-Xmx${compiler:maxMemory}
+# Maximum memory for classes and plugins
 -XX:MaxPermSize=${compiler:maxPermGenSpace}
--Djava.awt.headless=true
+
+## System properties
 -Djava.system.class.loader=net.sf.taverna.raven.prelauncher.BootstrapClassLoader
--Draven.launcher.app.main=net.sf.taverna.t2.commandline.CommandLineLauncher
--Dapple.laf.useScreenMenuBar=true
--Dapple.awt.graphics.UseQuartz=false
--Dsun.swing.enableImprovedDragGesture
 -Dcom.sun.net.ssl.enableECC=false
 -Djsse.enableSNIExtension=false
+##
+
+# Taverna distribution info
 -Dinstall4j.build=${compiler:sys.date}T${compiler:sys.time}
 -Dinstall4j.platform=${compiler:sys.platform}
-## Uncomment and change the value of the following line to enable
-## web-driven interaction with an external site
-#-Dtaverna.interaction.host=http://localhost
-## Modify the lines below if needed
-#-Dtaverna.interaction.port=8080
-#-Dtaverna.interaction.webdav_path=/interaction
+
+## Uncomment and change the value of the following line to 
+## enable web-driven interaction with an external site
+#-Dtaverna.interaction.host=http://localhost"
+
+## Uncomment the following three lines to enable web-driven interaction
+#-Dtaverna.interaction.port=8080"
+#-Dtaverna.interaction.webdav_path=/interaction"
 #-Dtaverna.interaction.feed_path=/feed"</content>
       </vmOptionsFile>
       <customScript mode="1" file="">
@@ -175,9 +173,7 @@
       <infoPlist mode="1" file="">
         <content />
       </infoPlist>
-      <iconImageFiles>
-        <file path="../resources/lib/launcher_logo_256x256.png" />
-      </iconImageFiles>
+      <iconImageFiles />
     </launcher>
   </launchers>
   <installerGui installerType="1" addOnAppId="" suggestPreviousLocations="true" autoUpdateDescriptorUrl="http://updates.taverna.org.uk/workbench/${compiler:sys.version}/updates.xml" useAutoUpdateBaseUrl="true" autoUpdateBaseUrl="http://updates.taverna.org.uk/workbench/installers/">
@@ -622,7 +618,8 @@
       </autoUpdate>
     </unixArchive>
   </mediaSets>
-  <buildIds buildAll="false" />
-  <buildOptions verbose="false" faster="true" disableSigning="false" debug="false" />
+  <buildIds buildAll="true">
+    <mediaSet refId="25" />
+  </buildIds>
+  <buildOptions verbose="false" faster="false" disableSigning="false" debug="false" />
 </install4j>
-
