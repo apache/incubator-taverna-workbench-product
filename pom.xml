@@ -432,6 +432,8 @@
                                 </goals>
                                 <configuration>
                                     <failIfMissing>true</failIfMissing>
+                                	<attach>true</attach>
+                                    
                                     <projectFile>${project.basedir}/src/main/install4j/taverna-workbench.install4j</projectFile>
 <!--
                                     <skipOnMissingExecutable>true</skipOnMissingExecutable>
