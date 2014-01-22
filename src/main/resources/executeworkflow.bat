@@ -29,6 +29,10 @@ REM Uncomment the following three lines to enable web-driven interaction
 
 set ARGS=%ARGS% "-Dtaverna.startup=%TAVERNA_HOME%."
 
-java %ARGS% -jar "%TAVERNA_HOME%lib\prelauncher-2.5-SNAPSHOT.jar" %*
+set JAR_FILE=
+
+for /F "delims=" %%a in ('dir /b %TAVERNA_HOME%lib ^|findstr /c:prelauncher') do set JAR_FILE=%%a
+
+java %ARGS% -jar "%TAVERNA_HOME%lib\%JAR_FILE%" %*
 
 
