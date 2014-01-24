@@ -552,6 +552,7 @@
                                     <type>jar</type>
                                     <outputDirectory>${project.build.directory}/repository/commons-codec/commons-codec/1.6</outputDirectory>
                                 </artifactItem>
+                                <!-- 
                                 <artifactItem>
                                     <groupId>commons-codec</groupId>
                                     <artifactId>commons-codec</artifactId>
@@ -5669,6 +5670,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/xpp3/xpp3_min/1.1.4c</outputDirectory>
                                 </artifactItem>
+                                 -->
 			     			</artifactItems>							
                     </configuration>
                 </plugin>
