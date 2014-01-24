@@ -152,6 +152,8 @@
 -Djava.system.class.loader=net.sf.taverna.raven.prelauncher.BootstrapClassLoader
 -Dcom.sun.net.ssl.enableECC=false
 -Djsse.enableSNIExtension=false
+-Draven.launcher.show_splashscreen=false
+-Djava.awt.headless=true
 ##
 
 # Taverna distribution info
