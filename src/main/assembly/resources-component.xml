@@ -14,8 +14,16 @@
 				<exclude>plugins/plugin-sites.xml</exclude>
 				<exclude>taverna.sh</exclude>
 				<exclude>executeworkflow.sh</exclude>
+				<exclude>bin</exclude>
 			</excludes>
 			<fileMode>0644</fileMode>			
+			<directoryMode>0755</directoryMode>
+			<lineEnding>keep</lineEnding>			
+		</fileSet>
+		<fileSet>
+			<directory>src/main/resources/bin</directory>
+			<outputDirectory>/bin</outputDirectory>
+			<fileMode>0755</fileMode>			
 			<directoryMode>0755</directoryMode>
 			<lineEnding>keep</lineEnding>			
 		</fileSet>
