@@ -455,16 +455,18 @@
 			</version>
 		</dependency>
 
-		<dependency>
+        <!-- Each of the plugins/ must be included here to ensure their
+        JARs end up in repository/-->
+        
+<!-- 		<dependency>
 			<groupId>net.sf.taverna.t2.taverna-workbench.plugins
 			</groupId>
 			<artifactId>activities-plugin</artifactId>
 			<version>${project.version}
 			</version>
 			<scope>test</scope>
-		</dependency>
-        <!-- Each of the plugins/ must be included here to ensure their
-        JARs end up in repository/-->
+		</dependency> -->
+
 		<dependency>
 			<groupId>net.sf.taverna.t2.taverna-workbench.plugins
 			</groupId>
@@ -481,12 +483,7 @@
 			</version>
 			<scope>test</scope>
 		</dependency> -->
-		<dependency>
-			<groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
-			<artifactId>externaltool-plugin</artifactId>
-			<version>${project.version}</version>
-			<scope>test</scope>
-		</dependency>
+
 		<dependency>
 			<groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
 			<artifactId>servicecatalogue-plugin</artifactId>
@@ -505,6 +502,94 @@
 			<version>${t2.taverna-commandline.version}</version>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- The activities -->
+		<dependency>
+			<groupId>net.sf.taverna.t2.activities</groupId>
+			<artifactId>common-activities</artifactId>
+			<version>${t2.activities.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>net.sf.taverna.t2.activities</groupId>
+			<artifactId>bioinformatics-activities</artifactId>
+			<version>${t2.activities.version}</version>
+			<scope>test</scope>
+		</dependency>
+	
+		<dependency>
+			<groupId>net.sf.taverna.t2.activities</groupId>
+			<artifactId>apiconsumer-activity</artifactId>
+			<version>${t2.activities.version}</version>
+			<scope>test</scope>
+		</dependency>
+				
+		<dependency>
+			<groupId>net.sf.taverna.t2.component</groupId>
+			<artifactId>component-activity</artifactId>
+			<version>${t2.activities.version}</version>
+			<scope>test</scope>
+		</dependency>
+	
+		<dependency>
+			<groupId>net.sf.taverna.t2.activities</groupId>
+			<artifactId>interaction-activity</artifactId>
+			<version>${t2.activities.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sf.taverna.t2.activities</groupId>
+			<artifactId>sardine-activity</artifactId>
+			<version>${t2.activities.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<!-- The activity UIs -->
+	
+		<dependency>
+			<groupId>net.sf.taverna.t2.ui-activities</groupId>
+			<artifactId>common-activity-uis</artifactId>
+			<version>${t2.ui.activities.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>net.sf.taverna.t2.ui-activities</groupId>
+			<artifactId>bioinformatics-activity-uis</artifactId>
+			<version>${t2.ui.activities.version}</version>
+			<scope>test</scope>
+		</dependency>
+	
+		<dependency>
+			<groupId>net.sf.taverna.t2.ui-activities</groupId>
+			<artifactId>apiconsumer-activity-ui</artifactId>
+			<version>${t2.ui.activities.version}</version>
+			<scope>test</scope>
+		</dependency>
+				
+		<dependency>
+			<groupId>net.sf.taverna.t2.ui-activities</groupId>
+			<artifactId>component-activity-ui</artifactId>
+			<version>${t2.ui.activities.version}</version>
+			<scope>test</scope>
+		</dependency>
+	
+		<dependency>
+			<groupId>net.sf.taverna.t2.ui-activities</groupId>
+			<artifactId>interaction-activity-ui</artifactId>
+			<version>${t2.ui.activities.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sf.taverna.t2.ui-activities</groupId>
+			<artifactId>sardine-activity-ui</artifactId>
+			<version>${t2.ui.activities.version}</version>
+			<scope>test</scope>
+		</dependency>
+							
 	</dependencies>
 	<build>
        <pluginManagement>
