@@ -46,7 +46,6 @@
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
             <repository>http://www.eviware.com/repository/maven2/</repository>
-            <repository>http://www.mygrid.org.uk/maven/biomoby/moby-dev.inab.org/m2/</repository>
         </repositories>
 		<profile>
 			<dependency>
