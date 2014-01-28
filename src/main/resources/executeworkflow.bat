@@ -31,7 +31,7 @@ set ARGS=%ARGS% "-Dtaverna.startup=%TAVERNA_HOME%."
 
 set JAR_FILE=
 
-for /F "delims=" %%a in ('dir /b %TAVERNA_HOME%lib ^|findstr /c:prelauncher') do set JAR_FILE=%%a
+for /F "delims=" %%a in ('dir /b "%TAVERNA_HOME%lib" ^|findstr /c:prelauncher') do set JAR_FILE=%%a
 
 java %ARGS% -jar "%TAVERNA_HOME%lib\%JAR_FILE%" %*
 
