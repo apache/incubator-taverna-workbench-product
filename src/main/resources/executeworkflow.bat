@@ -5,9 +5,9 @@ REM Taverna startup script
 REM distribution directory
 set TAVERNA_HOME=%~dp0
 
-
-REM 1000 MB memory, 140 MB for classes
-set ARGS=-Xmx1000m -XX:MaxPermSize=140m
+REM 32-bit compatible defaults:
+REM 700 MB memory, 200 MB for classes
+set ARGS=-Xmx700m -XX:MaxPermSize=200m
 
 REM Taverna system properties
 set ARGS=%ARGS% "-Dcom.sun.net.ssl.enableECC=false"
