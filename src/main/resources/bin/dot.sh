@@ -38,7 +38,7 @@ if [ "$os" = "Darwin" ] ; then
     dot="$dir/osx-x64/dot_static"
 fi
 
-if [ "$dot" != "dot" && ! -x "$dot" ] ; then  
+if [ "$dot" != "dot" ] && [ ! -x "$dot" ] ; then
     #echo "Could not find/execute $dot"
     dot="dot"
 fi
