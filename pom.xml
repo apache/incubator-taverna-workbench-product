@@ -437,7 +437,10 @@
                                     <projectFile>${project.basedir}/src/main/install4j/taverna-workbench.install4j</projectFile>
 <!--
                                     <skipOnMissingExecutable>true</skipOnMissingExecutable>
--->
+-->								
+								<variables>
+									<srcDir>${project.build.directory}/taverna-workbench-dist</srcDir>
+								</variables>
                                 </configuration>
                             </execution>
                         </executions>
