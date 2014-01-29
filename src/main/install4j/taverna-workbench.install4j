@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <install4j version="5.1.8" transformSequenceNumber="4">
-  <directoryPresets config="../../../target/taverna-workbench-dist/taverna.bat" />
-  <application name="Taverna Workbench" distributionSourceDir="" applicationId="5202-1944-9901-7953" mediaDir="../../../target/media" mediaFilePattern="${compiler:sys.shortName}-${compiler:sys.version}-${compiler:sys.platform}" compression="6" lzmaCompression="true" pack200Compression="false" excludeSignedFromPacking="true" commonExternalFiles="false" createMd5Sums="true" shrinkRuntime="false" shortName="taverna-workbench" publisher="myGrid" publisherWeb="http://www.taverna.org.uk/" version="2.5-SNAPSHOT" allPathsRelative="true" backupOnSave="false" autoSave="true" convertDotsToUnderscores="false" macSignature="????" installerName="" javaMinVersion="1.7" javaMaxVersion="" allowBetaVM="false" jdkMode="runtimeJre" jdkName="">
+  <directoryPresets config="../../../target/taverna-workbench-dist/taverna.sh" />
+  <application name="Taverna Workbench" distributionSourceDir="" applicationId="5202-1944-9901-7953" mediaDir="../../../target/media" mediaFilePattern="${compiler:sys.shortName}-${compiler:sys.version}-${compiler:sys.platform}" compression="6" lzmaCompression="true" pack200Compression="false" excludeSignedFromPacking="true" commonExternalFiles="false" createMd5Sums="true" shrinkRuntime="false" shortName="taverna-workbench" publisher="myGrid2" publisherWeb="http://www.taverna.org.uk/" version="2.5-SNAPSHOT" allPathsRelative="true" backupOnSave="false" autoSave="true" convertDotsToUnderscores="false" macSignature="????" installerName="" javaMinVersion="1.7" javaMaxVersion="" allowBetaVM="false" jdkMode="runtimeJre" jdkName="">
     <languages skipLanguageSelection="false" languageSelectionInPrincipalLanguage="false">
       <principalLanguage id="en" customLocalizationFile="" />
       <additionalLanguages />
@@ -15,6 +15,7 @@
       <variable name="dot" value="dot" description="Location of the dot binary, e.g. bin/win32i386/dot or bin/linux-x64/dot_static" category="" />
       <variable name="maxMemory" value="1g" description="" category="" />
       <variable name="maxPermGenSpace" value="400m" description="" category="" />
+      <variable name="srcDir" value="../../../target/taverna-workbench-dist" description="Source directory for the distribution, as output by Maven in workbench-distro, e.g. &#xA;../../../target/taverna-workbench-dist" category="" />
     </variables>
     <mergedProjects />
     <codeSigning macEnabled="false" macPkcs12File="" windowsEnabled="false" windowsKeySource="pkcs12" windowsPvkFile="" windowsSpcFile="" windowsPkcs12File="" />
@@ -40,7 +41,7 @@
       <mountPoint id="105" root="102" location="" mode="755" />
     </mountPoints>
     <entries>
-      <dirEntry mountPoint="22" file="../../../target/taverna-workbench-dist" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="direct" subDirectory="taverna-workbench-dist" excludeSuffixes="" dirMode="755" overrideDirMode="false">
+      <dirEntry mountPoint="22" file="${compiler:srcDir}" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="direct" subDirectory="taverna-workbench-dist" excludeSuffixes="" dirMode="755" overrideDirMode="false">
         <exclude>
           <entry location="taverna.sh" fileType="regular" />
           <entry location="executeworkflow.bat" fileType="regular" />
@@ -49,35 +50,35 @@
           <entry location="bin" fileType="regular" />
         </exclude>
       </dirEntry>
-      <dirEntry mountPoint="96" file="../../../target/taverna-workbench-dist/bin/win32i386" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="subdir" subDirectory="win32i386" excludeSuffixes="" dirMode="755" overrideDirMode="false">
+      <dirEntry mountPoint="96" file="${compiler:srcDir}/bin/win32i386" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="subdir" subDirectory="win32i386" excludeSuffixes="" dirMode="755" overrideDirMode="false">
         <exclude />
       </dirEntry>
-      <fileEntry mountPoint="95" file="../../../target/taverna-workbench-dist/executeworkflow.bat" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
-      <fileEntry mountPoint="95" file="../../../target/taverna-workbench-dist/taverna.bat" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
-      <dirEntry mountPoint="103" file="../../../target/taverna-workbench-dist/bin/linux-x64" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="subdir" subDirectory="linux-x64" excludeSuffixes="" dirMode="755" overrideDirMode="false">
+      <fileEntry mountPoint="95" file="${compiler:srcDir}/executeworkflow.bat" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
+      <fileEntry mountPoint="95" file="${compiler:srcDir}/taverna.bat" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
+      <dirEntry mountPoint="103" file="${compiler:srcDir}/bin/linux-x64" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="subdir" subDirectory="linux-x64" excludeSuffixes="" dirMode="755" overrideDirMode="false">
         <exclude />
       </dirEntry>
-      <dirEntry mountPoint="103" file="../../../target/taverna-workbench-dist/bin/linux-x86" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="subdir" subDirectory="linux-x86" excludeSuffixes="" dirMode="755" overrideDirMode="false">
+      <dirEntry mountPoint="103" file="${compiler:srcDir}/bin/linux-x86" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="subdir" subDirectory="linux-x86" excludeSuffixes="" dirMode="755" overrideDirMode="false">
         <exclude />
       </dirEntry>
-      <fileEntry mountPoint="103" file="../../../target/taverna-workbench-dist/bin/dot.sh" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" />
-      <fileEntry mountPoint="99" file="../../../target/taverna-workbench-dist/executeworkflow.sh" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" />
-      <fileEntry mountPoint="99" file="../../../target/taverna-workbench-dist/taverna.sh" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" />
-      <dirEntry mountPoint="104" file="../../../target/taverna-workbench-dist/bin/osx-x64" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="subdir" subDirectory="osx-x64" excludeSuffixes="" dirMode="755" overrideDirMode="false">
+      <fileEntry mountPoint="103" file="${compiler:srcDir}/bin/dot.sh" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" />
+      <fileEntry mountPoint="99" file="${compiler:srcDir}/executeworkflow.sh" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" />
+      <fileEntry mountPoint="99" file="${compiler:srcDir}/taverna.sh" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" />
+      <dirEntry mountPoint="104" file="${compiler:srcDir}/bin/osx-x64" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="subdir" subDirectory="osx-x64" excludeSuffixes="" dirMode="755" overrideDirMode="false">
         <exclude />
       </dirEntry>
-      <fileEntry mountPoint="104" file="../../../target/taverna-workbench-dist/bin/dot.sh" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" />
-      <fileEntry mountPoint="105" file="../../../target/taverna-workbench-dist/executeworkflow.sh" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" />
-      <fileEntry mountPoint="105" file="../../../target/taverna-workbench-dist/taverna.sh" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" />
+      <fileEntry mountPoint="104" file="${compiler:srcDir}/bin/dot.sh" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" />
+      <fileEntry mountPoint="105" file="${compiler:srcDir}/executeworkflow.sh" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" />
+      <fileEntry mountPoint="105" file="${compiler:srcDir}/taverna.sh" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" />
     </entries>
     <components />
   </files>
   <launchers>
-    <launcher name="Taverna Workbench" id="24" customizedId="" external="false" excludeFromMenu="false" unixMode="755" menuName="${compiler:sys.fullName} ${compiler:sys.version}" icnsFile="../osx/Taverna.icns" customMacBundleIdentifier="true" macBundleIdentifier="net.sf.taverna.t2.workbench" swtApp="false" fileset="" macBundleBinary="JavaApplicationStub" addMacEntitlements="false" macEntitlementsFile="">
-      <executable name="taverna" type="1" iconSet="true" iconFile="../windows/launcher_logo.ico" executableDir="" redirectStderr="false" stderrFile="error.log" stderrMode="overwrite" redirectStdout="false" stdoutFile="output.log" stdoutMode="overwrite" failOnStderrOutput="true" executableMode="1" changeWorkingDirectory="true" workingDirectory="." singleInstance="true" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="" executionLevel="asInvoker" checkConsoleParameter="true" globalSingleInstance="false">
+    <launcher name="Taverna Workbench" id="24" customizedId="" external="false" excludeFromMenu="false" unixMode="755" menuName="${compiler:sys.fullName} ${compiler:sys.version}" icnsFile="${compiler:srcDir}/lib/launcher_logo.icns" customMacBundleIdentifier="true" macBundleIdentifier="net.sf.taverna.t2.workbench" swtApp="false" fileset="" macBundleBinary="JavaApplicationStub" addMacEntitlements="false" macEntitlementsFile="">
+      <executable name="taverna" type="1" iconSet="true" iconFile="${compiler:srcDir}/lib/launcher_logo.ico" executableDir="" redirectStderr="false" stderrFile="error.log" stderrMode="overwrite" redirectStdout="false" stdoutFile="output.log" stdoutMode="overwrite" failOnStderrOutput="true" executableMode="1" changeWorkingDirectory="true" workingDirectory="." singleInstance="true" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="" executionLevel="asInvoker" checkConsoleParameter="true" globalSingleInstance="false">
         <versionInfo include="true" fileVersion="" fileDescription="Taverna Workbench build ${compiler:sys.platform}--${compiler:sys.date}T${compiler:sys.time}" legalCopyright="Copyright 2005-2014 University of Manchester, UK" internalName="taverna" productName="" />
       </executable>
-      <splashScreen show="true" autoOff="true" alwaysOnTop="true" width="0" height="0" bitmapFile="../resources/lib/launcher_splashscreen.png" java6SplashScreen="true">
+      <splashScreen show="true" autoOff="true" alwaysOnTop="true" width="0" height="0" bitmapFile="${compiler:srcDir}/lib/launcher_splashscreen.png" java6SplashScreen="true">
         <text>
           <statusLine x="20" y="20" text="" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
           <versionLine x="20" y="40" text="version ${compiler:sys.version}" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
@@ -123,7 +124,7 @@
         <content />
       </infoPlist>
       <iconImageFiles>
-        <file path="../resources/lib/launcher_logo_256x256.png" />
+        <file path="${compiler:srcDir}/lib/launcher_logo_256x256.png" />
       </iconImageFiles>
     </launcher>
     <launcher name="executeworkflow" id="165" customizedId="" external="false" excludeFromMenu="true" unixMode="755" menuName="" icnsFile="" customMacBundleIdentifier="false" macBundleIdentifier="" swtApp="false" fileset="" macBundleBinary="JavaApplicationStub" addMacEntitlements="false" macEntitlementsFile="">
