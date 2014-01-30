@@ -45,6 +45,6 @@ fi
 
 
 #echo "Using $dot"
-"$dot" $1+
+"$dot" ${1+"$@"}
 
 
