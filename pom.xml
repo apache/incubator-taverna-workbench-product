@@ -464,7 +464,7 @@
 		<dependency>
 			<groupId>net.sf.taverna.t2.taverna-workbench.plugins
 			</groupId>
-			<artifactId>components-plugin</artifactId>
+			<artifactId>workbench-plugin</artifactId>
 			<version>${project.version}
 			</version>
 			<scope>test</scope>
@@ -481,12 +481,6 @@
 		<dependency>
 			<groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
 			<artifactId>servicecatalogue-plugin</artifactId>
-			<version>${project.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
-			<artifactId>provenanceconnectors-plugin</artifactId>
 			<version>${project.version}</version>
 			<scope>test</scope>
 		</dependency>

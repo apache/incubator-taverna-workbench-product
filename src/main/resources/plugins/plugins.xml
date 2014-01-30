@@ -42,7 +42,7 @@
             ${m2Repository}
             <repository>http://www.mygrid.org.uk/maven/repository/</repository>
             <repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
-             <repository>http://uk.maven.org/maven2/</repository>
+            <repository>http://uk.maven.org/maven2/</repository>
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
             <repository>http://www.eviware.com/repository/maven2/</repository>
@@ -78,7 +78,7 @@
             ${m2Repository}
             <repository>http://www.mygrid.org.uk/maven/repository/</repository>
             <repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
-             <repository>http://uk.maven.org/maven2/</repository>
+            <repository>http://uk.maven.org/maven2/</repository>
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
             <repository>http://www.eviware.com/repository/maven2/</repository>
@@ -146,7 +146,7 @@
         <identifier>net.sf.taverna.t2.component-activity</identifier>
 		<version>${project.version}-${buildNumber}</version>
         <name>Component Service (required)</name>
-        <description>Component service developed by BioVeL, SCAPE and wf4ever</description>
+        <description>Create and use components, wrapping underlying workflows</description>
         <enabled>true</enabled>
         <repositories>
             ${m2Repository}
@@ -156,7 +156,6 @@
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
             <repository>http://www.eviware.com/repository/maven2/</repository>
-            <repository>http://www.mygrid.org.uk/maven/biomoby/moby-dev.inab.org/m2/</repository>
         </repositories>
         <profile>
  		<dependency>
@@ -181,7 +180,7 @@
         <identifier>net.sf.taverna.t2.interaction-activity</identifier>
 		<version>${project.version}-${buildNumber}</version>
         <name>Interaction Service (required)</name>
-        <description>Interacton service developed by BioVeL</description>
+        <description>Web-based user interactions during workflow run</description>
         <enabled>true</enabled>
         <repositories>
             ${m2Repository}
@@ -191,7 +190,6 @@
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
             <repository>http://www.eviware.com/repository/maven2/</repository>
-            <repository>http://www.mygrid.org.uk/maven/biomoby/moby-dev.inab.org/m2/</repository>
         </repositories>
         <profile>
 		<dependency>
@@ -232,7 +230,6 @@
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
             <repository>http://www.eviware.com/repository/maven2/</repository>
-            <repository>http://www.mygrid.org.uk/maven/biomoby/moby-dev.inab.org/m2/</repository>
         </repositories>
         <profile>
 		<dependency>
@@ -254,39 +251,7 @@
     </plugin>
     <plugin>
         <provider>taverna.sf.net</provider>
-        <identifier>net.sf.taverna.t2.taverna-workbench.provenanceconnectors-plugin</identifier>
-		<version>${project.version}-${buildNumber}</version>
-        <name>Provenance (required)</name>
-        <description>Taverna 2 provenance support</description>
-        <enabled>true</enabled>
-        <repositories>
-            ${m2Repository}
-           <repository>http://www.mygrid.org.uk/maven/repository/</repository>
-            <repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
-            <repository>http://uk.maven.org/maven2/</repository>
-            <repository>http://download.java.net/maven/2/</repository>
-            <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
-            <repository>http://www.eviware.com/repository/maven2/</repository>
-			<repository>http://openprovenance.org/java/maven-releases/</repository>
-			<repository>http://openjena.org/repo/</repository>			
-			<repository>http://repo.aduna-software.org/maven2/releases/</repository>
-        </repositories>
-        <profile>
-            <dependency>
-                <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
-                <artifactId>provenanceconnectors-plugin</artifactId>
-               <version>${project.version}</version>
-            </dependency>
-        </profile>
-        <compatibility>
-            <application>
-                <version>${project.version}</version>
-            </application>
-        </compatibility>
-    </plugin>
-    <plugin>
-        <provider>taverna.sf.net</provider>
-        <identifier>net.sf.taverna.t2.components</identifier>
+        <identifier>net.sf.taverna.t2.workbench</identifier>
 		<version>${project.version}-${buildNumber}</version>
         <name>Workbench (required)</name>
         <description>Taverna 2 workbench. Required for graphical interface.</description>
@@ -300,68 +265,26 @@
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
             <repository>http://www.eviware.com/repository/maven2/</repository>
+
+			<!--  for provenance -->
+			<repository>http://openprovenance.org/java/maven-releases/</repository>
+			<repository>http://openjena.org/repo/</repository>			
+			<repository>http://repo.aduna-software.org/maven2/releases/</repository>
         </repositories>
-        <profile>
+        <profile>        
             <dependency>
                 <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
-                <artifactId>components-plugin</artifactId>
-                <version>${project.version}</version>
+                <artifactId>provenanceconnectors-plugin</artifactId>
+               <version>${project.version}</version>
             </dependency>
-        </profile>
-        <compatibility>
-            <application>
-                <version>${project.version}</version>
-            </application>
-        </compatibility>
-    </plugin>
-        <plugin>
-        <provider>taverna.sf.net</provider>
-        <identifier>net.sf.taverna.t2.servicecatalogue</identifier>
-		<version>${project.version}-${buildNumber}</version>
-        <name>Service catalogue (required)</name>
-        <description>Taverna 2 service catalogue.</description>
-        <enabled>true</enabled>
-        <repositories>
-            ${m2Repository}
-            <repository>http://www.mygrid.org.uk/maven/repository/</repository>
-            <repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
-             <repository>http://uk.maven.org/maven2/</repository>
-            <repository>http://repo.fusesource.com/maven2-all</repository>
-            <repository>http://download.java.net/maven/2/</repository>
-            <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
-            <repository>http://www.eviware.com/repository/maven2/</repository>
-        </repositories>
-        <profile>
+
             <dependency>
                 <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
-                <artifactId>servicecatalogue-plugin</artifactId>
+                <artifactId>workbench-plugin</artifactId>
                 <version>${project.version}</version>
             </dependency>
-        </profile>
-        <compatibility>
-            <application>
-                <version>${project.version}</version>
-            </application>
-        </compatibility>
-    </plugin>
-    <plugin>
-        <provider>taverna.sf.net</provider>
-        <identifier>net.sf.taverna.t2.commandline</identifier>
-		<version>${project.version}</version>
-        <name>Taverna Command Line</name>
-        <description>Allows execution of Taverna workflows from the command line</description>
-        <enabled>true</enabled>
-        <repositories>            
-            <repository>http://www.mygrid.org.uk/maven/repository/</repository>
-            <repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
-            <repository>http://uk.maven.org/maven2/</repository>
-            <repository>http://download.java.net/maven/2/</repository>
-            <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
-            <repository>http://www.eviware.com/repository/maven2/</repository>
-            <repository>http://repo.aduna-software.org/maven2/releases/</repository>
-         </repositories>
-        <profile>
-            <dependency>
+            
+             <dependency>
                 <groupId>net.sf.taverna.t2.taverna-commandline</groupId>
                 <artifactId>taverna-commandline-common</artifactId>
                 <version>${t2.taverna-commandline.version}</version>
@@ -373,5 +296,34 @@
             </application>
         </compatibility>
     </plugin>
+    
+        <plugin>
+        <provider>taverna.sf.net</provider>
+        <identifier>net.sf.taverna.t2.servicecatalogue</identifier>
+		<version>${project.version}-${buildNumber}</version>
+        <name>Service catalogue (required)</name>
+        <description>Taverna 2 service catalogue, e.g. biocatalogue.org</description>
+        <enabled>true</enabled>
+        <repositories>
+            ${m2Repository}
+            <repository>http://www.mygrid.org.uk/maven/repository/</repository>
+            <repository>http://www.mygrid.org.uk/maven/snapshot-repository/</repository>
+            <repository>http://uk.maven.org/maven2/</repository>
+            <repository>http://repo.fusesource.com/maven2-all</repository>
+            <repository>http://download.java.net/maven/2/</repository>
+            <repository>http://ibiblio.lsu.edu/main/pub/packages/maven2/</repository>
+            <repository>http://www.eviware.com/repository/maven2/</repository>
+        </repositories>
+        <profile>
+            
+        </profile>
+        <compatibility>
+            <application>
+                <version>${project.version}</version>
+            </application>
+        </compatibility>
+    </plugin>
+    
+
     
 </plugins:plugins>
