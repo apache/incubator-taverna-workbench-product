@@ -237,12 +237,12 @@
         <profile>
 		<dependency>
 			<groupId>net.sf.taverna.t2.activities</groupId>
-			<artifactId>sardine-activity</artifactId>
+			<artifactId>webdav-activity</artifactId>
 			<version>${t2.activities.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>net.sf.taverna.t2.ui-activities</groupId>
-			<artifactId>sardine-activity-ui</artifactId>
+			<artifactId>webdav-activity-ui</artifactId>
 			<version>${t2.ui.activities.version}</version>
 		</dependency>
         </profile>
