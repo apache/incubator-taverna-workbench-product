@@ -302,7 +302,11 @@
             <repository>http://www.soapui.org/repository/maven2/</repository>
         </repositories>
         <profile>
-            
+            <dependency>
+                <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
+                <artifactId>servicecatalogue-plugin</artifactId>
+                <version>${project.version}</version>
+            </dependency>            
         </profile>
         <compatibility>
             <application>
