@@ -101,7 +101,7 @@
         </compatibility>
     </plugin>
     
-       <plugin>
+<!--        <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.apiconsumer-activity</identifier>
 		<version>${project.version}-${buildNumber}</version>
@@ -133,7 +133,7 @@
                 <version>${project.version}</version>
             </application>
         </compatibility>
-    </plugin>
+    </plugin> -->
     
 
     <plugin>

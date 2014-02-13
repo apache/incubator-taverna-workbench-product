@@ -505,14 +505,14 @@
 			<version>${t2.activities.version}</version>
 			<scope>test</scope>
 		</dependency>
-	
+<!-- 	
 		<dependency>
 			<groupId>net.sf.taverna.t2.activities</groupId>
 			<artifactId>apiconsumer-activity</artifactId>
 			<version>${t2.activities.version}</version>
 			<scope>test</scope>
 		</dependency>
-				
+ -->				
 		<dependency>
 			<groupId>net.sf.taverna.t2.component</groupId>
 			<artifactId>component-activity</artifactId>
@@ -549,14 +549,14 @@
 			<version>${t2.ui.activities.version}</version>
 			<scope>test</scope>
 		</dependency>
-	
+<!-- 	
 		<dependency>
 			<groupId>net.sf.taverna.t2.ui-activities</groupId>
 			<artifactId>apiconsumer-activity-ui</artifactId>
 			<version>${t2.ui.activities.version}</version>
 			<scope>test</scope>
 		</dependency>
-				
+				 -->
 		<dependency>
 			<groupId>net.sf.taverna.t2.ui-activities</groupId>
 			<artifactId>component-activity-ui</artifactId>
