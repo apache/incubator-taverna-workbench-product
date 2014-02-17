@@ -516,7 +516,7 @@
  		<dependency>
 			<groupId>net.sf.taverna.t2.activities</groupId>
 			<artifactId>biomoby-activity</artifactId>
-			<version>${project.version}</version>
+			<version>${t2.activities.version}</version>
 						<exclusions>
             <exclusion>
                 <groupId>sun.jdk</groupId>
@@ -571,7 +571,7 @@
 		<dependency>
 			<groupId>net.sf.taverna.t2.ui-activities</groupId>
 			<artifactId>biomoby-activity-ui</artifactId>
-			<version>${project.version}</version>
+			<version>${t2.ui.activities.version}</version>
 			<exclusions>
 				<exclusion>
 					<groupId>sun.jdk</groupId>
