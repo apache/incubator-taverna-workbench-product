@@ -513,17 +513,18 @@
 			<scope>test</scope>
 		</dependency>
 
- 		<dependency>
-			<groupId>net.sf.taverna.t2.activities</groupId>
-			<artifactId>biomoby-activity</artifactId>
-			<version>${t2.activities.version}</version>
-						<exclusions>
-            <exclusion>
-                <groupId>sun.jdk</groupId>
-                <artifactId>tools</artifactId>
-            </exclusion>
-        </exclusions>
-		</dependency>
+	<dependency>
+		<groupId>net.sf.taverna.t2.activities</groupId>
+		<artifactId>biomoby-activity</artifactId>
+		<version>${t2.activities.version}</version>
+		<exclusions>
+			<exclusion>
+				<groupId>sun.jdk</groupId>
+				<artifactId>tools</artifactId>
+			</exclusion>
+		</exclusions>
+		<scope>test</scope>
+	</dependency>
 		<dependency>
 			<groupId>net.sf.taverna.t2.component</groupId>
 			<artifactId>component-activity</artifactId>
@@ -578,6 +579,7 @@
 					<artifactId>tools</artifactId>
 				</exclusion>
 			</exclusions>
+					<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.sf.taverna.t2.ui-activities</groupId>
