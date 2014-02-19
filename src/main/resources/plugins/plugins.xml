@@ -294,12 +294,7 @@
 			<repository>http://openprovenance.org/java/maven-releases/</repository>			
 			<repository>http://repo.aduna-software.org/maven2/releases/</repository>
         </repositories>
-        <profile>        
-            <dependency>
-                <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
-                <artifactId>provenanceconnectors-plugin</artifactId>
-               <version>${project.version}</version>
-            </dependency>
+        <profile>
 
             <dependency>
                 <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>

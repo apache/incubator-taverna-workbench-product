@@ -3727,20 +3727,6 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
-                                    <artifactId>provenanceconnectors-plugin</artifactId>
-                                    <version>2.5-SNAPSHOT</version>
-                                    <type>jar</type>
-                                    <outputDirectory>${project.build.directory}/repository/net/sf/taverna/t2/taverna-workbench/plugins/provenanceconnectors-plugin/2.5-SNAPSHOT</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
-                                    <artifactId>provenanceconnectors-plugin</artifactId>
-                                    <version>2.5-SNAPSHOT</version>
-                                    <type>pom</type>
-                                    <outputDirectory>${project.build.directory}/repository/net/sf/taverna/t2/taverna-workbench/plugins/provenanceconnectors-plugin/2.5-SNAPSHOT</outputDirectory>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
                                     <artifactId>servicecatalogue-plugin</artifactId>
                                     <version>2.5-SNAPSHOT</version>
                                     <type>jar</type>
