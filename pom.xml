@@ -305,7 +305,7 @@
             <build>
                 <plugins>
                     <plugin>
-                                                <groupId>org.apache.maven.plugins</groupId>
+                        <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-dependency-plugin</artifactId>
                         <executions>
                             <execution>
@@ -579,7 +579,7 @@
                                         <artifactId>tools</artifactId>
                                 </exclusion>
                         </exclusions>
-                                        <scope>test</scope>
+                        <scope>test</scope>
                 </dependency>
                 <dependency>
                         <groupId>net.sf.taverna.t2.ui-activities</groupId>
@@ -627,15 +627,14 @@
                                 <version>2.4</version>
                         </plugin>
                         <plugin>
-                                                <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-dependency-plugin</artifactId>
-
-                                                        <configuration>
-                                                                        <copyPom>true</copyPom>
-                                                                        <useRepositoryLayout>true</useRepositoryLayout>
-                                                                        <overWriteReleases>false</overWriteReleases>
-                                                                        <overWriteSnapshots>true</overWriteSnapshots>
-                                                                        <artifactItems>
+                                <groupId>org.apache.maven.plugins</groupId>
+                                <artifactId>maven-dependency-plugin</artifactId>
+                                <configuration>
+                                        <copyPom>true</copyPom>
+                                        <useRepositoryLayout>true</useRepositoryLayout>
+                                        <overWriteReleases>false</overWriteReleases>
+                                        <overWriteSnapshots>true</overWriteSnapshots>
+                                        <artifactItems>
                                                                                 <!-- 
                                         Produced by first doing a nightly build (-Pnightly) but with this plugin
                                         commented out. When unzipping taverna-XXXX-bin.zip the repository/ folder
