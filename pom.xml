@@ -1,197 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>net.sf.taverna.t2</groupId>
-		<artifactId>taverna-workbench</artifactId>
-		<version>2.5-SNAPSHOT</version>
-	</parent>
-	<groupId>net.sf.taverna.t2.taverna-workbench
-	</groupId>
-	<artifactId>workbench-distro</artifactId>
-	<name>Taverna workbench distribution</name>
-	<properties>
-		<m2Repository />
-	</properties>
-	<profiles>
-		<profile>
-			<id>developer-win</id>            
-			<activation>                
-				<os>
-					<family>Windows</family>
-				</os>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<properties>
-				<!-- To be inserted into plugins.xml -->
-				<m2Repository>&lt;repository&gt;file:/${settings.localRepository}/&lt;/repository&gt;</m2Repository>
-			</properties>
-			<build>
-				<finalName>taverna-dev-${project.version}-${buildNumber}</finalName>
-				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>buildnumber-maven-plugin</artifactId>
-						<executions>
-							<execution>
-								<id>buildnumber-validate</id>
-								<phase>validate</phase>
-								<goals>
-									<goal>create</goal>
-								</goals>
-							</execution>
-						</executions>
-						<configuration>
-							<doCheck>false</doCheck>
-							<doUpdate>false</doUpdate>
-							<format>{0,date,yyyyMMdd}T{0,date,HHmm}
-							</format>
-							<items>
-								<item>timestamp</item>
-							</items>
-						</configuration>
-					</plugin>
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+        <modelVersion>4.0.0</modelVersion>
+        <parent>
+                <groupId>net.sf.taverna.t2</groupId>
+                <artifactId>taverna-workbench</artifactId>
+                <version>2.5-SNAPSHOT</version>
+        </parent>
+        <groupId>net.sf.taverna.t2.taverna-workbench
+        </groupId>
+        <artifactId>workbench-distro</artifactId>
+        <name>Taverna workbench distribution</name>
+        <properties>
+                <m2Repository />
+        </properties>
+        <profiles>
+                <profile>
+                        <id>developer-win</id>            
+                        <activation>                
+                                <os>
+                                        <family>Windows</family>
+                                </os>
+                                <activeByDefault>true</activeByDefault>
+                        </activation>
+                        <properties>
+                                <!-- To be inserted into plugins.xml -->
+                                <m2Repository>&lt;repository&gt;file:/${settings.localRepository}/&lt;/repository&gt;</m2Repository>
+                        </properties>
+                        <build>
+                                <finalName>taverna-dev-${project.version}-${buildNumber}</finalName>
+                                <plugins>
+                                        <plugin>
+                                                <groupId>org.codehaus.mojo</groupId>
+                                                <artifactId>buildnumber-maven-plugin</artifactId>
+                                                <executions>
+                                                        <execution>
+                                                                <id>buildnumber-validate</id>
+                                                                <phase>validate</phase>
+                                                                <goals>
+                                                                        <goal>create</goal>
+                                                                </goals>
+                                                        </execution>
+                                                </executions>
+                                                <configuration>
+                                                        <doCheck>false</doCheck>
+                                                        <doUpdate>false</doUpdate>
+                                                        <format>{0,date,yyyyMMdd}T{0,date,HHmm}
+                                                        </format>
+                                                        <items>
+                                                                <item>timestamp</item>
+                                                        </items>
+                                                </configuration>
+                                        </plugin>
 
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-assembly-plugin</artifactId>
-						<executions>
-							<execution>
+                                        <plugin>
+                                                <groupId>org.apache.maven.plugins</groupId>
+                                                <artifactId>maven-assembly-plugin</artifactId>
+                                                <executions>
+                                                        <execution>
                                 <id>developer-assembly</id>
-								<phase>package</phase>
-								<goals>
-									<goal>single</goal>
-								</goals>
+                                                                <phase>package</phase>
+                                                                <goals>
+                                                                        <goal>single</goal>
+                                                                </goals>
                                 <configuration>
                                     <descriptors>
                                         <descriptor>src/main/assembly/developer-assembly.xml
                                         </descriptor>
                                     </descriptors>
                                 </configuration>
-							</execution>
-						</executions>
-					</plugin>
-					<!--
-						Temporarily checked out from
-						https://svn.codehaus.org/mojo/trunk/sandbox/nsis-maven-plugin/ and
-						deployed to myGrid's snapshot repository
-					-->
-					<!--
-						<plugin> <groupId>org.codehaus.mojo</groupId>
-						<artifactId>nsis-maven-plugin</artifactId>
-						<version>1.0-20090309.160159-1</version> <executions> <execution>
-						<goals> <goal>generate-project</goal> create target/project.nsh
-						<goal>compile</goal> compile setup.nsi into exe </goals>
-						</execution> </executions> </plugin>
-					-->
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<id>developer</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<properties>
-				<!-- To be inserted into plugins.xml -->
-				<m2Repository>&lt;repository&gt;file:${settings.localRepository}/&lt;/repository&gt;</m2Repository>
-			</properties>
-			<build>
-				<finalName>taverna-dev-${project.version}-${buildNumber}</finalName>
-				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>buildnumber-maven-plugin</artifactId>
-						<executions>
-							<execution>
-								<id>buildnumber-validate</id>
-								<phase>validate</phase>
-								<goals>
-									<goal>create</goal>
-								</goals>
-							</execution>
-						</executions>
-						<configuration>
-							<doCheck>false</doCheck>
-							<doUpdate>false</doUpdate>
-							<format>{0,date,yyyyMMdd}T{0,date,HHmm}
-							</format>
-							<items>
-								<item>timestamp</item>
-							</items>
-						</configuration>
-					</plugin>
+                                                        </execution>
+                                                </executions>
+                                        </plugin>
+                                        <!--
+                                                Temporarily checked out from
+                                                https://svn.codehaus.org/mojo/trunk/sandbox/nsis-maven-plugin/ and
+                                                deployed to myGrid's snapshot repository
+                                        -->
+                                        <!--
+                                                <plugin> <groupId>org.codehaus.mojo</groupId>
+                                                <artifactId>nsis-maven-plugin</artifactId>
+                                                <version>1.0-20090309.160159-1</version> <executions> <execution>
+                                                <goals> <goal>generate-project</goal> create target/project.nsh
+                                                <goal>compile</goal> compile setup.nsi into exe </goals>
+                                                </execution> </executions> </plugin>
+                                        -->
+                                </plugins>
+                        </build>
+                </profile>
+                <profile>
+                        <id>developer</id>
+                        <activation>
+                                <activeByDefault>true</activeByDefault>
+                        </activation>
+                        <properties>
+                                <!-- To be inserted into plugins.xml -->
+                                <m2Repository>&lt;repository&gt;file:${settings.localRepository}/&lt;/repository&gt;</m2Repository>
+                        </properties>
+                        <build>
+                                <finalName>taverna-dev-${project.version}-${buildNumber}</finalName>
+                                <plugins>
+                                        <plugin>
+                                                <groupId>org.codehaus.mojo</groupId>
+                                                <artifactId>buildnumber-maven-plugin</artifactId>
+                                                <executions>
+                                                        <execution>
+                                                                <id>buildnumber-validate</id>
+                                                                <phase>validate</phase>
+                                                                <goals>
+                                                                        <goal>create</goal>
+                                                                </goals>
+                                                        </execution>
+                                                </executions>
+                                                <configuration>
+                                                        <doCheck>false</doCheck>
+                                                        <doUpdate>false</doUpdate>
+                                                        <format>{0,date,yyyyMMdd}T{0,date,HHmm}
+                                                        </format>
+                                                        <items>
+                                                                <item>timestamp</item>
+                                                        </items>
+                                                </configuration>
+                                        </plugin>
 
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-assembly-plugin</artifactId>
-						<executions>
-							<execution>
+                                        <plugin>
+                                                <groupId>org.apache.maven.plugins</groupId>
+                                                <artifactId>maven-assembly-plugin</artifactId>
+                                                <executions>
+                                                        <execution>
                                 <id>developer-assembly</id>
-								<phase>package</phase>
-								<goals>
-									<goal>single</goal>
-								</goals>
-        						<configuration>
-        							<descriptors>
-        								<descriptor>src/main/assembly/developer-assembly.xml
-        								</descriptor>
-        							</descriptors>
-        						</configuration>
-							</execution>
-						</executions>
+                                                                <phase>package</phase>
+                                                                <goals>
+                                                                        <goal>single</goal>
+                                                                </goals>
+                                                        <configuration>
+                                                                <descriptors>
+                                                                        <descriptor>src/main/assembly/developer-assembly.xml
+                                                                        </descriptor>
+                                                                </descriptors>
+                                                        </configuration>
+                                                        </execution>
+                                                </executions>
 
-					</plugin>
-					<!--
-						Temporarily checked out from
-						https://svn.codehaus.org/mojo/trunk/sandbox/nsis-maven-plugin/ and
-						deployed to myGrid's snapshot repository
-					-->
-					<!--
-						<plugin> <groupId>org.codehaus.mojo</groupId>
-						<artifactId>nsis-maven-plugin</artifactId>
-						<version>1.0-20090309.160159-1</version> <executions> <execution>
-						<goals> <goal>generate-project</goal> create target/project.nsh
-						<goal>compile</goal> compile setup.nsi into exe </goals>
-						</execution> </executions> </plugin>
-					-->
-				</plugins>
+                                        </plugin>
+                                        <!--
+                                                Temporarily checked out from
+                                                https://svn.codehaus.org/mojo/trunk/sandbox/nsis-maven-plugin/ and
+                                                deployed to myGrid's snapshot repository
+                                        -->
+                                        <!--
+                                                <plugin> <groupId>org.codehaus.mojo</groupId>
+                                                <artifactId>nsis-maven-plugin</artifactId>
+                                                <version>1.0-20090309.160159-1</version> <executions> <execution>
+                                                <goals> <goal>generate-project</goal> create target/project.nsh
+                                                <goal>compile</goal> compile setup.nsi into exe </goals>
+                                                </execution> </executions> </plugin>
+                                        -->
+                                </plugins>
 
-			</build>
-		</profile>
-		<profile>
-			<id>nightly</id>
-			<properties>
-				<!-- Nothing to be inserted into plugins.xml -->
-				<m2Repository></m2Repository>
-			</properties>
-			<build>
-				<finalName>taverna-nightly-${project.version}-${buildNumber}</finalName>
-				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>buildnumber-maven-plugin</artifactId>
-						<executions>
-							<execution>
-								<phase>validate</phase>
-								<goals>
-									<goal>create</goal>
-								</goals>
-							</execution>
-						</executions>
-						<configuration>
-							<doCheck>false</doCheck>
-							<doUpdate>false</doUpdate>
-							<format>{0,date,yyyyMMdd}</format>
-							<items>
-								<item>timestamp</item>
-							</items>
-						</configuration>
-					</plugin>
+                        </build>
+                </profile>
+                <profile>
+                        <id>nightly</id>
+                        <properties>
+                                <!-- Nothing to be inserted into plugins.xml -->
+                                <m2Repository></m2Repository>
+                        </properties>
+                        <build>
+                                <finalName>taverna-nightly-${project.version}-${buildNumber}</finalName>
+                                <plugins>
+                                        <plugin>
+                                                <groupId>org.codehaus.mojo</groupId>
+                                                <artifactId>buildnumber-maven-plugin</artifactId>
+                                                <executions>
+                                                        <execution>
+                                                                <phase>validate</phase>
+                                                                <goals>
+                                                                        <goal>create</goal>
+                                                                </goals>
+                                                        </execution>
+                                                </executions>
+                                                <configuration>
+                                                        <doCheck>false</doCheck>
+                                                        <doUpdate>false</doUpdate>
+                                                        <format>{0,date,yyyyMMdd}</format>
+                                                        <items>
+                                                                <item>timestamp</item>
+                                                        </items>
+                                                </configuration>
+                                        </plugin>
 
                     <plugin>
-						<groupId>org.apache.maven.plugins</groupId>
+                                                <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-dependency-plugin</artifactId>
                         <executions>
                             <execution>
@@ -205,25 +205,25 @@
                     </plugin>
                     
 
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-assembly-plugin</artifactId>
-						<executions>
-							<execution>
+                                        <plugin>
+                                                <groupId>org.apache.maven.plugins</groupId>
+                                                <artifactId>maven-assembly-plugin</artifactId>
+                                                <executions>
+                                                        <execution>
                                 <id>nightly-assembly</id>
-								<phase>package</phase>
-								<goals>
-									<goal>single</goal>
-								</goals>
-        						<configuration>
-        							<descriptors>
-        								<descriptor>src/main/assembly/nightly-assembly.xml
-        								</descriptor>
-        							</descriptors>
-        						</configuration>
-							</execution>
-						</executions>
-					</plugin>
+                                                                <phase>package</phase>
+                                                                <goals>
+                                                                        <goal>single</goal>
+                                                                </goals>
+                                                        <configuration>
+                                                                <descriptors>
+                                                                        <descriptor>src/main/assembly/nightly-assembly.xml
+                                                                        </descriptor>
+                                                                </descriptors>
+                                                        </configuration>
+                                                        </execution>
+                                                </executions>
+                                        </plugin>
 
                     <plugin>
                         <groupId>org.sonatype.install4j</groupId>
@@ -233,79 +233,79 @@
                             <faster>true</faster>
                         </configuration>
                     </plugin>
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<id>release</id>
-			<properties>
-				<!-- Nothing to be inserted into plugins.xml -->
-				<m2Repository></m2Repository>
-			</properties>
-			<build>
-				<finalName>taverna-workbench</finalName>
-				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>buildnumber-maven-plugin</artifactId>
-						<executions>
-							<execution>
-								<phase>validate</phase>
-								<goals>
-									<goal>create</goal>
-								</goals>
-							</execution>
-						</executions>
-						<configuration>
-							<doCheck>false</doCheck>
-							<doUpdate>false</doUpdate>
-							<format>{0,date,yyyyMMdd}</format>
-							<items>
-								<item>timestamp</item>
-							</items>
-						</configuration>
-					</plugin>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
+                                </plugins>
+                        </build>
+                </profile>
+                <profile>
+                        <id>release</id>
+                        <properties>
+                                <!-- Nothing to be inserted into plugins.xml -->
+                                <m2Repository></m2Repository>
+                        </properties>
+                        <build>
+                                <finalName>taverna-workbench</finalName>
+                                <plugins>
+                                        <plugin>
+                                                <groupId>org.codehaus.mojo</groupId>
+                                                <artifactId>buildnumber-maven-plugin</artifactId>
+                                                <executions>
+                                                        <execution>
+                                                                <phase>validate</phase>
+                                                                <goals>
+                                                                        <goal>create</goal>
+                                                                </goals>
+                                                        </execution>
+                                                </executions>
+                                                <configuration>
+                                                        <doCheck>false</doCheck>
+                                                        <doUpdate>false</doUpdate>
+                                                        <format>{0,date,yyyyMMdd}</format>
+                                                        <items>
+                                                                <item>timestamp</item>
+                                                        </items>
+                                                </configuration>
+                                        </plugin>
+                                        <plugin>
+                                                <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-dependency-plugin</artifactId>
-						<executions>
-							<execution>
-								<id>dependencycopy</id>
-								<phase>prepare-package</phase>
-								<goals>
-									<goal>copy</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-assembly-plugin</artifactId>
-						<executions>
-							<execution>
+                                                <executions>
+                                                        <execution>
+                                                                <id>dependencycopy</id>
+                                                                <phase>prepare-package</phase>
+                                                                <goals>
+                                                                        <goal>copy</goal>
+                                                                </goals>
+                                                        </execution>
+                                                </executions>
+                                        </plugin>
+                                        <plugin>
+                                                <groupId>org.apache.maven.plugins</groupId>
+                                                <artifactId>maven-assembly-plugin</artifactId>
+                                                <executions>
+                                                        <execution>
                                 <id>release-assembly</id>
-								<phase>package</phase>
-								<goals>
-									<goal>single</goal>
-								</goals>
+                                                                <phase>package</phase>
+                                                                <goals>
+                                                                        <goal>single</goal>
+                                                                </goals>
                                 <configuration>
                                     <descriptors>
                                         <descriptor>src/main/assembly/release-assembly.xml
                                         </descriptor>
                                     </descriptors>
                                 </configuration>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
+                                                        </execution>
+                                                </executions>
+                                        </plugin>
+                                </plugins>
+                        </build>
+                </profile>
         <profile>
             <id>dist</id>
             <build>
                 <plugins>
                     <plugin>
-						<groupId>org.apache.maven.plugins</groupId>
+                                                <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-dependency-plugin</artifactId>
                         <executions>
                             <execution>
@@ -423,15 +423,15 @@
                                 </goals>
                                 <configuration>
                                     <failIfMissing>true</failIfMissing>
-                                	<attach>true</attach>
+                                        <attach>true</attach>
                                     
                                     <projectFile>${project.basedir}/src/main/install4j/taverna-workbench.install4j</projectFile>
 <!--
                                     <skipOnMissingExecutable>true</skipOnMissingExecutable>
--->								
-								<variables>
-									<srcDir>${project.build.directory}/taverna-workbench-dist</srcDir>
-								</variables>
+-->                                                                
+                                                                <variables>
+                                                                        <srcDir>${project.build.directory}/taverna-workbench-dist</srcDir>
+                                                                </variables>
                                 </configuration>
                             </execution>
                         </executions>
@@ -439,231 +439,231 @@
                 </plugins>
             </build>
         </profile>
-	</profiles>
-	<dependencies>
-		<dependency>
-			<groupId>net.sf.taverna.t2.taverna-workbench
-			</groupId>
-			<artifactId>workbench-common</artifactId>
-			<version>${project.version}
-			</version>
-		</dependency>
+        </profiles>
+        <dependencies>
+                <dependency>
+                        <groupId>net.sf.taverna.t2.taverna-workbench
+                        </groupId>
+                        <artifactId>workbench-common</artifactId>
+                        <version>${project.version}
+                        </version>
+                </dependency>
 
         <!-- Each of the plugins/ must be included here to ensure their
         JARs end up in repository/-->
         
-<!-- 		<dependency>
-			<groupId>net.sf.taverna.t2.taverna-workbench.plugins
-			</groupId>
-			<artifactId>activities-plugin</artifactId>
-			<version>${project.version}
-			</version>
-			<scope>test</scope>
-		</dependency> -->
+<!--                 <dependency>
+                        <groupId>net.sf.taverna.t2.taverna-workbench.plugins
+                        </groupId>
+                        <artifactId>activities-plugin</artifactId>
+                        <version>${project.version}
+                        </version>
+                        <scope>test</scope>
+                </dependency> -->
 
-		<dependency>
-			<groupId>net.sf.taverna.t2.taverna-workbench.plugins
-			</groupId>
-			<artifactId>workbench-plugin</artifactId>
-			<version>${project.version}
-			</version>
-			<scope>test</scope>
-		</dependency>
-<!-- 		<dependency>
-			<groupId>net.sf.taverna.t2.taverna-workbench.plugins
-			</groupId>
-			<artifactId>translators-plugin</artifactId>
-			<version>${project.version}
-			</version>
-			<scope>test</scope>
-		</dependency> -->
+                <dependency>
+                        <groupId>net.sf.taverna.t2.taverna-workbench.plugins
+                        </groupId>
+                        <artifactId>workbench-plugin</artifactId>
+                        <version>${project.version}
+                        </version>
+                        <scope>test</scope>
+                </dependency>
+<!--                 <dependency>
+                        <groupId>net.sf.taverna.t2.taverna-workbench.plugins
+                        </groupId>
+                        <artifactId>translators-plugin</artifactId>
+                        <version>${project.version}
+                        </version>
+                        <scope>test</scope>
+                </dependency> -->
 
-		<dependency>
-			<groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
-			<artifactId>servicecatalogue-plugin</artifactId>
-			<version>${project.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>net.sf.taverna.t2.taverna-commandline</groupId>
-			<artifactId>taverna-commandline-common</artifactId>
-			<version>${t2.taverna-commandline.version}</version>
-			<scope>test</scope>
-		</dependency>
-		
-		<!-- The activities -->
-		<dependency>
-			<groupId>net.sf.taverna.t2.activities</groupId>
-			<artifactId>common-activities</artifactId>
-			<version>${t2.activities.version}</version>
-			<scope>test</scope>
-		</dependency>
-		
-		<dependency>
-			<groupId>net.sf.taverna.t2.activities</groupId>
-			<artifactId>bioinformatics-activities</artifactId>
-			<version>${t2.activities.version}</version>
-			<scope>test</scope>
-		</dependency>
-	
-		<dependency>
-			<groupId>net.sf.taverna.t2.activities</groupId>
-			<artifactId>apiconsumer-activity</artifactId>
-			<version>${t2.activities.version}</version>
-			<scope>test</scope>
-		</dependency>
+                <dependency>
+                        <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
+                        <artifactId>servicecatalogue-plugin</artifactId>
+                        <version>${project.version}</version>
+                        <scope>test</scope>
+                </dependency>
+                <dependency>
+                        <groupId>net.sf.taverna.t2.taverna-commandline</groupId>
+                        <artifactId>taverna-commandline-common</artifactId>
+                        <version>${t2.taverna-commandline.version}</version>
+                        <scope>test</scope>
+                </dependency>
+                
+                <!-- The activities -->
+                <dependency>
+                        <groupId>net.sf.taverna.t2.activities</groupId>
+                        <artifactId>common-activities</artifactId>
+                        <version>${t2.activities.version}</version>
+                        <scope>test</scope>
+                </dependency>
+                
+                <dependency>
+                        <groupId>net.sf.taverna.t2.activities</groupId>
+                        <artifactId>bioinformatics-activities</artifactId>
+                        <version>${t2.activities.version}</version>
+                        <scope>test</scope>
+                </dependency>
+        
+                <dependency>
+                        <groupId>net.sf.taverna.t2.activities</groupId>
+                        <artifactId>apiconsumer-activity</artifactId>
+                        <version>${t2.activities.version}</version>
+                        <scope>test</scope>
+                </dependency>
 
-	<dependency>
-		<groupId>net.sf.taverna.t2.activities</groupId>
-		<artifactId>biomoby-activity</artifactId>
-		<version>${t2.activities.version}</version>
-		<exclusions>
-			<exclusion>
-				<groupId>sun.jdk</groupId>
-				<artifactId>tools</artifactId>
-			</exclusion>
-		</exclusions>
-		<scope>test</scope>
-	</dependency>
-		<dependency>
-			<groupId>net.sf.taverna.t2.component</groupId>
-			<artifactId>component-activity</artifactId>
-			<version>${t2.activities.version}</version>
-			<scope>test</scope>
-		</dependency>
-	
-		<dependency>
-			<groupId>net.sf.taverna.t2.activities</groupId>
-			<artifactId>interaction-activity</artifactId>
-			<version>${t2.activities.version}</version>
-			<scope>test</scope>
-		</dependency>
+        <dependency>
+                <groupId>net.sf.taverna.t2.activities</groupId>
+                <artifactId>biomoby-activity</artifactId>
+                <version>${t2.activities.version}</version>
+                <exclusions>
+                        <exclusion>
+                                <groupId>sun.jdk</groupId>
+                                <artifactId>tools</artifactId>
+                        </exclusion>
+                </exclusions>
+                <scope>test</scope>
+        </dependency>
+                <dependency>
+                        <groupId>net.sf.taverna.t2.component</groupId>
+                        <artifactId>component-activity</artifactId>
+                        <version>${t2.activities.version}</version>
+                        <scope>test</scope>
+                </dependency>
+        
+                <dependency>
+                        <groupId>net.sf.taverna.t2.activities</groupId>
+                        <artifactId>interaction-activity</artifactId>
+                        <version>${t2.activities.version}</version>
+                        <scope>test</scope>
+                </dependency>
 
-		<dependency>
-			<groupId>net.sf.taverna.t2.activities</groupId>
-			<artifactId>webdav-activity</artifactId>
-			<version>${t2.activities.version}</version>
-			<scope>test</scope>
-		</dependency>
-		
-		<!-- The activity UIs -->
-	
-		<dependency>
-			<groupId>net.sf.taverna.t2.ui-activities</groupId>
-			<artifactId>common-activity-uis</artifactId>
-			<version>${t2.ui.activities.version}</version>
-			<scope>test</scope>
-		</dependency>
-		
-		<dependency>
-			<groupId>net.sf.taverna.t2.ui-activities</groupId>
-			<artifactId>bioinformatics-activity-uis</artifactId>
-			<version>${t2.ui.activities.version}</version>
-			<scope>test</scope>
-		</dependency>
-	
-		<dependency>
-			<groupId>net.sf.taverna.t2.ui-activities</groupId>
-			<artifactId>apiconsumer-activity-ui</artifactId>
-			<version>${t2.ui.activities.version}</version>
-			<scope>test</scope>
-		</dependency>
+                <dependency>
+                        <groupId>net.sf.taverna.t2.activities</groupId>
+                        <artifactId>webdav-activity</artifactId>
+                        <version>${t2.activities.version}</version>
+                        <scope>test</scope>
+                </dependency>
+                
+                <!-- The activity UIs -->
+        
+                <dependency>
+                        <groupId>net.sf.taverna.t2.ui-activities</groupId>
+                        <artifactId>common-activity-uis</artifactId>
+                        <version>${t2.ui.activities.version}</version>
+                        <scope>test</scope>
+                </dependency>
+                
+                <dependency>
+                        <groupId>net.sf.taverna.t2.ui-activities</groupId>
+                        <artifactId>bioinformatics-activity-uis</artifactId>
+                        <version>${t2.ui.activities.version}</version>
+                        <scope>test</scope>
+                </dependency>
+        
+                <dependency>
+                        <groupId>net.sf.taverna.t2.ui-activities</groupId>
+                        <artifactId>apiconsumer-activity-ui</artifactId>
+                        <version>${t2.ui.activities.version}</version>
+                        <scope>test</scope>
+                </dependency>
 
-		<dependency>
-			<groupId>net.sf.taverna.t2.ui-activities</groupId>
-			<artifactId>biomoby-activity-ui</artifactId>
-			<version>${t2.ui.activities.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>sun.jdk</groupId>
-					<artifactId>tools</artifactId>
-				</exclusion>
-			</exclusions>
-					<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>net.sf.taverna.t2.ui-activities</groupId>
-			<artifactId>component-activity-ui</artifactId>
-			<version>${t2.ui.activities.version}</version>
-			<scope>test</scope>
-		</dependency>
-	
-		<dependency>
-			<groupId>net.sf.taverna.t2.ui-activities</groupId>
-			<artifactId>interaction-activity-ui</artifactId>
-			<version>${t2.ui.activities.version}</version>
-			<scope>test</scope>
-		</dependency>
+                <dependency>
+                        <groupId>net.sf.taverna.t2.ui-activities</groupId>
+                        <artifactId>biomoby-activity-ui</artifactId>
+                        <version>${t2.ui.activities.version}</version>
+                        <exclusions>
+                                <exclusion>
+                                        <groupId>sun.jdk</groupId>
+                                        <artifactId>tools</artifactId>
+                                </exclusion>
+                        </exclusions>
+                                        <scope>test</scope>
+                </dependency>
+                <dependency>
+                        <groupId>net.sf.taverna.t2.ui-activities</groupId>
+                        <artifactId>component-activity-ui</artifactId>
+                        <version>${t2.ui.activities.version}</version>
+                        <scope>test</scope>
+                </dependency>
+        
+                <dependency>
+                        <groupId>net.sf.taverna.t2.ui-activities</groupId>
+                        <artifactId>interaction-activity-ui</artifactId>
+                        <version>${t2.ui.activities.version}</version>
+                        <scope>test</scope>
+                </dependency>
 
-		<dependency>
-			<groupId>net.sf.taverna.t2.ui-activities</groupId>
-			<artifactId>webdav-activity-ui</artifactId>
-			<version>${t2.ui.activities.version}</version>
-			<scope>test</scope>
-		</dependency>
-							
-	</dependencies>
-	<build>
-	<pluginManagement>
-		<plugins>
-			<plugin>
-				<groupId>com.googlecode.maven-download-plugin</groupId>
-				<artifactId>maven-download-plugin</artifactId>
-				<version>1.1.0</version>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>buildnumber-maven-plugin</artifactId>
-				<version>1.2</version>
-			</plugin>
-			<plugin>
-				<groupId>org.sonatype.install4j</groupId>
-				<artifactId>install4j-maven-plugin</artifactId>
-				<version>1.0.6</version>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<version>2.4</version>
-			</plugin>
-			<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
+                <dependency>
+                        <groupId>net.sf.taverna.t2.ui-activities</groupId>
+                        <artifactId>webdav-activity-ui</artifactId>
+                        <version>${t2.ui.activities.version}</version>
+                        <scope>test</scope>
+                </dependency>
+                                                        
+        </dependencies>
+        <build>
+        <pluginManagement>
+                <plugins>
+                        <plugin>
+                                <groupId>com.googlecode.maven-download-plugin</groupId>
+                                <artifactId>maven-download-plugin</artifactId>
+                                <version>1.1.0</version>
+                        </plugin>
+                        <plugin>
+                                <groupId>org.codehaus.mojo</groupId>
+                                <artifactId>buildnumber-maven-plugin</artifactId>
+                                <version>1.2</version>
+                        </plugin>
+                        <plugin>
+                                <groupId>org.sonatype.install4j</groupId>
+                                <artifactId>install4j-maven-plugin</artifactId>
+                                <version>1.0.6</version>
+                        </plugin>
+                        <plugin>
+                                <groupId>org.apache.maven.plugins</groupId>
+                                <artifactId>maven-assembly-plugin</artifactId>
+                                <version>2.4</version>
+                        </plugin>
+                        <plugin>
+                                                <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-dependency-plugin</artifactId>
 
-							<configuration>
-									<copyPom>true</copyPom>
-									<useRepositoryLayout>true</useRepositoryLayout>
-									<overWriteReleases>false</overWriteReleases>
-									<overWriteSnapshots>true</overWriteSnapshots>
-									<artifactItems>
-										<!-- 
-					Produced by first doing a nightly build (-Pnightly) but with this plugin
-					commented out. When unzipping taverna-XXXX-bin.zip the repository/ folder
-					will be missing these artifacts below (mainly due to Raven not merging version
-					differences). To find out which ones, start run.sh once, and then 
-					in .taverna-123123123/repository/ run:
+                                                        <configuration>
+                                                                        <copyPom>true</copyPom>
+                                                                        <useRepositoryLayout>true</useRepositoryLayout>
+                                                                        <overWriteReleases>false</overWriteReleases>
+                                                                        <overWriteSnapshots>true</overWriteSnapshots>
+                                                                        <artifactItems>
+                                                                                <!-- 
+                                        Produced by first doing a nightly build (-Pnightly) but with this plugin
+                                        commented out. When unzipping taverna-XXXX-bin.zip the repository/ folder
+                                        will be missing these artifacts below (mainly due to Raven not merging version
+                                        differences). To find out which ones, start run.sh once, and then 
+                                        in .taverna-123123123/repository/ run:
 
-					stain@ralph ~/AppData/Roaming/taverna-2.1-beta-5-SNAPSHOT-20091117/repository
-					$ find -type f > $HOME/files
-					
-					stain@ralph ~/AppData/Roaming/taverna-2.1-beta-5-SNAPSHOT-20091117/repository
-					$ cd
-		
-					stain@ralph ~
-					$ python generateArtifactItems.py > artifactItems.txt
-							
-					The generateArtifactItems.py script can be found in src/main/python
-										
-										
-					If you then do a new nightly build with the maven-dependency-plugin section enabled, and
-					delete your $HOME/.taverna-123123123/repository/ - then after running Taverna the 
-					$HOME/.taverna-123123123/repository/ should be empty.
-					
-					If on unzipping you get warnings about overwriting files already existing you might also
-					need to redo this procedure, as this means that an artifactItem is adding a file already
-					added by the repositories-component of the assembly plugin. 
-					
-					 -->
+                                        stain@ralph ~/AppData/Roaming/taverna-2.1-beta-5-SNAPSHOT-20091117/repository
+                                        $ find -type f > $HOME/files
+                                        
+                                        stain@ralph ~/AppData/Roaming/taverna-2.1-beta-5-SNAPSHOT-20091117/repository
+                                        $ cd
+                
+                                        stain@ralph ~
+                                        $ python generateArtifactItems.py > artifactItems.txt
+                                                        
+                                        The generateArtifactItems.py script can be found in src/main/python
+                                                                                
+                                                                                
+                                        If you then do a new nightly build with the maven-dependency-plugin section enabled, and
+                                        delete your $HOME/.taverna-123123123/repository/ - then after running Taverna the 
+                                        $HOME/.taverna-123123123/repository/ should be empty.
+                                        
+                                        If on unzipping you get warnings about overwriting files already existing you might also
+                                        need to redo this procedure, as this means that an artifactItem is adding a file already
+                                        added by the repositories-component of the assembly plugin. 
+                                        
+                                         -->
 
 
                                  <artifactItem>
@@ -8563,42 +8563,42 @@
                                     <outputDirectory>${project.build.directory}/repository/xpp3/xpp3_min/1.1.4c</outputDirectory>
                                 </artifactItem>
 
-			     			</artifactItems>							
+                                                     </artifactItems>                                                        
                     </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
     </build>
     <repositories>
-		<repository>
-			<id>mygrid-repository</id>
-			<name>myGrid Repository</name>
-			<url>http://www.mygrid.org.uk/maven/repository</url>
-			<releases />
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>mygrid-snapshot-repository</id>
-			<name>myGrid Snapshot Repository</name>
-			<url>http://www.mygrid.org.uk/maven/snapshot-repository</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots />
-		</repository>
-		<repository>
-		    <releases>
-			<enabled>true</enabled>
-		    </releases>
-		    <snapshots>
-			<enabled>false</enabled>
-		    </snapshots>
-		    <id>aduna-opensource.releases</id>
-		    <name>Aduna Open Source - Maven releases</name>
-		    <url>http://repo.aduna-software.org/maven2/releases</url>
-		</repository>
+                <repository>
+                        <id>mygrid-repository</id>
+                        <name>myGrid Repository</name>
+                        <url>http://www.mygrid.org.uk/maven/repository</url>
+                        <releases />
+                        <snapshots>
+                                <enabled>false</enabled>
+                        </snapshots>
+                </repository>
+                <repository>
+                        <id>mygrid-snapshot-repository</id>
+                        <name>myGrid Snapshot Repository</name>
+                        <url>http://www.mygrid.org.uk/maven/snapshot-repository</url>
+                        <releases>
+                                <enabled>false</enabled>
+                        </releases>
+                        <snapshots />
+                </repository>
+                <repository>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <id>aduna-opensource.releases</id>
+                    <name>Aduna Open Source - Maven releases</name>
+                    <url>http://repo.aduna-software.org/maven2/releases</url>
+                </repository>
 
-	</repositories>
+        </repositories>
 </project>
