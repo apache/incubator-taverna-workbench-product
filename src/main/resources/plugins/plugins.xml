@@ -18,11 +18,16 @@
             <repository>http://www.soapui.org/repository/maven2/</repository>
         </repositories>
         <profile>
-            <dependency>
-                <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
-                <artifactId>translators-plugin</artifactId>
-                <version>${project.version}</version>
-            </dependency>
+                <dependency>
+                        <groupId>net.sf.taverna.t2.translators</groupId>
+                        <artifactId>all-activity-translators</artifactId>
+                        <version>${t2.translators.version}</version>
+                </dependency>
+                <dependency>
+                        <groupId>net.sf.taverna.t2.ui-exts</groupId>
+                        <artifactId>file-translator</artifactId>
+                        <version>${t2.ui.exts.version}</version>
+                </dependency>
         </profile>
         <compatibility>
             <application>
@@ -65,6 +70,7 @@
         </compatibility>
     </plugin>
     
+<!--
     <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.activities.bioinformatics</identifier>
@@ -100,7 +106,9 @@
             </application>
         </compatibility>
     </plugin>
+-->
     
+<!--
        <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.apiconsumer-activity</identifier>
@@ -134,7 +142,9 @@
             </application>
         </compatibility>
     </plugin>
+-->
     
+<!--
        <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.biomoby-activity</identifier>
@@ -168,6 +178,7 @@
             </application>
         </compatibility>
     </plugin>
+-->
     
 
     <plugin>
@@ -242,6 +253,7 @@
             </application>
         </compatibility>
     </plugin>
+<!--
     <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.webdav-activity</identifier>
@@ -275,6 +287,8 @@
             </application>
         </compatibility>
     </plugin>
+-->
+
     <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.workbench</identifier>
@@ -290,9 +304,9 @@
             <repository>http://download.java.net/maven/2/</repository>
             <repository>http://www.soapui.org/repository/maven2/</repository>
 
-			<!--  for provenance -->
-			<repository>http://openprovenance.org/java/maven-releases/</repository>			
-			<repository>http://repo.aduna-software.org/maven2/releases/</repository>
+		<!--  for provenance -->
+		<repository>http://openprovenance.org/java/maven-releases/</repository>			
+		<repository>http://repo.aduna-software.org/maven2/releases/</repository>
         </repositories>
         <profile>
 
@@ -332,9 +346,9 @@
         </repositories>
         <profile>
             <dependency>
-                <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
-                <artifactId>servicecatalogue-plugin</artifactId>
-                <version>${project.version}</version>
+		<groupId>net.sf.taverna.t2.ui-exts</groupId>
+		<artifactId>perspective-biocatalogue</artifactId>
+		<version>${t2.ui.exts.version}</version>
             </dependency>            
         </profile>
         <compatibility>

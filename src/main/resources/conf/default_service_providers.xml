@@ -1,5 +1,6 @@
 <serviceDescriptions xmlns="http://taverna.sf.net/2009/xml/servicedescription">
   <providers>
+	  <!--
     <provider>
       <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2010/service-provider/biomart</providerId>
       <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
@@ -50,5 +51,6 @@
         </net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig>
       </configBean>
     </provider>
+    -->
   </providers>
 </serviceDescriptions>
