@@ -311,7 +311,7 @@
         <profile>
 
             <dependency>
-                <groupId>net.sf.taverna.t2.taverna-workbench.plugins</groupId>
+                <groupId>net.sf.taverna.t2.taverna-workbench</groupId>
                 <artifactId>workbench-plugin</artifactId>
                 <version>${project.version}</version>
             </dependency>

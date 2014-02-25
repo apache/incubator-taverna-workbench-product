@@ -442,11 +442,9 @@
         </profiles>
         <dependencies>
                 <dependency>
-                        <groupId>net.sf.taverna.t2.taverna-workbench
-                        </groupId>
+                        <groupId>net.sf.taverna.t2.taverna-workbench</groupId>
                         <artifactId>workbench-common</artifactId>
-                        <version>${project.version}
-                        </version>
+                        <version>${project.version}</version>
                 </dependency>
 
         <!-- Each of the plugins/ must be included here to ensure their
@@ -454,11 +452,9 @@
         
 
                 <dependency>
-                        <groupId>net.sf.taverna.t2.taverna-workbench.plugins
-                        </groupId>
+                        <groupId>net.sf.taverna.t2.taverna-workbench</groupId>
                         <artifactId>workbench-plugin</artifactId>
-                        <version>${project.version}
-                        </version>
+                        <version>${project.version}</version>
                         <scope>test</scope>
                 </dependency>
 
