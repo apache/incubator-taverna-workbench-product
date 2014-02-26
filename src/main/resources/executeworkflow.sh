@@ -27,8 +27,8 @@ interaction_settings=""
 ## interaction_settings="$interaction_settings -Dtaverna.interaction.feed_path=/feed"
 
 
-# 1000 MB memory, 140 MB for classes
-exec "$javabin" -Xmx1000m -XX:MaxPermSize=140m \
+# 1000 MB memory, 200 MB for classes
+exec "$javabin" -Xmx1000m -XX:MaxPermSize=200m \
   "-Dcom.sun.net.ssl.enableECC=false" \
   "-Djsse.enableSNIExtension=false" \
   "-Draven.profile=file://$taverna_home/conf/current-profile.xml" \
