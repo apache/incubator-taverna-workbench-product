@@ -12,7 +12,7 @@
 	<name>Taverna Workbench [${edition}]</name>
 
         <properties>
-		<edition>biodiversity</edition>
+		<edition>digitalpreservation</edition>
 		<raven.app.name>taverna-${edition}-${project.version}-${buildNumber}</raven.app.name>
                 <m2Repository />
         </properties>
