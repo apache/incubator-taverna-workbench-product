@@ -3,6 +3,24 @@
 	xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/component/1.1.2"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/component/1.1.2 http://maven.apache.org/xsd/component-1.1.2.xsd">
+	<dependencySets>
+		<dependencySet>
+			<includes>
+				<include>net.sf.taverna.t2.taverna-workbench:taverna-product-common</include>
+			</includes>
+			<unpack>true</unpack>
+			<unpackOptions>
+				<excludes>
+					<exclude>META-INF/</exclude>
+				</excludes>
+			</unpackOptions>
+			<!-- 0755 for all, due to
+			     https://jira.codehaus.org/browse/MASSEMBLY-583 
+			     we can't have a second dependencySet to / -->
+			<fileMode>0755</fileMode>
+			<directoryMode>0755</directoryMode>
+		</dependencySet>
+	</dependencySets>
 	<fileSets>
 		<fileSet>
 			<directory>src/main/resources</directory>
@@ -13,17 +31,9 @@
 				<exclude>plugins/plugins.xml</exclude>
 				<exclude>plugins/plugin-sites.xml</exclude>
 				<exclude>taverna.sh</exclude>
-				<exclude>executeworkflow.sh</exclude>
 				<exclude>bin/</exclude>
 			</excludes>
 			<fileMode>0644</fileMode>			
-			<directoryMode>0755</directoryMode>
-			<lineEnding>keep</lineEnding>			
-		</fileSet>
-		<fileSet>
-			<directory>src/main/resources/bin</directory>
-			<outputDirectory>/bin</outputDirectory>
-			<fileMode>0755</fileMode>			
 			<directoryMode>0755</directoryMode>
 			<lineEnding>keep</lineEnding>			
 		</fileSet>
@@ -42,12 +52,6 @@
 	<files>
 		<file>
 			<source>src/main/resources/taverna.sh</source>
-			<outputDirectory>/</outputDirectory>
-			<fileMode>0755</fileMode>
-			<lineEnding>lf</lineEnding>
-		</file>
-		<file>
-			<source>src/main/resources/executeworkflow.sh</source>
 			<outputDirectory>/</outputDirectory>
 			<fileMode>0755</fileMode>
 			<lineEnding>lf</lineEnding>

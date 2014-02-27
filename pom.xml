@@ -8,9 +8,10 @@
                 <version>2.5-SNAPSHOT</version>
         </parent>
         <groupId>net.sf.taverna.t2.taverna-workbench</groupId>
-        <artifactId>workbench-distro</artifactId>
-        <name>Taverna workbench distribution</name>
+	<artifactId>taverna-workbench-${edition}</artifactId>
+	<name>Taverna Workbench [${edition}]</name>
         <properties>
+		<edition>core</edition>
                 <m2Repository />
         </properties>
         <profiles>
@@ -287,12 +288,11 @@
                                                                 <goals>
                                                                         <goal>single</goal>
                                                                 </goals>
-                                <configuration>
-                                    <descriptors>
-                                        <descriptor>src/main/assembly/release-assembly.xml
-                                        </descriptor>
-                                    </descriptors>
-                                </configuration>
+								<configuration>
+									<descriptors>
+										<descriptor>src/main/assembly/release-assembly.xml</descriptor>
+									</descriptors>
+								</configuration>
                                                         </execution>
                                                 </executions>
                                         </plugin>
@@ -329,11 +329,11 @@
                                 </goals>
                                 <configuration>
                                     <descriptors>
-                                        <descriptor>src/main/assembly/dist-assembly.xml
-                                        </descriptor>
+                                        <descriptor>src/main/assembly/dist-assembly.xml</descriptor>
                                     </descriptors>
                                     <attach>false</attach>
-                                    <finalName>taverna-workbench</finalName>
+				    <finalName>dist</finalName>
+				    <appendAssemblyId>false</appendAssemblyId>
                                 </configuration>                                
                             </execution>
                         </executions>
@@ -422,14 +422,14 @@
                                 </goals>
                                 <configuration>
                                     <failIfMissing>true</failIfMissing>
-                                        <attach>true</attach>
-                                    
+                                    <attach>true</attach>
                                     <projectFile>${project.basedir}/src/main/install4j/taverna-workbench.install4j</projectFile>
 <!--
                                     <skipOnMissingExecutable>true</skipOnMissingExecutable>
 -->                                                                
                                                                 <variables>
-                                                                        <srcDir>${project.build.directory}/taverna-workbench-dist</srcDir>
+                                                                        <srcDir>${project.build.directory}/dist</srcDir>
+									<edition>${edition}</edition>
                                                                 </variables>
                                 </configuration>
                             </execution>
@@ -442,7 +442,7 @@
         <dependencies>
                 <dependency>
                         <groupId>net.sf.taverna.t2.taverna-workbench</groupId>
-                        <artifactId>workbench-common</artifactId>
+                        <artifactId>taverna-product-common</artifactId>
                         <version>${project.version}</version>
                 </dependency>
 
@@ -1987,4 +1987,10 @@
                 </repository>
 
         </repositories>
+	<scm>
+		<url>https://github.com/taverna/taverna-workbench-product</url>
+		<connection>scm:git:https://github.com/taverna/taverna-workbench-product.git</connection>
+		<developerConnection>scm:git:git@github.com:taverna/taverna-workbench-product.git</developerConnection>
+		<tag>${edition}</tag>
+	</scm>
 </project>
