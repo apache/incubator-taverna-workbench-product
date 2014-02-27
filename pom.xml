@@ -26,28 +26,6 @@
                         <build>
                                 <finalName>taverna-dev-${project.version}-${buildNumber}</finalName>
                                 <plugins>
-                                        <plugin>
-                                                <groupId>org.codehaus.mojo</groupId>
-                                                <artifactId>buildnumber-maven-plugin</artifactId>
-                                                <executions>
-                                                        <execution>
-                                                                <id>buildnumber-validate</id>
-                                                                <phase>validate</phase>
-                                                                <goals>
-                                                                        <goal>create</goal>
-                                                                </goals>
-                                                        </execution>
-                                                </executions>
-                                                <configuration>
-                                                        <doCheck>false</doCheck>
-                                                        <doUpdate>false</doUpdate>
-                                                        <format>{0,date,yyyyMMdd}T{0,date,HHmm}
-                                                        </format>
-                                                        <items>
-                                                                <item>timestamp</item>
-                                                        </items>
-                                                </configuration>
-                                        </plugin>
 
                                         <plugin>
                                                 <groupId>org.apache.maven.plugins</groupId>
@@ -93,29 +71,6 @@
                         <build>
                                 <finalName>taverna-dev-${project.version}-${buildNumber}</finalName>
                                 <plugins>
-                                        <plugin>
-                                                <groupId>org.codehaus.mojo</groupId>
-                                                <artifactId>buildnumber-maven-plugin</artifactId>
-                                                <executions>
-                                                        <execution>
-                                                                <id>buildnumber-validate</id>
-                                                                <phase>validate</phase>
-                                                                <goals>
-                                                                        <goal>create</goal>
-                                                                </goals>
-                                                        </execution>
-                                                </executions>
-                                                <configuration>
-                                                        <doCheck>false</doCheck>
-                                                        <doUpdate>false</doUpdate>
-                                                        <format>{0,date,yyyyMMdd}T{0,date,HHmm}
-                                                        </format>
-                                                        <items>
-                                                                <item>timestamp</item>
-                                                        </items>
-                                                </configuration>
-                                        </plugin>
-
                                         <plugin>
                                                 <groupId>org.apache.maven.plugins</groupId>
                                                 <artifactId>maven-assembly-plugin</artifactId>
@@ -165,40 +120,20 @@
                         <build>
 				<finalName>${project.artifactId}-${project.version}-${buildNumber}</finalName>
                                 <plugins>
-                                        <plugin>
-                                                <groupId>org.codehaus.mojo</groupId>
-                                                <artifactId>buildnumber-maven-plugin</artifactId>
-                                                <executions>
-                                                        <execution>
-                                                                <phase>validate</phase>
-                                                                <goals>
-                                                                        <goal>create</goal>
-                                                                </goals>
-                                                        </execution>
-                                                </executions>
-                                                <configuration>
-                                                        <doCheck>false</doCheck>
-                                                        <doUpdate>false</doUpdate>
-                                                        <format>{0,date,yyyyMMdd}</format>
-                                                        <items>
-                                                                <item>timestamp</item>
-                                                        </items>
-                                                </configuration>
-                                        </plugin>
 
-                    <plugin>
+					<plugin>
                                                 <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-dependency-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>dependencycopy</id>
-                                <phase>prepare-package</phase>
-                                <goals>
-                                    <goal>copy</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
+						<artifactId>maven-dependency-plugin</artifactId>
+						<executions>
+						<execution>
+							<id>dependencycopy</id>
+							<phase>prepare-package</phase>
+							<goals>
+							<goal>copy</goal>
+							</goals>
+						</execution>
+						</executions>
+					</plugin>
                     
 
                                         <plugin>
@@ -233,6 +168,60 @@
                         </build>
                 </profile>
                 <profile>
+                        <id>nightly</id>
+                        <properties>
+                                <!-- Nothing to be inserted into plugins.xml -->
+                                <m2Repository></m2Repository>
+                        </properties>
+                        <build>
+                                <plugins>
+                                        <plugin>
+                                                <groupId>org.codehaus.mojo</groupId>
+                                                <artifactId>buildnumber-maven-plugin</artifactId>
+                                                <configuration>
+                                                        <doCheck>false</doCheck>
+                                                        <doUpdate>false</doUpdate>
+                                                        <format>{0,date,yyyyMMdd}</format>
+                                                        <items>
+                                                                <item>timestamp</item>
+                                                        </items>
+                                                </configuration>
+                                        </plugin>
+                                        <plugin>
+                                                <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-dependency-plugin</artifactId>
+                                                <executions>
+                                                        <execution>
+                                                                <id>dependencycopy</id>
+                                                                <phase>prepare-package</phase>
+                                                                <goals>
+                                                                        <goal>copy</goal>
+                                                                </goals>
+                                                        </execution>
+                                                </executions>
+                                        </plugin>
+                                        <plugin>
+                                                <groupId>org.apache.maven.plugins</groupId>
+                                                <artifactId>maven-assembly-plugin</artifactId>
+                                                <executions>
+                                                        <execution>
+                                <id>release-assembly</id>
+                                                                <phase>package</phase>
+                                                                <goals>
+                                                                        <goal>single</goal>
+                                                                </goals>
+								<configuration>
+									<descriptors>
+										<descriptor>src/main/assembly/zip-assembly.xml</descriptor>
+									</descriptors>
+								</configuration>
+                                                        </execution>
+                                                </executions>
+                                        </plugin>
+                                </plugins>
+                        </build>
+                </profile>
+                <profile>
                         <id>release</id>
                         <properties>
                                 <!-- Nothing to be inserted into plugins.xml -->
@@ -245,14 +234,6 @@
                                         <plugin>
                                                 <groupId>org.codehaus.mojo</groupId>
                                                 <artifactId>buildnumber-maven-plugin</artifactId>
-                                                <executions>
-                                                        <execution>
-                                                                <phase>validate</phase>
-                                                                <goals>
-                                                                        <goal>create</goal>
-                                                                </goals>
-                                                        </execution>
-                                                </executions>
                                                 <configuration>
                                                         <doCheck>false</doCheck>
                                                         <doUpdate>false</doUpdate>
@@ -602,6 +583,31 @@
         </dependencies>
         <build>
 		<finalName>${project.artifactId}-${project.version}</finalName>
+
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>buildnumber-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>buildnumber-validate</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>create</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<doCheck>false</doCheck>
+					<doUpdate>false</doUpdate>
+					<format>{0,date,yyyyMMdd}T{0,date,HHmm}
+					</format>
+					<items>
+						<item>timestamp</item>
+					</items>
+				</configuration>
+			</plugin>
+		</plugins>
 		<pluginManagement>
 			<plugins>
 				<plugin>
