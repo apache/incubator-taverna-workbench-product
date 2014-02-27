@@ -567,10 +567,10 @@
         <content />
       </preInstallScript>
       <postInstallScript mode="3" file="">
-        <content>ln -sf /opt/taverna-workbench/taverna.desktop /usr/share/applications/taverna-workbench.desktop</content>
+        <content>ln -sf /opt/${compiler:sys.shortName}/taverna.desktop /usr/share/applications/${compiler:sys.shortName}.desktop</content>
       </postInstallScript>
       <preUninstallScript mode="3" file="">
-        <content>rm -f /usr/share/applications/taverna-workbench.desktop</content>
+        <content>rm -f /usr/share/applications/${compiler:sys.shortName}.desktop</content>
       </preUninstallScript>
       <postUninstallScript mode="1" file="">
         <content />
