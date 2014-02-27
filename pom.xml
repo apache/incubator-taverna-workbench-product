@@ -10,8 +10,10 @@
         <groupId>net.sf.taverna.t2.taverna-workbench</groupId>
 	<artifactId>taverna-workbench-${edition}</artifactId>
 	<name>Taverna Workbench [${edition}]</name>
+
         <properties>
 		<edition>core</edition>
+		<raven.app.name>taverna-${edition}-${project.version}-${buildNumber}</raven.app.name>
                 <m2Repository />
         </properties>
         <profiles>
@@ -161,13 +163,15 @@
                         </build>
                 </profile>
                 <profile>
-                        <id>nightly</id>
+                        <id>zip</id>
+                        <activation>
+                                <activeByDefault>true</activeByDefault>
+                        </activation>
                         <properties>
                                 <!-- Nothing to be inserted into plugins.xml -->
                                 <m2Repository></m2Repository>
                         </properties>
                         <build>
-                                <finalName>taverna-nightly-${project.version}-${buildNumber}</finalName>
                                 <plugins>
                                         <plugin>
                                                 <groupId>org.codehaus.mojo</groupId>
@@ -241,6 +245,7 @@
                         <properties>
                                 <!-- Nothing to be inserted into plugins.xml -->
                                 <m2Repository></m2Repository>
+				<raven.app.name>taverna-${edition}-${project.version}</raven.app.name>
                         </properties>
                         <build>
                                 <finalName>taverna-workbench</finalName>
@@ -302,6 +307,7 @@
         <profile>
             <id>dist</id>
             <build>
+
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -603,37 +609,38 @@
                                                         
         </dependencies>
         <build>
-        <pluginManagement>
-                <plugins>
-                        <plugin>
-                                <groupId>com.googlecode.maven-download-plugin</groupId>
-                                <artifactId>maven-download-plugin</artifactId>
-                                <version>1.1.0</version>
-                        </plugin>
-                        <plugin>
-                                <groupId>org.codehaus.mojo</groupId>
-                                <artifactId>buildnumber-maven-plugin</artifactId>
-                                <version>1.2</version>
-                        </plugin>
-                        <plugin>
-                                <groupId>org.sonatype.install4j</groupId>
-                                <artifactId>install4j-maven-plugin</artifactId>
-                                <version>1.0.6</version>
-                        </plugin>
-                        <plugin>
-                                <groupId>org.apache.maven.plugins</groupId>
-                                <artifactId>maven-assembly-plugin</artifactId>
-                                <version>2.4</version>
-                        </plugin>
-                        <plugin>
-                                <groupId>org.apache.maven.plugins</groupId>
-                                <artifactId>maven-dependency-plugin</artifactId>
-                                <configuration>
-                                        <copyPom>true</copyPom>
-                                        <useRepositoryLayout>true</useRepositoryLayout>
-                                        <overWriteReleases>false</overWriteReleases>
-                                        <overWriteSnapshots>true</overWriteSnapshots>
-                                        <artifactItems>
+		<finalName>${project.artifactId}-${project.version}</finalName>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>com.googlecode.maven-download-plugin</groupId>
+					<artifactId>maven-download-plugin</artifactId>
+					<version>1.1.0</version>
+				</plugin>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>buildnumber-maven-plugin</artifactId>
+					<version>1.2</version>
+				</plugin>
+				<plugin>
+					<groupId>org.sonatype.install4j</groupId>
+					<artifactId>install4j-maven-plugin</artifactId>
+					<version>1.0.6</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>2.4</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-dependency-plugin</artifactId>
+					<configuration>
+						<copyPom>true</copyPom>
+						<useRepositoryLayout>true</useRepositoryLayout>
+						<overWriteReleases>false</overWriteReleases>
+						<overWriteSnapshots>true</overWriteSnapshots>
+						<artifactItems>
                                                                                 <!-- 
                                         Produced by first doing a nightly build (-Pnightly) but with this plugin
                                         commented out. When unzipping taverna-XXXX-bin.zip the repository/ folder
@@ -1949,7 +1956,7 @@
                                     <outputDirectory>${project.build.directory}/repository/javax/servlet/servlet-api/2.4</outputDirectory>
                                 </artifactItem>
 
-                                                     </artifactItems>                                                        
+			</artifactItems>                                                        
                     </configuration>
                 </plugin>
             </plugins>
