@@ -331,7 +331,8 @@
         </compatibility>
     </plugin>
     
-        <plugin>
+    <!--
+    <plugin>
         <provider>taverna.sf.net</provider>
         <identifier>net.sf.taverna.t2.servicecatalogue</identifier>
 		<version>${project.version}-${buildNumber}</version>
@@ -359,6 +360,7 @@
             </application>
         </compatibility>
     </plugin>
+    -->
     
 
     
