@@ -1,9 +1,0 @@
-==========================
-Taverna 2.5.0 known issues
-==========================
-
-TODO: Include known issues in Taverna 2.5
-
-See:
-http://dev.mygrid.org.uk/issues/issues/?filter=10412
-
