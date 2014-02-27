@@ -18,7 +18,7 @@
         </properties>
         <profiles>
                 <profile>
-                        <id>developer-win</id>            
+                        <id>dev-win</id>            
                         <properties>
                                 <!-- To be inserted into plugins.xml -->
                                 <m2Repository>&lt;repository&gt;file:/${settings.localRepository}/&lt;/repository&gt;</m2Repository>
@@ -85,7 +85,7 @@
                         </build>
                 </profile>
                 <profile>
-                        <id>developer</id>
+                        <id>dev</id>
                         <properties>
                                 <!-- To be inserted into plugins.xml -->
                                 <m2Repository>&lt;repository&gt;file:${settings.localRepository}/&lt;/repository&gt;</m2Repository>
