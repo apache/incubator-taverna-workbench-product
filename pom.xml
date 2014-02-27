@@ -19,12 +19,6 @@
         <profiles>
                 <profile>
                         <id>developer-win</id>            
-                        <activation>                
-                                <os>
-                                        <family>Windows</family>
-                                </os>
-                                <activeByDefault>true</activeByDefault>
-                        </activation>
                         <properties>
                                 <!-- To be inserted into plugins.xml -->
                                 <m2Repository>&lt;repository&gt;file:/${settings.localRepository}/&lt;/repository&gt;</m2Repository>
@@ -92,9 +86,6 @@
                 </profile>
                 <profile>
                         <id>developer</id>
-                        <activation>
-                                <activeByDefault>true</activeByDefault>
-                        </activation>
                         <properties>
                                 <!-- To be inserted into plugins.xml -->
                                 <m2Repository>&lt;repository&gt;file:${settings.localRepository}/&lt;/repository&gt;</m2Repository>
@@ -172,6 +163,7 @@
                                 <m2Repository></m2Repository>
                         </properties>
                         <build>
+				<finalName>${project.artifactId}-${project.version}-${buildNumber}</finalName>
                                 <plugins>
                                         <plugin>
                                                 <groupId>org.codehaus.mojo</groupId>
@@ -248,7 +240,7 @@
 				<raven.app.name>taverna-${edition}-${project.version}</raven.app.name>
                         </properties>
                         <build>
-                                <finalName>taverna-workbench</finalName>
+				<finalName>${project.artifactId}-${project.version}</finalName>
                                 <plugins>
                                         <plugin>
                                                 <groupId>org.codehaus.mojo</groupId>
