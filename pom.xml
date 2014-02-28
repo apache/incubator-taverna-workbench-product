@@ -12,9 +12,10 @@
 	<name>Taverna Workbench [${edition}]</name>
 
         <properties>
-		<edition>core</edition>
+		<edition>astronomy</edition>
 		<raven.app.name>taverna-${edition}-${project.version}-${buildNumber}</raven.app.name>
                 <m2Repository />
+		<astrotaverna.version>1.11.tav25-SNAPSHOT</astrotaverna.version>
         </properties>
         <profiles>
                 <profile>
@@ -579,6 +580,39 @@
                         <version>${t2.ui.activities.version}</version>
                         <scope>test</scope>
                 </dependency>
+
+		<!-- astrotaverna -->
+
+		<dependency>
+		<groupId>org.purl.wf4ever.astrotaverna</groupId>
+		<artifactId>astrotaverna-voservices</artifactId>
+		<version>${astrotaverna.version}</version>
+		</dependency>
+		<dependency>
+		<groupId>org.purl.wf4ever.astrotaverna</groupId>
+		<artifactId>stilts-activity-ui</artifactId>
+		<version>${astrotaverna.version}</version>
+		</dependency>
+		<dependency>
+		<groupId>org.purl.wf4ever.astrotaverna</groupId>
+		<artifactId>votable-renderer</artifactId>
+		<version>${astrotaverna.version}</version>
+		</dependency>
+		<dependency>
+		<groupId>org.purl.wf4ever.astrotaverna</groupId>
+		<artifactId>PDL-activity-ui</artifactId>
+		<version>${astrotaverna.version}</version>
+		</dependency>
+		<dependency>
+		<groupId>org.purl.wf4ever.astrotaverna</groupId>
+		<artifactId>Image-activity-ui</artifactId>
+		<version>${astrotaverna.version}</version>
+		</dependency>
+		<dependency>
+		<groupId>org.purl.wf4ever.astrotaverna</groupId>
+		<artifactId>query-activity-ui</artifactId>
+		<version>${astrotaverna.version}</version>
+		</dependency>
                                                         
         </dependencies>
         <build>
@@ -671,6 +705,29 @@
 <!--
 
 				-->
+
+
+                                <artifactItem>
+                                    <groupId>org.slf4j</groupId>
+                                    <artifactId>slf4j-parent</artifactId>
+                                    <version>1.6.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/slf4j/slf4j-parent/1.6.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.slf4j</groupId>
+                                    <artifactId>slf4j-api</artifactId>
+                                    <version>1.6.1</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/slf4j/slf4j-api/1.6.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.slf4j</groupId>
+                                    <artifactId>slf4j-api</artifactId>
+                                    <version>1.6.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/slf4j/slf4j-api/1.6.1</outputDirectory>
+                                </artifactItem>
 
                                 <artifactItem>
                                     <groupId>xom</groupId>
@@ -1989,6 +2046,17 @@
                     <id>aduna-opensource.releases</id>
                     <name>Aduna Open Source - Maven releases</name>
                     <url>http://repo.aduna-software.org/maven2/releases</url>
+                </repository>
+                <repository>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                    <id>astrotaverna</id>
+                    <name>Astrotaverna repository</name>
+		    <url>http://wf4ever.github.com/astrotaverna</url>
                 </repository>
 
         </repositories>
