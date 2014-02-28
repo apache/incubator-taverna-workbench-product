@@ -264,7 +264,7 @@ The `media/media` folder will contain installers for different operating systems
 Icons
 -----
 
-IF you would like to customize the icons and splashscreen used by the generated
+If you would like to customize the icons and splashscreen used by the generated
 installers and launchers, see `src/main/resources/lib` - note that there are
 different icon files for different operating systems.
 
