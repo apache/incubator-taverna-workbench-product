@@ -12,7 +12,7 @@
 	<name>Taverna Workbench [${edition}]</name>
 
         <properties>
-		<edition>bioinformatics</edition>
+		<edition>enterprise</edition>
 		<raven.app.name>taverna-${edition}-${project.version}-${buildNumber}</raven.app.name>
                 <m2Repository />
         </properties>
@@ -498,14 +498,12 @@
                 <scope>test</scope>
         </dependency>
 
-		<!--
                 <dependency>
                         <groupId>net.sf.taverna.t2.activities</groupId>
                         <artifactId>webdav-activity</artifactId>
                         <version>${t2.activities.version}</version>
                         <scope>test</scope>
                 </dependency>
-		-->
                 
                 <dependency>
                         <groupId>net.sf.taverna.t2.component</groupId>
@@ -556,14 +554,13 @@
                         <scope>test</scope>
                 </dependency>
 
-		<!--
                 <dependency>
                         <groupId>net.sf.taverna.t2.ui-activities</groupId>
                         <artifactId>webdav-activity-ui</artifactId>
                         <version>${t2.ui.activities.version}</version>
                         <scope>test</scope>
                 </dependency>
-		-->
+
                 <dependency>
                         <groupId>net.sf.taverna.t2.ui-activities</groupId>
                         <artifactId>component-activity-ui</artifactId>
@@ -671,6 +668,97 @@
 				-->
 
 
+                                <artifactItem>
+                                    <groupId>commons-codec</groupId>
+                                    <artifactId>commons-codec</artifactId>
+                                    <version>1.7</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-codec/commons-codec/1.7</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>commons-codec</groupId>
+                                    <artifactId>commons-codec</artifactId>
+                                    <version>1.7</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-codec/commons-codec/1.7</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>commons-logging</groupId>
+                                    <artifactId>commons-logging</artifactId>
+                                    <version>1.1.2</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.1.2</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>commons-logging</groupId>
+                                    <artifactId>commons-logging</artifactId>
+                                    <version>1.1.2</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-logging/commons-logging/1.1.2</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.httpcomponents</groupId>
+                                    <artifactId>project</artifactId>
+                                    <version>4.0</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/httpcomponents/project/4.0</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.httpcomponents</groupId>
+                                    <artifactId>httpcomponents-core</artifactId>
+                                    <version>4.0.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/httpcomponents/httpcomponents-core/4.0.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.httpcomponents</groupId>
+                                    <artifactId>httpcomponents-client</artifactId>
+                                    <version>4.0.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/httpcomponents/httpcomponents-client/4.0.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.httpcomponents</groupId>
+                                    <artifactId>httpclient</artifactId>
+                                    <version>4.0.1</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/httpcomponents/httpclient/4.0.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.httpcomponents</groupId>
+                                    <artifactId>httpclient</artifactId>
+                                    <version>4.0.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/httpcomponents/httpclient/4.0.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.httpcomponents</groupId>
+                                    <artifactId>httpcore</artifactId>
+                                    <version>4.0.1</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/httpcomponents/httpcore/4.0.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.httpcomponents</groupId>
+                                    <artifactId>httpcore</artifactId>
+                                    <version>4.0.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/httpcomponents/httpcore/4.0.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.commons</groupId>
+                                    <artifactId>commons-parent</artifactId>
+                                    <version>28</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/commons/commons-parent/28</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.commons</groupId>
+                                    <artifactId>commons-parent</artifactId>
+                                    <version>26</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/commons/commons-parent/26</outputDirectory>
+                                </artifactItem>
                                 <artifactItem>
                                     <groupId>commons-configuration</groupId>
                                     <artifactId>commons-configuration</artifactId>
