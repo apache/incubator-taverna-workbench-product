@@ -427,7 +427,16 @@
                 </dependency>
 
         <!-- Each of the plugins/ must be included here to ensure their
-        JARs end up in repository/-->
+	JARs end up in repository/
+
+	You MUST include 
+
+                        <scope>test</scope>
+
+	for every dependency to avoid it being copied to lib/ instead
+	of repository/
+
+	-->
         
 
                 <dependency>
@@ -584,34 +593,40 @@
 		<!-- astrotaverna -->
 
 		<dependency>
-		<groupId>org.purl.wf4ever.astrotaverna</groupId>
-		<artifactId>astrotaverna-voservices</artifactId>
-		<version>${astrotaverna.version}</version>
+			<groupId>org.purl.wf4ever.astrotaverna</groupId>
+			<artifactId>astrotaverna-voservices</artifactId>
+			<version>${astrotaverna.version}</version>
+                        <scope>test</scope>
 		</dependency>
 		<dependency>
-		<groupId>org.purl.wf4ever.astrotaverna</groupId>
-		<artifactId>stilts-activity-ui</artifactId>
-		<version>${astrotaverna.version}</version>
+			<groupId>org.purl.wf4ever.astrotaverna</groupId>
+			<artifactId>stilts-activity-ui</artifactId>
+			<version>${astrotaverna.version}</version>
+                        <scope>test</scope>
 		</dependency>
 		<dependency>
-		<groupId>org.purl.wf4ever.astrotaverna</groupId>
-		<artifactId>votable-renderer</artifactId>
-		<version>${astrotaverna.version}</version>
+			<groupId>org.purl.wf4ever.astrotaverna</groupId>
+			<artifactId>votable-renderer</artifactId>
+			<version>${astrotaverna.version}</version>
+                        <scope>test</scope>
 		</dependency>
 		<dependency>
-		<groupId>org.purl.wf4ever.astrotaverna</groupId>
-		<artifactId>PDL-activity-ui</artifactId>
-		<version>${astrotaverna.version}</version>
+			<groupId>org.purl.wf4ever.astrotaverna</groupId>
+			<artifactId>PDL-activity-ui</artifactId>
+			<version>${astrotaverna.version}</version>
+                        <scope>test</scope>
 		</dependency>
 		<dependency>
-		<groupId>org.purl.wf4ever.astrotaverna</groupId>
-		<artifactId>Image-activity-ui</artifactId>
-		<version>${astrotaverna.version}</version>
+			<groupId>org.purl.wf4ever.astrotaverna</groupId>
+			<artifactId>Image-activity-ui</artifactId>
+			<version>${astrotaverna.version}</version>
+                        <scope>test</scope>
 		</dependency>
 		<dependency>
-		<groupId>org.purl.wf4ever.astrotaverna</groupId>
-		<artifactId>query-activity-ui</artifactId>
-		<version>${astrotaverna.version}</version>
+			<groupId>org.purl.wf4ever.astrotaverna</groupId>
+			<artifactId>query-activity-ui</artifactId>
+			<version>${astrotaverna.version}</version>
+                        <scope>test</scope>
 		</dependency>
                                                         
         </dependencies>
