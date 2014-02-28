@@ -12,7 +12,7 @@
 	<name>Taverna Workbench [${edition}]</name>
 
         <properties>
-		<edition>core</edition>
+		<edition>bioinformatics</edition>
 		<raven.app.name>taverna-${edition}-${project.version}-${buildNumber}</raven.app.name>
                 <m2Repository />
         </properties>
@@ -471,7 +471,6 @@
                         <scope>test</scope>
                 </dependency>
                 
-		<!--
                 <dependency>
                         <groupId>net.sf.taverna.t2.activities</groupId>
                         <artifactId>bioinformatics-activities</artifactId>
@@ -485,9 +484,7 @@
                         <version>${t2.activities.version}</version>
                         <scope>test</scope>
                 </dependency>
-		-->
 
-		<!--
         <dependency>
                 <groupId>net.sf.taverna.t2.activities</groupId>
                 <artifactId>biomoby-activity</artifactId>
@@ -501,6 +498,7 @@
                 <scope>test</scope>
         </dependency>
 
+		<!--
                 <dependency>
                         <groupId>net.sf.taverna.t2.activities</groupId>
                         <artifactId>webdav-activity</artifactId>
@@ -531,7 +529,6 @@
                         <scope>test</scope>
                 </dependency>
                 
-		<!--
                 <dependency>
                         <groupId>net.sf.taverna.t2.ui-activities</groupId>
                         <artifactId>bioinformatics-activity-uis</artifactId>
@@ -559,6 +556,7 @@
                         <scope>test</scope>
                 </dependency>
 
+		<!--
                 <dependency>
                         <groupId>net.sf.taverna.t2.ui-activities</groupId>
                         <artifactId>webdav-activity-ui</artifactId>
