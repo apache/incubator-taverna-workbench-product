@@ -12,4 +12,8 @@
     <name>Prototype plugins (Warning: alpha/beta versions)</name>
     <url>http://www.mygrid.org.uk/taverna/updates/${project.version}/plugins/prototype/</url>
   </pluginSite>
+  <pluginSite>
+    <name>AstroTaverna</name>
+    <url>http://wf4ever.github.io/astrotaverna/</url>
+  </pluginSite>
 </pluginSites>
