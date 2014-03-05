@@ -88,7 +88,7 @@
       <java mainClass="net.sf.taverna.raven.launcher.Launcher" vmParameters="&quot;-Djava.util.logging.config.file=${launcher:sys.launcherDirectory}/lib/logging.properties&quot;" arguments="" allowVMPassthroughParameters="true" preferredVM="client" bundleRuntime="true">
         <classPath>
           <directory location="conf" failOnError="false" />
-          <directory location="lib" failOnError="false" />
+          <directory location="lib" failOnError="true" />
           <scanDirectory location="lib" failOnError="true" />
         </classPath>
         <nativeLibraryDirectories>
@@ -193,7 +193,7 @@
       <iconImageFiles />
     </launcher>
   </launchers>
-  <installerGui installerType="1" addOnAppId="" suggestPreviousLocations="true" autoUpdateDescriptorUrl="http://updates.taverna.org.uk/workbench/${compiler:sys.version}/updates.xml" useAutoUpdateBaseUrl="true" autoUpdateBaseUrl="http://updates.taverna.org.uk/workbench/installers/">
+  <installerGui installerType="1" addOnAppId="" suggestPreviousLocations="true" autoUpdateDescriptorUrl="http://updates.taverna.org.uk/workbench/${compiler:edition}/${compiler:sys.version}/updates.xml" useAutoUpdateBaseUrl="true" autoUpdateBaseUrl="http://updates.taverna.org.uk/workbench/${compiler:edition}/installers/">
     <customCode />
     <autoUpdate useMinUpdatableVersion="false" minUpdatableVersion="" useMaxUpdatableVersion="false" maxUpdatableVersion="">
       <commentFiles />
@@ -636,7 +636,7 @@
     </unixArchive>
   </mediaSets>
   <buildIds buildAll="false">
-    <mediaSet refId="83" />
+    <mediaSet refId="78" />
   </buildIds>
   <buildOptions verbose="false" faster="false" disableSigning="false" debug="false" />
 </install4j>
