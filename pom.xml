@@ -1731,6 +1731,20 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.slf4j</groupId>
+                                    <artifactId>slf4j-jdk14</artifactId>
+                                    <version>1.6.4</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/slf4j/slf4j-jdk14/1.6.4</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.slf4j</groupId>
+                                    <artifactId>slf4j-jdk14</artifactId>
+                                    <version>1.6.4</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/slf4j/slf4j-jdk14/1.6.4</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.slf4j</groupId>
                                     <artifactId>slf4j-parent</artifactId>
                                     <version>1.4.3</version>
                                     <type>pom</type>
@@ -1760,6 +1774,20 @@
                                 <artifactItem>
                                     <groupId>org.slf4j</groupId>
                                     <artifactId>slf4j-log4j12</artifactId>
+                                    <version>1.6.4</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/slf4j/slf4j-log4j12/1.6.4</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.slf4j</groupId>
+                                    <artifactId>slf4j-log4j12</artifactId>
+                                    <version>1.6.4</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/slf4j/slf4j-log4j12/1.6.4</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.slf4j</groupId>
+                                    <artifactId>slf4j-log4j12</artifactId>
                                     <version>1.5.8</version>
                                     <type>jar</type>
                                     <outputDirectory>${project.build.directory}/repository/org/slf4j/slf4j-log4j12/1.5.8</outputDirectory>
@@ -1827,6 +1855,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/org/slf4j/slf4j-api/1.5.0</outputDirectory>
                                 </artifactItem>
+				<!--
                                 <artifactItem>
                                     <groupId>org.slf4j</groupId>
                                     <artifactId>slf4j-api</artifactId>
@@ -1841,6 +1870,7 @@
                                     <type>jar</type>
                                     <outputDirectory>${project.build.directory}/repository/org/slf4j/slf4j-api/1.6.4</outputDirectory>
                                 </artifactItem>
+				-->
                                 <artifactItem>
                                     <groupId>org.slf4j</groupId>
                                     <artifactId>slf4j-api</artifactId>
