@@ -281,6 +281,31 @@
 			<artifactId>webdav-activity-ui</artifactId>
 			<version>${t2.ui.activities.version}</version>
 		</dependency>
+                <!-- For backwards compatibility with older
+                        WebDAV local workers the remaining old versions
+                        need to be pulled into the repository: -->
+                <dependency>
+                        <groupId>org.apache.httpcomponents</groupId>
+                        <artifactId>httpcore</artifactId>
+                        <version>4.2.3</version>
+                </dependency>
+                <dependency>
+                        <groupId>org.apache.httpcomponents</groupId>
+                        <artifactId>httpclient</artifactId>
+                        <version>4.2.3</version>
+                </dependency>
+                <dependency>
+                        <groupId>com.github.lookfirst</groupId>
+                        <artifactId>sardine</artifactId>
+                        <version>5.0_1_6</version>
+                </dependency>
+                <!-- Any future versions of these dependencies also would need to 
+                be listed here: -->
+                <dependency>
+                        <groupId>com.github.lookfirst</groupId>
+                        <artifactId>sardine</artifactId>
+                        <version>5.1</version>
+                </dependency>
         </profile>
         <compatibility>
             <application>
