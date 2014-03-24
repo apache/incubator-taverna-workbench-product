@@ -15,7 +15,7 @@
 		<edition>astronomy</edition>
 		<raven.app.name>taverna-${edition}-${project.version}-${buildNumber}</raven.app.name>
                 <m2Repository />
-		<astrotaverna.version>1.11.tav25-SNAPSHOT</astrotaverna.version>
+		<astrotaverna.version>1.20</astrotaverna.version>
         </properties>
         <profiles>
                 <profile>
