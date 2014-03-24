@@ -301,11 +301,6 @@
                 <!-- Any future versions of these dependencies also would need to 
                 be listed here: -->
 <!--
-                <dependency>
-                        <groupId>com.github.lookfirst</groupId>
-                        <artifactId>sardine</artifactId>
-                        <version>5.1</version>
-                </dependency>
         </profile>
         <compatibility>
             <application>
