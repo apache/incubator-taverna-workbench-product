@@ -2443,6 +2443,15 @@
                         </snapshots>
                 </repository>
                 <repository>
+                        <id>mygrid-staging-repository</id>
+                        <name>myGrid Staging Repository</name>
+                        <url>http://www.mygrid.org.uk/maven/staging-repository</url>
+                        <releases />
+                        <snapshots>
+                                <enabled>false</enabled>
+                        </snapshots>
+                </repository>
+                <repository>
                         <id>mygrid-snapshot-repository</id>
                         <name>myGrid Snapshot Repository</name>
                         <url>http://www.mygrid.org.uk/maven/snapshot-repository</url>
