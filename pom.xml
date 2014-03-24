@@ -16,6 +16,7 @@
 		<raven.app.name>taverna-${edition}-${project.version}-${buildNumber}</raven.app.name>
                 <m2Repository />
 		<astrotaverna.version>1.20</astrotaverna.version>
+		<helio.version>0.2.1</helio.version>
         </properties>
         <profiles>
                 <profile>
@@ -628,6 +629,27 @@
 			<version>${astrotaverna.version}</version>
                         <scope>test</scope>
 		</dependency>
+
+		<!-- helio -->
+		<dependency>
+			<groupId>org.helio.taverna</groupId>
+			<artifactId>helio-activity</artifactId>
+			<version>${helio.version}</version>
+                        <scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.helio.taverna</groupId>
+			<artifactId>helio-common</artifactId>
+			<version>${helio.version}</version>
+                        <scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.helio.taverna</groupId>
+			<artifactId>helio-activity-ui</artifactId>
+			<version>${helio.version}</version>
+                        <scope>test</scope>
+		</dependency>
+
                                                         
         </dependencies>
         <build>
@@ -2220,6 +2242,19 @@
                     <name>Astrotaverna repository</name>
 		    <url>http://wf4ever.github.com/astrotaverna</url>
                 </repository>
+                <repository>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                    <id>helio</id>
+                    <name>Helio Taverna repository</name>
+		    <url>http://msslkz.mssl.ucl.ac.uk/helio_taverna/helio_repository/</url>
+                </repository>
+
+		
 
         </repositories>
 	<scm>
