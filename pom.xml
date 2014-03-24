@@ -2061,6 +2061,34 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/javax/servlet/servlet-api/2.4</outputDirectory>
                                 </artifactItem>
+                                <artifactItem>
+                                    <groupId>axis</groupId>
+                                    <artifactId>axis-jaxrpc</artifactId>
+                                    <version>1.4</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/axis/axis-jaxrpc/1.4</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>axis</groupId>
+                                    <artifactId>axis-jaxrpc</artifactId>
+                                    <version>1.4</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/axis/axis-jaxrpc/1.4</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>axis</groupId>
+                                    <artifactId>axis-saaj</artifactId>
+                                    <version>1.4</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/axis/axis-saaj/1.4</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>axis</groupId>
+                                    <artifactId>axis-saaj</artifactId>
+                                    <version>1.4</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/axis/axis-saaj/1.4</outputDirectory>
+                                </artifactItem>
 
 			</artifactItems>                                                        
                     </configuration>
