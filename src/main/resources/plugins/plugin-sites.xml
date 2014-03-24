@@ -16,4 +16,8 @@
     <name>AstroTaverna</name>
     <url>http://wf4ever.github.io/astrotaverna/</url>
   </pluginSite>
+  <pluginSite>
+    <name>Helio</name>
+    <url>http://msslkz.mssl.ucl.ac.uk/helio_taverna/taverna/helio/plugins/</url>
+  </pluginSite>
 </pluginSites>
