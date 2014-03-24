@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<install4j version="5.1.8" transformSequenceNumber="4">
+<install4j version="5.1.10" transformSequenceNumber="4">
   <directoryPresets config="../../../target/taverna-workbench-dist/taverna.sh" />
   <application name="Taverna Workbench ${compiler:edition}" distributionSourceDir="" applicationId="2878-7082-3139-2294" mediaDir="../../../target/media" mediaFilePattern="${compiler:sys.shortName}-${compiler:sys.version}-${compiler:sys.platform}" compression="6" lzmaCompression="false" pack200Compression="false" excludeSignedFromPacking="true" commonExternalFiles="false" createMd5Sums="true" shrinkRuntime="false" shortName="taverna-workbench-${compiler:edition}" publisher="myGrid" publisherWeb="http://www.taverna.org.uk/" version="2.5-SNAPSHOT" allPathsRelative="true" backupOnSave="false" autoSave="true" convertDotsToUnderscores="false" macSignature="????" installerName="" javaMinVersion="1.7" javaMaxVersion="" allowBetaVM="false" jdkMode="runtimeJre" jdkName="">
     <languages skipLanguageSelection="false" languageSelectionInPrincipalLanguage="false">
@@ -19,7 +19,7 @@
       <variable name="edition" value="snapshot" description="" category="" />
     </variables>
     <mergedProjects />
-    <codeSigning macEnabled="false" macPkcs12File="" windowsEnabled="false" windowsKeySource="pkcs12" windowsPvkFile="" windowsSpcFile="" windowsPkcs12File="" />
+    <codeSigning macEnabled="true" macPkcs12File="/tmp/code-signing.pfx" windowsEnabled="true" windowsKeySource="pkcs12" windowsPvkFile="" windowsSpcFile="" windowsPkcs12File="/tmp/code-signing.pfx" />
   </application>
   <files keepModificationTimes="false" missingFilesStrategy="error" globalExcludeSuffixes="" defaultOverwriteMode="3" defaultUninstallMode="0" launcherOverwriteMode="3" defaultFileMode="644" defaultDirMode="755">
     <filesets>
