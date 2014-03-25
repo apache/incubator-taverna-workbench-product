@@ -77,7 +77,7 @@
   <launchers>
     <launcher name="Taverna Workbench" id="24" customizedId="" external="false" excludeFromMenu="false" unixMode="755" menuName="${compiler:sys.fullName}" icnsFile="${compiler:srcDir}/lib/launcher_logo.icns" customMacBundleIdentifier="true" macBundleIdentifier="net.sf.taverna.t2.workbench" swtApp="false" fileset="" macBundleBinary="JavaApplicationStub" addMacEntitlements="false" macEntitlementsFile="">
       <executable name="taverna" type="1" iconSet="true" iconFile="${compiler:srcDir}/lib/launcher_logo.ico" executableDir="" redirectStderr="false" stderrFile="error.log" stderrMode="overwrite" redirectStdout="false" stdoutFile="output.log" stdoutMode="overwrite" failOnStderrOutput="true" executableMode="1" changeWorkingDirectory="true" workingDirectory="." singleInstance="true" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="" executionLevel="asInvoker" checkConsoleParameter="true" globalSingleInstance="false">
-        <versionInfo include="true" fileVersion="" fileDescription="Taverna Workbench build ${compiler:sys.platform}--${compiler:sys.date}T${compiler:sys.time}" legalCopyright="Copyright 2005-2014 University of Manchester, UK" internalName="taverna" productName="" />
+        <versionInfo include="true" fileVersion="" fileDescription="${compiler:sys.fullName} ${compiler:sys.platform}--${compiler:sys.date}T${compiler:sys.time}" legalCopyright="Copyright 2005-2014 University of Manchester, UK" internalName="taverna" productName="" />
       </executable>
       <splashScreen show="true" autoOff="true" alwaysOnTop="true" width="0" height="0" bitmapFile="${compiler:srcDir}/lib/launcher_splashscreen.png" java6SplashScreen="true">
         <text>
