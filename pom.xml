@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>uk.org.taverna.workbench</groupId>
 	<artifactId>taverna-workbench-product</artifactId>
-	<name>Taverna Workbench</name>
+	<name>Taverna Workbench [Developer]</name>
 	<packaging>taverna-application</packaging>
 	<profiles>
 		<profile>
