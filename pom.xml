@@ -411,6 +411,7 @@
                                                                 <variables>
                                                                         <srcDir>${project.build.directory}/dist</srcDir>
 									<edition>${edition}</edition>
+									<product-name>${project.name} ${project.version}</product-name>
                                                                 </variables>
                                 </configuration>
                             </execution>

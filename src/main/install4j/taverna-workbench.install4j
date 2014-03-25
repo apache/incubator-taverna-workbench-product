@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<install4j version="5.1.10" transformSequenceNumber="4">
+<install4j version="5.1.11" transformSequenceNumber="4">
   <directoryPresets config="../../../target/taverna-workbench-dist/taverna.sh" />
-  <application name="Taverna Workbench ${compiler:edition}" distributionSourceDir="" applicationId="5428-3171-5672-6258" mediaDir="../../../target/media" mediaFilePattern="${compiler:sys.shortName}-${compiler:sys.version}-${compiler:sys.platform}" compression="6" lzmaCompression="false" pack200Compression="false" excludeSignedFromPacking="true" commonExternalFiles="false" createMd5Sums="true" shrinkRuntime="false" shortName="taverna-workbench-${compiler:edition}" publisher="myGrid" publisherWeb="http://www.taverna.org.uk/" version="2.5-SNAPSHOT" allPathsRelative="true" backupOnSave="false" autoSave="true" convertDotsToUnderscores="false" macSignature="????" installerName="" javaMinVersion="1.7" javaMaxVersion="" allowBetaVM="false" jdkMode="runtimeJre" jdkName="">
+  <application name="${compiler:product-name}" distributionSourceDir="" applicationId="5428-3171-5672-6258" mediaDir="../../../target/media" mediaFilePattern="${compiler:sys.shortName}-${compiler:sys.version}-${compiler:sys.platform}" compression="6" lzmaCompression="false" pack200Compression="false" excludeSignedFromPacking="true" commonExternalFiles="false" createMd5Sums="true" shrinkRuntime="false" shortName="taverna-workbench-${compiler:edition}" publisher="myGrid" publisherWeb="http://www.taverna.org.uk/" version="2.5-SNAPSHOT" allPathsRelative="true" backupOnSave="false" autoSave="true" convertDotsToUnderscores="false" macSignature="????" installerName="" javaMinVersion="1.7" javaMaxVersion="" allowBetaVM="false" jdkMode="runtimeJre" jdkName="">
     <languages skipLanguageSelection="false" languageSelectionInPrincipalLanguage="false">
       <principalLanguage id="en" customLocalizationFile="" />
       <additionalLanguages />
