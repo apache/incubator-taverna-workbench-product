@@ -13,7 +13,7 @@
 
         <properties>
 		<edition>digitalpreservation</edition>
-		<raven.app.name>taverna-${edition}-${project.version}-${buildNumber}</raven.app.name>
+		<raven.app.name>taverna-workbench-${edition}-${project.version}-${buildNumber}</raven.app.name>
                 <m2Repository />
         </properties>
         <profiles>
