@@ -20,4 +20,8 @@
     <name>Helio</name>
     <url>http://msslkz.mssl.ucl.ac.uk/helio_taverna/taverna/helio/plugins/</url>
   </pluginSite>
+  <pluginSite>
+    <name>VAMDC</name>
+    <url>http://vamdc.mssl.ucl.ac.uk/taverna/vamdc/plugins/</url>
+  </pluginSite>
 </pluginSites>

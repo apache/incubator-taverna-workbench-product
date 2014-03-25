@@ -17,6 +17,7 @@
                 <m2Repository />
 		<astrotaverna.version>1.20</astrotaverna.version>
 		<helio.version>0.2.1</helio.version>
+		<vamdc.version>1.0</vamdc.version>
         </properties>
         <profiles>
                 <profile>
@@ -651,6 +652,26 @@
                         <scope>test</scope>
 		</dependency>
 
+		<!-- vamdc -->
+		<dependency>
+			<groupId>org.vamdc.taverna</groupId>
+			<artifactId>vamdc-activity</artifactId>
+			<version>${vamdc.version}</version>
+                        <scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.vamdc.taverna</groupId>
+			<artifactId>vamdc-common</artifactId>
+			<version>${vamdc.version}</version>
+                        <scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.vamdc.taverna</groupId>
+			<artifactId>vamdc-activity-ui</artifactId>
+			<version>${vamdc.version}</version>
+                        <scope>test</scope>
+		</dependency>
+
                                                         
         </dependencies>
         <build>
@@ -744,6 +765,279 @@
 
 				-->
 
+                                <artifactItem>
+                                    <groupId>commons-collections</groupId>
+                                    <artifactId>commons-collections</artifactId>
+                                    <version>3.2.1</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-collections/commons-collections/3.2.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>commons-collections</groupId>
+                                    <artifactId>commons-collections</artifactId>
+                                    <version>3.2.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-collections/commons-collections/3.2.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.sun.xml.bind</groupId>
+                                    <artifactId>jaxb-impl</artifactId>
+                                    <version>2.1.8</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/com/sun/xml/bind/jaxb-impl/2.1.8</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.sun.xml.bind</groupId>
+                                    <artifactId>jaxb-impl</artifactId>
+                                    <version>2.1.8</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/com/sun/xml/bind/jaxb-impl/2.1.8</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.sun.jdmk</groupId>
+                                    <artifactId>jmxtools</artifactId>
+                                    <version>1.2.1</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/com/sun/jdmk/jmxtools/1.2.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.sun.jdmk</groupId>
+                                    <artifactId>jmxtools</artifactId>
+                                    <version>1.2.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/com/sun/jdmk/jmxtools/1.2.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.sun.jmx</groupId>
+                                    <artifactId>jmxri</artifactId>
+                                    <version>1.2.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/com/sun/jmx/jmxri/1.2.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>com.sun.jmx</groupId>
+                                    <artifactId>jmxri</artifactId>
+                                    <version>1.2.1</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/com/sun/jmx/jmxri/1.2.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>xerces</groupId>
+                                    <artifactId>xerces</artifactId>
+                                    <version>1.2.3</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/xerces/xerces/1.2.3</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>xerces</groupId>
+                                    <artifactId>xerces</artifactId>
+                                    <version>1.2.3</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/xerces/xerces/1.2.3</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>xerces</groupId>
+                                    <artifactId>xercesImpl</artifactId>
+                                    <version>2.8.0</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/xerces/xercesImpl/2.8.0</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>xerces</groupId>
+                                    <artifactId>xercesImpl</artifactId>
+                                    <version>2.8.0</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/xerces/xercesImpl/2.8.0</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>commons-jxpath</groupId>
+                                    <artifactId>commons-jxpath</artifactId>
+                                    <version>1.2</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-jxpath/commons-jxpath/1.2</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>commons-jxpath</groupId>
+                                    <artifactId>commons-jxpath</artifactId>
+                                    <version>1.2</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-jxpath/commons-jxpath/1.2</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>axis</groupId>
+                                    <artifactId>axis-wsdl4j</artifactId>
+                                    <version>1.5.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/axis/axis-wsdl4j/1.5.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>axis</groupId>
+                                    <artifactId>axis-wsdl4j</artifactId>
+                                    <version>1.5.1</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/axis/axis-wsdl4j/1.5.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>axis</groupId>
+                                    <artifactId>axis</artifactId>
+                                    <version>1.4</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/axis/axis/1.4</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>axis</groupId>
+                                    <artifactId>axis</artifactId>
+                                    <version>1.4</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/axis/axis/1.4</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>commons-discovery</groupId>
+                                    <artifactId>commons-discovery</artifactId>
+                                    <version>20030211.213356</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-discovery/commons-discovery/20030211.213356</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>commons-discovery</groupId>
+                                    <artifactId>commons-discovery</artifactId>
+                                    <version>0.2</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-discovery/commons-discovery/0.2</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>commons-discovery</groupId>
+                                    <artifactId>commons-discovery</artifactId>
+                                    <version>0.2</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-discovery/commons-discovery/0.2</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>uk.ac.starlink</groupId>
+                                    <artifactId>topcat-lite</artifactId>
+                                    <version>3.8</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/uk/ac/starlink/topcat-lite/3.8</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>log4j</groupId>
+                                    <artifactId>log4j</artifactId>
+                                    <version>1.2.15</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.15</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>log4j</groupId>
+                                    <artifactId>log4j</artifactId>
+                                    <version>1.2.15</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.15</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>log4j</groupId>
+                                    <artifactId>log4j</artifactId>
+                                    <version>1.2.8</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.8</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>log4j</groupId>
+                                    <artifactId>log4j</artifactId>
+                                    <version>1.2.8</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/log4j/log4j/1.2.8</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>commons-httpclient</groupId>
+                                    <artifactId>commons-httpclient</artifactId>
+                                    <version>3.0.1</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-httpclient/commons-httpclient/3.0.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>commons-httpclient</groupId>
+                                    <artifactId>commons-httpclient</artifactId>
+                                    <version>3.0.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-httpclient/commons-httpclient/3.0.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>commons-transaction</groupId>
+                                    <artifactId>commons-transaction</artifactId>
+                                    <version>1.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/commons-transaction/commons-transaction/1.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>junit</groupId>
+                                    <artifactId>junit</artifactId>
+                                    <version>4.4</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/junit/junit/4.4</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>junit</groupId>
+                                    <artifactId>junit</artifactId>
+                                    <version>4.4</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/junit/junit/4.4</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>jdom</groupId>
+                                    <artifactId>jdom</artifactId>
+                                    <version>b8</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/jdom/jdom/b8</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>jdom</groupId>
+                                    <artifactId>jdom</artifactId>
+                                    <version>b8</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/jdom/jdom/b8</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.commons</groupId>
+                                    <artifactId>commons-parent</artifactId>
+                                    <version>9</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/commons/commons-parent/9</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.astrogrid</groupId>
+                                    <artifactId>astrogrid-registry-client-lite</artifactId>
+                                    <version>2009.1b</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/astrogrid/astrogrid-registry-client-lite/2009.1b</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.astrogrid</groupId>
+                                    <artifactId>astrogrid-config</artifactId>
+                                    <version>2007.2cfg</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/astrogrid/astrogrid-config/2007.2cfg</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.astrogrid</groupId>
+                                    <artifactId>astrogrid-xml</artifactId>
+                                    <version>2007.2xml</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/astrogrid/astrogrid-xml/2007.2xml</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>javax.jms</groupId>
+                                    <artifactId>jms</artifactId>
+                                    <version>1.1</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/javax/jms/jms/1.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>javax.jms</groupId>
+                                    <artifactId>jms</artifactId>
+                                    <version>1.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/javax/jms/jms/1.1</outputDirectory>
+                                </artifactItem>
 
                                 <artifactItem>
                                     <groupId>org.slf4j</groupId>
@@ -2261,29 +2555,38 @@
                     <url>http://repo.aduna-software.org/maven2/releases</url>
                 </repository>
                 <repository>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
                     <id>astrotaverna</id>
                     <name>Astrotaverna repository</name>
 		    <url>http://wf4ever.github.com/astrotaverna</url>
-                </repository>
-                <repository>
                     <releases>
                         <enabled>true</enabled>
                     </releases>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
+                </repository>
+                <repository>
                     <id>helio</id>
                     <name>Helio Taverna repository</name>
 		    <url>http://msslkz.mssl.ucl.ac.uk/helio_taverna/helio_repository/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
                 </repository>
-
-		
+                <repository>
+                    <id>vamdc</id>
+                    <name>VAMDC Taverna repository</name>
+		    <url>http://vamdc.mssl.ucl.ac.uk/vamdc_repository/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+			    <enabled>false</enabled>
+                    </snapshots>
+                </repository>
 
         </repositories>
 	<scm>
