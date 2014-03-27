@@ -712,7 +712,6 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/com/sun/jdmk/jmxtools/1.2.1</outputDirectory>
                                 </artifactItem>
-                                -->
                                 <artifactItem>
                                     <groupId>com.sun.jmx</groupId>
                                     <artifactId>jmxri</artifactId>
@@ -727,6 +726,7 @@
                                     <type>jar</type>
                                     <outputDirectory>${project.build.directory}/repository/com/sun/jmx/jmxri/1.2.1</outputDirectory>
                                 </artifactItem>
+                                -->
                                 <artifactItem>
                                     <groupId>xerces</groupId>
                                     <artifactId>xerces</artifactId>
