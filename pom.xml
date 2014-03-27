@@ -697,6 +697,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/com/sun/xml/bind/jaxb-impl/2.1.8</outputDirectory>
                                 </artifactItem>
+                                <!--
                                 <artifactItem>
                                     <groupId>com.sun.jdmk</groupId>
                                     <artifactId>jmxtools</artifactId>
@@ -711,6 +712,7 @@
                                     <type>pom</type>
                                     <outputDirectory>${project.build.directory}/repository/com/sun/jdmk/jmxtools/1.2.1</outputDirectory>
                                 </artifactItem>
+                                -->
                                 <artifactItem>
                                     <groupId>com.sun.jmx</groupId>
                                     <artifactId>jmxri</artifactId>
