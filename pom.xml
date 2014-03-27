@@ -13,7 +13,7 @@
 
         <properties>
 		<edition>enterprise</edition>
-		<raven.app.name>taverna-${edition}-${project.version}-${buildNumber}</raven.app.name>
+		<raven.app.name>taverna-workbench-${edition}-${project.version}-${buildNumber}</raven.app.name>
                 <m2Repository />
         </properties>
         <profiles>
@@ -663,8 +663,6 @@
                                         added by the repositories-component of the assembly plugin. 
                                         
                                          -->
-
-
                                 <artifactItem>
                                     <groupId>commons-configuration</groupId>
                                     <artifactId>commons-configuration</artifactId>
