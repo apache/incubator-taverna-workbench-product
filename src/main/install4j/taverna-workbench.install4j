@@ -54,7 +54,6 @@
       <dirEntry mountPoint="96" file="${compiler:srcDir}/bin/win32i386" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="subdir" subDirectory="win32i386" excludeSuffixes="" dirMode="755" overrideDirMode="false">
         <exclude />
       </dirEntry>
-      <fileEntry mountPoint="95" file="${compiler:srcDir}/executeworkflow.bat" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
       <fileEntry mountPoint="95" file="${compiler:srcDir}/taverna.bat" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
       <dirEntry mountPoint="103" file="${compiler:srcDir}/bin/linux-x64" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="subdir" subDirectory="linux-x64" excludeSuffixes="" dirMode="755" overrideDirMode="false">
         <exclude />
@@ -63,13 +62,11 @@
         <exclude />
       </dirEntry>
       <fileEntry mountPoint="103" file="${compiler:srcDir}/bin/dot.sh" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" />
-      <fileEntry mountPoint="99" file="${compiler:srcDir}/executeworkflow.sh" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" />
       <fileEntry mountPoint="99" file="${compiler:srcDir}/taverna.sh" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" />
       <dirEntry mountPoint="104" file="${compiler:srcDir}/bin/osx-x64" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" entryMode="subdir" subDirectory="osx-x64" excludeSuffixes="" dirMode="755" overrideDirMode="false">
         <exclude />
       </dirEntry>
       <fileEntry mountPoint="104" file="${compiler:srcDir}/bin/dot.sh" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" />
-      <fileEntry mountPoint="105" file="${compiler:srcDir}/executeworkflow.sh" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" />
       <fileEntry mountPoint="105" file="${compiler:srcDir}/taverna.sh" overwriteMode="4" shared="false" fileMode="755" uninstallMode="0" overrideFileMode="true" overrideOverwriteMode="false" overrideUninstallMode="false" />
     </entries>
     <components />
@@ -130,67 +127,6 @@
       <iconImageFiles>
         <file path="${compiler:srcDir}/lib/launcher_logo_256x256.png" />
       </iconImageFiles>
-    </launcher>
-    <launcher name="executeworkflow" id="165" customizedId="" external="false" excludeFromMenu="true" unixMode="755" menuName="" icnsFile="" customMacBundleIdentifier="false" macBundleIdentifier="" swtApp="false" fileset="" macBundleBinary="JavaApplicationStub" addMacEntitlements="false" macEntitlementsFile="">
-      <executable name="executeworkflow" type="1" iconSet="false" iconFile="" executableDir="" redirectStderr="false" stderrFile="error.log" stderrMode="overwrite" redirectStdout="false" stdoutFile="output.log" stdoutMode="overwrite" failOnStderrOutput="true" executableMode="2" changeWorkingDirectory="false" workingDirectory="." singleInstance="false" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="" executionLevel="asInvoker" checkConsoleParameter="false" globalSingleInstance="false">
-        <versionInfo include="false" fileVersion="" fileDescription="" legalCopyright="" internalName="" productName="" />
-      </executable>
-      <splashScreen show="false" autoOff="true" alwaysOnTop="true" width="0" height="0" bitmapFile="" java6SplashScreen="false">
-        <text>
-          <statusLine x="20" y="20" text="" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
-          <versionLine x="20" y="40" text="version ${compiler:sys.version}" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
-        </text>
-      </splashScreen>
-      <java mainClass="net.sf.taverna.raven.launcher.Launcher" vmParameters="-Draven.launcher.app.main=net.sf.taverna.t2.commandline.CommandLineLauncher &quot;-Djava.util.logging.config.file=${launcher:sys.launcherDirectory}/lib/logging.properties&quot;" arguments="" allowVMPassthroughParameters="true" preferredVM="client" bundleRuntime="true">
-        <classPath>
-          <directory location="conf" failOnError="false" />
-          <directory location="lib" failOnError="true" />
-          <scanDirectory location="lib" failOnError="true" />
-        </classPath>
-        <nativeLibraryDirectories>
-          <directory name="lib" />
-        </nativeLibraryDirectories>
-      </java>
-      <includedFiles />
-      <unextractableFiles />
-      <vmOptionsFile mode="content" overwriteMode="0" fileMode="644">
-        <content># Maximum working memory
--Xmx${compiler:maxMemory}
-# Maximum memory for classes and plugins
--XX:MaxPermSize=${compiler:maxPermGenSpace}
-
-## System properties
--Djava.system.class.loader=net.sf.taverna.raven.prelauncher.BootstrapClassLoader
--Dcom.sun.net.ssl.enableECC=false
--Djsse.enableSNIExtension=false
--Draven.launcher.show_splashscreen=false
--Djava.awt.headless=true
-##
-
-# Taverna distribution info
--Dtaverna.build=${compiler:sys.date}T${compiler:sys.time}
--Dtaverna.platform=${compiler:sys.platform}
--Dtaverna.shortName=${compiler:sys.shortName}
--Dtaverna.version=${compiler:sys.version}
--Dtaverna.edition=${compiler:edition}
-
-
-## Uncomment and change the value of the following line to 
-## enable web-driven interaction with an external site
-#-Dtaverna.interaction.host=http://localhost"
-
-## Uncomment the following three lines to enable web-driven interaction
-#-Dtaverna.interaction.port=8080"
-#-Dtaverna.interaction.webdav_path=/interaction"
-#-Dtaverna.interaction.feed_path=/feed"</content>
-      </vmOptionsFile>
-      <customScript mode="1" file="">
-        <content />
-      </customScript>
-      <infoPlist mode="1" file="">
-        <content />
-      </infoPlist>
-      <iconImageFiles />
     </launcher>
   </launchers>
   <installerGui installerType="1" addOnAppId="" suggestPreviousLocations="true" autoUpdateDescriptorUrl="http://updates.taverna.org.uk/workbench/${compiler:edition}/${compiler:sys.version}/updates.xml" useAutoUpdateBaseUrl="true" autoUpdateBaseUrl="http://updates.taverna.org.uk/workbench/${compiler:edition}/installers/">
