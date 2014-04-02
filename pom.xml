@@ -673,6 +673,56 @@
 
 				-->
 
+
+                                <artifactItem>
+                                    <groupId>org.apache.httpcomponents</groupId>
+                                    <artifactId>project</artifactId>
+                                    <version>4.0</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/httpcomponents/project/4.0</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.httpcomponents</groupId>
+                                    <artifactId>httpcomponents-core</artifactId>
+                                    <version>4.0.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/httpcomponents/httpcomponents-core/4.0.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.httpcomponents</groupId>
+                                    <artifactId>httpcomponents-client</artifactId>
+                                    <version>4.0.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/httpcomponents/httpcomponents-client/4.0.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.httpcomponents</groupId>
+                                    <artifactId>httpclient</artifactId>
+                                    <version>4.0.1</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/httpcomponents/httpclient/4.0.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.httpcomponents</groupId>
+                                    <artifactId>httpclient</artifactId>
+                                    <version>4.0.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/httpcomponents/httpclient/4.0.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.httpcomponents</groupId>
+                                    <artifactId>httpcore</artifactId>
+                                    <version>4.0.1</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/httpcomponents/httpcore/4.0.1</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.apache.httpcomponents</groupId>
+                                    <artifactId>httpcore</artifactId>
+                                    <version>4.0.1</version>
+                                    <type>pom</type>
+                                    <outputDirectory>${project.build.directory}/repository/org/apache/httpcomponents/httpcore/4.0.1</outputDirectory>
+                                </artifactItem>
                                 <artifactItem>
                                     <groupId>com.fasterxml.jackson.core</groupId>
                                     <artifactId>jackson-core</artifactId>
