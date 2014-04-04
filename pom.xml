@@ -2575,7 +2575,10 @@
                     </snapshots>
                     <id>aduna-opensource.releases</id>
                     <name>Aduna Open Source - Maven releases</name>
+<!--
                     <url>http://repo.aduna-software.org/maven2/releases</url>
+-->
+                        <url>http://build.mygrid.org.uk/maven/aduna</url>
                 </repository>
                 <repository>
                     <id>astrotaverna</id>
@@ -2610,7 +2613,13 @@
 			    <enabled>false</enabled>
                     </snapshots>
                 </repository>
-
+                    <id>aduna-software</id>
+                    <name>Aduna Open Source - Maven releases</name>
+<!--
+                    <url>http://repo.aduna-software.org/maven2/releases</url>
+-->
+                        <url>http://build.mygrid.org.uk/maven/aduna</url>
+                </repository>
         </repositories>
 	<scm>
 		<url>https://github.com/taverna/taverna-workbench-product</url>
