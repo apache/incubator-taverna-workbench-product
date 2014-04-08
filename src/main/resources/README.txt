@@ -53,60 +53,6 @@ Examples
 ========
 Example Taverna 2.5 workflows can be found in the myExperiment starter pack at
 
-TODO: http://www.myexperiment.org/packs/XXX
+http://www.myexperiment.org/packs/612.html
 
-You can also access these as the tab 'Starter pack' under the *myExperiment*
-view inside Taverna.
-
-You can share and find other workflows at http://www.myexperiment.org/
-
-You can find and describe web services in life sciences at
-http://www.biocatalogue.org/
-
-
-Support
-=======
-See http://www.taverna.org.uk/about/contact-us/ for contact details.
-
-You may email <support@mygrid.org.uk> for any questions on using Taverna
-workbench. myGrid's support team should respond to your query within a 
-week.
-
-
-Mailing lists
--------------
-
-We also encourage you to sign up to the public *taverna-users* mailing list,
-where you may post about any problem or give us feedback on using Taverna.
-myGrid developers are actively monitoring the list.
-
- * http://lists.sourceforge.net/lists/listinfo/taverna-users
- * http://taverna-users.markmail.org/search/?q=
-
-
-If you are a developer, writing plugins for Taverna, dealing with the code
-behind Taverna or integrating Taverna with other software, you might find it
-interesting to also sign up for the public *taverna-hackers* mailing list,
-where you can also track the latest developments of Taverna.
-
-  * http://lists.sourceforge.net/lists/listinfo/taverna-hackers
-  * http://taverna-hackers.markmail.org/search/?q=
-
-
-Registration
-============
-Taverna might ask if you would like to register as a Taverna user. The myGrid
-team would appreciate if you do, as it would:
-
-  * Allow us to support you better; future plans will be directed towards
-    solutions Taverna users require
-
-  * Help sustain Taverna development
-
-By registering, you will *not* be giving us access to your data or service
-usage. We will *not* be monitoring your usage of Taverna, we will only record
-the information you provide in the registration form.
-
-For full terms and condition of our registration, see
-http://www.taverna.org.uk/about/legal-stuff/terms/
-
+You can also access these a
