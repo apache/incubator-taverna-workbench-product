@@ -12,7 +12,9 @@ real_path() {
 realprog=`real_path "$prog"`
 taverna_home=`dirname "$realprog"`
 javabin=java
-if test -x "$JAVA_HOME/bin/java"; then
+if test -x "$taverna_home/jre/bin/java"; then
+    javabin="$taverna_home/jre/bin/java"
+elif test -x "$JAVA_HOME/bin/java"; then
     javabin="$JAVA_HOME/bin/java"
 fi
 
