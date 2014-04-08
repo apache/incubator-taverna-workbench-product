@@ -53,7 +53,7 @@ Examples
 ========
 Example Taverna 2.5 workflows can be found in the myExperiment starter pack at
 
-TODO: http://www.myexperiment.org/packs/XXX
+http://www.myexperiment.org/packs/607.html
 
 You can also access these as the tab 'Starter pack' under the *myExperiment*
 view inside Taverna.
