@@ -1,45 +1,12 @@
 <serviceDescriptions xmlns="http://taverna.sf.net/2009/xml/servicedescription">
   <providers>
-	  <!--
     <provider>
-      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2010/service-provider/biomart</providerId>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2012/service-provider/component</providerId>
       <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
-        <net.sf.taverna.t2.activities.biomart.servicedescriptions.BiomartServiceProviderConfig xmlns="">
-          <url>http://www.biomart.org/biomart</url>
-        </net.sf.taverna.t2.activities.biomart.servicedescriptions.BiomartServiceProviderConfig>
-      </configBean>
-    </provider>
-    <provider>
-      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2010/service-provider/wsdl</providerId>
-      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
-        <net.sf.taverna.t2.activities.wsdl.servicedescriptions.WSDLServiceProviderConfig xmlns="">
-          <uri>http://soap.bind.ca/wsdl/bind.wsdl</uri>
-        </net.sf.taverna.t2.activities.wsdl.servicedescriptions.WSDLServiceProviderConfig>
-      </configBean>
-    </provider>
-    <provider>
-      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2010/service-provider/biomoby</providerId>
-      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
-        <net.sf.taverna.t2.activities.biomoby.servicedescriptions.BiomobyServiceProviderConfig xmlns="">
-          <endpoint>http://www.inab.org/cgi-bin/MOBY-Central.pl</endpoint>
-          <namespace>http://www.inab.org/MOBY/Central</namespace>
-        </net.sf.taverna.t2.activities.biomoby.servicedescriptions.BiomobyServiceProviderConfig>
-      </configBean>
-    </provider>
-    <provider>
-      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2010/service-provider/wsdl</providerId>
-      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
-        <net.sf.taverna.t2.activities.wsdl.servicedescriptions.WSDLServiceProviderConfig xmlns="">
-          <uri>http://www.ebi.ac.uk/ws/services/urn:Dbfetch?wsdl</uri>
-        </net.sf.taverna.t2.activities.wsdl.servicedescriptions.WSDLServiceProviderConfig>
-      </configBean>
-    </provider>
-    <provider>
-      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2010/service-provider/soaplab</providerId>
-      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
-        <net.sf.taverna.t2.activities.soaplab.servicedescriptions.SoaplabServiceProviderConfig xmlns="">
-          <endpoint>http://wsembnet.vital-it.ch/soaplab2-axis/services/</endpoint>
-        </net.sf.taverna.t2.activities.soaplab.servicedescriptions.SoaplabServiceProviderConfig>
+        <net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig xmlns="">
+          <registryBase>http://www.myexperiment.org</registryBase>
+          <familyName>Image Migration</familyName>
+        </net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig>
       </configBean>
     </provider>
     <provider>
@@ -47,10 +14,135 @@
       <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
         <net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig xmlns="">
           <registryBase>http://www.myexperiment.org</registryBase>
-          <familyName>WebDAV test</familyName>
+          <familyName>Image Characterisation</familyName>
         </net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig>
       </configBean>
     </provider>
-    -->
+    <provider>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2012/service-provider/component</providerId>
+      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
+        <net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig xmlns="">
+          <registryBase>http://www.myexperiment.org</registryBase>
+          <familyName>Image Quality Assurance</familyName>
+        </net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig>
+      </configBean>
+    </provider>
+    <provider>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2012/service-provider/component</providerId>
+      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
+        <net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig xmlns="">
+          <registryBase>http://www.myexperiment.org</registryBase>
+          <familyName>Audio Video Migration</familyName>
+        </net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig>
+      </configBean>
+    </provider>
+    <provider>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2012/service-provider/component</providerId>
+      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
+        <net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig xmlns="">
+          <registryBase>http://www.myexperiment.org</registryBase>
+          <familyName>Audio Video Characterisation</familyName>
+        </net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig>
+      </configBean>
+    </provider>
+    <provider>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2012/service-provider/component</providerId>
+      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
+        <net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig xmlns="">
+          <registryBase>http://www.myexperiment.org</registryBase>
+          <familyName>Audio Video Quality Assurance</familyName>
+        </net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig>
+      </configBean>
+    </provider>
+    <provider>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2012/service-provider/component</providerId>
+      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
+        <net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig xmlns="">
+          <registryBase>http://www.myexperiment.org</registryBase>
+          <familyName>Scientific Data Migration</familyName>
+        </net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig>
+      </configBean>
+    </provider>
+    <provider>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2012/service-provider/component</providerId>
+      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
+        <net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig xmlns="">
+          <registryBase>http://www.myexperiment.org</registryBase>
+          <familyName>Scientific Data Characterisation</familyName>
+        </net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig>
+      </configBean>
+    </provider>
+    <provider>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2012/service-provider/component</providerId>
+      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
+        <net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig xmlns="">
+          <registryBase>http://www.myexperiment.org</registryBase>
+          <familyName>Scientific Data Quality Assurance</familyName>
+        </net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig>
+      </configBean>
+    </provider>
+    <provider>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2012/service-provider/component</providerId>
+      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
+        <net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig xmlns="">
+          <registryBase>http://www.myexperiment.org</registryBase>
+          <familyName>Document Migration</familyName>
+        </net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig>
+      </configBean>
+    </provider>
+    <provider>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2012/service-provider/component</providerId>
+      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
+        <net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig xmlns="">
+          <registryBase>http://www.myexperiment.org</registryBase>
+          <familyName>Document Characterisation</familyName>
+        </net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig>
+      </configBean>
+    </provider>
+    <provider>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2012/service-provider/component</providerId>
+      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
+        <net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig xmlns="">
+          <registryBase>http://www.myexperiment.org</registryBase>
+          <familyName>Document Quality Assurance</familyName>
+        </net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig>
+      </configBean>
+    </provider>
+    <provider>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2012/service-provider/component</providerId>
+      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
+        <net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig xmlns="">
+          <registryBase>http://www.myexperiment.org</registryBase>
+          <familyName>Webpage Migration</familyName>
+        </net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig>
+      </configBean>
+    </provider>
+    <provider>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2012/service-provider/component</providerId>
+      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
+        <net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig xmlns="">
+          <registryBase>http://www.myexperiment.org</registryBase>
+          <familyName>Webpage Characterisation</familyName>
+        </net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig>
+      </configBean>
+    </provider>
+    <provider>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2012/service-provider/component</providerId>
+      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
+        <net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig xmlns="">
+          <registryBase>http://www.myexperiment.org</registryBase>
+          <familyName>Webpage Quality Assurance</familyName>
+        </net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig>
+      </configBean>
+    </provider>
+    <provider>
+      <providerId xmlns="http://taverna.sf.net/2008/xml/t2flow">http://taverna.sf.net/2012/service-provider/component</providerId>
+      <configBean xmlns="http://taverna.sf.net/2008/xml/t2flow" encoding="xstream">
+        <net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig xmlns="">
+          <registryBase>http://www.myexperiment.org</registryBase>
+          <familyName>SCAPE Utility Components</familyName>
+        </net.sf.taverna.t2.component.ui.serviceprovider.ComponentServiceProviderConfig>
+      </configBean>
+    </provider>
   </providers>
 </serviceDescriptions>
