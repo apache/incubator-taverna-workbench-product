@@ -1,5 +1,5 @@
 =======================
-Taverna workbench 2.5.0
+Taverna Workbench 2.5.0
 =======================
 http://www.taverna.org.uk/
 http://www.mygrid.org.uk/
