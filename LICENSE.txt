@@ -1,3 +1,6 @@
+This license applies to the astronomy plugins for Taverna and to this
+aggregation. Taverna itself is distributed under LGPL.
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
