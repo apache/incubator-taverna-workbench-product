@@ -13,6 +13,7 @@
 				<excludes>
 					<exclude>META-INF/</exclude>
 					<exclude>LICENSE.txt</exclude>
+					<exclude>LICENCE.txt</exclude>
 				</excludes>
 			</unpackOptions>
 			<!-- 0755 for all, due to
