@@ -734,8 +734,23 @@
 		</dependency>
 
 	</dependencies>
+  <scm>
+    <connection>scm:git:https://git-wip-us.apache.org/repos/asf/incubator-taverna-workbench-product.git</connection>
+    <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/incubator-taverna-workbench-product.git</developerConnection>
+    <url>https://github.com/apache/incubator-taverna-workbench-product</url>
+    <tag>HEAD</tag>
+  </scm>
 
-	<repositories>
+  <repositories>
+    <repository>
+      <id>apache.snapshots</id>
+      <name>Apache Snapshot Repository</name>
+      <url>http://repository.apache.org/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+    </repository>
+    <!--
 		<repository>
 			<releases />
 			<snapshots>
@@ -745,15 +760,7 @@
 			<name>myGrid Repository</name>
 			<url>http://www.mygrid.org.uk/maven/repository</url>
 		</repository>
-		<repository>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots />
-			<id>mygrid-snapshot-repository</id>
-			<name>myGrid Snapshot Repository</name>
-			<url>http://www.mygrid.org.uk/maven/snapshot-repository</url>
-		</repository>
+    -->
 		<repository>
 			<id>spring-maven-milestone</id>
 			<name>Springframework Maven Repository</name>
