@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>net.sf.taverna</groupId>
-		<artifactId>taverna-parent</artifactId>
-		<version>3.0.1-SNAPSHOT</version>
+		<groupId>org.apache.taverna</groupId>
+		<artifactId>apache-taverna-parent</artifactId>
+		<version>2-incubating-SNAPSHOT</version>
 	</parent>
-	<groupId>uk.org.taverna.workbench</groupId>
-	<artifactId>taverna-workbench-product</artifactId>
+	<groupId>org.apache.taverna.workbench</groupId>
+	<artifactId>apache-taverna-workbench-product</artifactId>
 	<name>Taverna Workbench [Developer]</name>
 	<packaging>taverna-application</packaging>
 	<profiles>
