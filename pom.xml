@@ -616,8 +616,8 @@
 
 	</dependencies>
   <scm>
-    <connection>scm:git:https://git-wip-us.apache.org/repos/asf/incubator-taverna-workbench-product.git</connection>
-    <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/incubator-taverna-workbench-product.git</developerConnection>
+    <connection>scm:git:https://gitbox.apache.org/repos/asf/incubator-taverna-workbench-product.git</connection>
+    <developerConnection>scm:git:git@github.com:apache/incubator-taverna-workbench-product.git</developerConnection>
     <url>https://github.com/apache/incubator-taverna-workbench-product</url>
     <tag>HEAD</tag>
   </scm>
