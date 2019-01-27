@@ -480,12 +480,6 @@
 		</dependency>
 		<dependency>
 			<groupId>org.apache.taverna.workbench</groupId>
-			<artifactId>taverna-credential-manager-ui</artifactId>
-			<version>${taverna.workbench.version}</version>
-			
-		</dependency>
-		<dependency>
-			<groupId>org.apache.taverna.workbench</groupId>
 			<artifactId>taverna-perspective-design</artifactId>
 			<version>${taverna.workbench.version}</version>
 			
@@ -521,7 +515,7 @@
 			
 		</dependency>
 		<dependency>
-			<groupId>org.apache.taverna.workbench</groupId>
+			<groupId>org.apache.taverna.engine</groupId>
 			<artifactId>taverna-credential-manager-impl</artifactId>
 			<version>${taverna.engine.version}</version>
 			
@@ -646,30 +640,5 @@
         <enabled>false</enabled>
       </releases>
     </repository>
-    <!--
-		<repository>
-			<releases />
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<id>mygrid-repository</id>
-			<name>myGrid Repository</name>
-			<url>http://www.mygrid.org.uk/maven/repository</url>
-		</repository>
-    -->
-		<repository>
-			<id>spring-maven-milestone</id>
-			<name>Springframework Maven Repository</name>
-			<url>http://maven.springframework.org/milestone</url>
-		</repository>
-		<repository>
-			<id>com.springsource.repository.bundles.milestone</id>
-			<name>SpringSource Enterprise Bundle Repository - SpringSource Bundle Milestones</name>
-			<url>http://repository.springsource.com/maven/bundles/milestone</url>
-		</repository>
-		<repository>
-			<id>OPS4J</id>
-			<url>http://repository.ops4j.org/maven2</url>
-		</repository>
 	</repositories>
 </project>
