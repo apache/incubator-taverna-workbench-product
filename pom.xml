@@ -25,8 +25,13 @@
 	</parent>
 	<groupId>org.apache.taverna.workbench</groupId>
 	<artifactId>apache-taverna-workbench-product</artifactId>
+	<version>3.1.0-incubating-SNAPSHOT</version>
 	<name>Taverna Workbench [Developer]</name>
-	<packaging>jar</packaging>
+	<!--
+	<packaging>taverna-application</packaging> 
+           disabled due to TAVERNA-924 -->
+	<packaging>bundle</packaging>
+
 
     <properties>
         <taverna.language.version>0.16.0-incubating-SNAPSHOT</taverna.language.version>
@@ -44,8 +49,8 @@
 			</activation>
 			<properties>
 				<assembly.descriptor>src/main/assembly/developer-assembly.xml</assembly.descriptor>
-				<profile.updateSite>http://updates.taverna.org.uk/workbench/3.0/dev/</profile.updateSite>
-				<profile.pluginSite>http://updates.taverna.org.uk/workbench/3.0/dev/plugins/</profile.pluginSite>
+				<profile.updateSite>http://taverna.incubator.apache.org/updates/workbench/3.0/dev/</profile.updateSite>
+				<profile.pluginSite>http://taverna.incubator.apache.org/updates/workbench/3.0/dev/plugins/</profile.pluginSite>
 			</properties>
 			<distributionManagement>
 				<repository>
@@ -62,8 +67,8 @@
 			<id>beta</id>
 			<properties>
 				<assembly.descriptor>src/main/assembly/nightly-assembly.xml</assembly.descriptor>
-				<profile.updateSite>http://updates.taverna.org.uk/workbench/3.0/beta/</profile.updateSite>
-				<profile.pluginSite>http://updates.taverna.org.uk/workbench/3.0/beta/plugins/</profile.pluginSite>
+				<profile.updateSite>http://taverna.incubator.apache.org/updates/workbench/3.0/beta/</profile.updateSite>
+				<profile.pluginSite>http://taverna.incubator.apache.org/updates/workbench/3.0/beta/plugins/</profile.pluginSite>
 			</properties>
 			<distributionManagement>
 				<repository>
@@ -80,8 +85,8 @@
 			<id>stable</id>
 			<properties>
 				<assembly.descriptor>src/main/assembly/release-assembly.xml</assembly.descriptor>
-				<profile.updateSite>http://updates.taverna.org.uk/workbench/3.0/stable/</profile.updateSite>
-				<profile.pluginSite>http://updates.taverna.org.uk/workbench/3.0/stable/plugins/</profile.pluginSite>
+				<profile.updateSite>http://taverna.incubator.apache.org/updates/workbench/3.0/stable/</profile.updateSite>
+				<profile.pluginSite>http://taverna.incubator.apache.org/updates/workbench/3.0/stable/plugins/</profile.pluginSite>
 			</properties>
 			<distributionManagement>
 				<repository>
@@ -98,8 +103,8 @@
 			<id>nightly</id>
 			<properties>
 				<assembly.descriptor>src/main/assembly/nightly-assembly.xml</assembly.descriptor>
-				<profile.updateSite>http://updates.taverna.org.uk/workbench/3.0/dev/</profile.updateSite>
-				<profile.pluginSite>http://updates.taverna.org.uk/workbench/3.0/dev/plugins/</profile.pluginSite>
+				<profile.updateSite>http://taverna.incubator.apache.org/updates/workbench/3.0/dev/</profile.updateSite>
+				<profile.pluginSite>http://taverna.incubator.apache.org/updates/workbench/3.0/dev/plugins/</profile.pluginSite>
 			</properties>
 			<distributionManagement>
 				<repository>
@@ -119,9 +124,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
-<!-- 
- 				<version>2.4</version>
- -->
 				<executions>
 					<execution>
 						<phase>package</phase>
@@ -176,6 +178,7 @@
 						</frameworkConfiguration>
 						<frameworkConfiguration>
 							<name>org.osgi.framework.system.packages.extra</name>
+
 							<value>com.sun.org.apache.xml.internal.utils,org.apache.log4j;version=1.2.16</value>
 						</frameworkConfiguration>
 						<frameworkConfiguration>
@@ -184,15 +187,31 @@
 						</frameworkConfiguration>
 					</frameworkConfigurations>
 				</configuration>
+        <executions>
+          <execution>
+            <!-- Explicit execution due to TAVERNA-924 workaround -->
+            <id>prepare-bundles</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>profile-generate</goal>
+            </goals>
+          </execution>
+        </executions>
+
 			</plugin>
+			<!--
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
+-->
+				<!-- Deliberately downgraded so we can use <skipIfEmpty> -->
+					<!--
 				<version>2.4</version>
 				<configuration>
 					<skipIfEmpty>true</skipIfEmpty>
 				</configuration>
 			</plugin>
+-->
                         <plugin>
                                 <groupId>org.apache.rat</groupId>
                                 <artifactId>apache-rat-plugin</artifactId>
